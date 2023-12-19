@@ -363,13 +363,13 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../api.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="aeon.util.html">aeon.util</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.movies.html">aeon.analysis.movies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.io.api.html">aeon.io.api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.io.device.html">aeon.io.device</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.io.reader.html">aeon.io.reader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.io.video.html">aeon.io.video</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.movies.html">aeon.analysis.movies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.schema.core.html">aeon.schema.core</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.schema.dataset.html">aeon.schema.dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.schema.foraging.html">aeon.schema.foraging</a></li>
@@ -445,7 +445,8 @@ document.write(`
 <dl class="py class">
 <dt class="sig sig-object py" id="aeon.schema.social.Pose">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aeon.schema.social.</span></span><span class="sig-name descname"><span class="pre">Pose</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bin'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aeon/schema/social.html#Pose"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aeon.schema.social.Pose" title="Link to this definition">#</a></dt>
-<dd><p>Reader for Harp-binarized tracking data given a model that outputs id, parts, and likelihoods.</p>
+<dd><p>Bases: <a class="reference internal" href="aeon.io.reader.html#aeon.io.reader.Harp" title="aeon.io.reader.Harp"><code class="xref py py-class docutils literal notranslate"><span class="pre">Harp</span></code></a></p>
+<p>Reader for Harp-binarized tracking data given a model that outputs id, parts, and likelihoods.</p>
 <dl class="simple">
 <dt>Columns:</dt><dd><p>class (int): Int ID of a subject in the environment.
 class_likelihood (float): Likelihood of the subject’s identity.

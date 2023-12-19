@@ -14,13 +14,13 @@ API Reference
     :toctree: api
 
     aeon.util
-    aeon.analysis.movies
-    aeon.analysis.plotting
-    aeon.analysis.utils
     aeon.io.api
     aeon.io.device
     aeon.io.reader
     aeon.io.video
+    aeon.analysis.movies
+    aeon.analysis.plotting
+    aeon.analysis.utils
     aeon.schema.core
     aeon.schema.dataset
     aeon.schema.foraging
