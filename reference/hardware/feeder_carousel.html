@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>aeon.analysis.movies &#8212; aeon_docs  documentation</title>
+    <title>Feeder3 &#8212; aeon_docs  documentation</title>
   
   
   
@@ -30,6 +30,8 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-carousel.min.css?v=fd277c8b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/carousel-custom.css?v=6fe5d8c5" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -41,11 +43,12 @@
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/design-tabs.js?v=36754332"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/aeon.analysis.movies';</script>
+    <script src="../../_static/bootstrap-carousel.min.js?v=9a6c5d3e"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/hardware/feeder_carousel';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="aeon.analysis.plotting" href="aeon.analysis.plotting.html" />
-    <link rel="prev" title="aeon.util" href="aeon.util.html" />
+    <link rel="next" title="Glossary" href="../glossary.html" />
+    <link rel="prev" title="Feeder2" href="feeder_tab.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -351,27 +354,27 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../api.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="aeon.util.html">aeon.util</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">aeon.analysis.movies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.utils.html">aeon.analysis.utils</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.schema.core.html">aeon.schema.core</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.schema.dataset.html">aeon.schema.dataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.schema.foraging.html">aeon.schema.foraging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.schema.octagon.html">aeon.schema.octagon</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.schema.social.html">aeon.schema.social</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.io.api.html">aeon.io.api</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.io.device.html">aeon.io.device</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.io.reader.html">aeon.io.reader</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.io.video.html">aeon.io.video</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.util.html">aeon.util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.analysis.movies.html">aeon.analysis.movies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.analysis.utils.html">aeon.analysis.utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.schema.core.html">aeon.schema.core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.schema.dataset.html">aeon.schema.dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.schema.foraging.html">aeon.schema.foraging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.schema.octagon.html">aeon.schema.octagon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.schema.social.html">aeon.schema.social</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.io.api.html">aeon.io.api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.io.device.html">aeon.io.device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.io.reader.html">aeon.io.reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/aeon.io.video.html">aeon.io.video</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../data_contract.html">Data Schema</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../hardware.html">Hardware Overview</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../hardware/feeder.html">Feeder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../hardware/feeder_tab.html">Feeder2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../hardware/feeder_carousel.html">Feeder3</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../hardware.html">Hardware Overview</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="feeder.html">Feeder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feeder_tab.html">Feeder2</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Feeder3</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
@@ -416,9 +419,9 @@ document.write(`
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Reference</a></li>
     
     
-    <li class="breadcrumb-item"><a href="../api.html" class="nav-link">API Reference</a></li>
+    <li class="breadcrumb-item"><a href="../hardware.html" class="nav-link">Hardware Overview</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">aeon.analysis.movies</li>
+    <li class="breadcrumb-item active" aria-current="page">Feeder3</li>
   </ul>
 </nav>
 </div>
@@ -435,104 +438,124 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="module-aeon.analysis.movies">
-<span id="aeon-analysis-movies"></span><h1>aeon.analysis.movies<a class="headerlink" href="#module-aeon.analysis.movies" title="Link to this heading">#</a></h1>
-<dl class="py function">
-<dt class="sig sig-object py" id="aeon.analysis.movies.averageframes">
-<span class="sig-prename descclassname"><span class="pre">aeon.analysis.movies.</span></span><span class="sig-name descname"><span class="pre">averageframes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frames</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aeon/analysis/movies.html#averageframes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aeon.analysis.movies.averageframes" title="Link to this definition">#</a></dt>
-<dd><p>Returns the average of the specified collection of frames.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="aeon.analysis.movies.collatemovie">
-<span class="sig-prename descclassname"><span class="pre">aeon.analysis.movies.</span></span><span class="sig-name descname"><span class="pre">collatemovie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clipdata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fun</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aeon/analysis/movies.html#collatemovie"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aeon.analysis.movies.collatemovie" title="Link to this definition">#</a></dt>
-<dd><p>Collates a set of video clips into a single movie using the specified aggregation function.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>clipdata</strong> (<em>DataFrame</em>) – </p>
-</dd>
-</dl>
-<p>A pandas DataFrame where each row specifies video path, frame number, clip and sequence number.
-This DataFrame can be obtained from the output of the triggerclip function.
-:param callable fun: The aggregation function used to process the frames in each clip.
-:return: The sequence of processed frames representing the collated movie.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="aeon.analysis.movies.gridframes">
-<span class="sig-prename descclassname"><span class="pre">aeon.analysis.movies.</span></span><span class="sig-name descname"><span class="pre">gridframes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frames</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aeon/analysis/movies.html#gridframes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aeon.analysis.movies.gridframes" title="Link to this definition">#</a></dt>
-<dd><p>Arranges a set of frames into a grid layout with the specified
-pixel dimensions and shape.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>frames</strong> (<em>list</em>) – A list of frames to include in the grid layout.</p></li>
-<li><p><strong>width</strong> (<em>int</em>) – The width of the output grid image, in pixels.</p></li>
-<li><p><strong>height</strong> (<em>int</em>) – The height of the output grid image, in pixels.</p></li>
-<li><p><strong>shape</strong> (<em>optional</em>) – </p></li>
-</ul>
-</dd>
-</dl>
-<p>Either the number of frames to include, or the number of rows and columns
-in the output grid image layout.
-:return: A new image containing the arrangement of the frames in a grid.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="aeon.analysis.movies.gridmovie">
-<span class="sig-prename descclassname"><span class="pre">aeon.analysis.movies.</span></span><span class="sig-name descname"><span class="pre">gridmovie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clipdata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aeon/analysis/movies.html#gridmovie"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aeon.analysis.movies.gridmovie" title="Link to this definition">#</a></dt>
-<dd><p>Collates a set of video clips into a grid movie with the specified pixel dimensions
-and grid layout.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>clipdata</strong> (<em>DataFrame</em>) – </p>
-</dd>
-</dl>
-<p>A pandas DataFrame where each row specifies video path, frame number, clip and sequence number.
-This DataFrame can be obtained from the output of the triggerclip function.
-:param int width: The width of the output grid movie, in pixels.
-:param int height: The height of the output grid movie, in pixels.
-:param optional shape:
-Either the number of frames to include, or the number of rows and columns
-in the output grid movie layout.
-:return: The sequence of processed frames representing the collated grid movie.</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="aeon.analysis.movies.groupframes">
-<span class="sig-prename descclassname"><span class="pre">aeon.analysis.movies.</span></span><span class="sig-name descname"><span class="pre">groupframes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frames</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fun</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aeon/analysis/movies.html#groupframes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aeon.analysis.movies.groupframes" title="Link to this definition">#</a></dt>
-<dd><p>Applies the specified function to each group of n-frames.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>frames</strong> (<em>iterable</em>) – A sequence of frames to process.</p></li>
-<li><p><strong>n</strong> (<em>int</em>) – The number of frames in each group.</p></li>
-<li><p><strong>fun</strong> (<em>callable</em>) – The function used to process each group of frames.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An iterable returning the results of applying the function to each group.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="aeon.analysis.movies.triggerclip">
-<span class="sig-prename descclassname"><span class="pre">aeon.analysis.movies.</span></span><span class="sig-name descname"><span class="pre">triggerclip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">events</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">before</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Timedelta('0</span> <span class="pre">days</span> <span class="pre">00:00:00')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">after</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Timedelta('0</span> <span class="pre">days</span> <span class="pre">00:00:00')</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/aeon/analysis/movies.html#triggerclip"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aeon.analysis.movies.triggerclip" title="Link to this definition">#</a></dt>
-<dd><p>Split video data around the specified sequence of event timestamps.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>data</strong> (<em>DataFrame</em>) – </p>
-</dd>
-</dl>
-<p>A pandas DataFrame where each row specifies video acquisition path and frame number.
-:param iterable events: A sequence of timestamps to extract.
-:param Timedelta before: The left offset from each timestamp used to clip the data.
-:param Timedelta after: The right offset from each timestamp used to clip the data.
-:return:
-A pandas DataFrame containing the frames, clip and sequence numbers for each event timestamp.</p>
-</dd></dl>
-
+  <section id="feeder3">
+<span id="target-feeder-carousel"></span><h1>Feeder3<a class="headerlink" href="#feeder3" title="Link to this heading">#</a></h1>
+<p><img alt="Feeder" src="../../_images/feeder.png" />
+Insert description of the feeder.</p>
+<section id="parts-list">
+<h2>Parts List<a class="headerlink" href="#parts-list" title="Link to this heading">#</a></h2>
+<p><img alt="Parts1" src="../../_images/feeder-main.png" />
+<img alt="Parts2" src="../../_images/feeder-parts.png" /></p>
+</section>
+<section id="assembly-instructions">
+<h2>Assembly Instructions<a class="headerlink" href="#assembly-instructions" title="Link to this heading">#</a></h2>
+<section id="pellet-hopper">
+<h3>Pellet Hopper<a class="headerlink" href="#pellet-hopper" title="Link to this heading">#</a></h3>
+<div class="scbs-carousel scbs-slide scbs-carousel-dark" id="carousel-0">
+<div class="scbs-carousel-indicators">
+<button aria-current="true" aria-label="Slide 1" class="scbs-active" data-bs-slide-to="0" data-bs-target="#carousel-0" type="button"></button>
+<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carousel-0" type="button"></button>
+<button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carousel-0" type="button"></button>
+<button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carousel-0" type="button"></button>
+<button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#carousel-0" type="button"></button>
+</div>
+<div class="scbs-carousel-inner">
+<div class="scbs-carousel-item scbs-active">
+<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
+<p>
+1. Trim slightly the motor metal pin using a grinding wheel or a handheld Dremel. Trim until you create a flat surface on the pin.
+</p>
+</div>
+</div>
+<div class="scbs-carousel-item">
+<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
+<p>
+2. Rotate the feeder base and insert the motor. Screw the motor in place from the front using three screws (ID 2).
+</p>
+</div>
+</div>
+<div class="scbs-carousel-item">
+<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
+<p>
+3. Carefully handle the track and gently insert it in the feeder making sure of aligning the holes. Rotate the feeder base and hold the track in place by using six screws (ID 5).
+</p>
+</div>
+</div>
+<div class="scbs-carousel-item">
+<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
+<p>
+4. Lower the disk into the feeder base making sure to orient the grub screw tapped hole toward the flat surface previously created on the motor metal pin (see step 1). Push down the disk until the top of the pin is flushed to the disk itself and use a grub screw (ID 10) to hold the disk in place. Make sure the grub screw touches the flat surface of the trimmed motor pin.
+</p>
+</div>
+</div>
+<div class="scbs-carousel-item">
+<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
+<p>
+5. Insert two short silicon tubes in each pellet stopper pin and screw it in place with two screws (ID 4).
+</p>
+</div>
+</div>
+</div>
+<button class="scbs-carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-0" type="button">
+<span aria-hidden="true" class="scbs-carousel-control-prev-icon"></span>
+<span class="scbs-visually-hidden">Previous</span>
+</button>
+<button class="scbs-carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-0" type="button">
+<span aria-hidden="true" class="scbs-carousel-control-next-icon"></span>
+<span class="scbs-visually-hidden">Next</span>
+</button>
+</div>
+</section>
+<section id="ir-sensor">
+<h3>IR Sensor<a class="headerlink" href="#ir-sensor" title="Link to this heading">#</a></h3>
+<div class="scbs-carousel scbs-slide scbs-carousel-dark" id="carousel-1">
+<div class="scbs-carousel-indicators">
+<button aria-current="true" aria-label="Slide 1" class="scbs-active" data-bs-slide-to="0" data-bs-target="#carousel-1" type="button"></button>
+<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carousel-1" type="button"></button>
+<button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carousel-1" type="button"></button>
+</div>
+<div class="scbs-carousel-inner">
+<div class="scbs-carousel-item scbs-active">
+<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
+<p>
+6. Place the wheel frame on the feeder base with 4 screws (ID 4).
+</p>
+</div>
+</div>
+<div class="scbs-carousel-item">
+<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
+<p>
+7. Carefully insert the beam break PCB board into the beam break holder (ID 12).
+</p>
+</div>
+</div>
+<div class="scbs-carousel-item">
+<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
+<p>
+8. Slot the beam break holder in the back of the feeder base and screw it in place from the front (ID 1).
+</p>
+</div>
+</div>
+</div>
+<button class="scbs-carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-1" type="button">
+<span aria-hidden="true" class="scbs-carousel-control-prev-icon"></span>
+<span class="scbs-visually-hidden">Previous</span>
+</button>
+<button class="scbs-carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-1" type="button">
+<span aria-hidden="true" class="scbs-carousel-control-next-icon"></span>
+<span class="scbs-visually-hidden">Next</span>
+</button>
+</div>
+</section>
+</section>
 </section>
 
 
@@ -546,20 +569,20 @@ A pandas DataFrame containing the frames, clip and sequence numbers for each eve
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="aeon.util.html"
+       href="feeder_tab.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">aeon.util</p>
+        <p class="prev-next-title">Feeder2</p>
       </div>
     </a>
     <a class="right-next"
-       href="aeon.analysis.plotting.html"
+       href="../glossary.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">aeon.analysis.plotting</p>
+        <p class="prev-next-title">Glossary</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -581,19 +604,19 @@ A pandas DataFrame containing the frames, clip and sequence numbers for each eve
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeon.analysis.movies.averageframes"><code class="docutils literal notranslate"><span class="pre">averageframes()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeon.analysis.movies.collatemovie"><code class="docutils literal notranslate"><span class="pre">collatemovie()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeon.analysis.movies.gridframes"><code class="docutils literal notranslate"><span class="pre">gridframes()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeon.analysis.movies.gridmovie"><code class="docutils literal notranslate"><span class="pre">gridmovie()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeon.analysis.movies.groupframes"><code class="docutils literal notranslate"><span class="pre">groupframes()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeon.analysis.movies.triggerclip"><code class="docutils literal notranslate"><span class="pre">triggerclip()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parts-list">Parts List</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assembly-instructions">Assembly Instructions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pellet-hopper">Pellet Hopper</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir-sensor">IR Sensor</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/reference/api/aeon.analysis.movies.rst.txt">
+    <a href="../../_sources/reference/hardware/feeder_carousel.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
