@@ -47,7 +47,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/hardware/feeder_carousel';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Glossary" href="../glossary.html" />
+    <link rel="next" title="API Reference" href="../api.html" />
     <link rel="prev" title="Feeder2" href="feeder_tab.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -354,7 +354,13 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../hardware.html">Hardware Overview</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="feeder.html">Feeder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feeder_tab.html">Feeder2</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Feeder3</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../api/aeon.util.html">aeon.util</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/aeon.io.api.html">aeon.io.api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/aeon.io.device.html">aeon.io.device</a></li>
@@ -371,12 +377,6 @@ document.write(`
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../data_contract.html">Data Schema</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../hardware.html">Hardware Overview</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="feeder.html">Feeder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="feeder_tab.html">Feeder2</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Feeder3</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
 </ul>
 </div>
@@ -447,12 +447,12 @@ Insert description of the feeder.</p>
 <p><img alt="Parts1" src="../../_images/feeder-main.png" />
 <img alt="Parts2" src="../../_images/feeder-parts.png" /></p>
 </section>
-<section id="assembly-instructions">
-<h2>Assembly Instructions<a class="headerlink" href="#assembly-instructions" title="Link to this heading">#</a></h2>
+<section id="assembly-guide">
+<h2>Assembly Guide<a class="headerlink" href="#assembly-guide" title="Link to this heading">#</a></h2>
 <section id="pellet-hopper">
 <h3>Pellet Hopper<a class="headerlink" href="#pellet-hopper" title="Link to this heading">#</a></h3>
 <div class="scbs-carousel scbs-slide scbs-carousel-dark" data-bs-interval="false" id="carousel-0">
-<div class="scbs-carousel-indicators">
+<div class="scbs-carousel-indicators scbs-my-4 scc-top-indicator">
 <button aria-current="true" aria-label="Slide 1" class="scbs-active" data-bs-slide-to="0" data-bs-target="#carousel-0" type="button"></button>
 <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carousel-0" type="button"></button>
 <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carousel-0" type="button"></button>
@@ -461,7 +461,7 @@ Insert description of the feeder.</p>
 </div>
 <div class="scbs-carousel-inner">
 <div class="scbs-carousel-item scbs-active">
-<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<img alt="../../_images/feeder-pellet-hopper1.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder-pellet-hopper1.png" />
 <div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
 <p>
 1. Trim slightly the motor metal pin using a grinding wheel or a handheld Dremel. Trim until you create a flat surface on the pin.
@@ -469,7 +469,7 @@ Insert description of the feeder.</p>
 </div>
 </div>
 <div class="scbs-carousel-item">
-<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<img alt="../../_images/feeder-pellet-hopper2.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder-pellet-hopper2.png" />
 <div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
 <p>
 2. Rotate the feeder base and insert the motor. Screw the motor in place from the front using three screws (ID 2).
@@ -501,11 +501,11 @@ Insert description of the feeder.</p>
 </div>
 </div>
 </div>
-<button class="scbs-carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-0" type="button">
+<button class="scbs-carousel-control-prev scbs-my-4 scc-top-control" data-bs-slide="prev" data-bs-target="#carousel-0" type="button">
 <span aria-hidden="true" class="scbs-carousel-control-prev-icon"></span>
 <span class="scbs-visually-hidden">Previous</span>
 </button>
-<button class="scbs-carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-0" type="button">
+<button class="scbs-carousel-control-next scbs-my-4 scc-top-control" data-bs-slide="next" data-bs-target="#carousel-0" type="button">
 <span aria-hidden="true" class="scbs-carousel-control-next-icon"></span>
 <span class="scbs-visually-hidden">Next</span>
 </button>
@@ -514,14 +514,14 @@ Insert description of the feeder.</p>
 <section id="ir-sensor">
 <h3>IR Sensor<a class="headerlink" href="#ir-sensor" title="Link to this heading">#</a></h3>
 <div class="scbs-carousel scbs-slide scbs-carousel-dark" data-bs-interval="false" id="carousel-1">
-<div class="scbs-carousel-indicators">
+<div class="scbs-carousel-indicators scbs-my-4 scc-top-indicator">
 <button aria-current="true" aria-label="Slide 1" class="scbs-active" data-bs-slide-to="0" data-bs-target="#carousel-1" type="button"></button>
 <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carousel-1" type="button"></button>
 <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carousel-1" type="button"></button>
 </div>
 <div class="scbs-carousel-inner">
 <div class="scbs-carousel-item scbs-active">
-<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<img alt="../../_images/feeder-ir-sensor1.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder-ir-sensor1.png" />
 <div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
 <p>
 6. Place the wheel frame on the feeder base with 4 screws (ID 4).
@@ -529,7 +529,7 @@ Insert description of the feeder.</p>
 </div>
 </div>
 <div class="scbs-carousel-item">
-<img alt="../../_images/feeder.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder.png" />
+<img alt="../../_images/feeder-ir-sensor2.png" class="scbs-d-block scbs-w-100" src="../../_images/feeder-ir-sensor2.png" />
 <div class="scbs-carousel-caption scbs-bg-light scbs-d-sm-block scc-below-control">
 <p>
 7. Carefully insert the beam break PCB board into the beam break holder (ID 12).
@@ -545,11 +545,11 @@ Insert description of the feeder.</p>
 </div>
 </div>
 </div>
-<button class="scbs-carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-1" type="button">
+<button class="scbs-carousel-control-prev scbs-my-4 scc-top-control" data-bs-slide="prev" data-bs-target="#carousel-1" type="button">
 <span aria-hidden="true" class="scbs-carousel-control-prev-icon"></span>
 <span class="scbs-visually-hidden">Previous</span>
 </button>
-<button class="scbs-carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-1" type="button">
+<button class="scbs-carousel-control-next scbs-my-4 scc-top-control" data-bs-slide="next" data-bs-target="#carousel-1" type="button">
 <span aria-hidden="true" class="scbs-carousel-control-next-icon"></span>
 <span class="scbs-visually-hidden">Next</span>
 </button>
@@ -578,11 +578,11 @@ Insert description of the feeder.</p>
       </div>
     </a>
     <a class="right-next"
-       href="../glossary.html"
+       href="../api.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Glossary</p>
+        <p class="prev-next-title">API Reference</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -605,7 +605,7 @@ Insert description of the feeder.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parts-list">Parts List</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assembly-instructions">Assembly Instructions</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assembly-guide">Assembly Guide</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pellet-hopper">Pellet Hopper</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir-sensor">IR Sensor</a></li>
 </ul>
