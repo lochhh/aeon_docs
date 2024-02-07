@@ -14,9 +14,6 @@ API Reference
     :toctree: api
 
     aeon.util
-    aeon.analysis.movies
-    aeon.analysis.plotting
-    aeon.analysis.utils
     aeon.io.api
     aeon.io.device
     aeon.io.reader
@@ -26,3 +23,6 @@ API Reference
     aeon.schema.foraging
     aeon.schema.octagon
     aeon.schema.social
+    aeon.analysis.movies
+    aeon.analysis.plotting
+    aeon.analysis.utils
