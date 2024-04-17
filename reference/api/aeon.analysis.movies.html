@@ -38,14 +38,14 @@
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/aeon.analysis.movies';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="aeon.analysis.plotting" href="aeon.analysis.plotting.html" />
-    <link rel="prev" title="aeon.schema.social" href="aeon.schema.social.html" />
+    <link rel="prev" title="aeon.util" href="aeon.util.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -351,12 +351,11 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../hardware.html">Hardware Overview</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../hardware/feeder.html">Feeder</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../api.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../api.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="aeon.util.html">aeon.util</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">aeon.analysis.movies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.io.api.html">aeon.io.api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.io.device.html">aeon.io.device</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.io.reader.html">aeon.io.reader</a></li>
@@ -366,9 +365,6 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="aeon.schema.foraging.html">aeon.schema.foraging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.schema.octagon.html">aeon.schema.octagon</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aeon.schema.social.html">aeon.schema.social</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">aeon.analysis.movies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../data_contract.html">Data Schema</a></li>
@@ -447,7 +443,7 @@ document.write(`
 <dd><p>Collates a set of video clips into a single movie using the specified aggregation function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>clipdata</strong> (<em>DataFrame</em>) – </p>
+<dd class="field-odd"><p><strong>clipdata</strong> (<em>DataFrame</em>)</p>
 </dd>
 </dl>
 <p>A pandas DataFrame where each row specifies video path, frame number, clip and sequence number.
@@ -467,7 +463,7 @@ pixel dimensions and shape.</p>
 <li><p><strong>frames</strong> (<em>list</em>) – A list of frames to include in the grid layout.</p></li>
 <li><p><strong>width</strong> (<em>int</em>) – The width of the output grid image, in pixels.</p></li>
 <li><p><strong>height</strong> (<em>int</em>) – The height of the output grid image, in pixels.</p></li>
-<li><p><strong>shape</strong> (<em>optional</em>) – </p></li>
+<li><p><strong>shape</strong> (<em>optional</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -483,7 +479,7 @@ in the output grid image layout.
 and grid layout.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>clipdata</strong> (<em>DataFrame</em>) – </p>
+<dd class="field-odd"><p><strong>clipdata</strong> (<em>DataFrame</em>)</p>
 </dd>
 </dl>
 <p>A pandas DataFrame where each row specifies video path, frame number, clip and sequence number.
@@ -520,7 +516,7 @@ in the output grid movie layout.
 <dd><p>Split video data around the specified sequence of event timestamps.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>data</strong> (<em>DataFrame</em>) – </p>
+<dd class="field-odd"><p><strong>data</strong> (<em>DataFrame</em>)</p>
 </dd>
 </dl>
 <p>A pandas DataFrame where each row specifies video acquisition path and frame number.
@@ -544,12 +540,12 @@ A pandas DataFrame containing the frames, clip and sequence numbers for each eve
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="aeon.schema.social.html"
+       href="aeon.util.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">aeon.schema.social</p>
+        <p class="prev-next-title">aeon.util</p>
       </div>
     </a>
     <a class="right-next"
@@ -631,7 +627,7 @@ A pandas DataFrame containing the frames, clip and sequence numbers for each eve
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.5.
     <br/>
   </p>
 </div>

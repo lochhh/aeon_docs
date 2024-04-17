@@ -38,13 +38,13 @@
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/index';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hardware Overview" href="hardware.html" />
+    <link rel="next" title="API Reference" href="api.html" />
     <link rel="prev" title="Style and Documentation Guidelines" href="../contributor/style_and_doc_guidelines.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -351,12 +351,11 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="hardware.html">Hardware Overview</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="hardware/feeder.html">Feeder</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.util.html">aeon.util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.movies.html">aeon.analysis.movies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.io.api.html">aeon.io.api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.io.device.html">aeon.io.device</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.io.reader.html">aeon.io.reader</a></li>
@@ -366,9 +365,6 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.schema.foraging.html">aeon.schema.foraging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.schema.octagon.html">aeon.schema.octagon</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.schema.social.html">aeon.schema.social</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.movies.html">aeon.analysis.movies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="data_contract.html">Data Schema</a></li>
@@ -432,9 +428,11 @@ document.write(`
 <p>This reference manual details all software and hardware components, and a glossary of terms used in Project Aeon. It describes what these components are and how they function. For a comprehensive guide on how to use Project Aeon, please refer to the <a class="reference internal" href="../index.html#target-home"><span class="std std-ref">complete documentation</span></a>.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="hardware.html">Hardware Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.util.html">aeon.util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.movies.html">aeon.analysis.movies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.io.api.html">aeon.io.api</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.io.device.html">aeon.io.device</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.io.reader.html">aeon.io.reader</a></li>
@@ -444,9 +442,6 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.schema.foraging.html">aeon.schema.foraging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.schema.octagon.html">aeon.schema.octagon</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.schema.social.html">aeon.schema.social</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.movies.html">aeon.analysis.movies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="data_contract.html">Data Schema</a><ul>
@@ -478,11 +473,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="hardware.html"
+       href="api.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Hardware Overview</p>
+        <p class="prev-next-title">API Reference</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -539,7 +534,7 @@ document.write(`
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.5.
     <br/>
   </p>
 </div>
