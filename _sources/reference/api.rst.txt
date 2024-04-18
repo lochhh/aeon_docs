@@ -26,3 +26,4 @@ API Reference
     aeon.schema.foraging
     aeon.schema.octagon
     aeon.schema.social
+    aeon.schema.streams
