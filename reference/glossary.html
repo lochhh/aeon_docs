@@ -351,7 +351,11 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="hardware.html">Hardware Overview</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="hardware/feeder.html">Feeder</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.util.html">aeon.util</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.movies.html">aeon.analysis.movies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
@@ -429,24 +433,24 @@ document.write(`
   <section id="glossary">
 <h1>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h1>
 <p>This glossary provides definitions for terms used throughout the project documentation.</p>
-<dl class="simple myst">
-<dt>Aeon</dt><dd><p>The source of all being <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<dl class="simple glossary">
+<dt id="term-Aeon">Aeon<a class="headerlink" href="#term-Aeon" title="Link to this term">#</a></dt><dd><p>The source of all being. <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
 </dd>
-<dt>Session</dt><dd><p>For experiment 0.1, the event over the time period when an animal is placed in the nesting cage until the time the animal is removed from the nesting cage.</p>
+<dt id="term-Session">Session<a class="headerlink" href="#term-Session" title="Link to this term">#</a></dt><dd><p>For experiment 0.1, the event over the time period when an animal is placed in the nesting cage until the time the animal is removed from the nesting cage.</p>
 </dd>
-<dt>Trial</dt><dd><p>For experiment 0.1, the event over the time period when an animal starts moving the wheel on a patch until the time a pellet is delivered. Every experiment 0.1 session ends on incompleted trials.</p>
+<dt id="term-Trial">Trial<a class="headerlink" href="#term-Trial" title="Link to this term">#</a></dt><dd><p>For experiment 0.1, the event over the time period when an animal starts moving the wheel on a patch until the time a pellet is delivered. Every experiment 0.1 <a class="reference internal" href="#term-Session"><span class="xref std std-term">session</span></a> ends on incompleted trials.</p>
 </dd>
-<dt>Acquisition Epoch</dt><dd><p>The event over the time period when the acquistion computer is on and acquiring data until it is stopped. For experiment 0.1 there are multiple acquisition runs due to Bonsai/Windows being restarted.</p>
+<dt id="term-Acquisition-Epoch">Acquisition Epoch<a class="headerlink" href="#term-Acquisition-Epoch" title="Link to this term">#</a></dt><dd><p>The event over the time period when the acquistion computer is on and acquiring data until it is stopped. For experiment 0.1 there are multiple acquisition runs due to Bonsai/Windows being restarted.</p>
 </dd>
-<dt>Acquisition Chunk Duration</dt><dd><p>The time duration over which datastream files are written out. For experiment 0.1, datastreams were written out in files of 1 hour chunk durations.</p>
+<dt id="term-Acquisition-Chunk-Duration">Acquisition Chunk Duration<a class="headerlink" href="#term-Acquisition-Chunk-Duration" title="Link to this term">#</a></dt><dd><p>The time duration over which datastream files are written out. For experiment 0.1, datastreams were written out in files of 1 hour chunk durations.</p>
 </dd>
-<dt>Acquisition Chunk</dt><dd><p>The event (i.e. all data) over a particular acquisition chunk duration.</p>
+<dt id="term-Acquisition-Chunk">Acquisition Chunk<a class="headerlink" href="#term-Acquisition-Chunk" title="Link to this term">#</a></dt><dd><p>The event (i.e. all data) over a particular <a class="reference internal" href="#term-Acquisition-Chunk-Duration"><span class="xref std std-term">acquisition chunk duration</span></a>.</p>
 </dd>
-<dt>Acquisition Slice Duration</dt><dd><p>The minimum time resolution a user can get from an initial query of a Datajoint table (the timebin size of BLOB and QC data stored in Datajoint tables). For experiment 0.1 this was 10 minutes.</p>
+<dt id="term-Acquisition-Slice-Duration">Acquisition Slice Duration<a class="headerlink" href="#term-Acquisition-Slice-Duration" title="Link to this term">#</a></dt><dd><p>The minimum time resolution a user can get from an initial query of a Datajoint table (the timebin size of BLOB and QC data stored in Datajoint tables). For experiment 0.1 this was 10 minutes.</p>
 </dd>
-<dt>Acquisition Slice</dt><dd><p>The event (i.e. all data) over a particular acquisition slice duration.</p>
+<dt id="term-Acquisition-Slice">Acquisition Slice<a class="headerlink" href="#term-Acquisition-Slice" title="Link to this term">#</a></dt><dd><p>The event (i.e. all data) over a particular <a class="reference internal" href="#term-Acquisition-Slice-Duration"><span class="xref std std-term">acquisition slice duration</span></a>.</p>
 </dd>
-<dt>Task Protocol</dt><dd><p>An integer number and associated string describing a unique behavioral task run in Project Aeon. For experiment 0.1, there were 8 unique behavioral tasks run.</p>
+<dt id="term-Task-Protocol">Task Protocol<a class="headerlink" href="#term-Task-Protocol" title="Link to this term">#</a></dt><dd><p>An integer number and associated string describing a unique behavioral task run in Project Aeon. For experiment 0.1, there were 8 unique behavioral tasks run.</p>
 </dd>
 </dl>
 <hr class="footnotes docutils" />
@@ -539,7 +543,7 @@ document.write(`
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.5.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.6.
     <br/>
   </p>
 </div>
