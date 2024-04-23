@@ -600,7 +600,10 @@ Local</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-3">
 Remote</label><div class="sd-tab-content docutils">
-<p>For using an IDE (e.g. PyCharm, VS Code, Jupyter, etc.), you will need to set up local port forwarding from a specified port on the HPC. These instructions can typically be found in your IDE’s online documentation. Here are instructions for <a class="reference external" href="https://www.jetbrains.com/help/pycharm/configuring-remote-interpreters-via-ssh.html">PyCharm Professional</a>, and for <a class="reference external" href="https://code.visualstudio.com/docs/remote/ssh">VS Code</a>.</p>
+<p>For using an IDE (e.g. VS Code, PyCharm Professional, Jupyter, etc.) to access Aeon data, you will need to configure the connection to SWC’s HPC using SSH.
+Please ensure you have met all the <a class="reference external" href="https://howto.neuroinformatics.dev/programming/SSH-SWC-cluster#prerequisites">prerequisites</a> before proceeding.
+We recommend editing the SSH config file following this <a class="reference external" href="https://howto.neuroinformatics.dev/programming/SSH-SWC-cluster#ssh-config-file">guide</a>.
+The next step is to configure your IDE to connect to the <code class="docutils literal notranslate"><span class="pre">swc-gateway</span></code> node via SSH. These instructions can typically be found in your IDE’s online documentation. Here are the instructions for <a class="reference external" href="https://code.visualstudio.com/docs/remote/ssh">VS Code</a>, and for <a class="reference external" href="https://www.jetbrains.com/help/pycharm/remote-development-overview.html#client_to_server">PyCharm Professional</a>.</p>
 </div>
 </div>
 <p>Within the <code class="docutils literal notranslate"><span class="pre">aeon</span></code> conda environment, Aeon data can be accessed directly from Ceph or the DataJoint database using the <a class="reference internal" href="../reference/api.html#target-api-reference"><span class="std std-ref">Aeon API</span></a>. Examples for retrieving and visualizing the data can be found in the <a class="reference internal" href="../user/index.html#target-user-guide"><span class="std std-ref">User Guide</span></a>.</p>
