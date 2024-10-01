@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>About &#8212; Aeon  documentation</title>
+    <title>People &#8212; Aeon  documentation</title>
   
   
   
@@ -46,11 +46,11 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'about/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'about/people';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="People" href="people.html" />
-    <link rel="prev" title="Glossary" href="../reference/glossary.html" />
+    <link rel="next" title="Design Considerations" href="design_considerations.html" />
+    <link rel="prev" title="About" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,7 +172,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="index.html">
     About
   </a>
 </li>
@@ -306,7 +306,7 @@ document.write(`
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="index.html">
     About
   </a>
 </li>
@@ -358,8 +358,8 @@ document.write(`
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="people.html">People</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">People</a></li>
 <li class="toctree-l1"><a class="reference internal" href="design_considerations.html">Design Considerations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Code of Conduct</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
@@ -400,7 +400,10 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">About</li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">About</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">People</li>
   </ul>
 </nav>
 </div>
@@ -417,38 +420,152 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="about">
-<span id="target-about"></span><h1>About<a class="headerlink" href="#about" title="Link to this heading">#</a></h1>
-<p>The development of Aeon is funded by the <a class="reference external" href="http://www.gatsby.org.uk/">Gatsby Charitable Foundation</a> and <a class="reference external" href="https://wellcome.ac.uk/">Wellcome</a>. This joint initiative involves people from the <a class="reference external" href="https://www.sainsburywellcome.org/web/">Sainsbury Wellcome Centre</a> and the <a class="reference external" href="https://www.ucl.ac.uk/gatsby/gatsby-computational-neuroscience-unit">Gatsby Computational Neuroscience Unit</a> at UCL, <a class="reference external" href="https://neurogears.org/">NeuroGEARS Ltd</a>, and <a class="reference external" href="https://www.datajoint.com/">DataJoint</a>. For a full list of people involved, please refer to this <a class="reference internal" href="people.html#target-people"><span class="std std-ref">page</span></a>.</p>
-<p>The brain’s computations are shaped by evolutionary pressures related to survival and the resulting behavioural responses.
-Understanding the neural basis of natural behaviours is crucial for advancing our knowledge of the brain, as it sheds light on the functions of neural circuits in processing real-world stimuli.
-However, replicating natural conditions in a laboratory setting presents a challenge, as it requires simulating complex and dynamic environments which include the presence of conspecifics.
-It also requires monitoring over extended periods of time, all while allowing parametric control over key experimental variables and rigorous measurement of behaviour and neural activity.</p>
-<p>Aeon is an open-source platform designed to study the neural basis of ethological behaviours over naturalistic timescales, ranging from weeks to months.
-At its core, the setup is a modular, scalable, and programmable arena in which animals live.
-The arena can be equipped with various combinations of <a class="reference internal" href="../reference/hardware.html#target-hardware"><span class="std std-ref">interactive and non-interactive modules</span></a>,
-including, but not limited to, feeders, nesting areas, microphones, RFID readers, magnetic encoders, weighing scales, and high-speed cameras.
-This allows mimicking of complex and dynamic environments, thereby enabling animals to exhibit different natural behaviours,
-such as foraging, nesting, escape and social interaction.
-The large array of sensors in the arena additionally allows for continuous tracking of animal position, pose and identity, which in turn enables
-multidimensional quantification of behavioural dynamics and internal states at millisecond resolution.</p>
-<p>For an in-depth look at the unique challenges and opportunities presented by the datasets collected in Aeon, please refer to our <a class="reference internal" href="design_considerations.html#target-design-considerations"><span class="std std-ref">Design Considerations</span></a>.
-If you have any questions or need further information, feel free to reach out to the <a class="reference internal" href="#target-project-maintainers"><span class="std std-ref">project maintainers</span></a>.</p>
-<section id="project-maintainers">
-<span id="target-project-maintainers"></span><h2>Project Maintainers<a class="headerlink" href="#project-maintainers" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Jai Bhagat (<a class="reference external" href="mailto:jai&#46;bhagat&#46;21&#37;&#52;&#48;ucl&#46;ac&#46;uk">jai<span>&#46;</span>bhagat<span>&#46;</span>21<span>&#64;</span>ucl<span>&#46;</span>ac<span>&#46;</span>uk</a>)</p></li>
-<li><p>Gonçalo Lopes (<a class="reference external" href="mailto:g&#46;lopes&#37;&#52;&#48;neurogears&#46;org">g<span>&#46;</span>lopes<span>&#64;</span>neurogears<span>&#46;</span>org</a>)</p></li>
-<li><p>Dario Campagner (<a class="reference external" href="mailto:d&#46;campagner&#37;&#52;&#48;ucl&#46;ac&#46;uk">d<span>&#46;</span>campagner<span>&#64;</span>ucl<span>&#46;</span>ac<span>&#46;</span>uk</a>)</p></li>
-<li><p>Chang Huan Lo (<a class="reference external" href="mailto:changhuan&#46;lo&#37;&#52;&#48;ucl&#46;ac&#46;uk">changhuan<span>&#46;</span>lo<span>&#64;</span>ucl<span>&#46;</span>ac<span>&#46;</span>uk</a>)</p></li>
-</ul>
-</section>
-<section id="code-of-conduct">
-<h2>Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Link to this heading">#</a></h2>
-<p>Aeon is dedicated to providing a welcoming and positive experience for all its participants. We encourage respectful and considerate behavior, and we expect our community members to adhere to these principles. Please read our <a class="reference internal" href="code_of_conduct.html#target-code-of-conduct"><span class="std std-ref">Code of Conduct</span></a> for more details on our community guidelines and expectations.</p>
-<div class="toctree-wrapper compound">
+  <section id="people">
+<span id="target-people"></span><h1>People<a class="headerlink" href="#people" title="Link to this heading">#</a></h1>
+<p>Aeon is made possible thanks to the dedication and hard work of numerous individuals. In alphabetical order:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Athena Akrami</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>André Almeida</p></td>
+<td><p>NeuroGEARS Ltd</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jaerong Ahn</p></td>
+<td><p>DataJoint Inc</p></td>
+</tr>
+<tr class="row-even"><td><p>Joseph Burling</p></td>
+<td><p>DataJoint Inc</p></td>
+</tr>
+<tr class="row-odd"><td><p>Robb Barret</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Tim Behrens</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jai Bhagat</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Jacek Budziszewski</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tiago Branco</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Neil Burgess</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lorenza Calcaterra</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Dario Campagner</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL, Gatsby Computational Neuroscience Unit - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Filipe Carvalho</p></td>
+<td><p>NeuroGEARS Ltd</p></td>
+</tr>
+<tr class="row-even"><td><p>Roger Chen</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bruno Cruz</p></td>
+<td><p>NeuroGEARS Ltd</p></td>
+</tr>
+<tr class="row-even"><td><p>Chunyu Ann Duan</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jeffrey Erlich</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Andrew Erskine</p></td>
+<td><p>NeuroGEARS Ltd</p></td>
+</tr>
+<tr class="row-odd"><td><p>Orsolya Folsz</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Sean Hammet</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Julia Harris</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Del Halpin</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sonja Hofer</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Yoh Isogai</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Peter Latham</p></td>
+<td><p>Gatsby Computational Neuroscience Unit - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Zimo Li</p></td>
+<td><p>Gatsby Computational Neuroscience Unit - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Chang Huan Lo</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Gonçalo Lopes</p></td>
+<td><p>NeuroGEARS Ltd</p></td>
+</tr>
+<tr class="row-odd"><td><p>Troy Margrie</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Milagros Marín</p></td>
+<td><p>DataJoint Inc</p></td>
+</tr>
+<tr class="row-odd"><td><p>Thomas Mrsic-Flogel</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Sian Murphy</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Graeme McPhillips</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Gordon Mills</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Thinh Nguyen</p></td>
+<td><p>DataJoint Inc</p></td>
+</tr>
+<tr class="row-even"><td><p>Svenja Nierwetberg</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>John O’Keefe</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Tom Otis</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Anaya Pouget</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Joaquin Rapela</p></td>
+<td><p>Gatsby Computational Neuroscience Unit - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Thomas Ryan</p></td>
+<td><p>NeuroGEARS Ltd</p></td>
+</tr>
+<tr class="row-even"><td><p>Maneesh Sahani</p></td>
+<td><p>Gatsby Computational Neuroscience Unit - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Andrew Saxe</p></td>
+<td><p>Sainsbury Wellcome Centre and Gatsby Computational Neuroscience Unit - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>Simon Townsend</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Max Townsend</p></td>
+<td><p>Sainsbury Wellcome Centre - UCL</p></td>
+</tr>
+<tr class="row-even"><td><p>William Walker</p></td>
+<td><p>Gatsby Computational Neuroscience Unit - UCL</p></td>
+</tr>
+</tbody>
+</table>
 </div>
-</section>
 </section>
 
 
@@ -462,20 +579,20 @@ If you have any questions or need further information, feel free to reach out to
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../reference/glossary.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Glossary</p>
+        <p class="prev-next-title">About</p>
       </div>
     </a>
     <a class="right-next"
-       href="people.html"
+       href="design_considerations.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">People</p>
+        <p class="prev-next-title">Design Considerations</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -490,22 +607,9 @@ If you have any questions or need further information, feel free to reach out to
 
 
   <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-maintainers">Project Maintainers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-of-conduct">Code of Conduct</a></li>
-</ul>
-  </nav></div>
-
-  <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../_sources/about/index.md.txt">
+    <a href="../_sources/about/people.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
