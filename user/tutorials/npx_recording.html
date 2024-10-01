@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Long-term Neuropixels recording &#8212; Aeon  documentation</title>
+    <title>Neuropixels recordings &#8212; Aeon  documentation</title>
   
   
   
@@ -361,7 +361,7 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="multianimal_tracking.html">Multi-animal tracking</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Long-term Neuropixels recording</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Neuropixels recordings</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">How-to Guides</span></p>
 <ul class="nav bd-sidenav">
@@ -413,7 +413,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">User Guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Long-term...</li>
+    <li class="breadcrumb-item active" aria-current="page">Neuropixels...</li>
   </ul>
 </nav>
 </div>
@@ -430,8 +430,40 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="long-term-neuropixels-recording">
-<span id="target-npx-recording"></span><h1>Long-term Neuropixels recording<a class="headerlink" href="#long-term-neuropixels-recording" title="Link to this heading">#</a></h1>
+  <section id="neuropixels-recordings">
+<span id="target-npx-recording"></span><h1>Neuropixels recordings<a class="headerlink" href="#neuropixels-recordings" title="Link to this heading">#</a></h1>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/getting-started-npx.png"><img alt="neuropixels-recording" src="../../_images/getting-started-npx.png" style="height: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Week-long continuous neural recordings from a freely moving animal in a large environment.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Conducting continuous neural recordings over multiple days in a large environment presents several technical challenges.
+It is crucial to ensure that the animal’s movement is unrestricted and that the recording quality remains stable over time. To achieve this, it is essential to:</p>
+<ol class="arabic simple">
+<li><p>Maintain a constant slack in the recording tether, regardless of the mouse’s location in the arena.</p></li>
+<li><p>Prevent the tether from tangling when the mouse rotates.</p></li>
+</ol>
+<p>To address these challenges, we developed a closed-loop control system capable of untwisting the cable using the <a class="reference external" href="https://open-ephys.org/commutator-info">Onix torque-free commutator</a> and translating it based on the mouse’s position.</p>
+<section id="closed-loop-control-of-commutator-location">
+<h2>Closed-loop control of commutator location<a class="headerlink" href="#closed-loop-control-of-commutator-location" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="../../_images/npx-commutator-location.png"><img alt="commutator-location-control" class="align-left" src="../../_images/npx-commutator-location.png" style="width: 250px;" /></a>
+Using the live position estimate from the overhead camera, we can control the horizontal position of the commutator on a linear rail to follow the animal as it moves through the arena.</p>
+<p><em>Relevant repositories: <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_experiments/">aeon_experiment</a>, <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_lineardrive/">aeon_lineardrive</a></em></p>
+</section>
+<section id="closed-loop-control-of-commutator-rotation">
+<h2>Closed-loop control of commutator rotation<a class="headerlink" href="#closed-loop-control-of-commutator-rotation" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="../../_images/npx-commutator-rotation.png"><img alt="commutator-rotation-control" class="align-left" src="../../_images/npx-commutator-rotation.png" style="width: 250px;" /></a>
+Using the heading direction computed by the IMU sensor on the <a class="reference external" href="https://open-ephys.github.io/onix-docs/Hardware%20Guide/Headstages/headstage-neuropix-2e-beta.html">Onix neuropixels headstage</a>, the cable commutation is adapted in real time to avoid tangling.</p>
+<p><em>Relevant repositories: <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_experiments/">aeon_experiment</a>, <a class="reference external" href="https://github.com/open-ephys/bonsai-commutator">bonsai-commutator</a>, <a class="reference external" href="https://github.com/open-ephys/onix-bonsai-onix1">bonsai-onix1</a></em></p>
+</section>
+<section id="neuropixels-2-0-recordings">
+<h2>Neuropixels 2.0 recordings<a class="headerlink" href="#neuropixels-2-0-recordings" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="../../_images/npx-recording-sites.png"><img alt="npx-20-recordings" class="align-left" src="../../_images/npx-recording-sites.png" style="width: 250px;" /></a>
+All data are acquired using the <a class="reference external" href="https://open-ephys.github.io/onix-docs/index.html">Onix recording system</a>, which supports simultaneous recording with two <a class="reference external" href="https://www.neuropixels.org/probe2-0">Neuropixels 2.0 probes</a>.</p>
+<p><em>Relevant repositories: <a class="reference external" href="https://github.com/open-ephys/onix-bonsai-onix1">bonsai-onix1</a></em></p>
+</section>
 </section>
 
 
@@ -471,6 +503,20 @@ document.write(`
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closed-loop-control-of-commutator-location">Closed-loop control of commutator location</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closed-loop-control-of-commutator-rotation">Closed-loop control of commutator rotation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neuropixels-2-0-recordings">Neuropixels 2.0 recordings</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

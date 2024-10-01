@@ -49,7 +49,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'user/tutorials/multianimal_tracking';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Long-term Neuropixels recording" href="npx_recording.html" />
+    <link rel="next" title="Neuropixels recordings" href="npx_recording.html" />
     <link rel="prev" title="User Guide" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -361,7 +361,7 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Multi-animal tracking</a></li>
-<li class="toctree-l1"><a class="reference internal" href="npx_recording.html">Long-term Neuropixels recording</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npx_recording.html">Neuropixels recordings</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">How-to Guides</span></p>
 <ul class="nav bd-sidenav">
@@ -432,6 +432,38 @@ document.write(`
                   
   <section id="multi-animal-tracking">
 <span id="target-multianimal-tracking"></span><h1>Multi-animal tracking<a class="headerlink" href="#multi-animal-tracking" title="Link to this heading">#</a></h1>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/getting-started-ma.png"><img alt="multi-animal-tracking" src="../../_images/getting-started-ma.png" style="height: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Online tracking of location and identity of individual animals allows for quantification of natural behaviours.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>By quantifying both position as well as locomotion speed of multiple animals over weeks, we can identify the emergence of spontaneous behaviours such as foraging, as well as investigate social dynamics and individual strategies and their modulation by environmental influences.
+This is possible through the multipronged approach using multiple cameras as well as RFID sensors embedded in a single workflow.</p>
+<section id="live-position-tracking">
+<h2>Live position tracking<a class="headerlink" href="#live-position-tracking" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="../../_images/ma-live-position-tracking.png"><img alt="live-position-tracking" class="align-left" src="../../_images/ma-live-position-tracking.png" style="width: 250px;" /></a>
+An overhead camera with a view of the entire arena feeds into a Bonsai workflow and
+continuously estimates the animals’ x, y positions, body length, and orientation.</p>
+<p><em>Relevant repositories: <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_experiments/">aeon_experiment</a>, <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_acquisition/">aeon_acquisition</a></em></p>
+</section>
+<section id="identifying-animals">
+<h2>Identifying animals<a class="headerlink" href="#identifying-animals" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="../../_images/ma-identifying-animals.png"><img alt="identifying-animals" class="align-left" src="../../_images/ma-identifying-animals.png" style="width: 250px;" /></a>
+When there are multiple animals in the arena, identity of each animal can be
+determined using computer vision (<a class="reference external" href="https://sleap.ai/">SLEAP</a>) from the overhead camera using the individual tail tattoos (one
+band, two bands, or none) as features. Furthermore, animals are implanted with RFID tags that
+allow us to quantify their visits to important sites (nest, foraging patches, gates) which are equipped with RFID antennae.</p>
+<p><em>Relevant repositories: <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_experiments/">aeon_experiment</a>, <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_acquisition/">aeon_acquisition</a></em></p>
+</section>
+<section id="pose-estimation">
+<h2>Pose estimation<a class="headerlink" href="#pose-estimation" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="../../_images/ma-pose-estimation.png"><img alt="pose-estimation" class="align-left" src="../../_images/ma-pose-estimation.png" style="width: 250px;" /></a>
+A zoomed-in view of the overhead camera together with side-view cameras at
+behavioural hotspots such as the foraging patches allows for analysis of posture.</p>
+<p><em>Relevant repositories: <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_experiments/">aeon_experiment</a>, <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_acquisition/">aeon_acquisition</a></em></p>
+</section>
 </section>
 
 
@@ -458,7 +490,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Long-term Neuropixels recording</p>
+        <p class="prev-next-title">Neuropixels recordings</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -471,6 +503,20 @@ document.write(`
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#live-position-tracking">Live position tracking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifying-animals">Identifying animals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pose-estimation">Pose estimation</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 
