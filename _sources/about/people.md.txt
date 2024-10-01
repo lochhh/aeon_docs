@@ -45,7 +45,7 @@ Anaya Pouget,Sainsbury Wellcome Centre - UCL
 Joaquin Rapela,Gatsby Computational Neuroscience Unit - UCL
 Thomas Ryan,NeuroGEARS Ltd
 Maneesh Sahani,Gatsby Computational Neuroscience Unit - UCL
-Andrew Saxe,Sainsbury Wellcome Centre and Gatsby Computational Neuroscience Unit - UCL
+Andrew Saxe,"Sainsbury Wellcome Centre - UCL, Gatsby Computational Neuroscience Unit - UCL"
 Simon Townsend,Sainsbury Wellcome Centre - UCL
 Max Townsend,Sainsbury Wellcome Centre - UCL
 William Walker,Gatsby Computational Neuroscience Unit - UCL
