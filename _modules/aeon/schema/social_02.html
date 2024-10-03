@@ -407,7 +407,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="Environment">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.Environment">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.Environment">[docs]</a>
 <span class="k">class</span> <span class="nc">Environment</span><span class="p">(</span><span class="n">StreamGroup</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
@@ -415,7 +415,7 @@ document.write(`
     <span class="n">EnvironmentState</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">EnvironmentState</span>
 
 <div class="viewcode-block" id="Environment.BlockState">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.Environment.BlockState">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.Environment.BlockState">[docs]</a>
     <span class="k">class</span> <span class="nc">BlockState</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -424,7 +424,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="Environment.LightEvents">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.Environment.LightEvents">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.Environment.LightEvents">[docs]</a>
     <span class="k">class</span> <span class="nc">LightEvents</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_LightEvents_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;channel&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">]))</span></div>
@@ -435,27 +435,27 @@ document.write(`
 
 
 <div class="viewcode-block" id="SubjectData">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.SubjectData">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.SubjectData">[docs]</a>
 <span class="k">class</span> <span class="nc">SubjectData</span><span class="p">(</span><span class="n">StreamGroup</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 
 <div class="viewcode-block" id="SubjectData.SubjectState">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.SubjectData.SubjectState">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.SubjectData.SubjectState">[docs]</a>
     <span class="k">class</span> <span class="nc">SubjectState</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_SubjectState_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;weight&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="SubjectData.SubjectVisits">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.SubjectData.SubjectVisits">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.SubjectData.SubjectVisits">[docs]</a>
     <span class="k">class</span> <span class="nc">SubjectVisits</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_SubjectVisits_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="s2">&quot;region&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="SubjectData.SubjectWeight">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.SubjectData.SubjectWeight">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.SubjectData.SubjectWeight">[docs]</a>
     <span class="k">class</span> <span class="nc">SubjectWeight</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -468,7 +468,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="Pose">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.Pose">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.Pose">[docs]</a>
 <span class="k">class</span> <span class="nc">Pose</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Pose</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_test-node1*&quot;</span><span class="p">))</span></div>
@@ -476,7 +476,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="WeightRaw">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.WeightRaw">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.WeightRaw">[docs]</a>
 <span class="k">class</span> <span class="nc">WeightRaw</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_200_*&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;weight(g)&quot;</span><span class="p">,</span> <span class="s2">&quot;stability&quot;</span><span class="p">]))</span></div>
@@ -484,7 +484,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="WeightFiltered">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.WeightFiltered">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.WeightFiltered">[docs]</a>
 <span class="k">class</span> <span class="nc">WeightFiltered</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_202_*&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;weight(g)&quot;</span><span class="p">,</span> <span class="s2">&quot;stability&quot;</span><span class="p">]))</span></div>
@@ -492,13 +492,13 @@ document.write(`
 
 
 <div class="viewcode-block" id="Patch">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.Patch">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.Patch">[docs]</a>
 <span class="k">class</span> <span class="nc">Patch</span><span class="p">(</span><span class="n">StreamGroup</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 
 <div class="viewcode-block" id="Patch.DepletionState">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.Patch.DepletionState">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.Patch.DepletionState">[docs]</a>
     <span class="k">class</span> <span class="nc">DepletionState</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_State_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;threshold&quot;</span><span class="p">,</span> <span class="s2">&quot;offset&quot;</span><span class="p">,</span> <span class="s2">&quot;rate&quot;</span><span class="p">]))</span></div>
@@ -509,21 +509,21 @@ document.write(`
     <span class="n">Feeder</span> <span class="o">=</span> <span class="n">foraging</span><span class="o">.</span><span class="n">Feeder</span>
 
 <div class="viewcode-block" id="Patch.ManualDelivery">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.Patch.ManualDelivery">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.Patch.ManualDelivery">[docs]</a>
     <span class="k">class</span> <span class="nc">ManualDelivery</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_201_*&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;manual_delivery&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="Patch.MissedPellet">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.Patch.MissedPellet">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.Patch.MissedPellet">[docs]</a>
     <span class="k">class</span> <span class="nc">MissedPellet</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_202_*&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;missed_pellet&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="Patch.RetriedDelivery">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.Patch.RetriedDelivery">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.Patch.RetriedDelivery">[docs]</a>
     <span class="k">class</span> <span class="nc">RetriedDelivery</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_203_*&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;retried_delivery&quot;</span><span class="p">]))</span></div>
@@ -532,7 +532,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="RfidEvents">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.social_02.html#aeon.schema.social_02.RfidEvents">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.social_02.html#aeon.schema.social_02.RfidEvents">[docs]</a>
 <span class="k">class</span> <span class="nc">RfidEvents</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_32*&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;rfid&quot;</span><span class="p">]))</span></div>

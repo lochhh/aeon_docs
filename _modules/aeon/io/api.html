@@ -413,7 +413,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="aeon">
-<a class="viewcode-back" href="../../../reference/api/aeon.io.api.html#aeon.io.api.aeon">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.io.api.html#aeon.io.api.aeon">[docs]</a>
 <span class="k">def</span> <span class="nf">aeon</span><span class="p">(</span><span class="n">seconds</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Converts a Harp timestamp, in seconds, to a datetime object.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1904</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="p">,</span> <span class="s2">&quot;s&quot;</span><span class="p">)</span></div>
@@ -421,7 +421,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="chunk">
-<a class="viewcode-back" href="../../../reference/api/aeon.io.api.html#aeon.io.api.chunk">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.io.api.html#aeon.io.api.chunk">[docs]</a>
 <span class="k">def</span> <span class="nf">chunk</span><span class="p">(</span><span class="n">time</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the whole hour acquisition chunk for a measurement timestamp.</span>
 
@@ -438,7 +438,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="chunk_range">
-<a class="viewcode-back" href="../../../reference/api/aeon.io.api.html#aeon.io.api.chunk_range">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.io.api.html#aeon.io.api.chunk_range">[docs]</a>
 <span class="k">def</span> <span class="nf">chunk_range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns a range of whole hour acquisition chunks.</span>
 
@@ -451,7 +451,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="chunk_key">
-<a class="viewcode-back" href="../../../reference/api/aeon.io.api.html#aeon.io.api.chunk_key">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.io.api.html#aeon.io.api.chunk_key">[docs]</a>
 <span class="k">def</span> <span class="nf">chunk_key</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the acquisition chunk key for the specified file name.&quot;&quot;&quot;</span>
     <span class="n">epoch</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
@@ -476,7 +476,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="load">
-<a class="viewcode-back" href="../../../reference/api/aeon.io.api.html#aeon.io.api.load">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.io.api.html#aeon.io.api.load">[docs]</a>
 <span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">reader</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tolerance</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">epoch</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Extracts chunk data from the root path of an Aeon dataset.</span>
 

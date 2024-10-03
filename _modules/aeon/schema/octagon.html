@@ -406,7 +406,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="Photodiode">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Photodiode">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Photodiode">[docs]</a>
 <span class="k">class</span> <span class="nc">Photodiode</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">_44_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;adc&quot;</span><span class="p">,</span> <span class="s2">&quot;encoder&quot;</span><span class="p">]))</span></div>
@@ -414,13 +414,13 @@ document.write(`
 
 
 <div class="viewcode-block" id="OSC">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC">[docs]</a>
 <span class="k">class</span> <span class="nc">OSC</span><span class="p">(</span><span class="n">StreamGroup</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 
 <div class="viewcode-block" id="OSC.BackgroundColor">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC.BackgroundColor">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC.BackgroundColor">[docs]</a>
     <span class="k">class</span> <span class="nc">BackgroundColor</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -429,7 +429,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="OSC.ChangeSubjectState">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC.ChangeSubjectState">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC.ChangeSubjectState">[docs]</a>
     <span class="k">class</span> <span class="nc">ChangeSubjectState</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -438,14 +438,14 @@ document.write(`
 
 
 <div class="viewcode-block" id="OSC.EndTrial">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC.EndTrial">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC.EndTrial">[docs]</a>
     <span class="k">class</span> <span class="nc">EndTrial</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_endtrial_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;typetag&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="OSC.Slice">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC.Slice">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC.Slice">[docs]</a>
     <span class="k">class</span> <span class="nc">Slice</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -456,7 +456,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="OSC.GratingsSlice">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC.GratingsSlice">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC.GratingsSlice">[docs]</a>
     <span class="k">class</span> <span class="nc">GratingsSlice</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -477,7 +477,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="OSC.Poke">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC.Poke">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC.Poke">[docs]</a>
     <span class="k">class</span> <span class="nc">Poke</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -497,7 +497,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="OSC.Response">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC.Response">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC.Response">[docs]</a>
     <span class="k">class</span> <span class="nc">Response</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -508,7 +508,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="OSC.RunPreTrialNoPoke">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC.RunPreTrialNoPoke">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC.RunPreTrialNoPoke">[docs]</a>
     <span class="k">class</span> <span class="nc">RunPreTrialNoPoke</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -527,7 +527,7 @@ document.write(`
 
 
 <div class="viewcode-block" id="OSC.StartNewSession">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.OSC.StartNewSession">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.OSC.StartNewSession">[docs]</a>
     <span class="k">class</span> <span class="nc">StartNewSession</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_startnewsession_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;typetag&quot;</span><span class="p">,</span> <span class="s2">&quot;path&quot;</span><span class="p">]))</span></div>
@@ -536,55 +536,55 @@ document.write(`
 
 
 <div class="viewcode-block" id="TaskLogic">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic">[docs]</a>
 <span class="k">class</span> <span class="nc">TaskLogic</span><span class="p">(</span><span class="n">StreamGroup</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 
 <div class="viewcode-block" id="TaskLogic.TrialInitiation">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.TrialInitiation">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.TrialInitiation">[docs]</a>
     <span class="k">class</span> <span class="nc">TrialInitiation</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_1_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;trial_type&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="TaskLogic.Response">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.Response">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.Response">[docs]</a>
     <span class="k">class</span> <span class="nc">Response</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_2_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;wall_id&quot;</span><span class="p">,</span> <span class="s2">&quot;poke_id&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="TaskLogic.PreTrialState">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.PreTrialState">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.PreTrialState">[docs]</a>
     <span class="k">class</span> <span class="nc">PreTrialState</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_3_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="TaskLogic.InterTrialInterval">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.InterTrialInterval">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.InterTrialInterval">[docs]</a>
     <span class="k">class</span> <span class="nc">InterTrialInterval</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_4_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="TaskLogic.SliceOnset">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.SliceOnset">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.SliceOnset">[docs]</a>
     <span class="k">class</span> <span class="nc">SliceOnset</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_10_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;wall_id&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="TaskLogic.DrawBackground">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.DrawBackground">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.DrawBackground">[docs]</a>
     <span class="k">class</span> <span class="nc">DrawBackground</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_11_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="TaskLogic.GratingsSliceOnset">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.GratingsSliceOnset">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.TaskLogic.GratingsSliceOnset">[docs]</a>
     <span class="k">class</span> <span class="nc">GratingsSliceOnset</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">Harp</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_12_*&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;wall_id&quot;</span><span class="p">]))</span></div>
@@ -593,111 +593,111 @@ document.write(`
 
 
 <div class="viewcode-block" id="Wall">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall">[docs]</a>
 <span class="k">class</span> <span class="nc">Wall</span><span class="p">(</span><span class="n">StreamGroup</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 
 <div class="viewcode-block" id="Wall.BeamBreak0">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.BeamBreak0">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.BeamBreak0">[docs]</a>
     <span class="k">class</span> <span class="nc">BeamBreak0</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">DigitalBitmask</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_32_*&quot;</span><span class="p">,</span> <span class="mh">0x1</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="Wall.BeamBreak1">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.BeamBreak1">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.BeamBreak1">[docs]</a>
     <span class="k">class</span> <span class="nc">BeamBreak1</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">DigitalBitmask</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_32_*&quot;</span><span class="p">,</span> <span class="mh">0x2</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="Wall.BeamBreak2">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.BeamBreak2">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.BeamBreak2">[docs]</a>
     <span class="k">class</span> <span class="nc">BeamBreak2</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">DigitalBitmask</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_32_*&quot;</span><span class="p">,</span> <span class="mh">0x4</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]))</span></div>
 
 
 <div class="viewcode-block" id="Wall.SetLed0">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetLed0">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetLed0">[docs]</a>
     <span class="k">class</span> <span class="nc">SetLed0</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_34_*&quot;</span><span class="p">,</span> <span class="mh">0x1</span><span class="p">,</span> <span class="s2">&quot;Set&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.SetLed1">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetLed1">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetLed1">[docs]</a>
     <span class="k">class</span> <span class="nc">SetLed1</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_34_*&quot;</span><span class="p">,</span> <span class="mh">0x2</span><span class="p">,</span> <span class="s2">&quot;Set&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.SetLed2">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetLed2">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetLed2">[docs]</a>
     <span class="k">class</span> <span class="nc">SetLed2</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_34_*&quot;</span><span class="p">,</span> <span class="mh">0x4</span><span class="p">,</span> <span class="s2">&quot;Set&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.SetValve0">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetValve0">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetValve0">[docs]</a>
     <span class="k">class</span> <span class="nc">SetValve0</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_34_*&quot;</span><span class="p">,</span> <span class="mh">0x8</span><span class="p">,</span> <span class="s2">&quot;Set&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.SetValve1">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetValve1">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetValve1">[docs]</a>
     <span class="k">class</span> <span class="nc">SetValve1</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_34_*&quot;</span><span class="p">,</span> <span class="mh">0x10</span><span class="p">,</span> <span class="s2">&quot;Set&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.SetValve2">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetValve2">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.SetValve2">[docs]</a>
     <span class="k">class</span> <span class="nc">SetValve2</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_34_*&quot;</span><span class="p">,</span> <span class="mh">0x20</span><span class="p">,</span> <span class="s2">&quot;Set&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.ClearLed0">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearLed0">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearLed0">[docs]</a>
     <span class="k">class</span> <span class="nc">ClearLed0</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_35_*&quot;</span><span class="p">,</span> <span class="mh">0x1</span><span class="p">,</span> <span class="s2">&quot;Clear&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.ClearLed1">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearLed1">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearLed1">[docs]</a>
     <span class="k">class</span> <span class="nc">ClearLed1</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_35_*&quot;</span><span class="p">,</span> <span class="mh">0x2</span><span class="p">,</span> <span class="s2">&quot;Clear&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.ClearLed2">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearLed2">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearLed2">[docs]</a>
     <span class="k">class</span> <span class="nc">ClearLed2</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_35_*&quot;</span><span class="p">,</span> <span class="mh">0x4</span><span class="p">,</span> <span class="s2">&quot;Clear&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.ClearValve0">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearValve0">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearValve0">[docs]</a>
     <span class="k">class</span> <span class="nc">ClearValve0</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_35_*&quot;</span><span class="p">,</span> <span class="mh">0x8</span><span class="p">,</span> <span class="s2">&quot;Clear&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.ClearValve1">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearValve1">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearValve1">[docs]</a>
     <span class="k">class</span> <span class="nc">ClearValve1</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_35_*&quot;</span><span class="p">,</span> <span class="mh">0x10</span><span class="p">,</span> <span class="s2">&quot;Clear&quot;</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="Wall.ClearValve2">
-<a class="viewcode-back" href="../../../reference/api/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearValve2">[docs]</a>
+<a class="viewcode-back" href="../../../reference/api/mecha/aeon.schema.octagon.html#aeon.schema.octagon.Wall.ClearValve2">[docs]</a>
     <span class="k">class</span> <span class="nc">ClearValve2</span><span class="p">(</span><span class="n">Stream</span><span class="p">):</span>
         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
             <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">_reader</span><span class="o">.</span><span class="n">BitmaskEvent</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">_35_*&quot;</span><span class="p">,</span> <span class="mh">0x20</span><span class="p">,</span> <span class="s2">&quot;Clear&quot;</span><span class="p">))</span></div>
