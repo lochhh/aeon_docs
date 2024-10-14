@@ -29,11 +29,12 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=142bc327" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=4862f855" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -41,7 +42,7 @@
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
@@ -427,8 +428,8 @@ document.write(`
 <h1>Data access using the low-level API<a class="headerlink" href="#data-access-using-the-low-level-api" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">aeon.io.api</span> <span class="k">as</span> <span class="nn">aeon</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">aeon</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">aeon.analysis.utils</span> <span class="kn">import</span> <span class="n">distancetravelled</span>
 <span class="kn">from</span> <span class="nn">aeon.analysis.plotting</span> <span class="kn">import</span> <span class="n">heatmap</span>
 <span class="kn">from</span> <span class="nn">aeon.schema.schemas</span> <span class="kn">import</span> <span class="n">social02</span>
@@ -439,6 +440,11 @@ document.write(`
 </div>
 </div>
 <p>The root path is the directory containing the entire dataset, including all epochs and chunks of data for all streams of all devices. If your local dataset is in a different location, please change the value below before running the cells below.</p>
+<p>You can also run this notebook online from <a class="reference external" href="https://works.datajoint.com/"><code class="docutils literal notranslate"><span class="pre">works.datajoint.com</span></code></a> using the following credentials:</p>
+<ul class="simple">
+<li><p>Username: aeondemo</p></li>
+<li><p>Password: aeon_sfn2024</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">root</span> <span class="o">=</span> <span class="s1">&#39;/data/raw/AEON3/social0.2/&#39;</span>
@@ -448,10 +454,10 @@ document.write(`
 </div>
 <section id="experiment-metadata">
 <h2>Experiment metadata<a class="headerlink" href="#experiment-metadata" title="Link to this heading">#</a></h2>
+<p>Information about the location and configuration of all devices can be extracted from the <code class="docutils literal notranslate"><span class="pre">Metadata.yml</span></code> file. The <code class="docutils literal notranslate"><span class="pre">ExperimentMetadata</span></code> class provides a convenient API for parsing and accessing this metadata to access video frame rate, pixel to standard unit conversions, etc.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># read experiment metadata</span>
-<span class="n">metadata</span> <span class="o">=</span> <span class="n">aeon</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">social02</span><span class="o">.</span><span class="n">Metadata</span><span class="p">)[</span><span class="s1">&#39;metadata&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">metadata</span> <span class="o">=</span> <span class="n">aeon</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">social02</span><span class="o">.</span><span class="n">Metadata</span><span class="p">)[</span><span class="s1">&#39;metadata&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">experiment</span> <span class="o">=</span> <span class="n">ExperimentMetadata</span><span class="p">(</span><span class="n">metadata</span><span class="p">)</span>
 <span class="n">arena</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">arena</span>
 </pre></div>
@@ -461,14 +467,19 @@ document.write(`
 </section>
 <section id="position-tracking">
 <h2>Position tracking<a class="headerlink" href="#position-tracking" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">social02</span></code> schema is used with <code class="docutils literal notranslate"><span class="pre">aeon.load</span></code> to read stream data from different devices. Below we access the SLEAP pose data from <code class="docutils literal notranslate"><span class="pre">CameraTop</span></code> and convert pixel coordinates to standard units using the <code class="docutils literal notranslate"><span class="pre">point_to_cm</span></code> function from arena metadata.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># read normalized position data</span>
-<span class="n">pose</span> <span class="o">=</span> <span class="n">aeon</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">social02</span><span class="o">.</span><span class="n">CameraTop</span><span class="o">.</span><span class="n">Pose</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pose</span> <span class="o">=</span> <span class="n">aeon</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">social02</span><span class="o">.</span><span class="n">CameraTop</span><span class="o">.</span><span class="n">Pose</span><span class="p">)</span>
 <span class="n">position_cm</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">arena</span><span class="o">.</span><span class="n">point_to_cm</span><span class="p">(</span><span class="n">pose</span><span class="p">[[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">]])</span>
-
-<span class="c1"># plot position heatmap</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The low-level API also contains utility functions for data visualization and exploration. Below we use <code class="docutils literal notranslate"><span class="pre">heatmap</span></code> to display a 2D histogram of the position data over the entire dataset period.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">heatmap</span><span class="p">(</span><span class="n">position_cm</span><span class="p">,</span> <span class="n">experiment</span><span class="o">.</span><span class="n">video</span><span class="o">.</span><span class="n">global_fps</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x (cm)&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y (cm)&#39;</span><span class="p">)</span>
@@ -477,12 +488,13 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/78cb769de5e556ea30a6f287db1d2c8c358d5ee7e16917895dabed3ec5fce9c5.png" src="../../_images/78cb769de5e556ea30a6f287db1d2c8c358d5ee7e16917895dabed3ec5fce9c5.png" />
+<img alt="../../_images/ea51ae7a9b811fcb084bb24c3746d4c8522964be002be01fb8810aefb7286282.png" src="../../_images/ea51ae7a9b811fcb084bb24c3746d4c8522964be002be01fb8810aefb7286282.png" />
 </div>
 </div>
 </section>
 <section id="foraging-activity">
 <h2>Foraging activity<a class="headerlink" href="#foraging-activity" title="Link to this heading">#</a></h2>
+<p>In this experiment there are three foraging patches. For each patch we access below the wheel movement data and state transitions when a pellet is delivered.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">patches</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Patch1&quot;</span><span class="p">,</span> <span class="s2">&quot;Patch2&quot;</span><span class="p">,</span> <span class="s2">&quot;Patch3&quot;</span><span class="p">]</span>
@@ -493,38 +505,88 @@ document.write(`
 </div>
 </div>
 </div>
+<p>RFID tag readers are also located at various points of the environment and can be accessed using the same API.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rfids</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Patch1Rfid&quot;</span><span class="p">,</span> <span class="s2">&quot;Patch2Rfid&quot;</span><span class="p">,</span> <span class="s2">&quot;Patch3Rfid&quot;</span><span class="p">,</span> <span class="s2">&quot;NestRfid1&quot;</span><span class="p">,</span> <span class="s2">&quot;NestRfid2&quot;</span><span class="p">,</span> <span class="s2">&quot;GateRfid&quot;</span><span class="p">]</span>
+<span class="n">rfid_events</span> <span class="o">=</span> <span class="p">{</span><span class="n">rfid</span><span class="p">:</span> <span class="n">aeon</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">social02</span><span class="p">[</span><span class="n">rfid</span><span class="p">]</span><span class="o">.</span><span class="n">RfidEvents</span><span class="p">)</span> <span class="k">for</span> <span class="n">rfid</span> <span class="ow">in</span> <span class="n">rfids</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Below we summarize all patch and RFID activity. Note we can directly align time across all plots since data is synchronized at source.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">height_ratios</span><span class="o">=</span><span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">])</span>
 
-<span class="k">for</span> <span class="n">patch</span> <span class="ow">in</span> <span class="n">patches</span><span class="p">:</span>
-    <span class="c1"># plot distance travelled</span>
-    <span class="n">patch_distance</span><span class="p">[</span><span class="n">patch</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">patch</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">patch</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">patches</span><span class="p">):</span>
+    <span class="c1"># plot distance travelled and pellet delivery events</span>
+    <span class="n">patch_distance</span><span class="p">[</span><span class="n">patch</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">patch</span><span class="p">,</span> <span class="n">x_compat</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">pellet_deliveries</span><span class="p">[</span><span class="n">patch</span><span class="p">]</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">patch_index</span><span class="o">=-</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">patch_index</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">patch</span><span class="p">)</span>
 
-<span class="n">delivery_distance</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span>
-    <span class="n">pd</span><span class="o">.</span><span class="n">merge_asof</span><span class="p">(</span>
-        <span class="n">pellet_deliveries</span><span class="p">[</span><span class="n">patch</span><span class="p">],</span>
-        <span class="n">patch_distance</span><span class="p">[</span><span class="n">patch</span><span class="p">],</span>
-        <span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">patch</span> <span class="ow">in</span> <span class="n">patches</span><span class="p">])</span>
-<span class="n">delivery_distance</span><span class="o">.</span><span class="n">angle</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;r.&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;pellet&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;distance (m)&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">rfid</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">rfids</span><span class="p">):</span>
+    <span class="c1"># plot RFID detection events</span>
+    <span class="n">rfid_events</span><span class="p">[</span><span class="n">rfid</span><span class="p">]</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">rfid_index</span><span class="o">=-</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">rfid_index</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">rfid</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;distance (m)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;pellet</span><span class="se">\n</span><span class="s1"> delivery&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;RFID</span><span class="se">\n</span><span class="s1"> detected&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/a998103c9ab8fdd6a9a27bec0dbf55ab6a6015630595e3bafafd8cf5f5afcc85.png" src="../../_images/a998103c9ab8fdd6a9a27bec0dbf55ab6a6015630595e3bafafd8cf5f5afcc85.png" />
+<img alt="../../_images/1ac75db50728455479a0b61ff8fe0623370cf2969599255802ba2fac68071012.png" src="../../_images/1ac75db50728455479a0b61ff8fe0623370cf2969599255802ba2fac68071012.png" />
+</div>
+</div>
+</section>
+<section id="event-triggered-analysis">
+<h2>Event-triggered analysis<a class="headerlink" href="#event-triggered-analysis" title="Link to this heading">#</a></h2>
+<p>Having the same time reference for all data is also useful for quick exploration of correlations. Below we correlate wheel movement data with pellet delivery events by performing a direct outer join between the two tables and grouping by event count.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">patch</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">patches</span><span class="p">):</span>
+    <span class="c1"># get patch state at each pellet delivery</span>
+    <span class="n">patch_state</span> <span class="o">=</span> <span class="n">pellet_deliveries</span><span class="p">[</span><span class="n">patch</span><span class="p">]</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">count</span><span class="o">=</span><span class="n">pellet_deliveries</span><span class="p">[</span><span class="n">patch</span><span class="p">]</span><span class="o">.</span><span class="n">offset</span><span class="o">.</span><span class="n">notna</span><span class="p">()</span><span class="o">.</span><span class="n">cumsum</span><span class="p">())</span>
+    
+    <span class="c1"># correlate patch state with wheel data with a time delay</span>
+    <span class="n">foraging_state</span> <span class="o">=</span> <span class="n">patch_state</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">freq</span><span class="o">=</span><span class="s1">&#39;-1s&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">patch_distance</span><span class="p">[</span><span class="n">patch</span><span class="p">],</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">ffill</span><span class="p">()</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+    <span class="c1"># group wheel data by pellet delivery and align on first second</span>
+    <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">foraging_state</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;count&quot;</span><span class="p">):</span>
+        <span class="n">foraging_distance</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span><span class="o">.</span><span class="n">distance</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
+        <span class="n">foraging_distance</span> <span class="o">-=</span> <span class="n">foraging_distance</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">50</span><span class="p">]</span>
+        <span class="n">foraging_distance</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">(</span><span class="n">foraging_distance</span><span class="o">.</span><span class="n">index</span> <span class="o">-</span> <span class="n">foraging_distance</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">50</span><span class="p">])</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+        <span class="n">foraging_distance</span><span class="o">.</span><span class="n">distance</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">patch</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;distance from pellet (m)&#39;</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;time (s)&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/619081147de32b5099f45ca9a43262a75bed998f1c923d6a304c89786d1c2404.png" src="../../_images/619081147de32b5099f45ca9a43262a75bed998f1c923d6a304c89786d1c2404.png" />
 </div>
 </div>
 </section>
 <section id="video-analysis">
 <h2>Video analysis<a class="headerlink" href="#video-analysis" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">aeon.io.video</span></code> includes utilities for easily extracting raw video frames and movies aligned to the data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">video</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">cast</span>
+<span class="kn">from</span> <span class="nn">aeon.io.video</span> <span class="kn">import</span> <span class="n">frames</span>
+
+<span class="n">camera_frames</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;CameraTop&quot;</span><span class="p">:</span> <span class="n">aeon</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">social02</span><span class="o">.</span><span class="n">CameraTop</span><span class="o">.</span><span class="n">Video</span><span class="p">),</span>
     <span class="s2">&quot;CameraPatch1&quot;</span><span class="p">:</span> <span class="n">aeon</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">social02</span><span class="o">.</span><span class="n">CameraPatch1</span><span class="o">.</span><span class="n">Video</span><span class="p">),</span>
     <span class="s2">&quot;CameraPatch2&quot;</span><span class="p">:</span> <span class="n">aeon</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">social02</span><span class="o">.</span><span class="n">CameraPatch2</span><span class="o">.</span><span class="n">Video</span><span class="p">),</span>
@@ -533,6 +595,59 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
+</div>
+</div>
+<p>Below we extract the normalized wheel distance before and after a single pellet delivery on a specified patch. As above we normalize time in seconds aligned to pellet delivery and distance in meters from pellet.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">single_patch</span> <span class="o">=</span> <span class="s2">&quot;Patch2&quot;</span>
+<span class="n">delivery_index</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">before_delta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timedelta</span><span class="p">(</span><span class="s2">&quot;1s&quot;</span><span class="p">)</span>
+<span class="n">after_delta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timedelta</span><span class="p">(</span><span class="s2">&quot;3s&quot;</span><span class="p">)</span>
+
+<span class="n">single_pellet</span> <span class="o">=</span> <span class="n">pellet_deliveries</span><span class="p">[</span><span class="n">single_patch</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">delivery_index</span><span class="p">]</span>
+<span class="n">delivery_time</span> <span class="o">=</span> <span class="n">cast</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Timedelta</span><span class="p">,</span> <span class="n">single_pellet</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="n">before</span> <span class="o">=</span> <span class="n">delivery_time</span> <span class="o">-</span> <span class="n">before_delta</span>
+<span class="n">after</span> <span class="o">=</span> <span class="n">delivery_time</span> <span class="o">+</span> <span class="n">after_delta</span>
+<span class="n">foraging_distance</span> <span class="o">=</span> <span class="n">patch_distance</span><span class="p">[</span><span class="n">single_patch</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">before</span><span class="p">:</span><span class="n">after</span><span class="p">]</span> <span class="o">-</span> <span class="n">patch_distance</span><span class="p">[</span><span class="n">single_patch</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">delivery_time</span><span class="p">]</span>
+<span class="n">foraging_distance</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">(</span><span class="n">foraging_distance</span><span class="o">.</span><span class="n">index</span> <span class="o">-</span> <span class="n">delivery_time</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Next we extract the video frames corresponding to specific moments in the pellet delivery sequence. Note how <code class="docutils literal notranslate"><span class="pre">reindex</span></code> is used with <code class="docutils literal notranslate"><span class="pre">ffill</span></code> to get the closest frame following the desired frame times.</p>
+<p>Given a data frame of video frame metadata, the <code class="docutils literal notranslate"><span class="pre">frames</span></code> function will open and decode all the corresponding frame data as a <code class="docutils literal notranslate"><span class="pre">numpy.array</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get video frames at specific offsets from delivery time</span>
+<span class="n">frame_deltas_seconds</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">frame_times</span> <span class="o">=</span> <span class="p">[</span><span class="n">delivery_time</span> <span class="o">+</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timedelta</span><span class="p">(</span><span class="n">delta</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">delta</span> <span class="ow">in</span> <span class="n">frame_deltas_seconds</span><span class="p">]</span>
+<span class="n">frame_metadata</span> <span class="o">=</span> <span class="n">camera_frames</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;Camera</span><span class="si">{</span><span class="n">single_patch</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">frame_times</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;ffill&quot;</span><span class="p">)</span>
+<span class="n">bout_frames</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">frames</span><span class="p">(</span><span class="n">frame_metadata</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally we arrange a mosaic plot drawing each individual frame from left to right and annotate the distance plot with the frame times.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot_mosaic</span><span class="p">([[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">]])</span>
+<span class="n">foraging_distance</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="s2">&quot;D&quot;</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">frame_delta</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">frame_deltas_seconds</span><span class="p">):</span>
+    <span class="n">ax_index</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="n">ax_index</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">bout_frames</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">axes</span><span class="p">[</span><span class="n">ax_index</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+    <span class="n">axes</span><span class="p">[</span><span class="s2">&quot;D&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">frame_delta</span><span class="p">,</span> <span class="n">foraging_distance</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">frame_delta</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.02</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="s2">&quot;D&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="s2">&quot;D&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;distance from pellet (m)&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="s2">&quot;D&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;time (s)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/d82e044acb040f249036a3c9c300d3ce15e6ba8be05b532e5ecb105c493e268b.png" src="../../_images/d82e044acb040f249036a3c9c300d3ce15e6ba8be05b532e5ecb105c493e268b.png" />
 </div>
 </div>
 </section>
@@ -587,6 +702,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-metadata">Experiment metadata</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#position-tracking">Position tracking</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foraging-activity">Foraging activity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#event-triggered-analysis">Event-triggered analysis</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video-analysis">Video analysis</a></li>
 </ul>
   </nav></div>
@@ -622,7 +738,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><p class="sphinx-version"></p>
-    Created using <a href="https://sphinx-doc.org/">Sphinx</a> 8.0.2.
+    Created using <a href="https://sphinx-doc.org/">Sphinx</a> 8.1.3.
     <br/>
     </p>
     <p class="theme-version">

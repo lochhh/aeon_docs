@@ -1,0 +1,5 @@
+<map id="%3" name="%3">
+<area shape="rect" id="node1" title="Aeon.Acquisition.AeonAudio" alt="" coords="5,5,293,53"/>
+<area shape="rect" id="node2" title="AudioCapture" alt="" coords="73,101,225,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="152,54,152,86,146,86,146,54"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="%3" name="%3">
+<area shape="rect" id="node1" title="Aeon.Environment.TareWeightControl" alt="" coords="5,5,390,53"/>
+<area shape="rect" id="node2" title="UserControl" alt="" coords="128,101,267,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="200,54,200,86,195,86,195,54"/>
+</map>

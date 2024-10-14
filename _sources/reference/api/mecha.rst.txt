@@ -22,6 +22,7 @@
     aeon.analysis.movies
     aeon.analysis.plotting
     aeon.analysis.utils
+    aeon.metadata.social_02
     aeon.schema.core
     aeon.schema.dataset
     aeon.schema.foraging
@@ -31,4 +32,3 @@
     aeon.schema.social_02
     aeon.schema.social_03
     aeon.schema.streams
-    aeon.metadata.social_02

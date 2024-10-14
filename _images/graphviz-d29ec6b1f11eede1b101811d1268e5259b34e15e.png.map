@@ -1,0 +1,7 @@
+<map id="%3" name="%3">
+<area shape="rect" id="node1" title="Aeon.Foraging.DispenserController" alt="" coords="74,5,433,53"/>
+<area shape="rect" id="node2" title="INamedElement" alt="" coords="5,101,182,149"/>
+<area shape="poly" id="edge2" title="public&#45;inheritance" alt="" coords="215,56,147,96,145,91,212,52"/>
+<area shape="rect" id="node3" title="MetadataSource&lt; DispenserEventArgs &gt;" alt="" coords="206,101,624,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="295,52,364,91,361,96,292,56"/>
+</map>

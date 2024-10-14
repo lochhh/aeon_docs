@@ -1,0 +1,5 @@
+<map id="%3" name="%3">
+<area shape="rect" id="node1" title="Aeon.Vision.Sleap.CreatePoseTrackingMetadata" alt="" coords="5,5,485,53"/>
+<area shape="rect" id="node2" title="Source&lt; PoseTrackingMetadata &gt;" alt="" coords="70,101,420,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="248,54,248,86,242,86,242,54"/>
+</map>

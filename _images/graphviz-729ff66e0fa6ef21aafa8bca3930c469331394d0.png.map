@@ -1,0 +1,5 @@
+<map id="%3" name="%3">
+<area shape="rect" id="node1" title="Aeon.Acquisition.FormatLogMessage" alt="" coords="5,5,380,53"/>
+<area shape="rect" id="node2" title="Bonsai::Expressions::FormatBuilder" alt="" coords="10,101,375,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="195,54,195,86,190,86,190,54"/>
+</map>
