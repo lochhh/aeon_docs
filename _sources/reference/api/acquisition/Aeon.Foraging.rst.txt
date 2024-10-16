@@ -10,6 +10,7 @@ Aeon.Foraging
 Enums
 -----
 
+
 DispenserEventType
 ^^^^^^^^^^^^^^^^^^
 
@@ -23,87 +24,80 @@ CreateDispenserEvent
 ^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Foraging::CreateDispenserEvent
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 DispenserAccumulate
 ^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Foraging::DispenserAccumulate
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 DispenserController
 ^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Foraging::DispenserController
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 DispenserEventArgs
 ^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Foraging::DispenserEventArgs
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 DispenserEventControl
 ^^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Foraging::DispenserEventControl
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 DispenserEventVisualizer
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Foraging::DispenserEventVisualizer
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 DispenserState
 ^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Foraging::DispenserState
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 FormatDispenserState
 ^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Foraging::FormatDispenserState
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 WheelDisplacement
 ^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Foraging::WheelDisplacement
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
+

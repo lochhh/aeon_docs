@@ -10,6 +10,7 @@ Aeon.Video
 Enums
 -----
 
+
 VideoControllerType
 ^^^^^^^^^^^^^^^^^^^
 
@@ -23,57 +24,52 @@ AeonCapture
 ^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Video::AeonCapture
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 ObservableExtensions
 ^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Video::ObservableExtensions
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 PylonCapture
 ^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Video::PylonCapture
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 SpinnakerCapture
 ^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Video::SpinnakerCapture
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 VideoDataFrame
 ^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Video::VideoDataFrame
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 VideoFileCapture
 ^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Video::VideoFileCapture
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
@@ -86,7 +82,8 @@ VideoChunkData
 ^^^^^^^^^^^^^^
 
 .. doxygenstruct:: Aeon::Video::VideoChunkData
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
+

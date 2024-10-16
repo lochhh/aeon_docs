@@ -15,37 +15,35 @@ DistanceFromPoint
 ^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Vision::DistanceFromPoint
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 FormatBinaryRegions
 ^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Vision::FormatBinaryRegions
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 RegionContainsPoint
 ^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Vision::RegionContainsPoint
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 TakeLargestRegions
 ^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Vision::TakeLargestRegions
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
+

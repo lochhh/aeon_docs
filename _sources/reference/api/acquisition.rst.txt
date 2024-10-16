@@ -1,5 +1,5 @@
 ..
-   This file is auto-generated.
+  This file is auto-generated.
 
 .. _target-acquisition-reference:
 
@@ -8,6 +8,17 @@
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :glob:
 
    acquisition/*
+        
+.. list-table:: 
+    
+   * - :cs:namespace:`Aeon.Acquisition`
+   * - :cs:namespace:`Aeon.Database`
+   * - :cs:namespace:`Aeon.Environment`
+   * - :cs:namespace:`Aeon.Foraging`
+   * - :cs:namespace:`Aeon.Video`
+   * - :cs:namespace:`Aeon.Vision`
+   * - :cs:namespace:`Aeon.Vision.Sleap`

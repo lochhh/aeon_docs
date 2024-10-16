@@ -10,6 +10,7 @@ Aeon.Acquisition
 Enums
 -----
 
+
 PriorityLevel
 ^^^^^^^^^^^^^
 
@@ -23,257 +24,233 @@ AeonAudio
 ^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::AeonAudio
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 AvailableDiskSpace
 ^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::AvailableDiskSpace
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 AvailableMemory
 ^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::AvailableMemory
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 CreateLogMessage
 ^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::CreateLogMessage
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 CreateRepository
 ^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::CreateRepository
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 FormatDate
 ^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::FormatDate
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 FormatJson
 ^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::FormatJson
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 FormatLogMessage
 ^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::FormatLogMessage
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 GetDataPath
 ^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::GetDataPath
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 GetDateTime
 ^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::GetDateTime
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 GroupByTime
 ^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::GroupByTime
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 IsRepositoryClean
 ^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::IsRepositoryClean
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 LoadConfigFile
 ^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::LoadConfigFile
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 LogMessage
 ^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::LogMessage
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 MetadataSource
 ^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::MetadataSource
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 ObservableExtensions
 ^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::ObservableExtensions
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 PrependOnce
 ^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::PrependOnce
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 RangeThreshold
 ^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::RangeThreshold
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 StateRecoverySubject.RecoverySubject
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::StateRecoverySubject::RecoverySubject
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 SendMessageCard
 ^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::SendMessageCard
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 ServiceAccountName
 ^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::ServiceAccountName
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 StateRecovery
 ^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::StateRecovery
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 StateRecoverySubject
 ^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::StateRecoverySubject
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 StripSubstring
 ^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::StripSubstring
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 Synchronizer
 ^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::Synchronizer
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 ThrowException
 ^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::ThrowException
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
+

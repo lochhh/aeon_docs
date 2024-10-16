@@ -18,11 +18,11 @@
     aeon.io.device
     aeon.io.reader
     aeon.io.video
+    aeon.metadata.social_02
     aeon.analysis.block_plotting
     aeon.analysis.movies
     aeon.analysis.plotting
     aeon.analysis.utils
-    aeon.metadata.social_02
     aeon.schema.core
     aeon.schema.dataset
     aeon.schema.foraging

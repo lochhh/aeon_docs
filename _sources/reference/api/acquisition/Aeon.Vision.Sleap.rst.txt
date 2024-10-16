@@ -15,27 +15,26 @@ CreatePoseTrackingMetadata
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Vision::Sleap::CreatePoseTrackingMetadata
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 FormatPose
 ^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Vision::Sleap::FormatPose
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
-
 
 PoseTrackingMetadata
 ^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Vision::Sleap::PoseTrackingMetadata
-   :members: 
+   :members:
    :undoc-members:
    :protected-members:
    :allow-dot-graphs:
+
