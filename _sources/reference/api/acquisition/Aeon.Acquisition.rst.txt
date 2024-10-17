@@ -26,7 +26,6 @@ AeonAudio
 .. doxygenclass:: Aeon::Acquisition::AeonAudio
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 AvailableDiskSpace
@@ -35,7 +34,6 @@ AvailableDiskSpace
 .. doxygenclass:: Aeon::Acquisition::AvailableDiskSpace
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 AvailableMemory
@@ -44,7 +42,6 @@ AvailableMemory
 .. doxygenclass:: Aeon::Acquisition::AvailableMemory
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 CreateLogMessage
@@ -53,7 +50,6 @@ CreateLogMessage
 .. doxygenclass:: Aeon::Acquisition::CreateLogMessage
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 CreateRepository
@@ -62,7 +58,6 @@ CreateRepository
 .. doxygenclass:: Aeon::Acquisition::CreateRepository
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 FormatDate
@@ -71,7 +66,6 @@ FormatDate
 .. doxygenclass:: Aeon::Acquisition::FormatDate
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 FormatJson
@@ -80,7 +74,6 @@ FormatJson
 .. doxygenclass:: Aeon::Acquisition::FormatJson
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 FormatLogMessage
@@ -89,7 +82,6 @@ FormatLogMessage
 .. doxygenclass:: Aeon::Acquisition::FormatLogMessage
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 GetDataPath
@@ -98,7 +90,6 @@ GetDataPath
 .. doxygenclass:: Aeon::Acquisition::GetDataPath
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 GetDateTime
@@ -107,7 +98,6 @@ GetDateTime
 .. doxygenclass:: Aeon::Acquisition::GetDateTime
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 GroupByTime
@@ -116,7 +106,6 @@ GroupByTime
 .. doxygenclass:: Aeon::Acquisition::GroupByTime
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 IsRepositoryClean
@@ -125,7 +114,6 @@ IsRepositoryClean
 .. doxygenclass:: Aeon::Acquisition::IsRepositoryClean
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 LoadConfigFile
@@ -134,7 +122,6 @@ LoadConfigFile
 .. doxygenclass:: Aeon::Acquisition::LoadConfigFile
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 LogMessage
@@ -143,7 +130,6 @@ LogMessage
 .. doxygenclass:: Aeon::Acquisition::LogMessage
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 MetadataSource
@@ -152,7 +138,6 @@ MetadataSource
 .. doxygenclass:: Aeon::Acquisition::MetadataSource
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ObservableExtensions
@@ -161,7 +146,6 @@ ObservableExtensions
 .. doxygenclass:: Aeon::Acquisition::ObservableExtensions
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 PrependOnce
@@ -170,7 +154,6 @@ PrependOnce
 .. doxygenclass:: Aeon::Acquisition::PrependOnce
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 RangeThreshold
@@ -179,7 +162,6 @@ RangeThreshold
 .. doxygenclass:: Aeon::Acquisition::RangeThreshold
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 StateRecoverySubject.RecoverySubject
@@ -188,7 +170,6 @@ StateRecoverySubject.RecoverySubject
 .. doxygenclass:: Aeon::Acquisition::StateRecoverySubject::RecoverySubject
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 SendMessageCard
@@ -197,7 +178,6 @@ SendMessageCard
 .. doxygenclass:: Aeon::Acquisition::SendMessageCard
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ServiceAccountName
@@ -206,7 +186,6 @@ ServiceAccountName
 .. doxygenclass:: Aeon::Acquisition::ServiceAccountName
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 StateRecovery
@@ -215,7 +194,6 @@ StateRecovery
 .. doxygenclass:: Aeon::Acquisition::StateRecovery
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 StateRecoverySubject
@@ -224,7 +202,6 @@ StateRecoverySubject
 .. doxygenclass:: Aeon::Acquisition::StateRecoverySubject
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 StripSubstring
@@ -233,7 +210,6 @@ StripSubstring
 .. doxygenclass:: Aeon::Acquisition::StripSubstring
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 Synchronizer
@@ -242,7 +218,6 @@ Synchronizer
 .. doxygenclass:: Aeon::Acquisition::Synchronizer
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ThrowException
@@ -251,6 +226,5 @@ ThrowException
 .. doxygenclass:: Aeon::Acquisition::ThrowException
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 

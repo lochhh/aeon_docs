@@ -17,7 +17,6 @@ CreateConnection
 .. doxygenclass:: Aeon::Database::CreateConnection
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 DataReaderExtensions
@@ -26,7 +25,6 @@ DataReaderExtensions
 .. doxygenclass:: Aeon::Database::DataReaderExtensions
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ExecuteQuery
@@ -35,7 +33,6 @@ ExecuteQuery
 .. doxygenclass:: Aeon::Database::ExecuteQuery
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ObservableDatabase
@@ -44,7 +41,6 @@ ObservableDatabase
 .. doxygenclass:: Aeon::Database::ObservableDatabase
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 RecordReader
@@ -53,6 +49,5 @@ RecordReader
 .. doxygenclass:: Aeon::Database::RecordReader
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 

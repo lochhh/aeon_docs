@@ -17,7 +17,6 @@ CreatePoseTrackingMetadata
 .. doxygenclass:: Aeon::Vision::Sleap::CreatePoseTrackingMetadata
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 FormatPose
@@ -26,7 +25,6 @@ FormatPose
 .. doxygenclass:: Aeon::Vision::Sleap::FormatPose
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 PoseTrackingMetadata
@@ -35,6 +33,5 @@ PoseTrackingMetadata
 .. doxygenclass:: Aeon::Vision::Sleap::PoseTrackingMetadata
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 

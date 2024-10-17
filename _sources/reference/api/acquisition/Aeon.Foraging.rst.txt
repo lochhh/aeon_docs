@@ -26,7 +26,6 @@ CreateDispenserEvent
 .. doxygenclass:: Aeon::Foraging::CreateDispenserEvent
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 DispenserAccumulate
@@ -35,7 +34,6 @@ DispenserAccumulate
 .. doxygenclass:: Aeon::Foraging::DispenserAccumulate
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 DispenserController
@@ -44,7 +42,6 @@ DispenserController
 .. doxygenclass:: Aeon::Foraging::DispenserController
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 DispenserEventArgs
@@ -53,7 +50,6 @@ DispenserEventArgs
 .. doxygenclass:: Aeon::Foraging::DispenserEventArgs
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 DispenserEventControl
@@ -62,7 +58,6 @@ DispenserEventControl
 .. doxygenclass:: Aeon::Foraging::DispenserEventControl
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 DispenserEventVisualizer
@@ -71,7 +66,6 @@ DispenserEventVisualizer
 .. doxygenclass:: Aeon::Foraging::DispenserEventVisualizer
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 DispenserState
@@ -80,7 +74,6 @@ DispenserState
 .. doxygenclass:: Aeon::Foraging::DispenserState
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 FormatDispenserState
@@ -89,7 +82,6 @@ FormatDispenserState
 .. doxygenclass:: Aeon::Foraging::FormatDispenserState
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 WheelDisplacement
@@ -98,6 +90,5 @@ WheelDisplacement
 .. doxygenclass:: Aeon::Foraging::WheelDisplacement
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 

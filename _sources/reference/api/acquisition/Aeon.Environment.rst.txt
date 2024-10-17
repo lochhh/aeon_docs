@@ -41,7 +41,6 @@ ActiveSubjectCollection
 .. doxygenclass:: Aeon::Environment::ActiveSubjectCollection
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 AnnotationControl
@@ -50,7 +49,6 @@ AnnotationControl
 .. doxygenclass:: Aeon::Environment::AnnotationControl
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 AnnotationSource
@@ -59,7 +57,6 @@ AnnotationSource
 .. doxygenclass:: Aeon::Environment::AnnotationSource
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 AnnotationSourceVisualizer
@@ -68,7 +65,6 @@ AnnotationSourceVisualizer
 .. doxygenclass:: Aeon::Environment::AnnotationSourceVisualizer
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 InterpolateRoomLightPreset.AnonymousInterpolation
@@ -77,7 +73,6 @@ InterpolateRoomLightPreset.AnonymousInterpolation
 .. doxygenclass:: Aeon::Environment::InterpolateRoomLightPreset::AnonymousInterpolation
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ButtonControl
@@ -86,7 +81,6 @@ ButtonControl
 .. doxygenclass:: Aeon::Environment::ButtonControl
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ButtonSource
@@ -95,7 +89,6 @@ ButtonSource
 .. doxygenclass:: Aeon::Environment::ButtonSource
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ButtonSourceVisualizer
@@ -104,7 +97,6 @@ ButtonSourceVisualizer
 .. doxygenclass:: Aeon::Environment::ButtonSourceVisualizer
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ChannelMap
@@ -113,7 +105,6 @@ ChannelMap
 .. doxygenclass:: Aeon::Environment::ChannelMap
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 CreateRoomLightMessage
@@ -122,7 +113,6 @@ CreateRoomLightMessage
 .. doxygenclass:: Aeon::Environment::CreateRoomLightMessage
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 CreateRoomLightPreset
@@ -131,7 +121,6 @@ CreateRoomLightPreset
 .. doxygenclass:: Aeon::Environment::CreateRoomLightPreset
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 DeserializeFromYaml
@@ -140,7 +129,6 @@ DeserializeFromYaml
 .. doxygenclass:: Aeon::Environment::DeserializeFromYaml
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentSubjectStateControl.EditorSite
@@ -149,7 +137,6 @@ EnvironmentSubjectStateControl.EditorSite
 .. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateControl::EditorSite
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentSubjectStateEntry.EntryIdConverter
@@ -158,7 +145,6 @@ EnvironmentSubjectStateEntry.EntryIdConverter
 .. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateEntry::EntryIdConverter
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentSubjectStateEntry.EntryTypeDescriptionProvider
@@ -167,7 +153,6 @@ EnvironmentSubjectStateEntry.EntryTypeDescriptionProvider
 .. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateEntry::EntryTypeDescriptionProvider
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnumerateColony
@@ -176,7 +161,6 @@ EnumerateColony
 .. doxygenclass:: Aeon::Environment::EnumerateColony
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentState
@@ -185,7 +169,6 @@ EnvironmentState
 .. doxygenclass:: Aeon::Environment::EnvironmentState
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentStateControl
@@ -194,7 +177,6 @@ EnvironmentStateControl
 .. doxygenclass:: Aeon::Environment::EnvironmentStateControl
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentStateMetadata
@@ -203,7 +185,6 @@ EnvironmentStateMetadata
 .. doxygenclass:: Aeon::Environment::EnvironmentStateMetadata
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentStateRecovery
@@ -212,7 +193,6 @@ EnvironmentStateRecovery
 .. doxygenclass:: Aeon::Environment::EnvironmentStateRecovery
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentStateVisualizer
@@ -221,7 +201,6 @@ EnvironmentStateVisualizer
 .. doxygenclass:: Aeon::Environment::EnvironmentStateVisualizer
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentSubjectState
@@ -230,7 +209,6 @@ EnvironmentSubjectState
 .. doxygenclass:: Aeon::Environment::EnvironmentSubjectState
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentSubjectStateControl
@@ -239,7 +217,6 @@ EnvironmentSubjectStateControl
 .. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateControl
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentSubjectStateEntry
@@ -248,7 +225,6 @@ EnvironmentSubjectStateEntry
 .. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateEntry
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentSubjectStateMetadata
@@ -257,7 +233,6 @@ EnvironmentSubjectStateMetadata
 .. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateMetadata
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 EnvironmentSubjectStateVisualizer
@@ -266,7 +241,6 @@ EnvironmentSubjectStateVisualizer
 .. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateVisualizer
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ExperimentProperties
@@ -275,7 +249,6 @@ ExperimentProperties
 .. doxygenclass:: Aeon::Environment::ExperimentProperties
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ExternalizedPropertiesVisualizer
@@ -284,7 +257,6 @@ ExternalizedPropertiesVisualizer
 .. doxygenclass:: Aeon::Environment::ExternalizedPropertiesVisualizer
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 Fixture
@@ -293,7 +265,6 @@ Fixture
 .. doxygenclass:: Aeon::Environment::Fixture
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 FormatWeight
@@ -302,7 +273,6 @@ FormatWeight
 .. doxygenclass:: Aeon::Environment::FormatWeight
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 InterpolateRoomLightPreset
@@ -311,7 +281,6 @@ InterpolateRoomLightPreset
 .. doxygenclass:: Aeon::Environment::InterpolateRoomLightPreset
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 LabelControl
@@ -320,7 +289,6 @@ LabelControl
 .. doxygenclass:: Aeon::Environment::LabelControl
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 LabelVisualizer
@@ -329,7 +297,6 @@ LabelVisualizer
 .. doxygenclass:: Aeon::Environment::LabelVisualizer
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ParseRfidMeasurement
@@ -338,7 +305,6 @@ ParseRfidMeasurement
 .. doxygenclass:: Aeon::Environment::ParseRfidMeasurement
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ReadOnlyPropertyDescriptor
@@ -347,7 +313,6 @@ ReadOnlyPropertyDescriptor
 .. doxygenclass:: Aeon::Environment::ReadOnlyPropertyDescriptor
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ReadOnlyTypeDescriptor
@@ -356,7 +321,6 @@ ReadOnlyTypeDescriptor
 .. doxygenclass:: Aeon::Environment::ReadOnlyTypeDescriptor
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 RoomFixtures
@@ -365,7 +329,6 @@ RoomFixtures
 .. doxygenclass:: Aeon::Environment::RoomFixtures
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 RoomLightDevice
@@ -374,7 +337,6 @@ RoomLightDevice
 .. doxygenclass:: Aeon::Environment::RoomLightDevice
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 SerializeToYaml
@@ -383,7 +345,6 @@ SerializeToYaml
 .. doxygenclass:: Aeon::Environment::SerializeToYaml
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 CreateRoomLightPreset.SettingsConverter
@@ -392,7 +353,6 @@ CreateRoomLightPreset.SettingsConverter
 .. doxygenclass:: Aeon::Environment::CreateRoomLightPreset::SettingsConverter
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 StringExtensions
@@ -401,7 +361,6 @@ StringExtensions
 .. doxygenclass:: Aeon::Environment::StringExtensions
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 SubjectLogBitmap
@@ -410,7 +369,6 @@ SubjectLogBitmap
 .. doxygenclass:: Aeon::Environment::SubjectLogBitmap
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 SubjectRecord
@@ -419,7 +377,6 @@ SubjectRecord
 .. doxygenclass:: Aeon::Environment::SubjectRecord
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 SubjectStateRecovery
@@ -428,7 +385,6 @@ SubjectStateRecovery
 .. doxygenclass:: Aeon::Environment::SubjectStateRecovery
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 TareWeight
@@ -437,7 +393,6 @@ TareWeight
 .. doxygenclass:: Aeon::Environment::TareWeight
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 TareWeightControl
@@ -446,7 +401,6 @@ TareWeightControl
 .. doxygenclass:: Aeon::Environment::TareWeightControl
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 TareWeightVisualizer
@@ -455,7 +409,6 @@ TareWeightVisualizer
 .. doxygenclass:: Aeon::Environment::TareWeightVisualizer
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ExternalizedPropertiesVisualizer.VisualizerContext
@@ -464,7 +417,6 @@ ExternalizedPropertiesVisualizer.VisualizerContext
 .. doxygenclass:: Aeon::Environment::ExternalizedPropertiesVisualizer::VisualizerContext
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 WeightBaseline
@@ -473,7 +425,6 @@ WeightBaseline
 .. doxygenclass:: Aeon::Environment::WeightBaseline
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 WeightFilter
@@ -482,7 +433,6 @@ WeightFilter
 .. doxygenclass:: Aeon::Environment::WeightFilter
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 WeightRaw
@@ -491,7 +441,6 @@ WeightRaw
 .. doxygenclass:: Aeon::Environment::WeightRaw
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 Structs
@@ -504,7 +453,6 @@ RfidMeasurement
 .. doxygenstruct:: Aeon::Environment::RfidMeasurement
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 RoomLightMessage
@@ -513,7 +461,6 @@ RoomLightMessage
 .. doxygenstruct:: Aeon::Environment::RoomLightMessage
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 RoomLightPreset
@@ -522,7 +469,6 @@ RoomLightPreset
 .. doxygenstruct:: Aeon::Environment::RoomLightPreset
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 WeightMeasurement
@@ -531,6 +477,5 @@ WeightMeasurement
 .. doxygenstruct:: Aeon::Environment::WeightMeasurement
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 

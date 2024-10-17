@@ -26,7 +26,6 @@ AeonCapture
 .. doxygenclass:: Aeon::Video::AeonCapture
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 ObservableExtensions
@@ -35,7 +34,6 @@ ObservableExtensions
 .. doxygenclass:: Aeon::Video::ObservableExtensions
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 PylonCapture
@@ -44,7 +42,6 @@ PylonCapture
 .. doxygenclass:: Aeon::Video::PylonCapture
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 SpinnakerCapture
@@ -53,7 +50,6 @@ SpinnakerCapture
 .. doxygenclass:: Aeon::Video::SpinnakerCapture
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 VideoDataFrame
@@ -62,7 +58,6 @@ VideoDataFrame
 .. doxygenclass:: Aeon::Video::VideoDataFrame
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 VideoFileCapture
@@ -71,7 +66,6 @@ VideoFileCapture
 .. doxygenclass:: Aeon::Video::VideoFileCapture
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
 Structs
@@ -84,6 +78,5 @@ VideoChunkData
 .. doxygenstruct:: Aeon::Video::VideoChunkData
    :members:
    :undoc-members:
-   :protected-members:
    :allow-dot-graphs:
 
