@@ -50,7 +50,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/mecha';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="aeon.util" href="mecha/aeon.util.html" />
+    <link rel="next" title="aeon.analysis.block_plotting" href="mecha/aeon.analysis.block_plotting.html" />
     <link rel="prev" title="API Reference" href="../api.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -363,16 +363,15 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="../hardware.html">Hardware Overview</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../api.html">API Reference</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">aeon_mecha</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.util.html">aeon.util</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.analysis.block_plotting.html">aeon.analysis.block_plotting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.analysis.movies.html">aeon.analysis.movies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.io.api.html">aeon.io.api</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.io.device.html">aeon.io.device</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.io.reader.html">aeon.io.reader</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.io.video.html">aeon.io.video</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.metadata.social_02.html">aeon.metadata.social_02</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.analysis.block_plotting.html">aeon.analysis.block_plotting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.analysis.movies.html">aeon.analysis.movies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.analysis.plotting.html">aeon.analysis.plotting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.analysis.utils.html">aeon.analysis.utils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.schema.core.html">aeon.schema.core</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.schema.dataset.html">aeon.schema.dataset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.schema.foraging.html">aeon.schema.foraging</a></li>
@@ -382,6 +381,7 @@ document.write(`
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.schema.social_02.html">aeon.schema.social_02</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.schema.social_03.html">aeon.schema.social_03</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecha/aeon.schema.streams.html">aeon.schema.streams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecha/aeon.util.html">aeon.util</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="acquisition.html"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -464,24 +464,6 @@ document.write(`
 </div>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.util.html#module-aeon.util" title="aeon.util"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.util</span></code></a></p></td>
-<td><p>Utility functions.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.io.api.html#module-aeon.io.api" title="aeon.io.api"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.io.api</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.io.device.html#module-aeon.io.device" title="aeon.io.device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.io.device</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.io.reader.html#module-aeon.io.reader" title="aeon.io.reader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.io.reader</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.io.video.html#module-aeon.io.video" title="aeon.io.video"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.io.video</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.metadata.social_02.html#module-aeon.metadata.social_02" title="aeon.metadata.social_02"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.metadata.social_02</span></code></a></p></td>
-<td><p></p></td>
-</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.analysis.block_plotting.html#module-aeon.analysis.block_plotting" title="aeon.analysis.block_plotting"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.analysis.block_plotting</span></code></a></p></td>
 <td><p></p></td>
 </tr>
@@ -494,32 +476,50 @@ document.write(`
 <tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.analysis.utils.html#module-aeon.analysis.utils" title="aeon.analysis.utils"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.analysis.utils</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.schema.core.html#module-aeon.schema.core" title="aeon.schema.core"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.core</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.io.api.html#module-aeon.io.api" title="aeon.io.api"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.io.api</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.schema.dataset.html#module-aeon.schema.dataset" title="aeon.schema.dataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.dataset</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.io.device.html#module-aeon.io.device" title="aeon.io.device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.io.device</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.schema.foraging.html#module-aeon.schema.foraging" title="aeon.schema.foraging"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.foraging</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.io.reader.html#module-aeon.io.reader" title="aeon.io.reader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.io.reader</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.schema.octagon.html#module-aeon.schema.octagon" title="aeon.schema.octagon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.octagon</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.io.video.html#module-aeon.io.video" title="aeon.io.video"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.io.video</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.schema.schemas.html#module-aeon.schema.schemas" title="aeon.schema.schemas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.schemas</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.metadata.social_02.html#module-aeon.metadata.social_02" title="aeon.metadata.social_02"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.metadata.social_02</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.schema.social_01.html#module-aeon.schema.social_01" title="aeon.schema.social_01"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.social_01</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.schema.core.html#module-aeon.schema.core" title="aeon.schema.core"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.core</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.schema.social_02.html#module-aeon.schema.social_02" title="aeon.schema.social_02"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.social_02</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.schema.dataset.html#module-aeon.schema.dataset" title="aeon.schema.dataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.dataset</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.schema.social_03.html#module-aeon.schema.social_03" title="aeon.schema.social_03"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.social_03</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.schema.foraging.html#module-aeon.schema.foraging" title="aeon.schema.foraging"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.foraging</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.schema.streams.html#module-aeon.schema.streams" title="aeon.schema.streams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.streams</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.schema.octagon.html#module-aeon.schema.octagon" title="aeon.schema.octagon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.octagon</span></code></a></p></td>
 <td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.schema.schemas.html#module-aeon.schema.schemas" title="aeon.schema.schemas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.schemas</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.schema.social_01.html#module-aeon.schema.social_01" title="aeon.schema.social_01"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.social_01</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.schema.social_02.html#module-aeon.schema.social_02" title="aeon.schema.social_02"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.social_02</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.schema.social_03.html#module-aeon.schema.social_03" title="aeon.schema.social_03"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.social_03</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mecha/aeon.schema.streams.html#module-aeon.schema.streams" title="aeon.schema.streams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.schema.streams</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mecha/aeon.util.html#module-aeon.util" title="aeon.util"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aeon.util</span></code></a></p></td>
+<td><p>Utility functions.</p></td>
 </tr>
 </tbody>
 </table>
@@ -546,11 +546,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="mecha/aeon.util.html"
+       href="mecha/aeon.analysis.block_plotting.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">aeon.util</p>
+        <p class="prev-next-title">aeon.analysis.block_plotting</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
