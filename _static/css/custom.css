@@ -42,3 +42,7 @@ html[data-theme=light] {
 .sd-img-bottom-small {
   height: 8vw; 
 }
+
+img.img-hardware-steps {
+  max-height: 40vh;
+}
