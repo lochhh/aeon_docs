@@ -1,5 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="Aeon.Acquisition.CreateLogMessage" alt="" coords="5,5,375,53"/>
-<area shape="rect" id="node2" title="Source&lt; LogMessage &gt;" alt="" coords="65,101,315,149"/>
-<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="193,54,193,86,187,86,187,54"/>
-</map>

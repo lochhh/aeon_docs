@@ -1,5 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="Aeon.Environment.WeightRaw" alt="" coords="136,5,449,53"/>
-<area shape="rect" id="node2" title="Transform&lt; WeightMeasurement, WeightMeasurement &gt;" alt="" coords="5,101,580,149"/>
-<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="295,54,295,86,290,86,290,54"/>
-</map>

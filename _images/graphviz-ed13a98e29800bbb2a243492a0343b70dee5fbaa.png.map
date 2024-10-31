@@ -1,7 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="Aeon.Acquisition.StateRecoverySubject&lt; T &gt;" alt="" coords="5,5,459,53"/>
-<area shape="rect" id="node2" title="SubjectBuilder" alt="" coords="42,101,206,149"/>
-<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="207,56,164,93,161,89,204,52"/>
-<area shape="rect" id="node3" title="SubjectBuilder&lt; T &gt;" alt="" coords="230,101,450,149"/>
-<area shape="poly" id="edge2" title="public&#45;inheritance" alt="" coords="260,52,303,89,300,93,257,56"/>
-</map>

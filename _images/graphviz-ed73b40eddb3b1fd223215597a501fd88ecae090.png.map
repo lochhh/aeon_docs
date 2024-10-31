@@ -1,5 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="Aeon.Database.CreateConnection" alt="" coords="5,5,346,53"/>
-<area shape="rect" id="node2" title="Source&lt; MySqlConnection &gt;" alt="" coords="26,101,325,149"/>
-<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="178,54,178,86,173,86,173,54"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="Aeon.Environment.EnvironmentState" alt="" coords="81,5,460,53"/>
-<area shape="rect" id="node2" title="INamedElement" alt="" coords="5,101,182,149"/>
-<area shape="poly" id="edge2" title="public&#45;inheritance" alt="" coords="228,56,152,96,149,92,225,52"/>
-<area shape="rect" id="node3" title="MetadataSource&lt; EnvironmentStateMetadata &gt;" alt="" coords="205,101,694,149"/>
-<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="317,52,393,92,391,96,314,56"/>
-</map>

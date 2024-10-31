@@ -1,5 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="Aeon.Environment.ReadOnlyPropertyDescriptor" alt="" coords="5,5,487,53"/>
-<area shape="rect" id="node2" title="PropertyDescriptor" alt="" coords="143,101,349,149"/>
-<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="249,54,249,86,243,86,243,54"/>
-</map>

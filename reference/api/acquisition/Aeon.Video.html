@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Aeon.Video &#8212; Aeon  documentation</title>
+    <title>Namespace Aeon.Video &#8212; Aeon  documentation</title>
   
   
   
@@ -16,30 +16,32 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=4862f855" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
@@ -50,10 +52,11 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/acquisition/Aeon.Video';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Aeon.Vision" href="Aeon.Vision.html" />
-    <link rel="prev" title="Aeon.Foraging" href="Aeon.Foraging.html" />
+    <link rel="next" title="Class AeonCapture" href="Aeon.Video.AeonCapture.html" />
+    <link rel="prev" title="Enum DispenserEventType" href="Aeon.Foraging.DispenserEventType.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -69,19 +72,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../../search.html"
       method="get">
@@ -89,7 +81,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search the docs ..."
          aria-label="Search the docs ..."
          autocomplete="off"
@@ -97,8 +88,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -189,29 +180,21 @@
         <div class="navbar-item navbar-persistent--container">
           
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
         </div>
       
       
         <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
       
         <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -236,15 +219,11 @@ document.write(`
   
     <div class="navbar-persistent--mobile">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
     </div>
   
 
@@ -263,7 +242,8 @@ document.write(`
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -324,15 +304,11 @@ document.write(`
         
           <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
         
           <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -385,13 +361,128 @@ document.write(`
 </ul>
 </details></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../acquisition.html"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.html">Aeon.Acquisition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.html">Aeon.Database</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.html">Aeon.Foraging</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Aeon.Video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Acquisition.html">Aeon.Acquisition</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html">AeonAudio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html">AvailableDiskSpace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html">AvailableMemory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html">CreateLogMessage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html">CreateRepository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html">FormatDate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html">FormatJson</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html">FormatLogMessage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html">GetDataPath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html">GetDateTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html">GroupByTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html">IsRepositoryClean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html">LoadConfigFile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html">LogMessage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html">MetadataSource&lt;TMetadata&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html">PrependOnce</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html">RangeThreshold</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html">SendMessageCard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html">ServiceAccountName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html">StateRecovery&lt;TState&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html">StateRecoverySubject</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html">StateRecoverySubject&lt;T&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html">StripSubstring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html">ThrowException</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PriorityLevel.html">PriorityLevel</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Database.html">Aeon.Database</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.CreateConnection.html">CreateConnection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html">ExecuteQuery</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html">ObservableDatabase</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ActiveSubjectCollection.html">ActiveSubjectCollection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationControl.html">AnnotationControl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSource.html">AnnotationSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSourceVisualizer.html">AnnotationSourceVisualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSource.html">ButtonSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSourceVisualizer.html">ButtonSourceVisualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ChannelMap.html">ChannelMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightMessage.html">CreateRoomLightMessage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightPreset.html">CreateRoomLightPreset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.DeserializeFromYaml.html">DeserializeFromYaml</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnumerateColony.html">EnumerateColony</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentState.html">EnvironmentState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateControl.html">EnvironmentStateControl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateMetadata.html">EnvironmentStateMetadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateRecovery.html">EnvironmentStateRecovery</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateVisualizer.html">EnvironmentStateVisualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectState.html">EnvironmentSubjectState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateControl.html">EnvironmentSubjectStateControl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateEntry.html">EnvironmentSubjectStateEntry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateMetadata.html">EnvironmentSubjectStateMetadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateVisualizer.html">EnvironmentSubjectStateVisualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExperimentProperties.html">ExperimentProperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExternalizedPropertiesVisualizer.html">ExternalizedPropertiesVisualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.Fixture.html">Fixture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.FormatWeight.html">FormatWeight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolateRoomLightPreset.html">InterpolateRoomLightPreset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelControl.html">LabelControl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelVisualizer.html">LabelVisualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ParseRfidMeasurement.html">ParseRfidMeasurement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomFixtures.html">RoomFixtures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightDevice.html">RoomLightDevice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SerializeToYaml.html">SerializeToYaml</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectLogBitmap.html">SubjectLogBitmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectRecord.html">SubjectRecord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectStateRecovery.html">SubjectStateRecovery</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeight.html">TareWeight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightControl.html">TareWeightControl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightVisualizer.html">TareWeightVisualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightBaseline.html">WeightBaseline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightFilter.html">WeightFilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightRaw.html">WeightRaw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RfidMeasurement.html">RfidMeasurement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightMessage.html">RoomLightMessage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightPreset.html">RoomLightPreset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightMeasurement.html">WeightMeasurement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateType.html">EnvironmentStateType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectChangeType.html">EnvironmentSubjectChangeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolationMethod.html">InterpolationMethod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectSex.html">SubjectSex</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Foraging.html">Aeon.Foraging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html">CreateDispenserEvent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html">DispenserAccumulate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html">DispenserController</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html">DispenserEventArgs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html">DispenserEventControl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html">DispenserEventVisualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserState.html">DispenserState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html">FormatDispenserState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html">WheelDisplacement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventType.html">DispenserEventType</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 current active has-children"><a class="current reference internal" href="#">Aeon.Video</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.AeonCapture.html">AeonCapture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.PylonCapture.html">PylonCapture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html">SpinnakerCapture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html">VideoDataFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html">VideoFileCapture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoChunkData.html">VideoChunkData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoControllerType.html">VideoControllerType</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.DistanceFromPoint.html">DistanceFromPoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.FormatBinaryRegions.html">FormatBinaryRegions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.RegionContainsPoint.html">RegionContainsPoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.TakeLargestRegions.html">TakeLargestRegions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html">CreatePoseTrackingMetadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html">FormatPose</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html">PoseTrackingMetadata</a></li>
+</ul>
+</details></li>
 </ul>
 </details></li>
 </ul>
@@ -425,10 +516,6 @@ document.write(`
       
         <div class="header-article-item">
 
-
-
-
-
 <nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
@@ -441,12 +528,12 @@ document.write(`
     <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Reference</a></li>
     
     
-    <li class="breadcrumb-item"><i class="fa-solid fa-ellipsis"></i></li>
+    <li class="breadcrumb-item"><a href="../../api.html" class="nav-link">API Reference</a></li>
     
     
     <li class="breadcrumb-item"><a href="../acquisition.html" class="nav-link"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Aeon.Video</li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><a id="Aeon_Video"></a> Namespace Aeon.Video</span></li>
   </ul>
 </nav>
 </div>
@@ -463,319 +550,162 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="aeon-video">
-<h1>Aeon.Video<a class="headerlink" href="#aeon-video" title="Link to this heading">#</a></h1>
-<dl class="cs namespace">
-<dt class="sig sig-object cs" id="namespace-Aeon.Video">
-<span class="target" id="namespaceAeon_1_1Video"></span><em class="property"><span class="pre">namespace</span> </em><span class="sig-name descname"><span class="pre">Aeon.Video</span></span><a class="headerlink" href="#namespace-Aeon.Video" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<section id="enums">
-<h2>Enums<a class="headerlink" href="#enums" title="Link to this heading">#</a></h2>
-<section id="videocontrollertype">
-<h3>VideoControllerType<a class="headerlink" href="#videocontrollertype" title="Link to this heading">#</a></h3>
-<dl class="cs enum">
-<dt class="sig sig-object cs" id="enum-Aeon.Video.VideoControllerType">
-<span class="target" id="namespaceAeon_1_1Video_1a70c6110631ae9f0449df4dcc4c9026cd"></span><em class="property"><span class="pre">enum</span> </em><span class="sig-name descname"><span class="pre">Aeon.Video.VideoControllerType</span></span><a class="headerlink" href="#enum-Aeon.Video.VideoControllerType" title="Link to this definition">#</a></dt>
-<dd><p><em>Values:</em></p>
-<dl class="cs enumerator">
-<dt class="sig sig-object cs" id="enumerator-Aeon.Video.VideoControllerType.OutputExpander">
-<span class="target" id="namespaceAeon_1_1Video_1a70c6110631ae9f0449df4dcc4c9026cdae943fbf289a9f2a5823d2086cc4c3652"></span><span class="sig-name descname"><span class="pre">OutputExpander</span></span><a class="headerlink" href="#enumerator-Aeon.Video.VideoControllerType.OutputExpander" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="cs enumerator">
-<dt class="sig sig-object cs" id="enumerator-Aeon.Video.VideoControllerType.Behavior">
-<span class="target" id="namespaceAeon_1_1Video_1a70c6110631ae9f0449df4dcc4c9026cdab39a035a995fc6597c8eb942210d1527"></span><span class="sig-name descname"><span class="pre">Behavior</span></span><a class="headerlink" href="#enumerator-Aeon.Video.VideoControllerType.Behavior" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-</section>
-</section>
+  <section id="namespace-aeon-video">
+<h1><a id="Aeon_Video"></a> Namespace Aeon.Video<a class="headerlink" href="#namespace-aeon-video" title="Link to this heading">#</a></h1>
 <section id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
-<section id="aeoncapture">
-<h3>AeonCapture<a class="headerlink" href="#aeoncapture" title="Link to this heading">#</a></h3>
-<dl class="cs class">
-<dt class="sig sig-object cs" id="class-Aeon.Video.AeonCapture">
-<span class="target" id="classAeon_1_1Video_1_1AeonCapture"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Video.AeonCapture</span></span> <span class="pre">:</span> <a class="reference internal" href="#class-Aeon.Video.SpinnakerCapture" title="C# class: Aeon.Video.SpinnakerCapture"><span class="pre">Aeon.Video.SpinnakerCapture</span></a><a class="headerlink" href="#class-Aeon.Video.AeonCapture" title="Link to this definition">#</a></dt>
-<dd><p>Inheritence diagram for Aeon::Video::AeonCapture:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-39f346663f6ec00f17a28031bc53005baa2606bf.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;1&quot; [label=&quot;Aeon.Video.AeonCapture&quot; tooltip=&quot;Aeon.Video.AeonCapture&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;3&quot; [label=&quot;Bonsai::Spinnaker::SpinnakerCapture&quot; tooltip=&quot;Bonsai::Spinnaker::SpinnakerCapture&quot;]
-    &quot;2&quot; [label=&quot;SpinnakerCapture&quot; tooltip=&quot;SpinnakerCapture&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-    &quot;2&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
-<p>Collaboration diagram for Aeon::Video::AeonCapture:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-39f346663f6ec00f17a28031bc53005baa2606bf.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;1&quot; [label=&quot;Aeon.Video.AeonCapture&quot; tooltip=&quot;Aeon.Video.AeonCapture&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;3&quot; [label=&quot;Bonsai::Spinnaker::SpinnakerCapture&quot; tooltip=&quot;Bonsai::Spinnaker::SpinnakerCapture&quot;]
-    &quot;2&quot; [label=&quot;SpinnakerCapture&quot; tooltip=&quot;SpinnakerCapture&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-    &quot;2&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
-</dd></dl>
-
-</section>
-<section id="observableextensions">
-<h3>ObservableExtensions<a class="headerlink" href="#observableextensions" title="Link to this heading">#</a></h3>
-<dl class="cs class">
-<dt class="sig sig-object cs" id="class-Aeon.Video.ObservableExtensions">
-<span class="target" id="classAeon_1_1Video_1_1ObservableExtensions"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Video.ObservableExtensions</span></span><a class="headerlink" href="#class-Aeon.Video.ObservableExtensions" title="Link to this definition">#</a></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
-<dl class="cs function">
-<dt class="sig sig-object cs" id="function-Aeon.Video.ObservableExtensions.FillGaps">
-<span class="target" id="classAeon_1_1Video_1_1ObservableExtensions_1addc7b112fb8224929ee7431bb0d9cdbf"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">FillGaps</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><em class="property"><span class="pre">this</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Func-1" title="C# type: msdn ~&gt; System.Func"><span class="pre">Func</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">,</span> <span class="pre">TSource</span><span class="pre">,</span> <span class="pre">int</span><span class="pre">&gt;</span> <em><span class="pre">gapSelector</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Video.ObservableExtensions.FillGaps" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="cs function">
-<dt class="sig sig-object cs">
-<span class="target" id="classAeon_1_1Video_1_1ObservableExtensions_1a270477cc4bfcf0f086c5b09629004fd5"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">FillGaps</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">,</span> <span class="pre">TCounter</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><em class="property"><span class="pre">this</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Func-1" title="C# type: msdn ~&gt; System.Func"><span class="pre">Func</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">,</span> <span class="pre">TCounter</span><span class="pre">&gt;</span> <em><span class="pre">counterSelector</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Func-1" title="C# type: msdn ~&gt; System.Func"><span class="pre">Func</span></a><span class="pre">&lt;</span><span class="pre">TCounter</span><span class="pre">,</span> <span class="pre">TCounter</span><span class="pre">,</span> <span class="pre">int</span><span class="pre">&gt;</span> <em><span class="pre">gapSelector</span></em><span class="sig-paren">)</span></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-</section>
-<section id="pyloncapture">
-<h3>PylonCapture<a class="headerlink" href="#pyloncapture" title="Link to this heading">#</a></h3>
-<dl class="cs class">
-<dt class="sig sig-object cs" id="class-Aeon.Video.PylonCapture">
-<span class="target" id="classAeon_1_1Video_1_1PylonCapture"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Video.PylonCapture</span></span> <span class="pre">:</span> <span class="pre">Bonsai.Pylon.PylonCapture</span><a class="headerlink" href="#class-Aeon.Video.PylonCapture" title="Link to this definition">#</a></dt>
-<dd><p>Inheritence diagram for Aeon::Video::PylonCapture:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-41f59cb036087cb640e21702cd4e8f6471774024.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;1&quot; [label=&quot;Aeon.Video.PylonCapture&quot; tooltip=&quot;Aeon.Video.PylonCapture&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Bonsai::Pylon::PylonCapture&quot; tooltip=&quot;Bonsai::Pylon::PylonCapture&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
-<p>Collaboration diagram for Aeon::Video::PylonCapture:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-41f59cb036087cb640e21702cd4e8f6471774024.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;1&quot; [label=&quot;Aeon.Video.PylonCapture&quot; tooltip=&quot;Aeon.Video.PylonCapture&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Bonsai::Pylon::PylonCapture&quot; tooltip=&quot;Bonsai::Pylon::PylonCapture&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cs function">
-<dt class="sig sig-object cs" id="function-Aeon.Video.PylonCapture.Generate">
-<span class="target" id="classAeon_1_1Video_1_1PylonCapture_1a99af64e2ba9be0c72b40640d18562d8b"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Video.VideoDataFrame" title="C# class: Aeon.Video.VideoDataFrame"><span class="pre">VideoDataFrame</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span><span class="pre">&lt;</span><span class="pre">TPayload</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TPayload</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Video.PylonCapture.Generate" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-</section>
-<section id="spinnakercapture">
-<h3>SpinnakerCapture<a class="headerlink" href="#spinnakercapture" title="Link to this heading">#</a></h3>
-<dl class="cs class">
-<dt class="sig sig-object cs" id="class-Aeon.Video.SpinnakerCapture">
-<span class="target" id="classAeon_1_1Video_1_1SpinnakerCapture"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Video.SpinnakerCapture</span></span> <span class="pre">:</span> <span class="pre">Bonsai.Spinnaker.SpinnakerCapture</span><a class="headerlink" href="#class-Aeon.Video.SpinnakerCapture" title="Link to this definition">#</a></dt>
-<dd><p>Inheritence diagram for Aeon::Video::SpinnakerCapture:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-37bbc0912d530ca38aca02ad7f527a42ac606a3a.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;1&quot; [label=&quot;Aeon.Video.SpinnakerCapture&quot; tooltip=&quot;Aeon.Video.SpinnakerCapture&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;3&quot; [label=&quot;Aeon.Video.AeonCapture&quot; tooltip=&quot;Aeon.Video.AeonCapture&quot;]
-    &quot;2&quot; [label=&quot;Bonsai::Spinnaker::SpinnakerCapture&quot; tooltip=&quot;Bonsai::Spinnaker::SpinnakerCapture&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-    &quot;3&quot; -&gt; &quot;1&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
-<p>Collaboration diagram for Aeon::Video::SpinnakerCapture:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-ce7c4844fedc35acb314c33d0de5945de25f52ed.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;1&quot; [label=&quot;Aeon.Video.SpinnakerCapture&quot; tooltip=&quot;Aeon.Video.SpinnakerCapture&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Bonsai::Spinnaker::SpinnakerCapture&quot; tooltip=&quot;Bonsai::Spinnaker::SpinnakerCapture&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
-<p>Subclassed by <a class="reference internal" href="#classAeon_1_1Video_1_1AeonCapture"><span class="std std-ref">Aeon.Video.AeonCapture</span></a></p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cs function">
-<dt class="sig sig-object cs" id="function-Aeon.Video.SpinnakerCapture.SpinnakerCapture">
-<span class="target" id="classAeon_1_1Video_1_1SpinnakerCapture_1aa943eabef6f52f743031866aea0fdfc3"></span><span class="sig-name descname"><span class="pre">SpinnakerCapture</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Video.SpinnakerCapture.SpinnakerCapture" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="cs function">
-<dt class="sig sig-object cs" id="function-Aeon.Video.SpinnakerCapture.Generate">
-<span class="target" id="classAeon_1_1Video_1_1SpinnakerCapture_1a1588d63259ad46b63f52ae426f1b9673"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Video.VideoDataFrame" title="C# class: Aeon.Video.VideoDataFrame"><span class="pre">VideoDataFrame</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span><span class="pre">&lt;</span><span class="pre">TPayload</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TPayload</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Video.SpinnakerCapture.Generate" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
-<dl class="cs property">
-<dt class="sig sig-object cs" id="property-Aeon.Video.SpinnakerCapture.ExposureTime">
-<span class="target" id="classAeon_1_1Video_1_1SpinnakerCapture_1a7bfe892f0285eddae1fac7a45ef674d3"></span><span class="pre">double</span> <span class="sig-name descname"><span class="pre">ExposureTime</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Video.SpinnakerCapture.ExposureTime" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="cs property">
-<dt class="sig sig-object cs" id="property-Aeon.Video.SpinnakerCapture.Gain">
-<span class="target" id="classAeon_1_1Video_1_1SpinnakerCapture_1a01ad5e5ce6f5eea882a8487f0b0c4ccf"></span><span class="pre">double</span> <span class="sig-name descname"><span class="pre">Gain</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Video.SpinnakerCapture.Gain" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="cs property">
-<dt class="sig sig-object cs" id="property-Aeon.Video.SpinnakerCapture.Binning">
-<span class="target" id="classAeon_1_1Video_1_1SpinnakerCapture_1a375b4e199f77ad56d090f8fca1274bbe"></span><span class="pre">int</span> <span class="sig-name descname"><span class="pre">Binning</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Video.SpinnakerCapture.Binning" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-</section>
-<section id="videodataframe">
-<h3>VideoDataFrame<a class="headerlink" href="#videodataframe" title="Link to this heading">#</a></h3>
-<dl class="cs class">
-<dt class="sig sig-object cs" id="class-Aeon.Video.VideoDataFrame">
-<span class="target" id="classAeon_1_1Video_1_1VideoDataFrame"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Video.VideoDataFrame</span></span><a class="headerlink" href="#class-Aeon.Video.VideoDataFrame" title="Link to this definition">#</a></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cs function">
-<dt class="sig sig-object cs" id="function-Aeon.Video.VideoDataFrame.VideoDataFrame">
-<span class="target" id="classAeon_1_1Video_1_1VideoDataFrame_1a918093eadb043b2ab4c250689fef3cde"></span><span class="sig-name descname"><span class="pre">VideoDataFrame</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.IplImage" title="C# type: opencv.net ~&gt; OpenCV.Net.IplImage"><span class="pre">IplImage</span></a> <em><span class="pre">image</span></em>, <span class="pre">long</span> <em><span class="pre">frameID</span></em>, <span class="pre">long</span> <em><span class="pre">timestamp</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Video.VideoDataFrame.VideoDataFrame" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="cs function">
-<dt class="sig sig-object cs">
-<span class="target" id="classAeon_1_1Video_1_1VideoDataFrame_1a5968e1b3ff63418f776ce734448f4ce1"></span><span class="sig-name descname"><span class="pre">VideoDataFrame</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.IplImage" title="C# type: opencv.net ~&gt; OpenCV.Net.IplImage"><span class="pre">IplImage</span></a> <em><span class="pre">image</span></em>, <a class="reference internal" href="#struct-Aeon.Video.VideoChunkData" title="C# struct: Aeon.Video.VideoChunkData"><span class="pre">VideoChunkData</span></a> <em><span class="pre">chunkData</span></em><span class="sig-paren">)</span></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
-<dl class="cs property">
-<dt class="sig sig-object cs" id="property-Aeon.Video.VideoDataFrame.Image">
-<span class="target" id="classAeon_1_1Video_1_1VideoDataFrame_1ad3c1a7c0468756244dcd0aa7b5ec89f3"></span><a class="reference external" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.IplImage" title="C# type: opencv.net ~&gt; OpenCV.Net.IplImage"><span class="pre">IplImage</span></a> <span class="sig-name descname"><span class="pre">Image</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Video.VideoDataFrame.Image" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="cs property">
-<dt class="sig sig-object cs" id="property-Aeon.Video.VideoDataFrame.ChunkData">
-<span class="target" id="classAeon_1_1Video_1_1VideoDataFrame_1ae84655adb04fb08f0c11de76f20bdfc9"></span><a class="reference internal" href="#struct-Aeon.Video.VideoChunkData" title="C# struct: Aeon.Video.VideoChunkData"><span class="pre">VideoChunkData</span></a> <span class="sig-name descname"><span class="pre">ChunkData</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Video.VideoDataFrame.ChunkData" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-</section>
-<section id="videofilecapture">
-<h3>VideoFileCapture<a class="headerlink" href="#videofilecapture" title="Link to this heading">#</a></h3>
-<dl class="cs class">
-<dt class="sig sig-object cs" id="class-Aeon.Video.VideoFileCapture">
-<span class="target" id="classAeon_1_1Video_1_1VideoFileCapture"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Video.VideoFileCapture</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Video.VideoDataFrame" title="C# class: Aeon.Video.VideoDataFrame"><span class="pre">VideoDataFrame</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Video.VideoFileCapture" title="Link to this definition">#</a></dt>
-<dd><p>Inheritence diagram for Aeon::Video::VideoFileCapture:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-43e88ef341fab5e6c398adff03d30d15e80895fb.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;1&quot; [label=&quot;Aeon.Video.VideoFileCapture&quot; tooltip=&quot;Aeon.Video.VideoFileCapture&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Source&lt; Timestamped&lt; VideoDataFrame &gt; &gt;&quot; tooltip=&quot;Source&lt; Timestamped&lt; VideoDataFrame &gt; &gt;&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
-<p>Collaboration diagram for Aeon::Video::VideoFileCapture:</p>
-<figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-43e88ef341fab5e6c398adff03d30d15e80895fb.png" alt="digraph {
-    graph [bgcolor=&quot;#00000000&quot;]
-    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
-    edge [color=&quot;#1414CE&quot;]
-    &quot;1&quot; [label=&quot;Aeon.Video.VideoFileCapture&quot; tooltip=&quot;Aeon.Video.VideoFileCapture&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Source&lt; Timestamped&lt; VideoDataFrame &gt; &gt;&quot; tooltip=&quot;Source&lt; Timestamped&lt; VideoDataFrame &gt; &gt;&quot;]
-    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
-}" class="graphviz" /></div>
-</div>
-</figure>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cs function">
-<dt class="sig sig-object cs" id="function-Aeon.Video.VideoFileCapture.Generate">
-<span class="target" id="classAeon_1_1Video_1_1VideoFileCapture_1ae02ecc89e8148efc022f66f90b766864"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Video.VideoDataFrame" title="C# class: Aeon.Video.VideoDataFrame"><span class="pre">VideoDataFrame</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Video.VideoFileCapture.Generate" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="cs function">
-<dt class="sig sig-object cs">
-<span class="target" id="classAeon_1_1Video_1_1VideoFileCapture_1a83e68d1b6d604fc00a8a9888ff3980f9"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Video.VideoDataFrame" title="C# class: Aeon.Video.VideoDataFrame"><span class="pre">VideoDataFrame</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span><span class="pre">&lt;</span><span class="pre">TPayload</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TPayload</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
-<dl class="cs property">
-<dt class="sig sig-object cs" id="property-Aeon.Video.VideoFileCapture.FileName">
-<span class="target" id="classAeon_1_1Video_1_1VideoFileCapture_1aa959a23409ab9c427fba3b77f1d50147"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">FileName</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Video.VideoFileCapture.FileName" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-</section>
+<p><a class="reference internal" href="Aeon.Video.AeonCapture.html"><span class="std std-doc">AeonCapture</span></a></p>
+<p><a class="reference internal" href="Aeon.Video.PylonCapture.html"><span class="std std-doc">PylonCapture</span></a></p>
+<p><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html"><span class="std std-doc">SpinnakerCapture</span></a></p>
+<p><a class="reference internal" href="Aeon.Video.VideoDataFrame.html"><span class="std std-doc">VideoDataFrame</span></a></p>
+<p><a class="reference internal" href="Aeon.Video.VideoFileCapture.html"><span class="std std-doc">VideoFileCapture</span></a></p>
 </section>
 <section id="structs">
 <h2>Structs<a class="headerlink" href="#structs" title="Link to this heading">#</a></h2>
-<section id="videochunkdata">
-<h3>VideoChunkData<a class="headerlink" href="#videochunkdata" title="Link to this heading">#</a></h3>
-<dl class="cs struct">
-<dt class="sig sig-object cs" id="struct-Aeon.Video.VideoChunkData">
-<span class="target" id="structAeon_1_1Video_1_1VideoChunkData"></span><em class="property"><span class="pre">struct</span> </em><span class="sig-name descname"><span class="pre">Aeon.Video.VideoChunkData</span></span><a class="headerlink" href="#struct-Aeon.Video.VideoChunkData" title="Link to this definition">#</a></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cs function">
-<dt class="sig sig-object cs" id="function-Aeon.Video.VideoChunkData.VideoChunkData">
-<span class="target" id="structAeon_1_1Video_1_1VideoChunkData_1a07e35a8f5485a078185a2b15688e6c2a"></span><span class="sig-name descname"><span class="pre">VideoChunkData</span></span> <span class="sig-paren">(</span><span class="pre">long</span> <em><span class="pre">frameID</span></em>, <span class="pre">long</span> <em><span class="pre">timestamp</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Video.VideoChunkData.VideoChunkData" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
-<dl class="cs property">
-<dt class="sig sig-object cs" id="property-Aeon.Video.VideoChunkData.FrameID">
-<span class="target" id="structAeon_1_1Video_1_1VideoChunkData_1a6ff6ab8906cf00d22995cbd2ebce625a"></span><span class="pre">long</span> <span class="sig-name descname"><span class="pre">FrameID</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Video.VideoChunkData.FrameID" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="cs property">
-<dt class="sig sig-object cs" id="property-Aeon.Video.VideoChunkData.Timestamp">
-<span class="target" id="structAeon_1_1Video_1_1VideoChunkData_1ab58efef857c49b0fd1b7a47609d4f175"></span><span class="pre">long</span> <span class="sig-name descname"><span class="pre">Timestamp</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Video.VideoChunkData.Timestamp" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
+<p><a class="reference internal" href="Aeon.Video.VideoChunkData.html"><span class="std std-doc">VideoChunkData</span></a></p>
 </section>
+<section id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="Aeon.Video.VideoControllerType.html"><span class="std std-doc">VideoControllerType</span></a></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Aeon.Video.AeonCapture.html">AeonCapture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.AeonCapture.html#inheritance">Inheritance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.AeonCapture.html#inherited-members">Inherited Members</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Aeon.Video.PylonCapture.html">PylonCapture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.PylonCapture.html#inheritance">Inheritance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.PylonCapture.html#inherited-members">Inherited Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.PylonCapture.html#methods">Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.PylonCapture.html#generate-tpayload-iobservable-timestamped-tpayload"><a id="Aeon_Video_PylonCapture_Generate__1_System_IObservable_Bonsai_Harp_Timestamped___0___"></a> Generate&lt;TPayload&gt;(IObservable&lt;Timestamped&lt;TPayload&gt;&gt;)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.PylonCapture.html#parameters">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.PylonCapture.html#returns">Returns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.PylonCapture.html#type-parameters">Type Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html">SpinnakerCapture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#inheritance">Inheritance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#derived">Derived</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#inherited-members">Inherited Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#constructors">Constructors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#spinnakercapture"><a id="Aeon_Video_SpinnakerCapture__ctor"></a> SpinnakerCapture()</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#binning"><a id="Aeon_Video_SpinnakerCapture_Binning"></a> Binning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#property-value">Property Value</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#exposuretime"><a id="Aeon_Video_SpinnakerCapture_ExposureTime"></a> ExposureTime</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#id1">Property Value</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#gain"><a id="Aeon_Video_SpinnakerCapture_Gain"></a> Gain</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#id2">Property Value</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#methods">Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#configure-imanagedcamera"><a id="Aeon_Video_SpinnakerCapture_Configure_SpinnakerNET_IManagedCamera_"></a> Configure(IManagedCamera)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#generate-tpayload-iobservable-timestamped-tpayload"><a id="Aeon_Video_SpinnakerCapture_Generate__1_System_IObservable_Bonsai_Harp_Timestamped___0___"></a> Generate&lt;TPayload&gt;(IObservable&lt;Timestamped&lt;TPayload&gt;&gt;)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#id3">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#returns">Returns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html#type-parameters">Type Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html">VideoDataFrame</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#inheritance">Inheritance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#inherited-members">Inherited Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#constructors">Constructors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#videodataframe-iplimage-long-long"><a id="Aeon_Video_VideoDataFrame__ctor_OpenCV_Net_IplImage_System_Int64_System_Int64_"></a> VideoDataFrame(IplImage, long, long)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#videodataframe-iplimage-videochunkdata"><a id="Aeon_Video_VideoDataFrame__ctor_OpenCV_Net_IplImage_Aeon_Video_VideoChunkData_"></a> VideoDataFrame(IplImage, VideoChunkData)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#id1">Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#chunkdata"><a id="Aeon_Video_VideoDataFrame_ChunkData"></a> ChunkData</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#property-value">Property Value</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#image"><a id="Aeon_Video_VideoDataFrame_Image"></a> Image</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html#id2">Property Value</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html">VideoFileCapture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#inheritance">Inheritance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#inherited-members">Inherited Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#filename"><a id="Aeon_Video_VideoFileCapture_FileName"></a> FileName</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#property-value">Property Value</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#methods">Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#generate"><a id="Aeon_Video_VideoFileCapture_Generate"></a> Generate()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#returns">Returns</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#generate-tpayload-iobservable-timestamped-tpayload"><a id="Aeon_Video_VideoFileCapture_Generate__1_System_IObservable_Bonsai_Harp_Timestamped___0___"></a> Generate&lt;TPayload&gt;(IObservable&lt;Timestamped&lt;TPayload&gt;&gt;)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#parameters">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#id1">Returns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html#type-parameters">Type Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Aeon.Video.VideoChunkData.html">VideoChunkData</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoChunkData.html#inherited-members">Inherited Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoChunkData.html#constructors">Constructors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoChunkData.html#videochunkdata-long-long"><a id="Aeon_Video_VideoChunkData__ctor_System_Int64_System_Int64_"></a> VideoChunkData(long, long)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoChunkData.html#parameters">Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoChunkData.html#properties">Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoChunkData.html#frameid"><a id="Aeon_Video_VideoChunkData_FrameID"></a> FrameID</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoChunkData.html#property-value">Property Value</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.VideoChunkData.html#timestamp"><a id="Aeon_Video_VideoChunkData_Timestamp"></a> Timestamp</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoChunkData.html#id1">Property Value</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Aeon.Video.VideoControllerType.html">VideoControllerType</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Aeon.Video.VideoControllerType.html#fields">Fields</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </section>
 </section>
 
@@ -790,20 +720,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Aeon.Foraging.html"
+       href="Aeon.Foraging.DispenserEventType.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Aeon.Foraging</p>
+        <p class="prev-next-title"><a id="Aeon_Foraging_DispenserEventType"></a> Enum DispenserEventType</p>
       </div>
     </a>
     <a class="right-next"
-       href="Aeon.Vision.html"
+       href="Aeon.Video.AeonCapture.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Aeon.Vision</p>
+        <p class="prev-next-title"><a id="Aeon_Video_AeonCapture"></a> Class AeonCapture</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -814,7 +744,8 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -825,30 +756,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enums">Enums</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#videocontrollertype">VideoControllerType</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aeoncapture">AeonCapture</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observableextensions">ObservableExtensions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyloncapture">PylonCapture</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spinnakercapture">SpinnakerCapture</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#videodataframe">VideoDataFrame</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#videofilecapture">VideoFileCapture</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structs">Structs</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#videochunkdata">VideoChunkData</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structs">Structs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enums">Enums</a></li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../../_sources/reference/api/acquisition/Aeon.Video.rst.txt">
+    <a href="../../../_sources/reference/api/acquisition/Aeon.Video.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
@@ -867,8 +784,8 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -882,7 +799,7 @@ document.write(`
     <p class="theme-version">
     Built with the
     <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a>
-    0.15.4.
+    0.16.0.
     </p></div>
       
     </div>

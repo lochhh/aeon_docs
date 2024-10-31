@@ -1,5 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="Aeon.Acquisition.LoadConfigFile" alt="" coords="41,5,370,53"/>
-<area shape="rect" id="node2" title="Source&lt; Dictionary&lt; string, string &gt; &gt;" alt="" coords="5,101,406,149"/>
-<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="208,54,208,86,203,86,203,54"/>
-</map>

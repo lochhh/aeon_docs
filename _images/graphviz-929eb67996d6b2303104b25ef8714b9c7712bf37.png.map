@@ -1,5 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="Aeon.Environment.EnvironmentStateVisualizer" alt="" coords="5,5,479,53"/>
-<area shape="rect" id="node2" title="DialogTypeVisualizer" alt="" coords="131,101,353,149"/>
-<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="245,54,245,86,239,86,239,54"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="%3" name="%3">
-<area shape="rect" id="node1" title="Aeon.Environment.EnvironmentSubjectStateControl" alt="" coords="5,5,528,53"/>
-<area shape="rect" id="node2" title="UserControl" alt="" coords="197,101,336,149"/>
-<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="269,54,269,86,264,86,264,54"/>
-</map>
