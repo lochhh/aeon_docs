@@ -1,21 +1,21 @@
 (target-feeder)=
 # Feeder
-```{image} ../../_static/images/feeder.png
+:::{image} ../../_static/images/feeder.png
 :alt: Feeder
-:class: .img-hardware-steps
+:class: img-hardware-steps
 :align: center
-```
+:::
 Insert description of the feeder.
 
 ## Parts list
-```{image} ../../_static/images/feeder-main.png
+:::{image} ../../_static/images/feeder-main.png
 :alt: Parts1
 :align: center
-```
-```{image} ../../_static/images/feeder-parts.png
+:::
+:::{image} ../../_static/images/feeder-parts.png
 :alt: Parts2
 :align: center
-```
+:::
 
 ## Assembly guide
 ### Pellet hopper
