@@ -24,12 +24,15 @@ This section is still under construction. Some information may be incomplete or 
 ## Wiring diagrams
 - [Wiring diagram](../_static/resources/Example%20wiring%20diagram.pdf)
 
-<!--
 :::{toctree}
 :maxdepth: 1
 :hidden:
-hardware/feeder
+:glob:
 
+hardware/*
+:::
+
+<!--
 ::::{grid} 1 3 3 3 
 :::{grid-item-card} Feeder
 :img-top: ../_static/images/hardware-overview-feeder.png
