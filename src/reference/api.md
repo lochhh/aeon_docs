@@ -25,6 +25,11 @@ This reference guide contains a detailed description of the `aeon_acquisition` A
 :::
 ::::
 
+## Sample Bonsai code
+:::workflow
+![PredictCentroids](../workflows/CentroidModel.bonsai)
+:::
+
 :::{toctree}
 :maxdepth: 2
 :hidden:
