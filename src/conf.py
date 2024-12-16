@@ -18,7 +18,6 @@ from datetime import date
 sys.path.extend(
     [
         os.path.abspath("../aeon_mecha/"),
-        os.path.abspath("../aeon_analysis/aeon_analysis"),
         os.path.abspath("../aeon_acquisition"),
         os.path.abspath("../aeon_experiments"),
     ]
