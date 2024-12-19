@@ -1,0 +1,5 @@
+<map id="%3" name="%3">
+<area shape="rect" id="node1" title="Aeon.Environment.TareWeightVisualizer" alt="" coords="5,5,413,53"/>
+<area shape="rect" id="node2" title="DialogTypeVisualizer" alt="" coords="98,101,320,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="212,54,212,86,206,86,206,54"/>
+</map>

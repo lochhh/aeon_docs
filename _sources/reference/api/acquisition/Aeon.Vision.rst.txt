@@ -1,0 +1,45 @@
+..
+   This file is auto-generated.
+
+Aeon.Vision
+===========
+
+.. doxygennamespace:: Aeon::Vision
+    :desc-only:
+
+Classes
+-------
+
+
+DistanceFromPoint
+^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Vision::DistanceFromPoint
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+FormatBinaryRegions
+^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Vision::FormatBinaryRegions
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+RegionContainsPoint
+^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Vision::RegionContainsPoint
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+TakeLargestRegions
+^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Vision::TakeLargestRegions
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Namespace Aeon.Acquisition &#8212; Aeon  documentation</title>
+    <title>Aeon.Acquisition &#8212; Aeon  documentation</title>
   
   
   
@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,10 +27,11 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
@@ -38,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=531f5a0a" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
@@ -50,10 +51,10 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/acquisition/Aeon.Acquisition';</script>
-    <script src="../../../_static/js/workflow.js?v=38029464"></script>
+    <script src="../../../_static/js/workflow.js?v=e7055275"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Class AeonAudio" href="Aeon.Acquisition.AeonAudio.html" />
+    <link rel="next" title="Aeon.Database" href="Aeon.Database.html" />
     <link rel="prev" title="aeon_acquisition" href="../acquisition.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -366,128 +367,13 @@
 </ul>
 </details></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../acquisition.html"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active has-children"><a class="current reference internal" href="#">Aeon.Acquisition</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html">AeonAudio</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html">AvailableDiskSpace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html">AvailableMemory</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html">CreateLogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html">CreateRepository</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html">FormatDate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html">FormatJson</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html">FormatLogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html">GetDataPath</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html">GetDateTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html">GroupByTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html">IsRepositoryClean</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html">LoadConfigFile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html">LogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html">MetadataSource&lt;TMetadata&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html">PrependOnce</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html">RangeThreshold</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html">SendMessageCard</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html">ServiceAccountName</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html">StateRecovery&lt;TState&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html">StateRecoverySubject</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html">StateRecoverySubject&lt;T&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html">StripSubstring</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html">ThrowException</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PriorityLevel.html">PriorityLevel</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Database.html">Aeon.Database</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.CreateConnection.html">CreateConnection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html">ExecuteQuery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html">ObservableDatabase</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ActiveSubjectCollection.html">ActiveSubjectCollection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationControl.html">AnnotationControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSource.html">AnnotationSource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSourceVisualizer.html">AnnotationSourceVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSource.html">ButtonSource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSourceVisualizer.html">ButtonSourceVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ChannelMap.html">ChannelMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightMessage.html">CreateRoomLightMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightPreset.html">CreateRoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.DeserializeFromYaml.html">DeserializeFromYaml</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnumerateColony.html">EnumerateColony</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentState.html">EnvironmentState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateControl.html">EnvironmentStateControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateMetadata.html">EnvironmentStateMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateRecovery.html">EnvironmentStateRecovery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateVisualizer.html">EnvironmentStateVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectState.html">EnvironmentSubjectState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateControl.html">EnvironmentSubjectStateControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateEntry.html">EnvironmentSubjectStateEntry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateMetadata.html">EnvironmentSubjectStateMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateVisualizer.html">EnvironmentSubjectStateVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExperimentProperties.html">ExperimentProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExternalizedPropertiesVisualizer.html">ExternalizedPropertiesVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.Fixture.html">Fixture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.FormatWeight.html">FormatWeight</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolateRoomLightPreset.html">InterpolateRoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelControl.html">LabelControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelVisualizer.html">LabelVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ParseRfidMeasurement.html">ParseRfidMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomFixtures.html">RoomFixtures</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightDevice.html">RoomLightDevice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SerializeToYaml.html">SerializeToYaml</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectLogBitmap.html">SubjectLogBitmap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectRecord.html">SubjectRecord</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectStateRecovery.html">SubjectStateRecovery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeight.html">TareWeight</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightControl.html">TareWeightControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightVisualizer.html">TareWeightVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightBaseline.html">WeightBaseline</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightFilter.html">WeightFilter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightRaw.html">WeightRaw</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RfidMeasurement.html">RfidMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightMessage.html">RoomLightMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightPreset.html">RoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightMeasurement.html">WeightMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateType.html">EnvironmentStateType</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectChangeType.html">EnvironmentSubjectChangeType</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolationMethod.html">InterpolationMethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectSex.html">SubjectSex</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Foraging.html">Aeon.Foraging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html">CreateDispenserEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html">DispenserAccumulate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html">DispenserController</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html">DispenserEventArgs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html">DispenserEventControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html">DispenserEventVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserState.html">DispenserState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html">FormatDispenserState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html">WheelDisplacement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventType.html">DispenserEventType</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Video.html">Aeon.Video</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.AeonCapture.html">AeonCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.PylonCapture.html">PylonCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html">SpinnakerCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html">VideoDataFrame</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html">VideoFileCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoChunkData.html">VideoChunkData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoControllerType.html">VideoControllerType</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.DistanceFromPoint.html">DistanceFromPoint</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.FormatBinaryRegions.html">FormatBinaryRegions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.RegionContainsPoint.html">RegionContainsPoint</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.TakeLargestRegions.html">TakeLargestRegions</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html">CreatePoseTrackingMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html">FormatPose</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html">PoseTrackingMetadata</a></li>
-</ul>
-</details></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Aeon.Acquisition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.html">Aeon.Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.html">Aeon.Foraging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.html">Aeon.Video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a></li>
 </ul>
 </details></li>
 </ul>
@@ -501,9 +387,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -538,7 +429,7 @@
     
     <li class="breadcrumb-item"><a href="../acquisition.html" class="nav-link"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><a id="Aeon_Acquisition"></a> Namespace Aeon.Acquisition</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Aeon.Acquisition</span></li>
   </ul>
 </nav>
 </div>
@@ -555,596 +446,935 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="namespace-aeon-acquisition">
-<h1><a id="Aeon_Acquisition"></a> Namespace Aeon.Acquisition<a class="headerlink" href="#namespace-aeon-acquisition" title="Link to this heading">#</a></h1>
-<section id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html"><span class="std std-doc">AeonAudio</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html"><span class="std std-doc">AvailableDiskSpace</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html"><span class="std std-doc">AvailableMemory</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html"><span class="std std-doc">CreateLogMessage</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html"><span class="std std-doc">CreateRepository</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.FormatDate.html"><span class="std std-doc">FormatDate</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.FormatJson.html"><span class="std std-doc">FormatJson</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html"><span class="std std-doc">FormatLogMessage</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html"><span class="std std-doc">GetDataPath</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html"><span class="std std-doc">GetDateTime</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html"><span class="std std-doc">GroupByTime</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html"><span class="std std-doc">IsRepositoryClean</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html"><span class="std std-doc">LoadConfigFile</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.LogMessage.html"><span class="std std-doc">LogMessage</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html"><span class="std std-doc">MetadataSource&lt;TMetadata&gt;</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html"><span class="std std-doc">PrependOnce</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html"><span class="std std-doc">RangeThreshold</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html"><span class="std std-doc">SendMessageCard</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html"><span class="std std-doc">ServiceAccountName</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html"><span class="std std-doc">StateRecovery&lt;TState&gt;</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html"><span class="std std-doc">StateRecoverySubject</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html"><span class="std std-doc">StateRecoverySubject&lt;T&gt;</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html"><span class="std std-doc">StripSubstring</span></a></p>
-<p><a class="reference internal" href="Aeon.Acquisition.ThrowException.html"><span class="std std-doc">ThrowException</span></a></p>
-</section>
+  <section id="aeon-acquisition">
+<h1>Aeon.Acquisition<a class="headerlink" href="#aeon-acquisition" title="Link to this heading">#</a></h1>
+<dl class="cs namespace">
+<dt class="sig sig-object cs" id="namespace-Aeon.Acquisition">
+<span class="target" id="namespaceAeon_1_1Acquisition"></span><em class="property"><span class="pre">namespace</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition</span></span><a class="headerlink" href="#namespace-Aeon.Acquisition" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
 <section id="enums">
 <h2>Enums<a class="headerlink" href="#enums" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="Aeon.Acquisition.PriorityLevel.html"><span class="std std-doc">PriorityLevel</span></a></p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html">AeonAudio</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html#generate-tpayload-iobservable-timestamped-tpayload"><a id="Aeon_Acquisition_AeonAudio_Generate__1_System_IObservable_Bonsai_Harp_Timestamped___0___"></a> Generate&lt;TPayload&gt;(IObservable&lt;Timestamped&lt;TPayload&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html#returns">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html">AvailableDiskSpace</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#drivepath"><a id="Aeon_Acquisition_AvailableDiskSpace_DrivePath"></a> DrivePath</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#process-tsource-iobservable-tsource"><a id="Aeon_Acquisition_AvailableDiskSpace_Process__1_System_IObservable___0__"></a> Process&lt;TSource&gt;(IObservable&lt;TSource&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#returns">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html">AvailableMemory</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html#process-tsource-iobservable-tsource"><a id="Aeon_Acquisition_AvailableMemory_Process__1_System_IObservable___0__"></a> Process&lt;TSource&gt;(IObservable&lt;TSource&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html#returns">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html">CreateLogMessage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#message"><a id="Aeon_Acquisition_CreateLogMessage_Message"></a> Message</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#priority"><a id="Aeon_Acquisition_CreateLogMessage_Priority"></a> Priority</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#id1">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#type"><a id="Aeon_Acquisition_CreateLogMessage_Type"></a> Type</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#id2">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#generate"><a id="Aeon_Acquisition_CreateLogMessage_Generate"></a> Generate()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#generate-tsource-iobservable-tsource"><a id="Aeon_Acquisition_CreateLogMessage_Generate__1_System_IObservable___0__"></a> Generate&lt;TSource&gt;(IObservable&lt;TSource&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#id3">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#generate-tsource-iobservable-timestamped-tsource"><a id="Aeon_Acquisition_CreateLogMessage_Generate__1_System_IObservable_Bonsai_Harp_Timestamped___0___"></a> Generate&lt;TSource&gt;(IObservable&lt;Timestamped&lt;TSource&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#id4">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#id5">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#id6">Type Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#generate-iobservable-harpmessage"><a id="Aeon_Acquisition_CreateLogMessage_Generate_System_IObservable_Bonsai_Harp_HarpMessage__"></a> Generate(IObservable&lt;HarpMessage&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#id7">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html#id8">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html">CreateRepository</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html#path"><a id="Aeon_Acquisition_CreateRepository_Path"></a> Path</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html#generate"><a id="Aeon_Acquisition_CreateRepository_Generate"></a> Generate()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html">FormatDate</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html#process-iobservable-datetime"><a id="Aeon_Acquisition_FormatDate_Process_System_IObservable_System_DateTime__"></a> Process(IObservable&lt;DateTime&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html">FormatJson</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html#process-tsource-iobservable-tsource"><a id="Aeon_Acquisition_FormatJson_Process__1_System_IObservable___0__"></a> Process&lt;TSource&gt;(IObservable&lt;TSource&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html#returns">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html">FormatLogMessage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#implements">Implements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#priority"><a id="Aeon_Acquisition_FormatLogMessage_Priority"></a> Priority</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#timestamp"><a id="Aeon_Acquisition_FormatLogMessage_Timestamp"></a> Timestamp</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#id1">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#type"><a id="Aeon_Acquisition_FormatLogMessage_Type"></a> Type</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#id2">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#buildselector-expression"><a id="Aeon_Acquisition_FormatLogMessage_BuildSelector_System_Linq_Expressions_Expression_"></a> BuildSelector(Expression)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html">GetDataPath</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#datapath"><a id="Aeon_Acquisition_GetDataPath_DataPath"></a> DataPath</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#fallbackpath"><a id="Aeon_Acquisition_GetDataPath_FallbackPath"></a> FallbackPath</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#id1">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#process-iobservable-irepository"><a id="Aeon_Acquisition_GetDataPath_Process_System_IObservable_LibGit2Sharp_IRepository__"></a> Process(IObservable&lt;IRepository&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html">GetDateTime</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#fromseconds-double"><a id="Aeon_Acquisition_GetDateTime_FromSeconds_System_Double_"></a> FromSeconds(double)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#process-iobservable-double"><a id="Aeon_Acquisition_GetDateTime_Process_System_IObservable_System_Double__"></a> Process(IObservable&lt;double&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#id1">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#id2">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#process-iobservable-harpmessage"><a id="Aeon_Acquisition_GetDateTime_Process_System_IObservable_Bonsai_Harp_HarpMessage__"></a> Process(IObservable&lt;HarpMessage&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#id3">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#id4">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#process-t-iobservable-timestamped-t"><a id="Aeon_Acquisition_GetDateTime_Process__1_System_IObservable_Bonsai_Harp_Timestamped___0___"></a> Process&lt;T&gt;(IObservable&lt;Timestamped&lt;T&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#id5">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#id6">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html">GroupByTime</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#constructors">Constructors</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#groupbytime"><a id="Aeon_Acquisition_GroupByTime__ctor"></a> GroupByTime()</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#chunksize"><a id="Aeon_Acquisition_GroupByTime_ChunkSize"></a> ChunkSize</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#closingduration"><a id="Aeon_Acquisition_GroupByTime_ClosingDuration"></a> ClosingDuration</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id1">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#closingdurationxml"><a id="Aeon_Acquisition_GroupByTime_ClosingDurationXml"></a> ClosingDurationXml</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id2">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#process-tsource-iobservable-timestamped-tsource"><a id="Aeon_Acquisition_GroupByTime_Process__1_System_IObservable_Bonsai_Harp_Timestamped___0___"></a> Process&lt;TSource&gt;(IObservable&lt;Timestamped&lt;TSource&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#returns">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#process-iobservable-harpmessage"><a id="Aeon_Acquisition_GroupByTime_Process_System_IObservable_Bonsai_Harp_HarpMessage__"></a> Process(IObservable&lt;HarpMessage&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id3">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id4">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#process-tsource-iobservable-tuple-tsource-double"><a id="Aeon_Acquisition_GroupByTime_Process__1_System_IObservable_System_Tuple___0_System_Double___"></a> Process&lt;TSource&gt;(IObservable&lt;Tuple&lt;TSource, double&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id5">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id6">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id7">Type Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#process-tsource-iobservable-timestamped-tsource-iobservable-harpmessage"><a id="Aeon_Acquisition_GroupByTime_Process__1_System_IObservable_Bonsai_Harp_Timestamped___0___System_IObservable_Bonsai_Harp_HarpMessage__"></a> Process&lt;TSource&gt;(IObservable&lt;Timestamped&lt;TSource&gt;&gt;, IObservable&lt;HarpMessage&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id8">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id9">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id10">Type Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#process-iobservable-harpmessage-iobservable-harpmessage"><a id="Aeon_Acquisition_GroupByTime_Process_System_IObservable_Bonsai_Harp_HarpMessage__System_IObservable_Bonsai_Harp_HarpMessage__"></a> Process(IObservable&lt;HarpMessage&gt;, IObservable&lt;HarpMessage&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id11">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id12">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#process-tsource-iobservable-tuple-tsource-double-iobservable-harpmessage"><a id="Aeon_Acquisition_GroupByTime_Process__1_System_IObservable_System_Tuple___0_System_Double___System_IObservable_Bonsai_Harp_HarpMessage__"></a> Process&lt;TSource&gt;(IObservable&lt;Tuple&lt;TSource, double&gt;&gt;, IObservable&lt;HarpMessage&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id13">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id14">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html#id15">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html">IsRepositoryClean</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html#process-iobservable-irepository"><a id="Aeon_Acquisition_IsRepositoryClean_Process_System_IObservable_LibGit2Sharp_IRepository__"></a> Process(IObservable&lt;IRepository&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html">LoadConfigFile</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html#filename"><a id="Aeon_Acquisition_LoadConfigFile_FileName"></a> FileName</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html#generate"><a id="Aeon_Acquisition_LoadConfigFile_Generate"></a> Generate()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html">LogMessage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#constructors">Constructors</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#logmessage-prioritylevel-string"><a id="Aeon_Acquisition_LogMessage__ctor_Aeon_Acquisition_PriorityLevel_System_String_"></a> LogMessage(PriorityLevel, string)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#logmessage-prioritylevel-string-string"><a id="Aeon_Acquisition_LogMessage__ctor_Aeon_Acquisition_PriorityLevel_System_String_System_String_"></a> LogMessage(PriorityLevel, string, string)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#id1">Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#fields">Fields</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#defaulttype"><a id="Aeon_Acquisition_LogMessage_DefaultType"></a> DefaultType</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#field-value">Field Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#message"><a id="Aeon_Acquisition_LogMessage_Message"></a> Message</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#priority"><a id="Aeon_Acquisition_LogMessage_Priority"></a> Priority</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#id2">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#type"><a id="Aeon_Acquisition_LogMessage_Type"></a> Type</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#id3">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#tostring"><a id="Aeon_Acquisition_LogMessage_ToString"></a> ToString()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html">MetadataSource&lt;TMetadata&gt;</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#type-parameters">Type Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#onnext-tmetadata"><a id="Aeon_Acquisition_MetadataSource_1_OnNext__0_"></a> OnNext(TMetadata)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#process"><a id="Aeon_Acquisition_MetadataSource_1_Process"></a> Process()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#process-iobservable-harpmessage"><a id="Aeon_Acquisition_MetadataSource_1_Process_System_IObservable_Bonsai_Harp_HarpMessage__"></a> Process(IObservable&lt;HarpMessage&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#id1">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html#id2">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html">PrependOnce</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html#process-tsource-iobservable-tsource-iobservable-tsource"><a id="Aeon_Acquisition_PrependOnce_Process__1_System_IObservable___0__System_IObservable___0__"></a> Process&lt;TSource&gt;(IObservable&lt;TSource&gt;, IObservable&lt;TSource&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html#returns">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html">RangeThreshold</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#lower"><a id="Aeon_Acquisition_RangeThreshold_Lower"></a> Lower</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#upper"><a id="Aeon_Acquisition_RangeThreshold_Upper"></a> Upper</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#id1">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#process-iobservable-double"><a id="Aeon_Acquisition_RangeThreshold_Process_System_IObservable_System_Double__"></a> Process(IObservable&lt;double&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#process-iobservable-timestamped-double"><a id="Aeon_Acquisition_RangeThreshold_Process_System_IObservable_Bonsai_Harp_Timestamped_System_Double___"></a> Process(IObservable&lt;Timestamped&lt;double&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#id2">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html#id3">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html">SendMessageCard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#address"><a id="Aeon_Acquisition_SendMessageCard_Address"></a> Address</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#process-tsource-iobservable-tsource"><a id="Aeon_Acquisition_SendMessageCard_Process__1_System_IObservable___0__"></a> Process&lt;TSource&gt;(IObservable&lt;TSource&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#returns">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html">ServiceAccountName</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html#generate"><a id="Aeon_Acquisition_ServiceAccountName_Generate"></a> Generate()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html#generate-tsource-iobservable-tsource"><a id="Aeon_Acquisition_ServiceAccountName_Generate__1_System_IObservable___0__"></a> Generate&lt;TSource&gt;(IObservable&lt;TSource&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html#id1">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html">StateRecovery&lt;TState&gt;</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html#type-parameters">Type Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html#deserialize-string"><a id="Aeon_Acquisition_StateRecovery_1_Deserialize_System_String_"></a> Deserialize(string)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html#serialize-string-tstate"><a id="Aeon_Acquisition_StateRecovery_1_Serialize_System_String__0_"></a> Serialize(string, TState)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html#id1">Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html">StateRecoverySubject</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html#implements">Implements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html#buildsubject-expression"><a id="Aeon_Acquisition_StateRecoverySubject_BuildSubject_System_Linq_Expressions_Expression_"></a> BuildSubject(Expression)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html">StateRecoverySubject&lt;T&gt;</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html#type-parameters">Type Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html#implements">Implements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html#createsubject"><a id="Aeon_Acquisition_StateRecoverySubject_1_CreateSubject"></a> CreateSubject()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html">StripSubstring</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html#separator"><a id="Aeon_Acquisition_StripSubstring_Separator"></a> Separator</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html#process-iobservable-string"><a id="Aeon_Acquisition_StripSubstring_Process_System_IObservable_System_String__"></a> Process(IObservable&lt;string&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html">ThrowException</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#message"><a id="Aeon_Acquisition_ThrowException_Message"></a> Message</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#process-tsource-iobservable-tsource"><a id="Aeon_Acquisition_ThrowException_Process__1_System_IObservable___0__"></a> Process&lt;TSource&gt;(IObservable&lt;TSource&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#returns">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Acquisition.PriorityLevel.html">PriorityLevel</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Acquisition.PriorityLevel.html#fields">Fields</a></li>
-</ul>
-</li>
-</ul>
+<section id="prioritylevel">
+<h3>PriorityLevel<a class="headerlink" href="#prioritylevel" title="Link to this heading">#</a></h3>
+<dl class="cs enum">
+<dt class="sig sig-object cs" id="enum-Aeon.Acquisition.PriorityLevel">
+<span class="target" id="namespaceAeon_1_1Acquisition_1a55a4a7b47c57278a7e1f69c0d15b1ec8"></span><em class="property"><span class="pre">enum</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.PriorityLevel</span></span><a class="headerlink" href="#enum-Aeon.Acquisition.PriorityLevel" title="Link to this definition">#</a></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cs enumerator">
+<dt class="sig sig-object cs" id="enumerator-Aeon.Acquisition.PriorityLevel.Notification">
+<span class="target" id="namespaceAeon_1_1Acquisition_1a55a4a7b47c57278a7e1f69c0d15b1ec8a96d008db67fc0b5551a926842bbb6a71"></span><span class="sig-name descname"><span class="pre">Notification</span></span><a class="headerlink" href="#enumerator-Aeon.Acquisition.PriorityLevel.Notification" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs enumerator">
+<dt class="sig sig-object cs" id="enumerator-Aeon.Acquisition.PriorityLevel.Alert">
+<span class="target" id="namespaceAeon_1_1Acquisition_1a55a4a7b47c57278a7e1f69c0d15b1ec8ab92071d61c88498171928745ca53078b"></span><span class="sig-name descname"><span class="pre">Alert</span></span><a class="headerlink" href="#enumerator-Aeon.Acquisition.PriorityLevel.Alert" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
+<section id="aeonaudio">
+<h3>AeonAudio<a class="headerlink" href="#aeonaudio" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.AeonAudio">
+<span class="target" id="classAeon_1_1Acquisition_1_1AeonAudio"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.AeonAudio</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Audio.AudioCapture" title="C# type: bonsai ~&gt; Bonsai.Audio.AudioCapture"><span class="pre">AudioCapture</span></a><a class="headerlink" href="#class-Aeon.Acquisition.AeonAudio" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Acquisition::AeonAudio:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-638f8b580acf996c25e779dce379ae7ef7f80084.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.AeonAudio&quot; tooltip=&quot;Aeon.Acquisition.AeonAudio&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;AudioCapture&quot; tooltip=&quot;AudioCapture&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
 </div>
+</figure>
+<p>Collaboration diagram for Aeon::Acquisition::AeonAudio:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-638f8b580acf996c25e779dce379ae7ef7f80084.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.AeonAudio&quot; tooltip=&quot;Aeon.Acquisition.AeonAudio&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;AudioCapture&quot; tooltip=&quot;AudioCapture&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.AeonAudio.Generate">
+<span class="target" id="classAeon_1_1Acquisition_1_1AeonAudio_1a26a3ba75f9f8d962acee68454e169efa"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference external" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat" title="C# type: opencv.net ~&gt; OpenCV.Net.Mat"><span class="pre">Mat</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span><span class="pre">&lt;</span><span class="pre">TPayload</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TPayload</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.AeonAudio.Generate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="availablediskspace">
+<h3>AvailableDiskSpace<a class="headerlink" href="#availablediskspace" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.AvailableDiskSpace">
+<span class="target" id="classAeon_1_1Acquisition_1_1AvailableDiskSpace"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.AvailableDiskSpace</span></span><a class="headerlink" href="#class-Aeon.Acquisition.AvailableDiskSpace" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.AvailableDiskSpace.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1AvailableDiskSpace_1a24b98f82c0cea06f24a855cf1493932e"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">long</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.AvailableDiskSpace.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.AvailableDiskSpace.DrivePath">
+<span class="target" id="classAeon_1_1Acquisition_1_1AvailableDiskSpace_1a3d05d2e6689c4c0725b6f0f59b7fb65a"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">DrivePath</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.AvailableDiskSpace.DrivePath" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="availablememory">
+<h3>AvailableMemory<a class="headerlink" href="#availablememory" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.AvailableMemory">
+<span class="target" id="classAeon_1_1Acquisition_1_1AvailableMemory"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.AvailableMemory</span></span><a class="headerlink" href="#class-Aeon.Acquisition.AvailableMemory" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.AvailableMemory.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1AvailableMemory_1a9050082741a5305af54654d2a8389b6c"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">float</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.AvailableMemory.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="createlogmessage">
+<h3>CreateLogMessage<a class="headerlink" href="#createlogmessage" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.CreateLogMessage">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateLogMessage"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.CreateLogMessage</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Acquisition.LogMessage" title="C# class: Aeon.Acquisition.LogMessage"><span class="pre">LogMessage</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Acquisition.CreateLogMessage" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Acquisition::CreateLogMessage:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-b4b731d86e8c8fa161c37b6e0829742cfe85e5dd.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.CreateLogMessage&quot; tooltip=&quot;Aeon.Acquisition.CreateLogMessage&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; LogMessage &gt;&quot; tooltip=&quot;Source&lt; LogMessage &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Acquisition::CreateLogMessage:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-b4b731d86e8c8fa161c37b6e0829742cfe85e5dd.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.CreateLogMessage&quot; tooltip=&quot;Aeon.Acquisition.CreateLogMessage&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; LogMessage &gt;&quot; tooltip=&quot;Source&lt; LogMessage &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.CreateLogMessage.Generate">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateLogMessage_1a3bd148a7cccd42792776d9902a4d99e4"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Acquisition.LogMessage" title="C# class: Aeon.Acquisition.LogMessage"><span class="pre">LogMessage</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.CreateLogMessage.Generate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateLogMessage_1a80955d2e21e6cdd5a6c47070ee333607"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Acquisition.LogMessage" title="C# class: Aeon.Acquisition.LogMessage"><span class="pre">LogMessage</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateLogMessage_1ab127b5f2b975b60b11a4a8c9fbbf0b7e"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Acquisition.LogMessage" title="C# class: Aeon.Acquisition.LogMessage"><span class="pre">LogMessage</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateLogMessage_1a74cc2c09611182366f799084ceea509c"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Acquisition.LogMessage" title="C# class: Aeon.Acquisition.LogMessage"><span class="pre">LogMessage</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.CreateLogMessage.Priority">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateLogMessage_1a3f9eb8a8fecbce1a2592fdee2e8401ea"></span><a class="reference internal" href="#enum-Aeon.Acquisition.PriorityLevel" title="C# enum: Aeon.Acquisition.PriorityLevel"><span class="pre">PriorityLevel</span></a> <span class="sig-name descname"><span class="pre">Priority</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.CreateLogMessage.Priority" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.CreateLogMessage.Type">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateLogMessage_1a406039febd8f054609ea0a66f798ebcb"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Type</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span> <span class="pre">=</span> <span class="pre">LogMessage.DefaultType</span><a class="headerlink" href="#property-Aeon.Acquisition.CreateLogMessage.Type" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.CreateLogMessage.Message">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateLogMessage_1a91b487dd9103e77ae7df03ca10f91b21"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Message</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.CreateLogMessage.Message" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="createrepository">
+<h3>CreateRepository<a class="headerlink" href="#createrepository" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.CreateRepository">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateRepository"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.CreateRepository</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><span class="pre">IRepository</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Acquisition.CreateRepository" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Acquisition::CreateRepository:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-bc150c97189620e4f97bfc3cf634eef5791207d4.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.CreateRepository&quot; tooltip=&quot;Aeon.Acquisition.CreateRepository&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; IRepository &gt;&quot; tooltip=&quot;Source&lt; IRepository &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Acquisition::CreateRepository:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-bc150c97189620e4f97bfc3cf634eef5791207d4.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.CreateRepository&quot; tooltip=&quot;Aeon.Acquisition.CreateRepository&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; IRepository &gt;&quot; tooltip=&quot;Source&lt; IRepository &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.CreateRepository.Generate">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateRepository_1a5a8761b2c8a6bc01d64959cbe7451ec4"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">IRepository</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.CreateRepository.Generate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.CreateRepository.Path">
+<span class="target" id="classAeon_1_1Acquisition_1_1CreateRepository_1a17531040a803aa9e49ab6a4eeec18017"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Path</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.CreateRepository.Path" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="formatdate">
+<h3>FormatDate<a class="headerlink" href="#formatdate" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.FormatDate">
+<span class="target" id="classAeon_1_1Acquisition_1_1FormatDate"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.FormatDate</span></span><a class="headerlink" href="#class-Aeon.Acquisition.FormatDate" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.FormatDate.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1FormatDate_1a5973ccc2c1cc336e31a3cb036db425d4"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.FormatDate.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="formatjson">
+<h3>FormatJson<a class="headerlink" href="#formatjson" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.FormatJson">
+<span class="target" id="classAeon_1_1Acquisition_1_1FormatJson"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.FormatJson</span></span><a class="headerlink" href="#class-Aeon.Acquisition.FormatJson" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.FormatJson.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1FormatJson_1a93926bd31b2e0be6911cf5bb12acbfad"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.FormatJson.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="formatlogmessage">
+<h3>FormatLogMessage<a class="headerlink" href="#formatlogmessage" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.FormatLogMessage">
+<span class="target" id="classAeon_1_1Acquisition_1_1FormatLogMessage"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.FormatLogMessage</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Expressions.FormatBuilder" title="C# type: bonsai ~&gt; Bonsai.Expressions.FormatBuilder"><span class="pre">FormatBuilder</span></a><a class="headerlink" href="#class-Aeon.Acquisition.FormatLogMessage" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Acquisition::FormatLogMessage:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-729ff66e0fa6ef21aafa8bca3930c469331394d0.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.FormatLogMessage&quot; tooltip=&quot;Aeon.Acquisition.FormatLogMessage&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Bonsai::Expressions::FormatBuilder&quot; tooltip=&quot;Bonsai::Expressions::FormatBuilder&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Acquisition::FormatLogMessage:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-729ff66e0fa6ef21aafa8bca3930c469331394d0.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.FormatLogMessage&quot; tooltip=&quot;Aeon.Acquisition.FormatLogMessage&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Bonsai::Expressions::FormatBuilder&quot; tooltip=&quot;Bonsai::Expressions::FormatBuilder&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.FormatLogMessage.Priority">
+<span class="target" id="classAeon_1_1Acquisition_1_1FormatLogMessage_1ae160dee4b8a964c16cf0b20ab2cc13f9"></span><a class="reference internal" href="#enum-Aeon.Acquisition.PriorityLevel" title="C# enum: Aeon.Acquisition.PriorityLevel"><span class="pre">PriorityLevel</span></a> <span class="sig-name descname"><span class="pre">Priority</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.FormatLogMessage.Priority" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.FormatLogMessage.Type">
+<span class="target" id="classAeon_1_1Acquisition_1_1FormatLogMessage_1a7dda61883973f03e667e311a075442a7"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Type</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span> <span class="pre">=</span> <span class="pre">LogMessage.DefaultType</span><a class="headerlink" href="#property-Aeon.Acquisition.FormatLogMessage.Type" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.FormatLogMessage.Timestamp">
+<span class="target" id="classAeon_1_1Acquisition_1_1FormatLogMessage_1ae00f1fec000b0d5ec94f2936b1ec77c6"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Timestamp</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.FormatLogMessage.Timestamp" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="getdatapath">
+<h3>GetDataPath<a class="headerlink" href="#getdatapath" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.GetDataPath">
+<span class="target" id="classAeon_1_1Acquisition_1_1GetDataPath"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.GetDataPath</span></span><a class="headerlink" href="#class-Aeon.Acquisition.GetDataPath" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.GetDataPath.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1GetDataPath_1aab4e4083725778ebc0be4a48d31e0060"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">IRepository</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.GetDataPath.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.GetDataPath.DataPath">
+<span class="target" id="classAeon_1_1Acquisition_1_1GetDataPath_1a392142dcb359c19720ab9ac480c33b06"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">DataPath</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.GetDataPath.DataPath" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.GetDataPath.FallbackPath">
+<span class="target" id="classAeon_1_1Acquisition_1_1GetDataPath_1aea17b6b5e5794668e99161acfe6956aa"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">FallbackPath</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.GetDataPath.FallbackPath" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="getdatetime">
+<h3>GetDateTime<a class="headerlink" href="#getdatetime" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.GetDateTime">
+<span class="target" id="classAeon_1_1Acquisition_1_1GetDateTime"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.GetDateTime</span></span><a class="headerlink" href="#class-Aeon.Acquisition.GetDateTime" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.GetDateTime.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1GetDateTime_1ace53be579f68e3b360690be95d59fd45"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">double</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.GetDateTime.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1GetDateTime_1a2ed6c239dc73ad47f387681fcc8982eb"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1GetDateTime_1af6935ce3eaef4f635c9fe16bbfff96d0"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">T</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">T</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.GetDateTime.FromSeconds">
+<span class="target" id="classAeon_1_1Acquisition_1_1GetDateTime_1ad19a7a89a246564e987ea0df360a32c9"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a> <span class="sig-name descname"><span class="pre">FromSeconds</span></span> <span class="sig-paren">(</span><span class="pre">double</span> <em><span class="pre">seconds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.GetDateTime.FromSeconds" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="groupbytime">
+<h3>GroupByTime<a class="headerlink" href="#groupbytime" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.GroupByTime">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.GroupByTime</span></span><a class="headerlink" href="#class-Aeon.Acquisition.GroupByTime" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.GroupByTime.GroupByTime">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1a10780b235b13334e9fc6b05b1966e397"></span><span class="sig-name descname"><span class="pre">GroupByTime</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.GroupByTime.GroupByTime" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.GroupByTime.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1a2267506909375d1ea5e982da3964a562"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">IGroupedObservable</span><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">,</span> <a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.GroupByTime.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1a647602c736841cdd31bce69dfbd6afa8"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">IGroupedObservable</span><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">,</span> <a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1aa7a491db7d700ee9b4143711c6a57bf6"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">IGroupedObservable</span><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">,</span> <a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Tuple" title="C# type: msdn ~&gt; System.Tuple"><span class="pre">Tuple</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">,</span> <span class="pre">double</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1aa71c8d131c91ae7f4fd9f6772b46a686"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">IGroupedObservable</span><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">,</span> <a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">heartbeats</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1afd63b84d084fa1813eea0435b4618939"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">IGroupedObservable</span><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">,</span> <a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">heartbeats</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1a5bb6d3f3222df9b40d05811c02b01869"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">IGroupedObservable</span><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.DateTime" title="C# type: msdn ~&gt; System.DateTime"><span class="pre">DateTime</span></a><span class="pre">,</span> <a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Tuple" title="C# type: msdn ~&gt; System.Tuple"><span class="pre">Tuple</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">,</span> <span class="pre">double</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">heartbeats</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.GroupByTime.ChunkSize">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1a79068d9a2cce27e132a51b29ba888be3"></span><span class="pre">int</span> <span class="sig-name descname"><span class="pre">ChunkSize</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.GroupByTime.ChunkSize" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.GroupByTime.ClosingDuration">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1a66df367052b39a214ebaad30f6ee771c"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.TimeSpan" title="C# type: msdn ~&gt; System.TimeSpan"><span class="pre">TimeSpan</span></a><span class="pre">?</span> <span class="sig-name descname"><span class="pre">ClosingDuration</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.GroupByTime.ClosingDuration" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.GroupByTime.ClosingDurationXml">
+<span class="target" id="classAeon_1_1Acquisition_1_1GroupByTime_1aa0dada9e423ddf95d16fd3bcf9e0321d"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">ClosingDurationXml</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.GroupByTime.ClosingDurationXml" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="isrepositoryclean">
+<h3>IsRepositoryClean<a class="headerlink" href="#isrepositoryclean" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.IsRepositoryClean">
+<span class="target" id="classAeon_1_1Acquisition_1_1IsRepositoryClean"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.IsRepositoryClean</span></span><a class="headerlink" href="#class-Aeon.Acquisition.IsRepositoryClean" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.IsRepositoryClean.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1IsRepositoryClean_1aee02b6c3c62802fc56c9b90d8711b185"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">bool</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">IRepository</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.IsRepositoryClean.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="loadconfigfile">
+<h3>LoadConfigFile<a class="headerlink" href="#loadconfigfile" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.LoadConfigFile">
+<span class="target" id="classAeon_1_1Acquisition_1_1LoadConfigFile"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.LoadConfigFile</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2" title="C# type: msdn ~&gt; System.Collections.Generic.Dictionary"><span class="pre">Dictionary</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">,</span> <span class="pre">string</span><span class="pre">&gt;</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Acquisition.LoadConfigFile" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Acquisition::LoadConfigFile:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-9485c447298ce02bda81d0c7782d756437e995eb.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.LoadConfigFile&quot; tooltip=&quot;Aeon.Acquisition.LoadConfigFile&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; Dictionary&lt; string, string &gt; &gt;&quot; tooltip=&quot;Source&lt; Dictionary&lt; string, string &gt; &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Acquisition::LoadConfigFile:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-9485c447298ce02bda81d0c7782d756437e995eb.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.LoadConfigFile&quot; tooltip=&quot;Aeon.Acquisition.LoadConfigFile&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; Dictionary&lt; string, string &gt; &gt;&quot; tooltip=&quot;Source&lt; Dictionary&lt; string, string &gt; &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.LoadConfigFile.Generate">
+<span class="target" id="classAeon_1_1Acquisition_1_1LoadConfigFile_1ae521c9bc34ef6ee651867f15dae267f2"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2" title="C# type: msdn ~&gt; System.Collections.Generic.Dictionary"><span class="pre">Dictionary</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">,</span> <span class="pre">string</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.LoadConfigFile.Generate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.LoadConfigFile.FileName">
+<span class="target" id="classAeon_1_1Acquisition_1_1LoadConfigFile_1a1d96e3434b497e2cf87039655b834e54"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">FileName</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.LoadConfigFile.FileName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="logmessage">
+<h3>LogMessage<a class="headerlink" href="#logmessage" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.LogMessage">
+<span class="target" id="classAeon_1_1Acquisition_1_1LogMessage"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.LogMessage</span></span><a class="headerlink" href="#class-Aeon.Acquisition.LogMessage" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.LogMessage.LogMessage">
+<span class="target" id="classAeon_1_1Acquisition_1_1LogMessage_1a5bfecff2650c2936c37979fc8ceed8b4"></span><span class="sig-name descname"><span class="pre">LogMessage</span></span> <span class="sig-paren">(</span><a class="reference internal" href="#enum-Aeon.Acquisition.PriorityLevel" title="C# enum: Aeon.Acquisition.PriorityLevel"><span class="pre">PriorityLevel</span></a> <em><span class="pre">priority</span></em>, <span class="pre">string</span> <em><span class="pre">message</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.LogMessage.LogMessage" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1LogMessage_1aeaea267887504c969b3ac82bd1083eeb"></span><span class="sig-name descname"><span class="pre">LogMessage</span></span> <span class="sig-paren">(</span><a class="reference internal" href="#enum-Aeon.Acquisition.PriorityLevel" title="C# enum: Aeon.Acquisition.PriorityLevel"><span class="pre">PriorityLevel</span></a> <em><span class="pre">priority</span></em>, <span class="pre">string</span> <em><span class="pre">type</span></em>, <span class="pre">string</span> <em><span class="pre">message</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.LogMessage.ToString">
+<span class="target" id="classAeon_1_1Acquisition_1_1LogMessage_1a1e7fc3845e7eab5e23f06a574137b024"></span><em class="property"><span class="pre">override</span></em> <span class="pre">string</span> <span class="sig-name descname"><span class="pre">ToString</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.LogMessage.ToString" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.LogMessage.Priority">
+<span class="target" id="classAeon_1_1Acquisition_1_1LogMessage_1a806ca74bd7f683ece5ff0c7d8f0c60ba"></span><a class="reference internal" href="#enum-Aeon.Acquisition.PriorityLevel" title="C# enum: Aeon.Acquisition.PriorityLevel"><span class="pre">PriorityLevel</span></a> <span class="sig-name descname"><span class="pre">Priority</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.LogMessage.Priority" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.LogMessage.Type">
+<span class="target" id="classAeon_1_1Acquisition_1_1LogMessage_1a4223a8c9ead084733a7e44b4d5f37e3d"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Type</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.LogMessage.Type" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.LogMessage.Message">
+<span class="target" id="classAeon_1_1Acquisition_1_1LogMessage_1ad03c9c70cccae0da95b698ebb3cca062"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Message</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.LogMessage.Message" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-attributes">Public Static Attributes</p>
+<dl class="cs var">
+<dt class="sig sig-object cs" id="var-Aeon.Acquisition.LogMessage.DefaultType">
+<span class="target" id="classAeon_1_1Acquisition_1_1LogMessage_1a79b12a479f5d3c0c81bcc251ce69de64"></span><em class="property"><span class="pre">const</span></em> <span class="pre">string</span> <span class="sig-name descname"><span class="pre">DefaultType</span></span> <span class="pre">=</span> <span class="pre">&quot;Annotation&quot;</span><a class="headerlink" href="#var-Aeon.Acquisition.LogMessage.DefaultType" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="metadatasource">
+<h3>MetadataSource<a class="headerlink" href="#metadatasource" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.MetadataSource">
+<span class="target" id="classAeon_1_1Acquisition_1_1MetadataSource"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.MetadataSource</span></span><span class="pre">&lt;</span><span class="pre">TMetadata</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Acquisition.MetadataSource" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.MetadataSource.OnNext">
+<span class="target" id="classAeon_1_1Acquisition_1_1MetadataSource_1ae67c73dc608cabcf21e47bdb0e212250"></span><span class="pre">void</span> <span class="sig-name descname"><span class="pre">OnNext</span></span> <span class="sig-paren">(</span><span class="pre">TMetadata</span> <em><span class="pre">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.MetadataSource.OnNext" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.MetadataSource.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1MetadataSource_1aa0e001ddb924d218449551486766193c"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TMetadata</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.MetadataSource.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1MetadataSource_1ae8d824338f7eeee5e13da1663fcea54d"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TMetadata</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="observableextensions">
+<h3>ObservableExtensions<a class="headerlink" href="#observableextensions" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.ObservableExtensions">
+<span class="target" id="classAeon_1_1Acquisition_1_1ObservableExtensions"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.ObservableExtensions</span></span><a class="headerlink" href="#class-Aeon.Acquisition.ObservableExtensions" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.ObservableExtensions.MergeUnit">
+<span class="target" id="classAeon_1_1Acquisition_1_1ObservableExtensions_1acd6c5dcf4cc3b22572ce6f3039728e18"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://horizongir.github.io/reactive/api/System.Reactive.Unit" title="C# type: reactive ~&gt; System.Reactive.Unit"><span class="pre">Unit</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">MergeUnit</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">,</span> <span class="pre">TOther</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><em class="property"><span class="pre">this</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TOther</span><span class="pre">&gt;</span> <em><span class="pre">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.ObservableExtensions.MergeUnit" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.ObservableExtensions.Timestamp">
+<span class="target" id="classAeon_1_1Acquisition_1_1ObservableExtensions_1aaa40646e5ee88d785ce23d03f7196b2c"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Timestamp</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><em class="property"><span class="pre">this</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">clock</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.ObservableExtensions.Timestamp" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="prependonce">
+<h3>PrependOnce<a class="headerlink" href="#prependonce" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.PrependOnce">
+<span class="target" id="classAeon_1_1Acquisition_1_1PrependOnce"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.PrependOnce</span></span><a class="headerlink" href="#class-Aeon.Acquisition.PrependOnce" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.PrependOnce.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1PrependOnce_1a286099f44fccb3cab68df822ea093775"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.PrependOnce.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="rangethreshold">
+<h3>RangeThreshold<a class="headerlink" href="#rangethreshold" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.RangeThreshold">
+<span class="target" id="classAeon_1_1Acquisition_1_1RangeThreshold"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.RangeThreshold</span></span> <span class="pre">:</span> <a class="reference external" href="https://docs.unity3d.com/ScriptReference/Transform.html" title="C# type: unity ~&gt; Transform"><span class="pre">Transform</span></a><span class="pre">&lt;</span><span class="pre">double</span><span class="pre">,</span> <span class="pre">bool</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Acquisition.RangeThreshold" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Acquisition::RangeThreshold:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-b193ddefaf161dde7594bd9ac7fe34db70ce4f4f.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.RangeThreshold&quot; tooltip=&quot;Aeon.Acquisition.RangeThreshold&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Transform&lt; double, bool &gt;&quot; tooltip=&quot;Transform&lt; double, bool &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Acquisition::RangeThreshold:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-b193ddefaf161dde7594bd9ac7fe34db70ce4f4f.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.RangeThreshold&quot; tooltip=&quot;Aeon.Acquisition.RangeThreshold&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Transform&lt; double, bool &gt;&quot; tooltip=&quot;Transform&lt; double, bool &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.RangeThreshold.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1RangeThreshold_1a51e17ffa2f9065d79da9d6baaede99d4"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">bool</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">double</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.RangeThreshold.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1RangeThreshold_1aa7c81ae2ce666073d0de457da0b88da5"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">bool</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><span class="pre">double</span><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.RangeThreshold.Lower">
+<span class="target" id="classAeon_1_1Acquisition_1_1RangeThreshold_1a4e45c48af546acebb897590d9f190f20"></span><span class="pre">double</span><span class="pre">?</span> <span class="sig-name descname"><span class="pre">Lower</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.RangeThreshold.Lower" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.RangeThreshold.Upper">
+<span class="target" id="classAeon_1_1Acquisition_1_1RangeThreshold_1a74a9a52acbe2c7658dc2adabe82f45e8"></span><span class="pre">double</span><span class="pre">?</span> <span class="sig-name descname"><span class="pre">Upper</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.RangeThreshold.Upper" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="staterecoverysubject-recoverysubject">
+<h3>StateRecoverySubject.RecoverySubject<a class="headerlink" href="#staterecoverysubject-recoverysubject" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.StateRecoverySubject.RecoverySubject">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecoverySubject_1_1RecoverySubject"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.StateRecoverySubject.RecoverySubject</span></span> <span class="pre">:</span> <a class="reference external" href="https://horizongir.github.io/reactive/api/System.Reactive.Subjects.ISubject-1" title="C# type: reactive ~&gt; System.Reactive.Subjects.ISubject"><span class="pre">ISubject</span></a><span class="pre">&lt;</span><span class="pre">T</span><span class="pre">&gt;</span><span class="pre">,</span> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IDisposable" title="C# type: msdn ~&gt; System.IDisposable"><span class="pre">IDisposable</span></a><a class="headerlink" href="#class-Aeon.Acquisition.StateRecoverySubject.RecoverySubject" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Acquisition::StateRecoverySubject::RecoverySubject:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-1f246d4da34a4f256d32a142afe4a31e0eff8a3d.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.StateRecoverySubject&lt; T &gt;.RecoverySubject&quot; tooltip=&quot;Aeon.Acquisition.StateRecoverySubject&lt; T &gt;.RecoverySubject&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;3&quot; [label=&quot;IDisposable&quot; tooltip=&quot;IDisposable&quot;]
+    &quot;2&quot; [label=&quot;ISubject&lt; T &gt;&quot; tooltip=&quot;ISubject&lt; T &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+    &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Acquisition::StateRecoverySubject::RecoverySubject:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-1f246d4da34a4f256d32a142afe4a31e0eff8a3d.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.StateRecoverySubject&lt; T &gt;.RecoverySubject&quot; tooltip=&quot;Aeon.Acquisition.StateRecoverySubject&lt; T &gt;.RecoverySubject&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;3&quot; [label=&quot;IDisposable&quot; tooltip=&quot;IDisposable&quot;]
+    &quot;2&quot; [label=&quot;ISubject&lt; T &gt;&quot; tooltip=&quot;ISubject&lt; T &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+    &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.RecoverySubject">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecoverySubject_1_1RecoverySubject_1aa9d3239bc4aa55cf2dbe687fc64f0c6d"></span><span class="sig-name descname"><span class="pre">RecoverySubject</span></span> <span class="sig-paren">(</span><span class="pre">string</span> <em><span class="pre">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.RecoverySubject" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.OnCompleted">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecoverySubject_1_1RecoverySubject_1ae37b9ea8ed9fc8d26af318f3b7186d0c"></span><span class="pre">void</span> <span class="sig-name descname"><span class="pre">OnCompleted</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.OnCompleted" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.OnError">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecoverySubject_1_1RecoverySubject_1af7e58a9182194124834a8ad46f45805a"></span><span class="pre">void</span> <span class="sig-name descname"><span class="pre">OnError</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Exception" title="C# type: msdn ~&gt; System.Exception"><span class="pre">Exception</span></a> <em><span class="pre">error</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.OnError" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.OnNext">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecoverySubject_1_1RecoverySubject_1ae32c357f0168fd1b858c94b0af9576d8"></span><span class="pre">void</span> <span class="sig-name descname"><span class="pre">OnNext</span></span> <span class="sig-paren">(</span><span class="pre">T</span> <em><span class="pre">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.OnNext" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.Subscribe">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecoverySubject_1_1RecoverySubject_1ace39590e921d794a77ed54f025b0504d"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IDisposable" title="C# type: msdn ~&gt; System.IDisposable"><span class="pre">IDisposable</span></a> <span class="sig-name descname"><span class="pre">Subscribe</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObserver-1" title="C# type: msdn ~&gt; System.IObserver"><span class="pre">IObserver</span></a><span class="pre">&lt;</span><span class="pre">T</span><span class="pre">&gt;</span> <em><span class="pre">observer</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.Subscribe" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.Dispose">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecoverySubject_1_1RecoverySubject_1a469a89ca81121b44aa2598f265c4c9e6"></span><span class="pre">void</span> <span class="sig-name descname"><span class="pre">Dispose</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.StateRecoverySubject.RecoverySubject.Dispose" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="sendmessagecard">
+<h3>SendMessageCard<a class="headerlink" href="#sendmessagecard" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.SendMessageCard">
+<span class="target" id="classAeon_1_1Acquisition_1_1SendMessageCard"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.SendMessageCard</span></span><a class="headerlink" href="#class-Aeon.Acquisition.SendMessageCard" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.SendMessageCard.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1SendMessageCard_1afc7e7fcaa44441957a2c3590b28789a4"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.SendMessageCard.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.SendMessageCard.Address">
+<span class="target" id="classAeon_1_1Acquisition_1_1SendMessageCard_1ab36315852da1fdaabb197a4651ec4f92"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Address</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.SendMessageCard.Address" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="serviceaccountname">
+<h3>ServiceAccountName<a class="headerlink" href="#serviceaccountname" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.ServiceAccountName">
+<span class="target" id="classAeon_1_1Acquisition_1_1ServiceAccountName"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.ServiceAccountName</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Acquisition.ServiceAccountName" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Acquisition::ServiceAccountName:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-826d12ddae0d1d615ef05b6b22bb73c58b630c9d.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.ServiceAccountName&quot; tooltip=&quot;Aeon.Acquisition.ServiceAccountName&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; string &gt;&quot; tooltip=&quot;Source&lt; string &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Acquisition::ServiceAccountName:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-826d12ddae0d1d615ef05b6b22bb73c58b630c9d.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.ServiceAccountName&quot; tooltip=&quot;Aeon.Acquisition.ServiceAccountName&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; string &gt;&quot; tooltip=&quot;Source&lt; string &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.ServiceAccountName.Generate">
+<span class="target" id="classAeon_1_1Acquisition_1_1ServiceAccountName_1ab8702fcd09168d6730ff6a6924d7b245"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.ServiceAccountName.Generate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Acquisition_1_1ServiceAccountName_1aa78511bad73d2585ff49d276e9875664"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="staterecovery">
+<h3>StateRecovery<a class="headerlink" href="#staterecovery" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.StateRecovery">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecovery"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.StateRecovery</span></span><span class="pre">&lt;</span><span class="pre">TState</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Acquisition.StateRecovery" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.StateRecovery.Serialize">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecovery_1a0f190734d658578c1f243244a5679b43"></span><span class="pre">void</span> <span class="sig-name descname"><span class="pre">Serialize</span></span> <span class="sig-paren">(</span><span class="pre">string</span> <em><span class="pre">name</span></em>, <span class="pre">TState</span> <em><span class="pre">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.StateRecovery.Serialize" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.StateRecovery.Deserialize">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecovery_1a21aba44506ae25c4e067742e6d120937"></span><span class="pre">TState</span> <span class="sig-name descname"><span class="pre">Deserialize</span></span> <span class="sig-paren">(</span><span class="pre">string</span> <em><span class="pre">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.StateRecovery.Deserialize" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="staterecoverysubject">
+<h3>StateRecoverySubject<a class="headerlink" href="#staterecoverysubject" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.StateRecoverySubject">
+<span class="target" id="classAeon_1_1Acquisition_1_1StateRecoverySubject"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.StateRecoverySubject</span></span><span class="pre">&lt;</span><span class="pre">T</span><span class="pre">&gt;</span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Expressions.SubjectBuilder" title="C# type: bonsai ~&gt; Bonsai.Expressions.SubjectBuilder"><span class="pre">SubjectBuilder</span></a><span class="pre">,</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Expressions.SubjectBuilder" title="C# type: bonsai ~&gt; Bonsai.Expressions.SubjectBuilder"><span class="pre">SubjectBuilder</span></a><span class="pre">&lt;</span><span class="pre">T</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Acquisition.StateRecoverySubject" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Acquisition::StateRecoverySubject:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-ed13a98e29800bbb2a243492a0343b70dee5fbaa.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.StateRecoverySubject&lt; T &gt;&quot; tooltip=&quot;Aeon.Acquisition.StateRecoverySubject&lt; T &gt;&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;SubjectBuilder&quot; tooltip=&quot;SubjectBuilder&quot;]
+    &quot;3&quot; [label=&quot;SubjectBuilder&lt; T &gt;&quot; tooltip=&quot;SubjectBuilder&lt; T &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+    &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Acquisition::StateRecoverySubject:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-ed13a98e29800bbb2a243492a0343b70dee5fbaa.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Acquisition.StateRecoverySubject&lt; T &gt;&quot; tooltip=&quot;Aeon.Acquisition.StateRecoverySubject&lt; T &gt;&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;SubjectBuilder&quot; tooltip=&quot;SubjectBuilder&quot;]
+    &quot;3&quot; [label=&quot;SubjectBuilder&lt; T &gt;&quot; tooltip=&quot;SubjectBuilder&lt; T &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+    &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+</dd></dl>
+
+</section>
+<section id="stripsubstring">
+<h3>StripSubstring<a class="headerlink" href="#stripsubstring" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.StripSubstring">
+<span class="target" id="classAeon_1_1Acquisition_1_1StripSubstring"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.StripSubstring</span></span><a class="headerlink" href="#class-Aeon.Acquisition.StripSubstring" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.StripSubstring.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1StripSubstring_1aeec9cb79ebe609e74aa2bd1a41950292"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.StripSubstring.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.StripSubstring.Separator">
+<span class="target" id="classAeon_1_1Acquisition_1_1StripSubstring_1a8e018452ebdd7160ed3c560d202c5728"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Separator</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.StripSubstring.Separator" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="synchronizer">
+<h3>Synchronizer<a class="headerlink" href="#synchronizer" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.Synchronizer">
+<span class="target" id="classAeon_1_1Acquisition_1_1Synchronizer"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.Synchronizer</span></span><a class="headerlink" href="#class-Aeon.Acquisition.Synchronizer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="throwexception">
+<h3>ThrowException<a class="headerlink" href="#throwexception" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Acquisition.ThrowException">
+<span class="target" id="classAeon_1_1Acquisition_1_1ThrowException"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Acquisition.ThrowException</span></span><a class="headerlink" href="#class-Aeon.Acquisition.ThrowException" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Acquisition.ThrowException.Process">
+<span class="target" id="classAeon_1_1Acquisition_1_1ThrowException_1a92973af58e17c36b0f3a97989b776e9e"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Acquisition.ThrowException.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Acquisition.ThrowException.Message">
+<span class="target" id="classAeon_1_1Acquisition_1_1ThrowException_1a971462fcf7b1313c830f486141e5244b"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Message</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Acquisition.ThrowException.Message" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
 </section>
 </section>
 
@@ -1168,11 +1398,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="Aeon.Acquisition.AeonAudio.html"
+       href="Aeon.Database.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><a id="Aeon_Acquisition_AeonAudio"></a> Class AeonAudio</p>
+        <p class="prev-next-title">Aeon.Database</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1195,19 +1425,50 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enums">Enums</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enums">Enums</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prioritylevel">PriorityLevel</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aeonaudio">AeonAudio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#availablediskspace">AvailableDiskSpace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#availablememory">AvailableMemory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#createlogmessage">CreateLogMessage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#createrepository">CreateRepository</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatdate">FormatDate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatjson">FormatJson</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatlogmessage">FormatLogMessage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#getdatapath">GetDataPath</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#getdatetime">GetDateTime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#groupbytime">GroupByTime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#isrepositoryclean">IsRepositoryClean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loadconfigfile">LoadConfigFile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logmessage">LogMessage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadatasource">MetadataSource</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observableextensions">ObservableExtensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prependonce">PrependOnce</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rangethreshold">RangeThreshold</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#staterecoverysubject-recoverysubject">StateRecoverySubject.RecoverySubject</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sendmessagecard">SendMessageCard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serviceaccountname">ServiceAccountName</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#staterecovery">StateRecovery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#staterecoverysubject">StateRecoverySubject</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stripsubstring">StripSubstring</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synchronizer">Synchronizer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#throwexception">ThrowException</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../../_sources/reference/api/acquisition/Aeon.Acquisition.md.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/reference/api/acquisition/Aeon.Acquisition.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -1222,8 +1483,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1237,7 +1498,7 @@
     <p class="theme-version">
     Built with the
     <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a>
-    0.16.0.
+    0.16.1.
     </p></div>
       
     </div>

@@ -7,12 +7,18 @@
 =====================
 
 .. toctree::
-    :glob:
+   :maxdepth: 1
+   :hidden:
+   :glob:
 
-    Aeon.Acquisition <acquisition/Aeon.Acquisition>
-    Aeon.Database <acquisition/Aeon.Database>
-    Aeon.Environment <acquisition/Aeon.Environment>
-    Aeon.Foraging <acquisition/Aeon.Foraging>
-    Aeon.Video <acquisition/Aeon.Video>
-    Aeon.Vision <acquisition/Aeon.Vision>
-    Aeon.Vision.Sleap <acquisition/Aeon.Vision.Sleap>
+   acquisition/*
+        
+.. list-table:: 
+    
+   * - :cs:namespace:`Aeon.Acquisition`
+   * - :cs:namespace:`Aeon.Database`
+   * - :cs:namespace:`Aeon.Environment`
+   * - :cs:namespace:`Aeon.Foraging`
+   * - :cs:namespace:`Aeon.Video`
+   * - :cs:namespace:`Aeon.Vision`
+   * - :cs:namespace:`Aeon.Vision.Sleap`

@@ -1,0 +1,5 @@
+<map id="%3" name="%3">
+<area shape="rect" id="node1" title="Aeon.Environment.ActiveSubjectCollection" alt="" coords="84,5,515,53"/>
+<area shape="rect" id="node2" title="KeyedCollection&lt; string, EnvironmentSubjectStateEntry &gt;" alt="" coords="5,101,594,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="302,54,302,86,297,86,297,54"/>
+</map>

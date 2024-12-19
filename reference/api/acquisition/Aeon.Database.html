@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Namespace Aeon.Database &#8212; Aeon  documentation</title>
+    <title>Aeon.Database &#8212; Aeon  documentation</title>
   
   
   
@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,10 +27,11 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
@@ -38,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=531f5a0a" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
@@ -50,11 +51,11 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/acquisition/Aeon.Database';</script>
-    <script src="../../../_static/js/workflow.js?v=38029464"></script>
+    <script src="../../../_static/js/workflow.js?v=e7055275"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Class CreateConnection" href="Aeon.Database.CreateConnection.html" />
-    <link rel="prev" title="Enum PriorityLevel" href="Aeon.Acquisition.PriorityLevel.html" />
+    <link rel="next" title="Aeon.Environment" href="Aeon.Environment.html" />
+    <link rel="prev" title="Aeon.Acquisition" href="Aeon.Acquisition.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -366,128 +367,13 @@
 </ul>
 </details></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../acquisition.html"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Acquisition.html">Aeon.Acquisition</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html">AeonAudio</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html">AvailableDiskSpace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html">AvailableMemory</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html">CreateLogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html">CreateRepository</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html">FormatDate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html">FormatJson</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html">FormatLogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html">GetDataPath</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html">GetDateTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html">GroupByTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html">IsRepositoryClean</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html">LoadConfigFile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html">LogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html">MetadataSource&lt;TMetadata&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html">PrependOnce</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html">RangeThreshold</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html">SendMessageCard</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html">ServiceAccountName</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html">StateRecovery&lt;TState&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html">StateRecoverySubject</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html">StateRecoverySubject&lt;T&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html">StripSubstring</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html">ThrowException</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PriorityLevel.html">PriorityLevel</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 current active has-children"><a class="current reference internal" href="#">Aeon.Database</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.CreateConnection.html">CreateConnection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html">ExecuteQuery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html">ObservableDatabase</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ActiveSubjectCollection.html">ActiveSubjectCollection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationControl.html">AnnotationControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSource.html">AnnotationSource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSourceVisualizer.html">AnnotationSourceVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSource.html">ButtonSource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSourceVisualizer.html">ButtonSourceVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ChannelMap.html">ChannelMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightMessage.html">CreateRoomLightMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightPreset.html">CreateRoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.DeserializeFromYaml.html">DeserializeFromYaml</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnumerateColony.html">EnumerateColony</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentState.html">EnvironmentState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateControl.html">EnvironmentStateControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateMetadata.html">EnvironmentStateMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateRecovery.html">EnvironmentStateRecovery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateVisualizer.html">EnvironmentStateVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectState.html">EnvironmentSubjectState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateControl.html">EnvironmentSubjectStateControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateEntry.html">EnvironmentSubjectStateEntry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateMetadata.html">EnvironmentSubjectStateMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateVisualizer.html">EnvironmentSubjectStateVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExperimentProperties.html">ExperimentProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExternalizedPropertiesVisualizer.html">ExternalizedPropertiesVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.Fixture.html">Fixture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.FormatWeight.html">FormatWeight</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolateRoomLightPreset.html">InterpolateRoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelControl.html">LabelControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelVisualizer.html">LabelVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ParseRfidMeasurement.html">ParseRfidMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomFixtures.html">RoomFixtures</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightDevice.html">RoomLightDevice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SerializeToYaml.html">SerializeToYaml</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectLogBitmap.html">SubjectLogBitmap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectRecord.html">SubjectRecord</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectStateRecovery.html">SubjectStateRecovery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeight.html">TareWeight</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightControl.html">TareWeightControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightVisualizer.html">TareWeightVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightBaseline.html">WeightBaseline</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightFilter.html">WeightFilter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightRaw.html">WeightRaw</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RfidMeasurement.html">RfidMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightMessage.html">RoomLightMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightPreset.html">RoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightMeasurement.html">WeightMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateType.html">EnvironmentStateType</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectChangeType.html">EnvironmentSubjectChangeType</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolationMethod.html">InterpolationMethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectSex.html">SubjectSex</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Foraging.html">Aeon.Foraging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html">CreateDispenserEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html">DispenserAccumulate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html">DispenserController</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html">DispenserEventArgs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html">DispenserEventControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html">DispenserEventVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserState.html">DispenserState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html">FormatDispenserState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html">WheelDisplacement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventType.html">DispenserEventType</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Video.html">Aeon.Video</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.AeonCapture.html">AeonCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.PylonCapture.html">PylonCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html">SpinnakerCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html">VideoDataFrame</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html">VideoFileCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoChunkData.html">VideoChunkData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoControllerType.html">VideoControllerType</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.DistanceFromPoint.html">DistanceFromPoint</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.FormatBinaryRegions.html">FormatBinaryRegions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.RegionContainsPoint.html">RegionContainsPoint</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.TakeLargestRegions.html">TakeLargestRegions</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html">CreatePoseTrackingMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html">FormatPose</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html">PoseTrackingMetadata</a></li>
-</ul>
-</details></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.html">Aeon.Acquisition</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Aeon.Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.html">Aeon.Foraging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.html">Aeon.Video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a></li>
 </ul>
 </details></li>
 </ul>
@@ -501,9 +387,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -538,7 +429,7 @@
     
     <li class="breadcrumb-item"><a href="../acquisition.html" class="nav-link"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><a id="Aeon_Database"></a> Namespace Aeon.Database</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Aeon.Database</span></li>
   </ul>
 </nav>
 </div>
@@ -555,87 +446,347 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="namespace-aeon-database">
-<h1><a id="Aeon_Database"></a> Namespace Aeon.Database<a class="headerlink" href="#namespace-aeon-database" title="Link to this heading">#</a></h1>
+  <section id="aeon-database">
+<h1>Aeon.Database<a class="headerlink" href="#aeon-database" title="Link to this heading">#</a></h1>
+<dl class="cs namespace">
+<dt class="sig sig-object cs" id="namespace-Aeon.Database">
+<span class="target" id="namespaceAeon_1_1Database"></span><em class="property"><span class="pre">namespace</span> </em><span class="sig-name descname"><span class="pre">Aeon.Database</span></span><a class="headerlink" href="#namespace-Aeon.Database" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
 <section id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="Aeon.Database.CreateConnection.html"><span class="std std-doc">CreateConnection</span></a></p>
-<p><a class="reference internal" href="Aeon.Database.ExecuteQuery.html"><span class="std std-doc">ExecuteQuery</span></a></p>
-<p><a class="reference internal" href="Aeon.Database.ObservableDatabase.html"><span class="std std-doc">ObservableDatabase</span></a></p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Database.CreateConnection.html">CreateConnection</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.CreateConnection.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.CreateConnection.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.CreateConnection.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.CreateConnection.html#connectionstring"><a id="Aeon_Database_CreateConnection_ConnectionString"></a> ConnectionString</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.CreateConnection.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.CreateConnection.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.CreateConnection.html#generate"><a id="Aeon_Database_CreateConnection_Generate"></a> Generate()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.CreateConnection.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html">ExecuteQuery</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html#querystring"><a id="Aeon_Database_ExecuteQuery_QueryString"></a> QueryString</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html#process-iobservable-mysqlconnection"><a id="Aeon_Database_ExecuteQuery_Process_System_IObservable_MySqlConnector_MySqlConnection__"></a> Process(IObservable&lt;MySqlConnection&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html">ObservableDatabase</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#query-string-mysqlconnection"><a id="Aeon_Database_ObservableDatabase_Query_System_String_MySqlConnector_MySqlConnection_"></a> Query(string, MySqlConnection)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#query-trecord-string-mysqlconnection"><a id="Aeon_Database_ObservableDatabase_Query__1_System_String_MySqlConnector_MySqlConnection_"></a> Query&lt;TRecord&gt;(string, MySqlConnection)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#id1">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#id2">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#query-trecord-string-mysqlconnection-func-mysqldatareader-trecord"><a id="Aeon_Database_ObservableDatabase_Query__1_System_String_MySqlConnector_MySqlConnection_System_Func_MySqlConnector_MySqlDataReader___0__"></a> Query&lt;TRecord&gt;(string, MySqlConnection, Func&lt;MySqlDataReader, TRecord&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#id3">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#id4">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#id5">Type Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#query-trecord-string-mysqlconnection-action-mysqldatareader-func-mysqldatareader-trecord"><a id="Aeon_Database_ObservableDatabase_Query__1_System_String_MySqlConnector_MySqlConnection_System_Action_MySqlConnector_MySqlDataReader__System_Func_MySqlConnector_MySqlDataReader___0__"></a> Query&lt;TRecord&gt;(string, MySqlConnection, Action&lt;MySqlDataReader&gt;, Func&lt;MySqlDataReader, TRecord&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#id6">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#id7">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html#id8">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<section id="createconnection">
+<h3>CreateConnection<a class="headerlink" href="#createconnection" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Database.CreateConnection">
+<span class="target" id="classAeon_1_1Database_1_1CreateConnection"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Database.CreateConnection</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqlconnectiontype" title="C# type: mysqlconnector ~&gt; MySqlConnection"><span class="pre">MySqlConnection</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Database.CreateConnection" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Database::CreateConnection:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-ed73b40eddb3b1fd223215597a501fd88ecae090.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Database.CreateConnection&quot; tooltip=&quot;Aeon.Database.CreateConnection&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; MySqlConnection &gt;&quot; tooltip=&quot;Source&lt; MySqlConnection &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
 </div>
+</figure>
+<p>Collaboration diagram for Aeon::Database::CreateConnection:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-ed73b40eddb3b1fd223215597a501fd88ecae090.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Database.CreateConnection&quot; tooltip=&quot;Aeon.Database.CreateConnection&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; MySqlConnection &gt;&quot; tooltip=&quot;Source&lt; MySqlConnection &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Database.CreateConnection.Generate">
+<span class="target" id="classAeon_1_1Database_1_1CreateConnection_1aa1d33f5e6715ed31f465bb485dcf8dee"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqlconnectiontype" title="C# type: mysqlconnector ~&gt; MySqlConnection"><span class="pre">MySqlConnection</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Database.CreateConnection.Generate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Database.CreateConnection.ConnectionString">
+<span class="target" id="classAeon_1_1Database_1_1CreateConnection_1aedf5596d1db45696fd25fbf67f77b01c"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">ConnectionString</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Database.CreateConnection.ConnectionString" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="datareaderextensions">
+<h3>DataReaderExtensions<a class="headerlink" href="#datareaderextensions" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Database.DataReaderExtensions">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Database.DataReaderExtensions</span></span><a class="headerlink" href="#class-Aeon.Database.DataReaderExtensions" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Database.DataReaderExtensions.GetRecords">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1af74c0a368d45db38488a5c16bc36ef7e"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1" title="C# type: msdn ~&gt; System.Collections.Generic.IEnumerable"><span class="pre">IEnumerable</span></a><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">GetRecords</span></span><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><em class="property"><span class="pre">this</span></em> <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a> <em><span class="pre">reader</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Database.DataReaderExtensions.GetRecords" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a5e0555e381e01db71993ddf1416d809f"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1" title="C# type: msdn ~&gt; System.Collections.Generic.IEnumerable"><span class="pre">IEnumerable</span></a><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">GetRecords</span></span><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><em class="property"><span class="pre">this</span></em> <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a> <em><span class="pre">reader</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Func-1" title="C# type: msdn ~&gt; System.Func"><span class="pre">Func</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a><span class="pre">,</span> <span class="pre">TRecord</span><span class="pre">&gt;</span> <em><span class="pre">selector</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a08242084bc2731f9541087906452ac8a"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1" title="C# type: msdn ~&gt; System.Collections.Generic.IEnumerable"><span class="pre">IEnumerable</span></a><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">GetRecords</span></span><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><em class="property"><span class="pre">this</span></em> <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a> <em><span class="pre">reader</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Action" title="C# type: msdn ~&gt; System.Action"><span class="pre">Action</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a><span class="pre">&gt;</span> <em><span class="pre">validator</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Func-1" title="C# type: msdn ~&gt; System.Func"><span class="pre">Func</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a><span class="pre">,</span> <span class="pre">TRecord</span><span class="pre">&gt;</span> <em><span class="pre">selector</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a27a4f2b4afe3edebb32ea0bbc95e29c7"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">bool</span> <span class="pre">GetNullableBoolean</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1ac4b824ce976ae591a84724542a2777aa"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">bool</span> <span class="pre">GetNullableBoolean</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1abe31316d8c4dfdd26591717bc1eb7cf7"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">char</span> <span class="pre">GetNullableChar</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a69c3f98b7120d30649d05ad673fe5d01"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">char</span> <span class="pre">GetNullableChar</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1ac4f74fd3cc3ddb24175c0f7cd61e2f7c"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">sbyte</span> <span class="pre">GetNullableSByte</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a05fe9db26b338b4b93db60a1dd5db3e5"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">sbyte</span> <span class="pre">GetNullableSByte</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a17d2b7c0eaad6aac121ced9d9b858701"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">byte</span> <span class="pre">GetNullableByte</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a27596fbde35f60baf737a632c715c000"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">byte</span> <span class="pre">GetNullableByte</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1af7c143ef9f9555c3e8c2730ced95c542"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">short</span> <span class="pre">GetNullableInt16</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a858883427b5093b452e6262e72ce3147"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">short</span> <span class="pre">GetNullableInt16</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1abddabd5e56237ebc79d70e77d6af5d65"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">ushort</span> <span class="pre">GetNullableUInt16</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a8176b4302498190a02bc60521ddf3a96"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">ushort</span> <span class="pre">GetNullableUInt16</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a86226eb2f7335b18c60555b284003483"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">int</span> <span class="pre">GetNullableInt32</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a6af6002b09604235622e83f7b723235a"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">int</span> <span class="pre">GetNullableInt32</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1ad95a041aca2069d47cee73cd6c661d07"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">uint</span> <span class="pre">GetNullableUInt32</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1add255ad2e2026fef9b2bbdc01cd703a2"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">uint</span> <span class="pre">GetNullableUInt32</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a50f968516e8cbc6c7c84a49d34bd5986"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">long</span> <span class="pre">GetNullableInt64</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1ad980bd77c675081d9d8e0c3fce9b51ef"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">long</span> <span class="pre">GetNullableInt64</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a91e35850515a2fe1ec4af991e2478237"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">ulong</span> <span class="pre">GetNullableUInt64</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a866477c6b47e4d9828fcfab5924067f0"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">ulong</span> <span class="pre">GetNullableUInt64</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1aa6e551710f8506b552b424f84716cef0"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">float</span> <span class="pre">GetNullableFloat</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1aad331cb7cd5bc2fccebbb15b285dc6ff"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">float</span> <span class="pre">GetNullableFloat</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1aea1b4cd718d1482d7a4986555c895817"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">double</span> <span class="pre">GetNullableDouble</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a895af99acb78c06e98be24df98c08bd5"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">double</span> <span class="pre">GetNullableDouble</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1aeadaf67e4e745fbf3bacf9ccc8b4715f"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">decimal</span> <span class="pre">GetNullableDecimal</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1af6da8a44b42623b73245ce2977c7b1b5"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">decimal</span> <span class="pre">GetNullableDecimal</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1ac662bc2b32a81f9ccd0fae56421111a1"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">DateTime</span> <span class="pre">GetNullableDateTime</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">int</span> <span class="pre">ordinal)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1ada84b5225476b61c13bc97b2c1a8f557"></span><span class="sig-name descname"><span class="pre">?</span> <span class="pre">DateTime</span> <span class="pre">GetNullableDateTime</span> <span class="pre">(this</span> <span class="pre">MySqlDataReader</span> <span class="pre">reader,</span> <span class="pre">string</span> <span class="pre">name)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Database.DataReaderExtensions.GetNullableString">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1aaa243ac3b47421a8b85237bcd3c0fe60"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">GetNullableString</span></span> <span class="sig-paren">(</span><em class="property"><span class="pre">this</span></em> <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a> <em><span class="pre">reader</span></em>, <span class="pre">int</span> <em><span class="pre">ordinal</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Database.DataReaderExtensions.GetNullableString" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1DataReaderExtensions_1a87ac724933c10a93022a32317e2b2980"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">GetNullableString</span></span> <span class="sig-paren">(</span><em class="property"><span class="pre">this</span></em> <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a> <em><span class="pre">reader</span></em>, <span class="pre">string</span> <em><span class="pre">name</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="executequery">
+<h3>ExecuteQuery<a class="headerlink" href="#executequery" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Database.ExecuteQuery">
+<span class="target" id="classAeon_1_1Database_1_1ExecuteQuery"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Database.ExecuteQuery</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Combinator" title="C# type: bonsai ~&gt; Bonsai.Combinator"><span class="pre">Combinator</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqlconnectiontype" title="C# type: mysqlconnector ~&gt; MySqlConnection"><span class="pre">MySqlConnection</span></a><span class="pre">,</span> <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Database.ExecuteQuery" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Database::ExecuteQuery:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-edb63db433e561ebae7800a03f23b3e1d8030f3f.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Database.ExecuteQuery&quot; tooltip=&quot;Aeon.Database.ExecuteQuery&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Combinator&lt; MySqlConnection, MySqlDataReader &gt;&quot; tooltip=&quot;Combinator&lt; MySqlConnection, MySqlDataReader &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Database::ExecuteQuery:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-edb63db433e561ebae7800a03f23b3e1d8030f3f.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Database.ExecuteQuery&quot; tooltip=&quot;Aeon.Database.ExecuteQuery&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Combinator&lt; MySqlConnection, MySqlDataReader &gt;&quot; tooltip=&quot;Combinator&lt; MySqlConnection, MySqlDataReader &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Database.ExecuteQuery.Process">
+<span class="target" id="classAeon_1_1Database_1_1ExecuteQuery_1a8a8eb7626443ee972758f79de2cc6c31"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqlconnectiontype" title="C# type: mysqlconnector ~&gt; MySqlConnection"><span class="pre">MySqlConnection</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Database.ExecuteQuery.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Database.ExecuteQuery.QueryString">
+<span class="target" id="classAeon_1_1Database_1_1ExecuteQuery_1aa865490d442c884c4b1d4d4f82bd906f"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">QueryString</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Database.ExecuteQuery.QueryString" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="observabledatabase">
+<h3>ObservableDatabase<a class="headerlink" href="#observabledatabase" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Database.ObservableDatabase">
+<span class="target" id="classAeon_1_1Database_1_1ObservableDatabase"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Database.ObservableDatabase</span></span><a class="headerlink" href="#class-Aeon.Database.ObservableDatabase" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Database.ObservableDatabase.Query">
+<span class="target" id="classAeon_1_1Database_1_1ObservableDatabase_1a97cc4a77ae4f2ecb60ca56fb0a3d94a5"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Query</span></span> <span class="sig-paren">(</span><span class="pre">string</span> <em><span class="pre">queryString</span></em>, <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqlconnectiontype" title="C# type: mysqlconnector ~&gt; MySqlConnection"><span class="pre">MySqlConnection</span></a> <em><span class="pre">connection</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Database.ObservableDatabase.Query" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1ObservableDatabase_1a1349e3a0f7a8bbdc6da4cf23f3058a2e"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Query</span></span><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><span class="pre">string</span> <em><span class="pre">queryString</span></em>, <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqlconnectiontype" title="C# type: mysqlconnector ~&gt; MySqlConnection"><span class="pre">MySqlConnection</span></a> <em><span class="pre">connection</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1ObservableDatabase_1a1c2b32ae31a94413e5dc255fcc4ee526"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Query</span></span><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><span class="pre">string</span> <em><span class="pre">queryString</span></em>, <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqlconnectiontype" title="C# type: mysqlconnector ~&gt; MySqlConnection"><span class="pre">MySqlConnection</span></a> <em><span class="pre">connection</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Func-1" title="C# type: msdn ~&gt; System.Func"><span class="pre">Func</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a><span class="pre">,</span> <span class="pre">TRecord</span><span class="pre">&gt;</span> <em><span class="pre">selector</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Database_1_1ObservableDatabase_1a3ad8fd52f79708e2776e19701c29acbb"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Query</span></span><span class="pre">&lt;</span><span class="pre">TRecord</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><span class="pre">string</span> <em><span class="pre">queryString</span></em>, <a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqlconnectiontype" title="C# type: mysqlconnector ~&gt; MySqlConnection"><span class="pre">MySqlConnection</span></a> <em><span class="pre">connection</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Action" title="C# type: msdn ~&gt; System.Action"><span class="pre">Action</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a><span class="pre">&gt;</span> <em><span class="pre">validator</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Func-1" title="C# type: msdn ~&gt; System.Func"><span class="pre">Func</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqldatareadertype" title="C# type: mysqlconnector ~&gt; MySqlDataReader"><span class="pre">MySqlDataReader</span></a><span class="pre">,</span> <span class="pre">TRecord</span><span class="pre">&gt;</span> <em><span class="pre">selector</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="recordreader">
+<h3>RecordReader<a class="headerlink" href="#recordreader" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Database.RecordReader">
+<span class="target" id="classAeon_1_1Database_1_1RecordReader"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Database.RecordReader</span></span><span class="pre">&lt;</span><span class="pre">T</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Database.RecordReader" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Database.RecordReader.Validate">
+<span class="target" id="classAeon_1_1Database_1_1RecordReader_1a78040e4764472e88c615135802acf571"></span><em class="property"><span class="pre">MySqlDataReader</span></em> <span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Validate</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Database.RecordReader.Validate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Database.RecordReader.Select">
+<span class="target" id="classAeon_1_1Database_1_1RecordReader_1a68df1499d5f0f3c4523a663b647dca90"></span><em class="property"><span class="pre">T</span></em> <span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Select</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Database.RecordReader.Select" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-attributes">Public Static Attributes</p>
+<dl class="cs var">
+<dt class="sig sig-object cs" id="var-Aeon.Database.RecordReader.Instance">
+<span class="target" id="classAeon_1_1Database_1_1RecordReader_1a141df3db6c2d5b32f49f3f2bed0b2ecc"></span><em class="property"><span class="pre">readonly</span></em> <a class="reference internal" href="#class-Aeon.Database.RecordReader" title="C# class: Aeon.Database.RecordReader"><span class="pre">RecordReader</span></a><span class="pre">&lt;</span><span class="pre">T</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Instance</span></span> <span class="pre">=</span> <span class="pre">new()</span><a class="headerlink" href="#var-Aeon.Database.RecordReader.Instance" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
 </section>
 </section>
 
@@ -650,20 +801,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Aeon.Acquisition.PriorityLevel.html"
+       href="Aeon.Acquisition.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><a id="Aeon_Acquisition_PriorityLevel"></a> Enum PriorityLevel</p>
+        <p class="prev-next-title">Aeon.Acquisition</p>
       </div>
     </a>
     <a class="right-next"
-       href="Aeon.Database.CreateConnection.html"
+       href="Aeon.Environment.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><a id="Aeon_Database_CreateConnection"></a> Class CreateConnection</p>
+        <p class="prev-next-title">Aeon.Environment</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -686,18 +837,25 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#createconnection">CreateConnection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datareaderextensions">DataReaderExtensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#executequery">ExecuteQuery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observabledatabase">ObservableDatabase</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recordreader">RecordReader</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../../_sources/reference/api/acquisition/Aeon.Database.md.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/reference/api/acquisition/Aeon.Database.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -712,8 +870,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -727,7 +885,7 @@
     <p class="theme-version">
     Built with the
     <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a>
-    0.16.0.
+    0.16.1.
     </p></div>
       
     </div>

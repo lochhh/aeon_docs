@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Namespace Aeon.Vision.Sleap &#8212; Aeon  documentation</title>
+    <title>Aeon.Vision.Sleap &#8212; Aeon  documentation</title>
   
   
   
@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,10 +27,11 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
@@ -38,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=531f5a0a" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
@@ -50,11 +51,11 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/acquisition/Aeon.Vision.Sleap';</script>
-    <script src="../../../_static/js/workflow.js?v=38029464"></script>
+    <script src="../../../_static/js/workflow.js?v=e7055275"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Class CreatePoseTrackingMetadata" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html" />
-    <link rel="prev" title="Class TakeLargestRegions" href="Aeon.Vision.TakeLargestRegions.html" />
+    <link rel="next" title="Data Schema" href="../../data_contract.html" />
+    <link rel="prev" title="Aeon.Vision" href="Aeon.Vision.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -366,128 +367,13 @@
 </ul>
 </details></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../acquisition.html"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Acquisition.html">Aeon.Acquisition</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html">AeonAudio</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html">AvailableDiskSpace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html">AvailableMemory</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html">CreateLogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html">CreateRepository</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html">FormatDate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html">FormatJson</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html">FormatLogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html">GetDataPath</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html">GetDateTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html">GroupByTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html">IsRepositoryClean</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html">LoadConfigFile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html">LogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html">MetadataSource&lt;TMetadata&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html">PrependOnce</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html">RangeThreshold</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html">SendMessageCard</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html">ServiceAccountName</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html">StateRecovery&lt;TState&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html">StateRecoverySubject</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html">StateRecoverySubject&lt;T&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html">StripSubstring</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html">ThrowException</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PriorityLevel.html">PriorityLevel</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Database.html">Aeon.Database</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.CreateConnection.html">CreateConnection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html">ExecuteQuery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html">ObservableDatabase</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ActiveSubjectCollection.html">ActiveSubjectCollection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationControl.html">AnnotationControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSource.html">AnnotationSource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSourceVisualizer.html">AnnotationSourceVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSource.html">ButtonSource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSourceVisualizer.html">ButtonSourceVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ChannelMap.html">ChannelMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightMessage.html">CreateRoomLightMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightPreset.html">CreateRoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.DeserializeFromYaml.html">DeserializeFromYaml</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnumerateColony.html">EnumerateColony</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentState.html">EnvironmentState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateControl.html">EnvironmentStateControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateMetadata.html">EnvironmentStateMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateRecovery.html">EnvironmentStateRecovery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateVisualizer.html">EnvironmentStateVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectState.html">EnvironmentSubjectState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateControl.html">EnvironmentSubjectStateControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateEntry.html">EnvironmentSubjectStateEntry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateMetadata.html">EnvironmentSubjectStateMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateVisualizer.html">EnvironmentSubjectStateVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExperimentProperties.html">ExperimentProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExternalizedPropertiesVisualizer.html">ExternalizedPropertiesVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.Fixture.html">Fixture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.FormatWeight.html">FormatWeight</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolateRoomLightPreset.html">InterpolateRoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelControl.html">LabelControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelVisualizer.html">LabelVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ParseRfidMeasurement.html">ParseRfidMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomFixtures.html">RoomFixtures</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightDevice.html">RoomLightDevice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SerializeToYaml.html">SerializeToYaml</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectLogBitmap.html">SubjectLogBitmap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectRecord.html">SubjectRecord</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectStateRecovery.html">SubjectStateRecovery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeight.html">TareWeight</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightControl.html">TareWeightControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightVisualizer.html">TareWeightVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightBaseline.html">WeightBaseline</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightFilter.html">WeightFilter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightRaw.html">WeightRaw</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RfidMeasurement.html">RfidMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightMessage.html">RoomLightMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightPreset.html">RoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightMeasurement.html">WeightMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateType.html">EnvironmentStateType</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectChangeType.html">EnvironmentSubjectChangeType</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolationMethod.html">InterpolationMethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectSex.html">SubjectSex</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Foraging.html">Aeon.Foraging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html">CreateDispenserEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html">DispenserAccumulate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html">DispenserController</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html">DispenserEventArgs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html">DispenserEventControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html">DispenserEventVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserState.html">DispenserState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html">FormatDispenserState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html">WheelDisplacement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventType.html">DispenserEventType</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Video.html">Aeon.Video</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.AeonCapture.html">AeonCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.PylonCapture.html">PylonCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html">SpinnakerCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html">VideoDataFrame</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html">VideoFileCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoChunkData.html">VideoChunkData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoControllerType.html">VideoControllerType</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.DistanceFromPoint.html">DistanceFromPoint</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.FormatBinaryRegions.html">FormatBinaryRegions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.RegionContainsPoint.html">RegionContainsPoint</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.TakeLargestRegions.html">TakeLargestRegions</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 current active has-children"><a class="current reference internal" href="#">Aeon.Vision.Sleap</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html">CreatePoseTrackingMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html">FormatPose</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html">PoseTrackingMetadata</a></li>
-</ul>
-</details></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.html">Aeon.Acquisition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.html">Aeon.Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.html">Aeon.Foraging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.html">Aeon.Video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Aeon.Vision.Sleap</a></li>
 </ul>
 </details></li>
 </ul>
@@ -501,9 +387,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -538,7 +429,7 @@
     
     <li class="breadcrumb-item"><a href="../acquisition.html" class="nav-link"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><a id="Aeon_Vision_Sleap"></a> Namespace Aeon.Vision.Sleap</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Aeon.Vision.Sleap</span></li>
   </ul>
 </nav>
 </div>
@@ -555,107 +446,146 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="namespace-aeon-vision-sleap">
-<h1><a id="Aeon_Vision_Sleap"></a> Namespace Aeon.Vision.Sleap<a class="headerlink" href="#namespace-aeon-vision-sleap" title="Link to this heading">#</a></h1>
+  <section id="aeon-vision-sleap">
+<h1>Aeon.Vision.Sleap<a class="headerlink" href="#aeon-vision-sleap" title="Link to this heading">#</a></h1>
+<dl class="cs namespace">
+<dt class="sig sig-object cs" id="namespace-Aeon.Vision.Sleap">
+<span class="target" id="namespaceAeon_1_1Vision_1_1Sleap"></span><em class="property"><span class="pre">namespace</span> </em><span class="sig-name descname"><span class="pre">Aeon.Vision.Sleap</span></span><a class="headerlink" href="#namespace-Aeon.Vision.Sleap" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
 <section id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html"><span class="std std-doc">CreatePoseTrackingMetadata</span></a></p>
-<p><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html"><span class="std std-doc">FormatPose</span></a></p>
-<p><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html"><span class="std std-doc">PoseTrackingMetadata</span></a></p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html">CreatePoseTrackingMetadata</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#modelpath"><a id="Aeon_Vision_Sleap_CreatePoseTrackingMetadata_ModelPath"></a> ModelPath</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#generate"><a id="Aeon_Vision_Sleap_CreatePoseTrackingMetadata_Generate"></a> Generate()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#generate-iobservable-string"><a id="Aeon_Vision_Sleap_CreatePoseTrackingMetadata_Generate_System_IObservable_System_String__"></a> Generate(IObservable&lt;string&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html#id1">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html">FormatPose</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#address"><a id="Aeon_Vision_Sleap_FormatPose_Address"></a> Address</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#identityindex"><a id="Aeon_Vision_Sleap_FormatPose_IdentityIndex"></a> IdentityIndex</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#id1">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#process-iobservable-timestamped-poseidentity"><a id="Aeon_Vision_Sleap_FormatPose_Process_System_IObservable_Bonsai_Harp_Timestamped_Bonsai_Sleap_PoseIdentity___"></a> Process(IObservable&lt;Timestamped&lt;PoseIdentity&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#process-iobservable-timestamped-poseidentitycollection"><a id="Aeon_Vision_Sleap_FormatPose_Process_System_IObservable_Bonsai_Harp_Timestamped_Bonsai_Sleap_PoseIdentityCollection___"></a> Process(IObservable&lt;Timestamped&lt;PoseIdentityCollection&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#id2">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#id3">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#process-iobservable-timestamped-pose"><a id="Aeon_Vision_Sleap_FormatPose_Process_System_IObservable_Bonsai_Harp_Timestamped_Bonsai_Sleap_Pose___"></a> Process(IObservable&lt;Timestamped&lt;Pose&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#id4">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#id5">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#process-iobservable-timestamped-posecollection"><a id="Aeon_Vision_Sleap_FormatPose_Process_System_IObservable_Bonsai_Harp_Timestamped_Bonsai_Sleap_PoseCollection___"></a> Process(IObservable&lt;Timestamped&lt;PoseCollection&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#id6">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html#id7">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html">PoseTrackingMetadata</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#logname"><a id="Aeon_Vision_Sleap_PoseTrackingMetadata_LogName"></a> LogName</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#modelfilename"><a id="Aeon_Vision_Sleap_PoseTrackingMetadata_ModelFileName"></a> ModelFileName</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#id1">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#trainingconfig"><a id="Aeon_Vision_Sleap_PoseTrackingMetadata_TrainingConfig"></a> TrainingConfig</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#id2">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#tostring"><a id="Aeon_Vision_Sleap_PoseTrackingMetadata_ToString"></a> ToString()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<section id="createposetrackingmetadata">
+<h3>CreatePoseTrackingMetadata<a class="headerlink" href="#createposetrackingmetadata" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Vision.Sleap.CreatePoseTrackingMetadata">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1CreatePoseTrackingMetadata"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Vision.Sleap.CreatePoseTrackingMetadata</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Vision.Sleap.PoseTrackingMetadata" title="C# class: Aeon.Vision.Sleap.PoseTrackingMetadata"><span class="pre">PoseTrackingMetadata</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Vision.Sleap.CreatePoseTrackingMetadata" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Vision::Sleap::CreatePoseTrackingMetadata:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-aa2d94a5ff37f8c52122fd7b8ec63f71df441a23.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Vision.Sleap.CreatePoseTrackingMetadata&quot; tooltip=&quot;Aeon.Vision.Sleap.CreatePoseTrackingMetadata&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; PoseTrackingMetadata &gt;&quot; tooltip=&quot;Source&lt; PoseTrackingMetadata &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
 </div>
+</figure>
+<p>Collaboration diagram for Aeon::Vision::Sleap::CreatePoseTrackingMetadata:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-aa2d94a5ff37f8c52122fd7b8ec63f71df441a23.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Vision.Sleap.CreatePoseTrackingMetadata&quot; tooltip=&quot;Aeon.Vision.Sleap.CreatePoseTrackingMetadata&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; PoseTrackingMetadata &gt;&quot; tooltip=&quot;Source&lt; PoseTrackingMetadata &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Vision.Sleap.CreatePoseTrackingMetadata.Generate">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1CreatePoseTrackingMetadata_1a22e5a6e8f6a376286f39bbfa1910ce01"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Vision.Sleap.PoseTrackingMetadata" title="C# class: Aeon.Vision.Sleap.PoseTrackingMetadata"><span class="pre">PoseTrackingMetadata</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Vision.Sleap.CreatePoseTrackingMetadata.Generate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1CreatePoseTrackingMetadata_1a011efb63cf2f445f44beb5c8bb228779"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Vision.Sleap.PoseTrackingMetadata" title="C# class: Aeon.Vision.Sleap.PoseTrackingMetadata"><span class="pre">PoseTrackingMetadata</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Vision.Sleap.CreatePoseTrackingMetadata.ModelPath">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1CreatePoseTrackingMetadata_1ab44fa169ec4551bd039a75da5faf0e72"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">ModelPath</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Vision.Sleap.CreatePoseTrackingMetadata.ModelPath" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="formatpose">
+<h3>FormatPose<a class="headerlink" href="#formatpose" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Vision.Sleap.FormatPose">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1FormatPose"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Vision.Sleap.FormatPose</span></span><a class="headerlink" href="#class-Aeon.Vision.Sleap.FormatPose" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Vision.Sleap.FormatPose.Process">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1FormatPose_1a31e532d56350626f30594737c3c0dffb"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference external" href="https://bonsai-rx.org/sleap/api/Bonsai.Sleap.PoseIdentity" title="C# type: bonsai-sleap ~&gt; PoseIdentity"><span class="pre">PoseIdentity</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Vision.Sleap.FormatPose.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1FormatPose_1ad538e9e5b916958920f2f3d6cc9095e1"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference external" href="https://bonsai-rx.org/sleap/api/Bonsai.Sleap.PoseIdentityCollection" title="C# type: bonsai-sleap ~&gt; PoseIdentityCollection"><span class="pre">PoseIdentityCollection</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1FormatPose_1a091269fa7ff5ab0e65f566db550e51ec"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference external" href="https://bonsai-rx.org/sleap/api/Bonsai.Sleap.Pose" title="C# type: bonsai-sleap ~&gt; Pose"><span class="pre">Pose</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1FormatPose_1acd42966bc1708c034b6370242721a358"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference external" href="https://bonsai-rx.org/sleap/api/Bonsai.Sleap.PoseCollection" title="C# type: bonsai-sleap ~&gt; PoseCollection"><span class="pre">PoseCollection</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Vision.Sleap.FormatPose.Address">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1FormatPose_1aedc08078ee937fc69a79a593dc27467a"></span><span class="pre">int</span> <span class="sig-name descname"><span class="pre">Address</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span> <span class="pre">=</span> <span class="pre">255</span><a class="headerlink" href="#property-Aeon.Vision.Sleap.FormatPose.Address" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Vision.Sleap.FormatPose.IdentityIndex">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1FormatPose_1a02076121c0f82236e253cf68807b921d"></span><span class="pre">int</span><span class="pre">?</span> <span class="sig-name descname"><span class="pre">IdentityIndex</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Vision.Sleap.FormatPose.IdentityIndex" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="posetrackingmetadata">
+<h3>PoseTrackingMetadata<a class="headerlink" href="#posetrackingmetadata" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Vision.Sleap.PoseTrackingMetadata">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1PoseTrackingMetadata"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Vision.Sleap.PoseTrackingMetadata</span></span><a class="headerlink" href="#class-Aeon.Vision.Sleap.PoseTrackingMetadata" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Vision.Sleap.PoseTrackingMetadata.ToString">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1PoseTrackingMetadata_1a40a88887ea5ee3578688b4d3e32468ef"></span><em class="property"><span class="pre">override</span></em> <span class="pre">string</span> <span class="sig-name descname"><span class="pre">ToString</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Vision.Sleap.PoseTrackingMetadata.ToString" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Vision.Sleap.PoseTrackingMetadata.ModelFileName">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1PoseTrackingMetadata_1aced714a9c8203a573c54f204c8037f05"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">ModelFileName</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Vision.Sleap.PoseTrackingMetadata.ModelFileName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Vision.Sleap.PoseTrackingMetadata.TrainingConfig">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1PoseTrackingMetadata_1a461f05d959d2bc47b08da8cc42fb1c65"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">TrainingConfig</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Vision.Sleap.PoseTrackingMetadata.TrainingConfig" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Vision.Sleap.PoseTrackingMetadata.LogName">
+<span class="target" id="classAeon_1_1Vision_1_1Sleap_1_1PoseTrackingMetadata_1a1c55d100d5e6d29dde0059dcc7f85045"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">LogName</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Vision.Sleap.PoseTrackingMetadata.LogName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
 </section>
 </section>
 
@@ -670,20 +600,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Aeon.Vision.TakeLargestRegions.html"
+       href="Aeon.Vision.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><a id="Aeon_Vision_TakeLargestRegions"></a> Class TakeLargestRegions</p>
+        <p class="prev-next-title">Aeon.Vision</p>
       </div>
     </a>
     <a class="right-next"
-       href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html"
+       href="../../data_contract.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><a id="Aeon_Vision_Sleap_CreatePoseTrackingMetadata"></a> Class CreatePoseTrackingMetadata</p>
+        <p class="prev-next-title">Data Schema</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -706,18 +636,23 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#createposetrackingmetadata">CreatePoseTrackingMetadata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatpose">FormatPose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posetrackingmetadata">PoseTrackingMetadata</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../../_sources/reference/api/acquisition/Aeon.Vision.Sleap.md.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/reference/api/acquisition/Aeon.Vision.Sleap.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -732,8 +667,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -747,7 +682,7 @@
     <p class="theme-version">
     Built with the
     <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a>
-    0.16.0.
+    0.16.1.
     </p></div>
       
     </div>

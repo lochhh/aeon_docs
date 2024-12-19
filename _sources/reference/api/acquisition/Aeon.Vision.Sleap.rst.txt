@@ -1,0 +1,37 @@
+..
+   This file is auto-generated.
+
+Aeon.Vision.Sleap
+=================
+
+.. doxygennamespace:: Aeon::Vision::Sleap
+    :desc-only:
+
+Classes
+-------
+
+
+CreatePoseTrackingMetadata
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Vision::Sleap::CreatePoseTrackingMetadata
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+FormatPose
+^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Vision::Sleap::FormatPose
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+PoseTrackingMetadata
+^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Vision::Sleap::PoseTrackingMetadata
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+

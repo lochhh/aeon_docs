@@ -1,0 +1,481 @@
+..
+   This file is auto-generated.
+
+Aeon.Environment
+================
+
+.. doxygennamespace:: Aeon::Environment
+    :desc-only:
+
+Enums
+-----
+
+
+InterpolationMethod
+^^^^^^^^^^^^^^^^^^^
+
+.. doxygenenum:: InterpolationMethod
+
+EnvironmentStateType
+^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenenum:: EnvironmentStateType
+
+EnvironmentSubjectChangeType
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenenum:: EnvironmentSubjectChangeType
+
+SubjectSex
+^^^^^^^^^^
+
+.. doxygenenum:: SubjectSex
+
+Classes
+-------
+
+
+ActiveSubjectCollection
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ActiveSubjectCollection
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+AnnotationControl
+^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::AnnotationControl
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+AnnotationSource
+^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::AnnotationSource
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+AnnotationSourceVisualizer
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::AnnotationSourceVisualizer
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+InterpolateRoomLightPreset.AnonymousInterpolation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::InterpolateRoomLightPreset::AnonymousInterpolation
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ButtonControl
+^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ButtonControl
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ButtonSource
+^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ButtonSource
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ButtonSourceVisualizer
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ButtonSourceVisualizer
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ChannelMap
+^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ChannelMap
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+CreateRoomLightMessage
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::CreateRoomLightMessage
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+CreateRoomLightPreset
+^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::CreateRoomLightPreset
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+DeserializeFromYaml
+^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::DeserializeFromYaml
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentSubjectStateControl.EditorSite
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateControl::EditorSite
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentSubjectStateEntry.EntryIdConverter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateEntry::EntryIdConverter
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentSubjectStateEntry.EntryTypeDescriptionProvider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateEntry::EntryTypeDescriptionProvider
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnumerateColony
+^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnumerateColony
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentState
+^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentState
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentStateControl
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentStateControl
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentStateMetadata
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentStateMetadata
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentStateRecovery
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentStateRecovery
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentStateVisualizer
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentStateVisualizer
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentSubjectState
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentSubjectState
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentSubjectStateControl
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateControl
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentSubjectStateEntry
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateEntry
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentSubjectStateMetadata
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateMetadata
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+EnvironmentSubjectStateVisualizer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::EnvironmentSubjectStateVisualizer
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ExperimentProperties
+^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ExperimentProperties
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ExternalizedPropertiesVisualizer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ExternalizedPropertiesVisualizer
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+Fixture
+^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::Fixture
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+FormatWeight
+^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::FormatWeight
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+InterpolateRoomLightPreset
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::InterpolateRoomLightPreset
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+LabelControl
+^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::LabelControl
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+LabelVisualizer
+^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::LabelVisualizer
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ParseRfidMeasurement
+^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ParseRfidMeasurement
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ReadOnlyPropertyDescriptor
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ReadOnlyPropertyDescriptor
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ReadOnlyTypeDescriptor
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ReadOnlyTypeDescriptor
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+RoomFixtures
+^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::RoomFixtures
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+RoomLightDevice
+^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::RoomLightDevice
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+SerializeToYaml
+^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::SerializeToYaml
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+CreateRoomLightPreset.SettingsConverter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::CreateRoomLightPreset::SettingsConverter
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+StringExtensions
+^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::StringExtensions
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+SubjectLogBitmap
+^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::SubjectLogBitmap
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+SubjectRecord
+^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::SubjectRecord
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+SubjectStateRecovery
+^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::SubjectStateRecovery
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+TareWeight
+^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::TareWeight
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+TareWeightControl
+^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::TareWeightControl
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+TareWeightVisualizer
+^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::TareWeightVisualizer
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ExternalizedPropertiesVisualizer.VisualizerContext
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::ExternalizedPropertiesVisualizer::VisualizerContext
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+WeightBaseline
+^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::WeightBaseline
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+WeightFilter
+^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::WeightFilter
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+WeightRaw
+^^^^^^^^^
+
+.. doxygenclass:: Aeon::Environment::WeightRaw
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+Structs
+-------
+
+
+RfidMeasurement
+^^^^^^^^^^^^^^^
+
+.. doxygenstruct:: Aeon::Environment::RfidMeasurement
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+RoomLightMessage
+^^^^^^^^^^^^^^^^
+
+.. doxygenstruct:: Aeon::Environment::RoomLightMessage
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+RoomLightPreset
+^^^^^^^^^^^^^^^
+
+.. doxygenstruct:: Aeon::Environment::RoomLightPreset
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+WeightMeasurement
+^^^^^^^^^^^^^^^^^
+
+.. doxygenstruct:: Aeon::Environment::WeightMeasurement
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+

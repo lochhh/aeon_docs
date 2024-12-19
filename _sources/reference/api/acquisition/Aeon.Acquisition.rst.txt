@@ -1,0 +1,230 @@
+..
+   This file is auto-generated.
+
+Aeon.Acquisition
+================
+
+.. doxygennamespace:: Aeon::Acquisition
+    :desc-only:
+
+Enums
+-----
+
+
+PriorityLevel
+^^^^^^^^^^^^^
+
+.. doxygenenum:: PriorityLevel
+
+Classes
+-------
+
+
+AeonAudio
+^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::AeonAudio
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+AvailableDiskSpace
+^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::AvailableDiskSpace
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+AvailableMemory
+^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::AvailableMemory
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+CreateLogMessage
+^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::CreateLogMessage
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+CreateRepository
+^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::CreateRepository
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+FormatDate
+^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::FormatDate
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+FormatJson
+^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::FormatJson
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+FormatLogMessage
+^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::FormatLogMessage
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+GetDataPath
+^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::GetDataPath
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+GetDateTime
+^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::GetDateTime
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+GroupByTime
+^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::GroupByTime
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+IsRepositoryClean
+^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::IsRepositoryClean
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+LoadConfigFile
+^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::LoadConfigFile
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+LogMessage
+^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::LogMessage
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+MetadataSource
+^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::MetadataSource
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ObservableExtensions
+^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::ObservableExtensions
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+PrependOnce
+^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::PrependOnce
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+RangeThreshold
+^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::RangeThreshold
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+StateRecoverySubject.RecoverySubject
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::StateRecoverySubject::RecoverySubject
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+SendMessageCard
+^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::SendMessageCard
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ServiceAccountName
+^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::ServiceAccountName
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+StateRecovery
+^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::StateRecovery
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+StateRecoverySubject
+^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::StateRecoverySubject
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+StripSubstring
+^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::StripSubstring
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+Synchronizer
+^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::Synchronizer
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+ThrowException
+^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::ThrowException
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+

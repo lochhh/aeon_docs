@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Namespace Aeon.Foraging &#8212; Aeon  documentation</title>
+    <title>Aeon.Foraging &#8212; Aeon  documentation</title>
   
   
   
@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,10 +27,11 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
@@ -38,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=531f5a0a" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
@@ -50,11 +51,11 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/acquisition/Aeon.Foraging';</script>
-    <script src="../../../_static/js/workflow.js?v=38029464"></script>
+    <script src="../../../_static/js/workflow.js?v=e7055275"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Class CreateDispenserEvent" href="Aeon.Foraging.CreateDispenserEvent.html" />
-    <link rel="prev" title="Enum SubjectSex" href="Aeon.Environment.SubjectSex.html" />
+    <link rel="next" title="Aeon.Video" href="Aeon.Video.html" />
+    <link rel="prev" title="Aeon.Environment" href="Aeon.Environment.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -366,128 +367,13 @@
 </ul>
 </details></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../acquisition.html"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Acquisition.html">Aeon.Acquisition</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AeonAudio.html">AeonAudio</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableDiskSpace.html">AvailableDiskSpace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.AvailableMemory.html">AvailableMemory</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateLogMessage.html">CreateLogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.CreateRepository.html">CreateRepository</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatDate.html">FormatDate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatJson.html">FormatJson</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.FormatLogMessage.html">FormatLogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDataPath.html">GetDataPath</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GetDateTime.html">GetDateTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.GroupByTime.html">GroupByTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.IsRepositoryClean.html">IsRepositoryClean</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LoadConfigFile.html">LoadConfigFile</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.LogMessage.html">LogMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.MetadataSource-1.html">MetadataSource&lt;TMetadata&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PrependOnce.html">PrependOnce</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.RangeThreshold.html">RangeThreshold</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.SendMessageCard.html">SendMessageCard</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ServiceAccountName.html">ServiceAccountName</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecovery-1.html">StateRecovery&lt;TState&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject.html">StateRecoverySubject</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StateRecoverySubject-1.html">StateRecoverySubject&lt;T&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.StripSubstring.html">StripSubstring</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.ThrowException.html">ThrowException</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Acquisition.PriorityLevel.html">PriorityLevel</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Database.html">Aeon.Database</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.CreateConnection.html">CreateConnection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ExecuteQuery.html">ExecuteQuery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Database.ObservableDatabase.html">ObservableDatabase</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ActiveSubjectCollection.html">ActiveSubjectCollection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationControl.html">AnnotationControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSource.html">AnnotationSource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.AnnotationSourceVisualizer.html">AnnotationSourceVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSource.html">ButtonSource</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ButtonSourceVisualizer.html">ButtonSourceVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ChannelMap.html">ChannelMap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightMessage.html">CreateRoomLightMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.CreateRoomLightPreset.html">CreateRoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.DeserializeFromYaml.html">DeserializeFromYaml</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnumerateColony.html">EnumerateColony</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentState.html">EnvironmentState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateControl.html">EnvironmentStateControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateMetadata.html">EnvironmentStateMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateRecovery.html">EnvironmentStateRecovery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateVisualizer.html">EnvironmentStateVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectState.html">EnvironmentSubjectState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateControl.html">EnvironmentSubjectStateControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateEntry.html">EnvironmentSubjectStateEntry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateMetadata.html">EnvironmentSubjectStateMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectStateVisualizer.html">EnvironmentSubjectStateVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExperimentProperties.html">ExperimentProperties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ExternalizedPropertiesVisualizer.html">ExternalizedPropertiesVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.Fixture.html">Fixture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.FormatWeight.html">FormatWeight</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolateRoomLightPreset.html">InterpolateRoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelControl.html">LabelControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.LabelVisualizer.html">LabelVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.ParseRfidMeasurement.html">ParseRfidMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomFixtures.html">RoomFixtures</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightDevice.html">RoomLightDevice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SerializeToYaml.html">SerializeToYaml</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectLogBitmap.html">SubjectLogBitmap</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectRecord.html">SubjectRecord</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectStateRecovery.html">SubjectStateRecovery</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeight.html">TareWeight</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightControl.html">TareWeightControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.TareWeightVisualizer.html">TareWeightVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightBaseline.html">WeightBaseline</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightFilter.html">WeightFilter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightRaw.html">WeightRaw</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RfidMeasurement.html">RfidMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightMessage.html">RoomLightMessage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.RoomLightPreset.html">RoomLightPreset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.WeightMeasurement.html">WeightMeasurement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentStateType.html">EnvironmentStateType</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.EnvironmentSubjectChangeType.html">EnvironmentSubjectChangeType</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.InterpolationMethod.html">InterpolationMethod</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Environment.SubjectSex.html">SubjectSex</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 current active has-children"><a class="current reference internal" href="#">Aeon.Foraging</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html">CreateDispenserEvent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html">DispenserAccumulate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html">DispenserController</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html">DispenserEventArgs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html">DispenserEventControl</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html">DispenserEventVisualizer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserState.html">DispenserState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html">FormatDispenserState</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html">WheelDisplacement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventType.html">DispenserEventType</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Video.html">Aeon.Video</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.AeonCapture.html">AeonCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.PylonCapture.html">PylonCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.SpinnakerCapture.html">SpinnakerCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoDataFrame.html">VideoDataFrame</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoFileCapture.html">VideoFileCapture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoChunkData.html">VideoChunkData</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Video.VideoControllerType.html">VideoControllerType</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.DistanceFromPoint.html">DistanceFromPoint</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.FormatBinaryRegions.html">FormatBinaryRegions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.RegionContainsPoint.html">RegionContainsPoint</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.TakeLargestRegions.html">TakeLargestRegions</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.CreatePoseTrackingMetadata.html">CreatePoseTrackingMetadata</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.FormatPose.html">FormatPose</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Vision.Sleap.PoseTrackingMetadata.html">PoseTrackingMetadata</a></li>
-</ul>
-</details></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Acquisition.html">Aeon.Acquisition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Database.html">Aeon.Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Environment.html">Aeon.Environment</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Aeon.Foraging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Video.html">Aeon.Video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.html">Aeon.Vision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a></li>
 </ul>
 </details></li>
 </ul>
@@ -501,9 +387,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -538,7 +429,7 @@
     
     <li class="breadcrumb-item"><a href="../acquisition.html" class="nav-link"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><a id="Aeon_Foraging"></a> Namespace Aeon.Foraging</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Aeon.Foraging</span></li>
   </ul>
 </nav>
 </div>
@@ -555,241 +446,387 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="namespace-aeon-foraging">
-<h1><a id="Aeon_Foraging"></a> Namespace Aeon.Foraging<a class="headerlink" href="#namespace-aeon-foraging" title="Link to this heading">#</a></h1>
-<section id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html"><span class="std std-doc">CreateDispenserEvent</span></a></p>
-<p><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html"><span class="std std-doc">DispenserAccumulate</span></a></p>
-<p><a class="reference internal" href="Aeon.Foraging.DispenserController.html"><span class="std std-doc">DispenserController</span></a></p>
-<p><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html"><span class="std std-doc">DispenserEventArgs</span></a></p>
-<p><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html"><span class="std std-doc">DispenserEventControl</span></a></p>
-<p><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html"><span class="std std-doc">DispenserEventVisualizer</span></a></p>
-<p><a class="reference internal" href="Aeon.Foraging.DispenserState.html"><span class="std std-doc">DispenserState</span></a></p>
-<p><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html"><span class="std std-doc">FormatDispenserState</span></a></p>
-<p><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html"><span class="std std-doc">WheelDisplacement</span></a></p>
-</section>
+  <section id="aeon-foraging">
+<h1>Aeon.Foraging<a class="headerlink" href="#aeon-foraging" title="Link to this heading">#</a></h1>
+<dl class="cs namespace">
+<dt class="sig sig-object cs" id="namespace-Aeon.Foraging">
+<span class="target" id="namespaceAeon_1_1Foraging"></span><em class="property"><span class="pre">namespace</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging</span></span><a class="headerlink" href="#namespace-Aeon.Foraging" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
 <section id="enums">
 <h2>Enums<a class="headerlink" href="#enums" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="Aeon.Foraging.DispenserEventType.html"><span class="std std-doc">DispenserEventType</span></a></p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html">CreateDispenserEvent</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#eventtype"><a id="Aeon_Foraging_CreateDispenserEvent_EventType"></a> EventType</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#value"><a id="Aeon_Foraging_CreateDispenserEvent_Value"></a> Value</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#id1">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#generate"><a id="Aeon_Foraging_CreateDispenserEvent_Generate"></a> Generate()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#generate-tsource-iobservable-tsource"><a id="Aeon_Foraging_CreateDispenserEvent_Generate__1_System_IObservable___0__"></a> Generate&lt;TSource&gt;(IObservable&lt;TSource&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#id2">Returns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.CreateDispenserEvent.html#type-parameters">Type Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html">DispenserAccumulate</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html#process-iobservable-dispensereventargs"><a id="Aeon_Foraging_DispenserAccumulate_Process_System_IObservable_Aeon_Foraging_DispenserEventArgs__"></a> Process(IObservable&lt;DispenserEventArgs&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html#process-iobservable-dispensereventargs-iobservable-dispenserstate"><a id="Aeon_Foraging_DispenserAccumulate_Process_System_IObservable_Aeon_Foraging_DispenserEventArgs__System_IObservable_Aeon_Foraging_DispenserState__"></a> Process(IObservable&lt;DispenserEventArgs&gt;, IObservable&lt;DispenserState&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html#id1">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserAccumulate.html#id2">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.DispenserController.html">DispenserController</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#implements">Implements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#name"><a id="Aeon_Foraging_DispenserController_Name"></a> Name</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#process-iobservable-dispenserstate"><a id="Aeon_Foraging_DispenserController_Process_System_IObservable_Aeon_Foraging_DispenserState__"></a> Process(IObservable&lt;DispenserState&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#returns">Returns</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#process-iobservable-dispenserstate-iobservable-harpmessage"><a id="Aeon_Foraging_DispenserController_Process_System_IObservable_Aeon_Foraging_DispenserState__System_IObservable_Bonsai_Harp_HarpMessage__"></a> Process(IObservable&lt;DispenserState&gt;, IObservable&lt;HarpMessage&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#id1">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserController.html#id2">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html">DispenserEventArgs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#constructors">Constructors</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#dispensereventargs-int-dispensereventtype"><a id="Aeon_Foraging_DispenserEventArgs__ctor_System_Int32_Aeon_Foraging_DispenserEventType_"></a> DispenserEventArgs(int, DispenserEventType)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#parameters">Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#eventtype"><a id="Aeon_Foraging_DispenserEventArgs_EventType"></a> EventType</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#value"><a id="Aeon_Foraging_DispenserEventArgs_Value"></a> Value</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#id1">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#tostring"><a id="Aeon_Foraging_DispenserEventArgs_ToString"></a> ToString()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventArgs.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html">DispenserEventControl</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#implements">Implements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#constructors">Constructors</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#dispensereventcontrol-dispensercontroller"><a id="Aeon_Foraging_DispenserEventControl__ctor_Aeon_Foraging_DispenserController_"></a> DispenserEventControl(DispenserController)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#parameters">Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#source"><a id="Aeon_Foraging_DispenserEventControl_Source"></a> Source</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#property-value">Property Value</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#value"><a id="Aeon_Foraging_DispenserEventControl_Value"></a> Value</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#id1">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#dispose-bool"><a id="Aeon_Foraging_DispenserEventControl_Dispose_System_Boolean_"></a> Dispose(bool)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventControl.html#id2">Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html">DispenserEventVisualizer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html#load-iserviceprovider"><a id="Aeon_Foraging_DispenserEventVisualizer_Load_System_IServiceProvider_"></a> Load(IServiceProvider)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html#show-object"><a id="Aeon_Foraging_DispenserEventVisualizer_Show_System_Object_"></a> Show(object)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html#id1">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserEventVisualizer.html#unload"><a id="Aeon_Foraging_DispenserEventVisualizer_Unload"></a> Unload()</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.DispenserState.html">DispenserState</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserState.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserState.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserState.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserState.html#count"><a id="Aeon_Foraging_DispenserState_Count"></a> Count</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserState.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserState.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.DispenserState.html#tostring"><a id="Aeon_Foraging_DispenserState_ToString"></a> ToString()</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.DispenserState.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html">FormatDispenserState</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html#address"><a id="Aeon_Foraging_FormatDispenserState_Address"></a> Address</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html#process-iobservable-timestamped-dispenserstate"><a id="Aeon_Foraging_FormatDispenserState_Process_System_IObservable_Bonsai_Harp_Timestamped_Aeon_Foraging_DispenserState___"></a> Process(IObservable&lt;Timestamped&lt;DispenserState&gt;&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.FormatDispenserState.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html">WheelDisplacement</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html#inheritance">Inheritance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html#inherited-members">Inherited Members</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html#properties">Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html#radius"><a id="Aeon_Foraging_WheelDisplacement_Radius"></a> Radius</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html#property-value">Property Value</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html#process-iobservable-ushort"><a id="Aeon_Foraging_WheelDisplacement_Process_System_IObservable_System_UInt16__"></a> Process(IObservable&lt;ushort&gt;)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html#parameters">Parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Aeon.Foraging.WheelDisplacement.html#returns">Returns</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Aeon.Foraging.DispenserEventType.html">DispenserEventType</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Aeon.Foraging.DispenserEventType.html#fields">Fields</a></li>
-</ul>
-</li>
-</ul>
+<section id="dispensereventtype">
+<h3>DispenserEventType<a class="headerlink" href="#dispensereventtype" title="Link to this heading">#</a></h3>
+<dl class="cs enum">
+<dt class="sig sig-object cs" id="enum-Aeon.Foraging.DispenserEventType">
+<span class="target" id="namespaceAeon_1_1Foraging_1ae5b20720fcb5a18665f4b6bd16ec44b5"></span><em class="property"><span class="pre">enum</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.DispenserEventType</span></span><a class="headerlink" href="#enum-Aeon.Foraging.DispenserEventType" title="Link to this definition">#</a></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cs enumerator">
+<dt class="sig sig-object cs" id="enumerator-Aeon.Foraging.DispenserEventType.Discount">
+<span class="target" id="namespaceAeon_1_1Foraging_1ae5b20720fcb5a18665f4b6bd16ec44b5a104d9898c04874d0fbac36e125fa1369"></span><span class="sig-name descname"><span class="pre">Discount</span></span><a class="headerlink" href="#enumerator-Aeon.Foraging.DispenserEventType.Discount" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs enumerator">
+<dt class="sig sig-object cs" id="enumerator-Aeon.Foraging.DispenserEventType.Refill">
+<span class="target" id="namespaceAeon_1_1Foraging_1ae5b20720fcb5a18665f4b6bd16ec44b5a6e60dd592fd8d8d3e2e8d701437048de"></span><span class="sig-name descname"><span class="pre">Refill</span></span><a class="headerlink" href="#enumerator-Aeon.Foraging.DispenserEventType.Refill" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs enumerator">
+<dt class="sig sig-object cs" id="enumerator-Aeon.Foraging.DispenserEventType.Reset">
+<span class="target" id="namespaceAeon_1_1Foraging_1ae5b20720fcb5a18665f4b6bd16ec44b5a526d688f37a86d3c3f27d0c5016eb71d"></span><span class="sig-name descname"><span class="pre">Reset</span></span><a class="headerlink" href="#enumerator-Aeon.Foraging.DispenserEventType.Reset" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
+<section id="createdispenserevent">
+<h3>CreateDispenserEvent<a class="headerlink" href="#createdispenserevent" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Foraging.CreateDispenserEvent">
+<span class="target" id="classAeon_1_1Foraging_1_1CreateDispenserEvent"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.CreateDispenserEvent</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserEventArgs" title="C# class: Aeon.Foraging.DispenserEventArgs"><span class="pre">DispenserEventArgs</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Foraging.CreateDispenserEvent" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Foraging::CreateDispenserEvent:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-cb5cf48d4fc9785ab79ad04ef821b8eaf385ff64.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Foraging.CreateDispenserEvent&quot; tooltip=&quot;Aeon.Foraging.CreateDispenserEvent&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; DispenserEventArgs &gt;&quot; tooltip=&quot;Source&lt; DispenserEventArgs &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
 </div>
+</figure>
+<p>Collaboration diagram for Aeon::Foraging::CreateDispenserEvent:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-cb5cf48d4fc9785ab79ad04ef821b8eaf385ff64.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Foraging.CreateDispenserEvent&quot; tooltip=&quot;Aeon.Foraging.CreateDispenserEvent&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Source&lt; DispenserEventArgs &gt;&quot; tooltip=&quot;Source&lt; DispenserEventArgs &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.CreateDispenserEvent.Generate">
+<span class="target" id="classAeon_1_1Foraging_1_1CreateDispenserEvent_1a4decc1be81323593068c22c64d100b2f"></span><em class="property"><span class="pre">override</span></em> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserEventArgs" title="C# class: Aeon.Foraging.DispenserEventArgs"><span class="pre">DispenserEventArgs</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.CreateDispenserEvent.Generate" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Foraging_1_1CreateDispenserEvent_1abe4ed024fcf5a80a7fb009a48ee4f098"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserEventArgs" title="C# class: Aeon.Foraging.DispenserEventArgs"><span class="pre">DispenserEventArgs</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Generate</span></span><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">TSource</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.CreateDispenserEvent.Value">
+<span class="target" id="classAeon_1_1Foraging_1_1CreateDispenserEvent_1af3448cace5c8d7873f31d357f66ba663"></span><span class="pre">int</span> <span class="sig-name descname"><span class="pre">Value</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Foraging.CreateDispenserEvent.Value" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.CreateDispenserEvent.EventType">
+<span class="target" id="classAeon_1_1Foraging_1_1CreateDispenserEvent_1aad3cf784466deb7e96fb4d72e47acd54"></span><a class="reference internal" href="#enum-Aeon.Foraging.DispenserEventType" title="C# enum: Aeon.Foraging.DispenserEventType"><span class="pre">DispenserEventType</span></a> <span class="sig-name descname"><span class="pre">EventType</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Foraging.CreateDispenserEvent.EventType" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="dispenseraccumulate">
+<h3>DispenserAccumulate<a class="headerlink" href="#dispenseraccumulate" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Foraging.DispenserAccumulate">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserAccumulate"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.DispenserAccumulate</span></span><a class="headerlink" href="#class-Aeon.Foraging.DispenserAccumulate" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.DispenserAccumulate.Process">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserAccumulate_1a416bbbc72f20ef8ca070569f86f1436a"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserState" title="C# class: Aeon.Foraging.DispenserState"><span class="pre">DispenserState</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserEventArgs" title="C# class: Aeon.Foraging.DispenserEventArgs"><span class="pre">DispenserEventArgs</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.DispenserAccumulate.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserAccumulate_1af7601aa57fc13bec6dad4807f7fa0b94"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserState" title="C# class: Aeon.Foraging.DispenserState"><span class="pre">DispenserState</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserEventArgs" title="C# class: Aeon.Foraging.DispenserEventArgs"><span class="pre">DispenserEventArgs</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserState" title="C# class: Aeon.Foraging.DispenserState"><span class="pre">DispenserState</span></a><span class="pre">&gt;</span> <em><span class="pre">seed</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="dispensercontroller">
+<h3>DispenserController<a class="headerlink" href="#dispensercontroller" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Foraging.DispenserController">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserController"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.DispenserController</span></span> <span class="pre">:</span> <a class="reference internal" href="Aeon.Acquisition.html#class-Aeon.Acquisition.MetadataSource" title="C# class: Aeon.Acquisition.MetadataSource"><span class="pre">Aeon.Acquisition.MetadataSource</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserEventArgs" title="C# class: Aeon.Foraging.DispenserEventArgs"><span class="pre">DispenserEventArgs</span></a><span class="pre">&gt;</span><span class="pre">,</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.INamedElement" title="C# type: bonsai ~&gt; Bonsai.INamedElement"><span class="pre">INamedElement</span></a><a class="headerlink" href="#class-Aeon.Foraging.DispenserController" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Foraging::DispenserController:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-d29ec6b1f11eede1b101811d1268e5259b34e15e.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Foraging.DispenserController&quot; tooltip=&quot;Aeon.Foraging.DispenserController&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;3&quot; [label=&quot;INamedElement&quot; tooltip=&quot;INamedElement&quot;]
+    &quot;2&quot; [label=&quot;MetadataSource&lt; DispenserEventArgs &gt;&quot; tooltip=&quot;MetadataSource&lt; DispenserEventArgs &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+    &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Foraging::DispenserController:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-d29ec6b1f11eede1b101811d1268e5259b34e15e.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Foraging.DispenserController&quot; tooltip=&quot;Aeon.Foraging.DispenserController&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;3&quot; [label=&quot;INamedElement&quot; tooltip=&quot;INamedElement&quot;]
+    &quot;2&quot; [label=&quot;MetadataSource&lt; DispenserEventArgs &gt;&quot; tooltip=&quot;MetadataSource&lt; DispenserEventArgs &gt;&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+    &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.DispenserController.Process">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserController_1a3bb8f9af4a894b712ef3f92186564e9f"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserEventArgs" title="C# class: Aeon.Foraging.DispenserEventArgs"><span class="pre">DispenserEventArgs</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserState" title="C# class: Aeon.Foraging.DispenserState"><span class="pre">DispenserState</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.DispenserController.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserController_1a3ebf59dff565a1a8ae5e11eba7e932ce"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserEventArgs" title="C# class: Aeon.Foraging.DispenserEventArgs"><span class="pre">DispenserEventArgs</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserState" title="C# class: Aeon.Foraging.DispenserState"><span class="pre">DispenserState</span></a><span class="pre">&gt;</span> <em><span class="pre">source</span></em>, <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <em><span class="pre">clockSource</span></em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.DispenserController.Name">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserController_1a6b14c1be5e77a92a3d919a90fe1b4384"></span><span class="pre">string</span> <span class="sig-name descname"><span class="pre">Name</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Foraging.DispenserController.Name" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="dispensereventargs">
+<h3>DispenserEventArgs<a class="headerlink" href="#dispensereventargs" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Foraging.DispenserEventArgs">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventArgs"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.DispenserEventArgs</span></span><a class="headerlink" href="#class-Aeon.Foraging.DispenserEventArgs" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.DispenserEventArgs.DispenserEventArgs">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventArgs_1a06bed90ce0a59df455fb64d42b05654c"></span><span class="sig-name descname"><span class="pre">DispenserEventArgs</span></span> <span class="sig-paren">(</span><span class="pre">int</span> <em><span class="pre">value</span></em>, <a class="reference internal" href="#enum-Aeon.Foraging.DispenserEventType" title="C# enum: Aeon.Foraging.DispenserEventType"><span class="pre">DispenserEventType</span></a> <em><span class="pre">eventType</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.DispenserEventArgs.DispenserEventArgs" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.DispenserEventArgs.ToString">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventArgs_1a83c215c237315bd6ec235d746adc1cc3"></span><em class="property"><span class="pre">override</span></em> <span class="pre">string</span> <span class="sig-name descname"><span class="pre">ToString</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.DispenserEventArgs.ToString" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.DispenserEventArgs.Value">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventArgs_1a9ac4ad56f22275dd48b54a1e16dc3f1c"></span><span class="pre">int</span> <span class="sig-name descname"><span class="pre">Value</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Foraging.DispenserEventArgs.Value" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.DispenserEventArgs.EventType">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventArgs_1a535d8f43bf162fe917be4be2133eccf1"></span><a class="reference internal" href="#enum-Aeon.Foraging.DispenserEventType" title="C# enum: Aeon.Foraging.DispenserEventType"><span class="pre">DispenserEventType</span></a> <span class="sig-name descname"><span class="pre">EventType</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Foraging.DispenserEventArgs.EventType" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="dispensereventcontrol">
+<h3>DispenserEventControl<a class="headerlink" href="#dispensereventcontrol" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Foraging.DispenserEventControl">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventControl"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.DispenserEventControl</span></span> <span class="pre">:</span> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Windows.Forms.UserControl" title="C# type: msdn ~&gt; System.Windows.Forms.UserControl"><span class="pre">UserControl</span></a><a class="headerlink" href="#class-Aeon.Foraging.DispenserEventControl" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Foraging::DispenserEventControl:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-56033d2624bc16d499ac073b4f6d92c7fc242ebe.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Foraging.DispenserEventControl&quot; tooltip=&quot;Aeon.Foraging.DispenserEventControl&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;UserControl&quot; tooltip=&quot;UserControl&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Foraging::DispenserEventControl:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-56033d2624bc16d499ac073b4f6d92c7fc242ebe.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Foraging.DispenserEventControl&quot; tooltip=&quot;Aeon.Foraging.DispenserEventControl&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;UserControl&quot; tooltip=&quot;UserControl&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.DispenserEventControl.DispenserEventControl">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventControl_1a33ec9cde4b85712b979d850ddf5e65a7"></span><span class="sig-name descname"><span class="pre">DispenserEventControl</span></span> <span class="sig-paren">(</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserController" title="C# class: Aeon.Foraging.DispenserController"><span class="pre">DispenserController</span></a> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.DispenserEventControl.DispenserEventControl" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.DispenserEventControl.Source">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventControl_1af93372b1c7b2482ca5b05e377c00af38"></span><a class="reference internal" href="#class-Aeon.Foraging.DispenserController" title="C# class: Aeon.Foraging.DispenserController"><span class="pre">DispenserController</span></a> <span class="sig-name descname"><span class="pre">Source</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Foraging.DispenserEventControl.Source" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.DispenserEventControl.Value">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventControl_1a74209cae29c1cface5a3c076bebfbaf9"></span><span class="pre">int</span> <span class="sig-name descname"><span class="pre">Value</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Foraging.DispenserEventControl.Value" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="dispensereventvisualizer">
+<h3>DispenserEventVisualizer<a class="headerlink" href="#dispensereventvisualizer" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Foraging.DispenserEventVisualizer">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventVisualizer"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.DispenserEventVisualizer</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Design.DialogTypeVisualizer" title="C# type: bonsai ~&gt; Bonsai.Design.DialogTypeVisualizer"><span class="pre">DialogTypeVisualizer</span></a><a class="headerlink" href="#class-Aeon.Foraging.DispenserEventVisualizer" title="Link to this definition">#</a></dt>
+<dd><p>Inheritence diagram for Aeon::Foraging::DispenserEventVisualizer:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-9aac69d7c1e67a30eabe3a32aa1d76cc6ce80015.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Foraging.DispenserEventVisualizer&quot; tooltip=&quot;Aeon.Foraging.DispenserEventVisualizer&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;DialogTypeVisualizer&quot; tooltip=&quot;DialogTypeVisualizer&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<p>Collaboration diagram for Aeon::Foraging::DispenserEventVisualizer:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-9aac69d7c1e67a30eabe3a32aa1d76cc6ce80015.png" alt="digraph {
+    graph [bgcolor=&quot;#00000000&quot;]
+    node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
+    edge [color=&quot;#1414CE&quot;]
+    &quot;1&quot; [label=&quot;Aeon.Foraging.DispenserEventVisualizer&quot; tooltip=&quot;Aeon.Foraging.DispenserEventVisualizer&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;DialogTypeVisualizer&quot; tooltip=&quot;DialogTypeVisualizer&quot;]
+    &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
+}" class="graphviz" /></div>
+</div>
+</figure>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.DispenserEventVisualizer.Load">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventVisualizer_1aa6b76e1757d5bd2272302fe29b8a934e"></span><em class="property"><span class="pre">override</span></em> <span class="pre">void</span> <span class="sig-name descname"><span class="pre">Load</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IServiceProvider" title="C# type: msdn ~&gt; System.IServiceProvider"><span class="pre">IServiceProvider</span></a> <em><span class="pre">provider</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.DispenserEventVisualizer.Load" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.DispenserEventVisualizer.Show">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventVisualizer_1a4257b66b943c9f1a43df346004e8d466"></span><em class="property"><span class="pre">override</span></em> <span class="pre">void</span> <span class="sig-name descname"><span class="pre">Show</span></span> <span class="sig-paren">(</span><span class="pre">object</span> <em><span class="pre">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.DispenserEventVisualizer.Show" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.DispenserEventVisualizer.Unload">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserEventVisualizer_1af5074e6191121cad768fcfb2c1e49551"></span><em class="property"><span class="pre">override</span></em> <span class="pre">void</span> <span class="sig-name descname"><span class="pre">Unload</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.DispenserEventVisualizer.Unload" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="dispenserstate">
+<h3>DispenserState<a class="headerlink" href="#dispenserstate" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Foraging.DispenserState">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserState"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.DispenserState</span></span><a class="headerlink" href="#class-Aeon.Foraging.DispenserState" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.DispenserState.ToString">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserState_1a3b94cea2b1d3c90c734efc01ac060d6a"></span><em class="property"><span class="pre">override</span></em> <span class="pre">string</span> <span class="sig-name descname"><span class="pre">ToString</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.DispenserState.ToString" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.DispenserState.Count">
+<span class="target" id="classAeon_1_1Foraging_1_1DispenserState_1a2ae0615be9d73d0812682059546a1fad"></span><span class="pre">int</span> <span class="sig-name descname"><span class="pre">Count</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span><a class="headerlink" href="#property-Aeon.Foraging.DispenserState.Count" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="formatdispenserstate">
+<h3>FormatDispenserState<a class="headerlink" href="#formatdispenserstate" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Foraging.FormatDispenserState">
+<span class="target" id="classAeon_1_1Foraging_1_1FormatDispenserState"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.FormatDispenserState</span></span><a class="headerlink" href="#class-Aeon.Foraging.FormatDispenserState" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.FormatDispenserState.Process">
+<span class="target" id="classAeon_1_1Foraging_1_1FormatDispenserState_1af3fe8fc459155aea422e35d939b77fec"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Foraging.DispenserState" title="C# class: Aeon.Foraging.DispenserState"><span class="pre">DispenserState</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.FormatDispenserState.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.FormatDispenserState.Address">
+<span class="target" id="classAeon_1_1Foraging_1_1FormatDispenserState_1a179f25b8740afbf1294f9301e873df59"></span><span class="pre">int</span> <span class="sig-name descname"><span class="pre">Address</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span> <span class="pre">=</span> <span class="pre">200</span><a class="headerlink" href="#property-Aeon.Foraging.FormatDispenserState.Address" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="wheeldisplacement">
+<h3>WheelDisplacement<a class="headerlink" href="#wheeldisplacement" title="Link to this heading">#</a></h3>
+<dl class="cs class">
+<dt class="sig sig-object cs" id="class-Aeon.Foraging.WheelDisplacement">
+<span class="target" id="classAeon_1_1Foraging_1_1WheelDisplacement"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Foraging.WheelDisplacement</span></span><a class="headerlink" href="#class-Aeon.Foraging.WheelDisplacement" title="Link to this definition">#</a></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-Aeon.Foraging.WheelDisplacement.Process">
+<span class="target" id="classAeon_1_1Foraging_1_1WheelDisplacement_1a895ccb0d8282a40f5b6b9ce20519d426"></span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">double</span><span class="pre">&gt;</span> <span class="sig-name descname"><span class="pre">Process</span></span> <span class="sig-paren">(</span><a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.IObservable-1" title="C# type: msdn ~&gt; System.IObservable"><span class="pre">IObservable</span></a><span class="pre">&lt;</span><span class="pre">ushort</span><span class="pre">&gt;</span> <em><span class="pre">source</span></em><span class="sig-paren">)</span><a class="headerlink" href="#function-Aeon.Foraging.WheelDisplacement.Process" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-properties">Properties</p>
+<dl class="cs property">
+<dt class="sig sig-object cs" id="property-Aeon.Foraging.WheelDisplacement.Radius">
+<span class="target" id="classAeon_1_1Foraging_1_1WheelDisplacement_1a69f9a7ea7c39c1e872ee3c8c97b497fd"></span><span class="pre">double</span> <span class="sig-name descname"><span class="pre">Radius</span></span> <span class="pre">{</span> <em class="property"><span class="pre">get;</span> <span class="pre">set;</span></em> <span class="pre">}</span> <span class="pre">=</span> <span class="pre">1</span><a class="headerlink" href="#property-Aeon.Foraging.WheelDisplacement.Radius" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
 </section>
 </section>
 
@@ -804,20 +841,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Aeon.Environment.SubjectSex.html"
+       href="Aeon.Environment.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><a id="Aeon_Environment_SubjectSex"></a> Enum SubjectSex</p>
+        <p class="prev-next-title">Aeon.Environment</p>
       </div>
     </a>
     <a class="right-next"
-       href="Aeon.Foraging.CreateDispenserEvent.html"
+       href="Aeon.Video.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><a id="Aeon_Foraging_CreateDispenserEvent"></a> Class CreateDispenserEvent</p>
+        <p class="prev-next-title">Aeon.Video</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -840,19 +877,33 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enums">Enums</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enums">Enums</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispensereventtype">DispenserEventType</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#createdispenserevent">CreateDispenserEvent</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispenseraccumulate">DispenserAccumulate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispensercontroller">DispenserController</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispensereventargs">DispenserEventArgs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispensereventcontrol">DispenserEventControl</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispensereventvisualizer">DispenserEventVisualizer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispenserstate">DispenserState</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatdispenserstate">FormatDispenserState</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wheeldisplacement">WheelDisplacement</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../../_sources/reference/api/acquisition/Aeon.Foraging.md.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/reference/api/acquisition/Aeon.Foraging.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -867,8 +918,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -882,7 +933,7 @@
     <p class="theme-version">
     Built with the
     <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a>
-    0.16.0.
+    0.16.1.
     </p></div>
       
     </div>
