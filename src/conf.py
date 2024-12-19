@@ -69,7 +69,8 @@ extensions = [
     "myst_nb",
     "sphinx_design",
     "sphinx_copybutton",
-    "convertworkflow" "breathe",
+    "convertworkflow",
+    "breathe",
     "sphinx_csharp",
 ]
 
