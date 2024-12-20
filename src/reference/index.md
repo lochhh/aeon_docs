@@ -43,3 +43,4 @@ hardware
 api
 data_contract
 glossary
+sample_workflow
