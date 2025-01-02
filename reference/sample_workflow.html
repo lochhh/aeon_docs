@@ -445,14 +445,24 @@
 <h1>Sample Bonsai code<a class="headerlink" href="#sample-bonsai-code" title="Link to this heading">#</a></h1>
 <section id="markdown">
 <h2>Markdown<a class="headerlink" href="#markdown" title="Link to this heading">#</a></h2>
+<p>using the markdown <code class="docutils literal notranslate"><span class="pre">workflow</span></code> codeblock:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="sb">```workflow</span><span class="w"> </span>../workflows/CentroidModel.bonsai
+<span class="sb">```</span>
+</pre></div>
+</div>
+<p>using the <code class="docutils literal notranslate"><span class="pre">workflow</span></code> directive:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{workflow} ../workflows/CentroidModel.bonsai
 :::
-
-or optionally providing alt-text
-
-:::{workflow} ../workflows/CentroidModel.bonsai
+</pre></div>
+</div>
+<p>or optionally providing alt-text:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{workflow} ../workflows/CentroidModel.bonsai
     :alt: PredictCentroids
 :::
+
+<span class="sb">```workflow</span><span class="w"> </span>../workflows/CentroidModel.bonsai
+<span class="s">    :alt: PredictCentroids</span>
+<span class="sb">```</span>
 </pre></div>
 </div>
 <p>will render as</p>
@@ -462,16 +472,17 @@ or optionally providing alt-text
 </section>
 <section id="rst">
 <h2>RST<a class="headerlink" href="#rst" title="Link to this heading">#</a></h2>
+<p>using the <code class="docutils literal notranslate"><span class="pre">workflow</span></code> directive:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span> ../workflows/CentroidModel.bonsai
-
-or
-
-<span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span> 
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span> 
 <span class="c">    ../workflows/CentroidModel.bonsai</span>
-
-or optionally providing alt-text
-
-<span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span> ../workflows/CentroidModel.bonsai
+</pre></div>
+</div>
+<p>or optionally providing alt-text:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span> ../workflows/CentroidModel.bonsai
     <span class="nc">:alt:</span> PredictCentroids
 </pre></div>
 </div>
