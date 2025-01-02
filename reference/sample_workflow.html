@@ -446,49 +446,53 @@
 <section id="markdown">
 <h2>Markdown<a class="headerlink" href="#markdown" title="Link to this heading">#</a></h2>
 <p>using the markdown <code class="docutils literal notranslate"><span class="pre">workflow</span></code> codeblock:</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="sb">```workflow</span><span class="w"> </span>../workflows/CentroidModel.bonsai
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="sb">```workflow</span>
+<span class="s">../workflows/CentroidModel.bonsai</span>
 <span class="sb">```</span>
 </pre></div>
 </div>
 <p>using the <code class="docutils literal notranslate"><span class="pre">workflow</span></code> directive:</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{workflow} ../workflows/CentroidModel.bonsai
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{workflow}
+../workflows/CentroidModel.bonsai
 :::
 </pre></div>
 </div>
 <p>or optionally providing alt-text:</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{workflow} ../workflows/CentroidModel.bonsai
-    :alt: PredictCentroids
-:::
-
-<span class="sb">```workflow</span><span class="w"> </span>../workflows/CentroidModel.bonsai
-<span class="s">    :alt: PredictCentroids</span>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="sb">```workflow</span>
+<span class="s">:alt: PredictCentroids</span>
+<span class="s">../workflows/CentroidModel.bonsai</span>
 <span class="sb">```</span>
+
+or
+
+:::{workflow}
+:alt: PredictCentroids
+../workflows/CentroidModel.bonsai
+:::
 </pre></div>
 </div>
 <p>will render as</p>
 <div class="workflow docutils container">
-<img alt="../_images/CentroidModel.svg" src="../_images/CentroidModel.svg" />
+<img alt="PredictCentroids" src="../_images/CentroidModel.svg" />
 </div>
 </section>
 <section id="rst">
 <h2>RST<a class="headerlink" href="#rst" title="Link to this heading">#</a></h2>
 <p>using the <code class="docutils literal notranslate"><span class="pre">workflow</span></code> directive:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span> ../workflows/CentroidModel.bonsai
-</pre></div>
-</div>
-<p>or</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span> 
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span>
 <span class="c">    ../workflows/CentroidModel.bonsai</span>
 </pre></div>
 </div>
 <p>or optionally providing alt-text:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span> ../workflows/CentroidModel.bonsai
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">workflow</span><span class="p">::</span>
     <span class="nc">:alt:</span> PredictCentroids
+    
+<span class="c">    ../workflows/CentroidModel.bonsai</span>
 </pre></div>
 </div>
 <p>will render as</p>
 <div class="workflow docutils container">
-<img alt="../_images/CentroidModel.svg" src="../_images/CentroidModel.svg" />
+<img alt="PredictCentroids" src="../_images/CentroidModel.svg" />
 </div>
 </section>
 </section>
