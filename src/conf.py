@@ -283,7 +283,8 @@ myst_url_schemes = {
     "sphinx-doc": "https://www.sphinx-doc.org/en/master/usage/{{path}}#{{fragment}}",
     "niu-howto": "https://howto.neuroinformatics.dev/programming/SSH-SWC-cluster#{{fragment}}",
 }
-
+# Interpret a code fence as a directive for the specified language(s)
+myst_fence_as_directive = ["workflow"]
 # Disable notebook execution
 nb_execution_mode = "off"
 
