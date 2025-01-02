@@ -178,3 +178,5 @@ myst_url_schemes = {
     "python-pep": "https://peps.python.org/pep-{{path}}",
     "niu-howto": "https://howto.neuroinformatics.dev/programming/SSH-SWC-cluster#{{fragment}}",
 }
+# Interpret a code fence as a directive for the specified language(s)
+myst_fence_as_directive = ["workflow"]
