@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 class WorkflowDirective(Directive):
     """A directive to include a Bonsai workflow image.
 
-    The directive takes the path of a .bonsai workflow file as a required argument
+    The directive takes the path of a .bonsai workflow file as its content,
     and looks for the corresponding .svg file to include as an image.
     As an optional argument, an alt text for the image can be provided.
 
@@ -25,26 +25,29 @@ class WorkflowDirective(Directive):
     into the _workflows folder so it can be fetched by copy button scripts.
     """
 
-    required_arguments = 1
+    required_arguments = 0
     optional_arguments = 0
-    final_argument_whitespace = (
-        True  # Allow for long URLs which may span multiple lines
-    )
-    has_content = False
+    has_content = True
     option_spec = {"alt": directives.unchanged}
 
     def run(self):
         try:
+            # Raise an error if the directive does not have contents.
+            self.assert_has_content()
+            srcpath = Path(directives.uri(self.content[0]))
+            imgpath = srcpath.with_suffix(".svg")
+            # Create a container to contain the workflow image
+            self.options["uri"] = str(imgpath)
+            image_node = nodes.image(rawsource=self.block_text, **self.options)
+            container_node = nodes.container(classes=["workflow"])
+            container_node += image_node
             # Make sure the workflow source file exists and has .bonsai extension
-            srcpath = Path(directives.uri(self.arguments[0]))
             abs_srcpath = (
                 Path(self.state.document["source"]).parent / srcpath
             ).resolve()
             if not abs_srcpath.exists() or abs_srcpath.suffix != ".bonsai":
                 logger.warning(__("Invalid workflow file: %s"), srcpath)
-                return []
             # Make sure the workflow image exists
-            imgpath = srcpath.with_suffix(".svg")
             abs_imgpath = (
                 Path(self.state.document["source"]).parent / imgpath
             ).resolve()
@@ -54,7 +57,6 @@ class WorkflowDirective(Directive):
                     imgpath,
                     abs_imgpath,
                 )
-                return []
             # Copy workflow image to _images folder
             imagedir = self.state.document.settings.env.app.builder.outdir / "_images"
             destpath = imagedir / imgpath.name
@@ -68,15 +70,10 @@ class WorkflowDirective(Directive):
                 abs_workflowpath = abs_workflowdir / srcpath.name
                 ensuredir(abs_workflowdir)
                 copyfile(abs_srcpath, abs_workflowpath)
-            # Create a container to contain the workflow image
-            self.options["uri"] = str(imgpath)
-            image_node = nodes.image(rawsource=self.block_text, **self.options)
-            container_node = nodes.container(classes=["workflow"])
-            container_node += image_node
-            return [container_node]
         except Exception as exc:
             logger.warning(__("Could not fetch workflow image: %s [%s]"), imgpath, exc)
-            return []
+        finally:
+            return [container_node]
 
 
 def setup(app: Sphinx) -> ExtensionMetadata:
