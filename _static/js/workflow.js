@@ -18,9 +18,9 @@ class WorkflowContainer {
         // workflow SVG renders in a visible pre element
         const workflowCell = document.createElement("pre");
         wrap.appendChild(workflowCell);
-        //const imgParent = img.parentElement;
+        const imgParent = img.parentElement;
         workflowCell.appendChild(img);
-        //imgParent.remove();
+        imgParent.remove();
 
         // set button SVG from sphinx-copybutton
         const id = "workflowcell" + WorkflowContainer.cellCounter++;

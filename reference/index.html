@@ -30,7 +30,7 @@
   <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -51,10 +51,10 @@
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/index';</script>
-    <script src="../_static/js/workflow.js?v=709e43b5"></script>
+    <script src="../_static/js/workflow.js?v=e7055275"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hardware Overview" href="hardware.html" />
+    <link rel="next" title="Hardware Assembly" href="hardware.html" />
     <link rel="prev" title="Style and Documentation Guidelines" href="../contributor/style_and_doc_guidelines.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -338,9 +338,24 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="hardware.html">Hardware Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="hardware.html">Hardware Assembly</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="hardware/feeder.html">Feeder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hardware/nest.html">Nest</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="acquisition.html">Acquisition Modules</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/activity_tracking.html">Activity Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/alerts.html">Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/camera.html">Spinnaker Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/camera_controller.html">Multi-Camera Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/cv_tracking.html">Computer Vision Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/foraging_patch.html">Foraging Patch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/monitors.html">Device Synchronisation Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/nest.html">Nest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/pose_estimation.html">Pose Estimation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/rfid_reader.html">RFID Reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acquisition/template.html">[Template] Device Name</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -380,7 +395,6 @@
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="data_contract.html">Data Schema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sample_workflow.html">Sample Bonsai code</a></li>
 </ul>
 </div>
 </nav></div>
@@ -447,10 +461,10 @@
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Hardware Overview</div>
+Hardware Assembly</div>
 </div>
 <img alt="" class="sd-card-img-bottom sd-img-bottom-small" src="../_images/noun-hardware-setup-6046729.svg" />
-<a class="sd-stretched-link sd-hide-link-text reference internal" href="hardware.html#target-hardware"><span class="std std-ref">Hardware Overview</span></a></div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="hardware.html#target-hardware"><span class="std std-ref">Hardware Assembly</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
@@ -460,6 +474,15 @@ API Reference</div>
 </div>
 <img alt="" class="sd-card-img-bottom sd-img-bottom-small" src="../_images/noun-code-6878936.svg" />
 <a class="sd-stretched-link sd-hide-link-text reference internal" href="api.html#target-api-reference"><span class="std std-ref">API Reference</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Acquisition Modules</div>
+</div>
+<img alt="" class="sd-card-img-bottom sd-img-bottom-small" src="../_images/noun-timeline-5147845.svg" />
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="acquisition.html#target-acquisition-modules"><span class="std std-ref">Acquisition Modules</span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
@@ -509,7 +532,7 @@ Glossary</div>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Hardware Overview</p>
+        <p class="prev-next-title">Hardware Assembly</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
