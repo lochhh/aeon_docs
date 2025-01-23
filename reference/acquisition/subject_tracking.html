@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Computer Vision Tracking &#8212; Aeon  documentation</title>
+    <title>Subject Tracking &#8212; Aeon  documentation</title>
   
   
   
@@ -50,12 +50,12 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/acquisition/cv_tracking';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/acquisition/subject_tracking';</script>
     <script src="../../_static/js/workflow.js?v=e7055275"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Foraging Patch" href="foraging_patch.html" />
-    <link rel="prev" title="Multi-Camera Controller" href="camera_controller.html" />
+    <link rel="next" title="[Template] Device Name" href="template.html" />
+    <link rel="prev" title="RFID Reader" href="rfid_reader.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -348,13 +348,13 @@
 <li class="toctree-l2"><a class="reference internal" href="alerts.html">Alerts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="camera.html">Spinnaker Camera</a></li>
 <li class="toctree-l2"><a class="reference internal" href="camera_controller.html">Multi-Camera Controller</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Computer Vision Tracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foraging_patch.html">Foraging Patch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitors.html">Device Synchronisation Monitors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nest.html">Nest</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pose_estimation.html">Pose Estimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rfid_reader.html">RFID Reader</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Subject Tracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="template.html">[Template] Device Name</a></li>
 </ul>
 </details></li>
@@ -441,7 +441,7 @@
     
     <li class="breadcrumb-item"><a href="../acquisition.html" class="nav-link">Acquisition Modules</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Computer Vision Tracking</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Subject Tracking</span></li>
   </ul>
 </nav>
 </div>
@@ -458,10 +458,12 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="computer-vision-tracking">
-<span id="target-module-cv-tracking"></span><h1>Computer Vision Tracking<a class="headerlink" href="#computer-vision-tracking" title="Link to this heading">#</a></h1>
-<p>The computer vision tracking module facilitates tracking and analysing the positions of animals within specific regions or areas in the arena that are of behavioural significance (e.g. <a class="reference internal" href="nest.html#target-module-nest"><span class="std std-ref">nest</span></a>, <a class="reference internal" href="foraging_patch.html#target-module-foraging-patch"><span class="std std-ref">foraging patch</span></a>) based on video data from <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref">camera</span></a> devices.
-It includes nodes such as <code class="docutils literal notranslate"><span class="pre">PositionTracking</span></code> for detecting and tracking objects, <code class="docutils literal notranslate"><span class="pre">RegionTracking</span></code> for determining if an object is within a specific region, <code class="docutils literal notranslate"><span class="pre">DistanceFromPoint</span></code> for calculating the distance between an object and a point, and <code class="docutils literal notranslate"><span class="pre">InRange</span></code> for checking if an object is within a specified range.
+  <section id="subject-tracking">
+<span id="target-module-subject-tracking"></span><h1>Subject Tracking<a class="headerlink" href="#subject-tracking" title="Link to this heading">#</a></h1>
+<p>The subject tracking module processes <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref">camera</span></a> frame events to facilitate comprehensive tracking and analysis of animal positions and movements in the arena or within specific regions or areas in the arena that are of behavioural significance (e.g. <a class="reference internal" href="nest.html#target-module-nest"><span class="std std-ref">nest</span></a>, <a class="reference internal" href="foraging_patch.html#target-module-foraging-patch"><span class="std std-ref">foraging patch</span></a>).
+It includes nodes such as <code class="docutils literal notranslate"><span class="pre">PositionTracking</span></code> for detecting and tracking blobs (of objects, e.g. animals);
+<code class="docutils literal notranslate"><span class="pre">PoseTracking</span></code>, which leverages <a class="reference external" href="https://sleap.ai/">SLEAP’s</a> multi-animal tracking capabilities, to simultaneously track and identify different animals; and
+<code class="docutils literal notranslate"><span class="pre">RegionTracking</span></code> for determining if a tracked object is within a specific region.
 These enable real-time tracking, event triggering, and data logging, making it easier to monitor and analyse animal behaviour in various experimental setups.</p>
 <section id="nodes">
 <h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading">#</a></h2>
@@ -473,18 +475,18 @@ This mask should include any area in which the animal could be at a given time, 
 This ensures any movement or activity outside of the region of interest (therefore have pixel values of zero in the user-generated mask) are eliminated and not tracked.
 Below is an example of an input image of the arena from a top-view camera and its corresponding mask.</p>
 <div class="things-in-a-row docutils">
-<figure class="align-default" id="id14">
+<figure class="align-default" id="id20">
 <a class="reference internal image-reference" href="../../_images/module-cv-tracking-cameratop.png"><img alt="camera top" src="../../_images/module-cv-tracking-cameratop.png" style="height: 200px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Arena image from “CameraTop”.</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Arena image from “CameraTop”.</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-default" id="id15">
+<figure class="align-default" id="id21">
 <a class="reference internal image-reference" href="../../_images/module-cv-tracking-arena-mask.png"><img alt="arena mask" src="../../_images/module-cv-tracking-arena-mask.png" style="height: 200px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Arena mask.</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Arena mask.</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -578,18 +580,21 @@ To avoid confusion<!-- with what? -->, change the display name of the externalis
 </div>
 </section>
 </section>
-<section id="regiontracking">
-<h3>RegionTracking<a class="headerlink" href="#regiontracking" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">RegionTracking</span> <span class="pre">(Aeon.Vision)</span></code> node computes and returns a <code class="docutils literal notranslate"><span class="pre">boolean</span></code> describing whether the <a class="reference internal" href="#positiontracking">tracking position</a> of an animal falls within a defined <a class="reference internal" href="#target-node-regiontracking-properties"><span class="std std-ref">region</span></a> of the camera image.</p>
+<section id="posetracking">
+<h3>PoseTracking<a class="headerlink" href="#posetracking" title="Link to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code> node utilises <a class="reference external" href="https://sleap.ai/">SLEAP</a>, which is fully integrated with Bonsai through the <a class="reference external" href="https://bonsai-rx.org/sleap/index.html">Bonsai.Sleap</a> package, to simultaneously track and identify different animals within the arena.
+It loads a trained SLEAP model, and runs inference on frame events from a <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref">camera</span></a> device, returning timestamped data containing the position of each animal, their identity and confidence measures.</p>
 <!-- To be completed
 #### Inputs
-Tracking events in the format `Harp.Timestamped<Bonsai.Vision.ConnectedComponentCollection>` generated by a [`PositionTracking (Aeon.Vision)`](#positiontracking) node?
-
 #### Outputs
-boolean? 
+A sequence of `<type>` with the following attributes. 
+| Attribute name     | Type                           | Description                      |
+|--------------------|--------------------------------|----------------------------------|
+| **Attr1**          | `Type`                         | Description of Attr1             |
+| **Attr2**          | `Type`                         | Description of Attr2             |
 -->
-<section id="target-node-regiontracking-properties">
-<span id="id1"></span><h4>Properties<a class="headerlink" href="#target-node-regiontracking-properties" title="Link to this heading">#</a></h4>
+<section id="id1">
+<h4>Properties<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <section id="general">
 <h5>General<a class="headerlink" href="#general" title="Link to this heading">#</a></h5>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -599,8 +604,20 @@ boolean?
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Region</strong></p></td>
-<td><p>An array of four <code class="docutils literal notranslate"><span class="pre">OpenCV.NET.Points</span></code>. These define the corners (anticlockwise from top left) of the region of interest</p></td>
+<tr class="row-even"><td><p><strong>IdentityMinConfidence</strong></p></td>
+<td><p>Set the minimum confidence score applied to computation of an object (animal) instance’s centroid</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>FrameStep</strong></p></td>
+<td><p>Frame by frame inference and pose estimation is computationally expensive. It may be helpful to downsample the incoming stream to run inference in real time. Here you can set the number of frames to skip between incoming frames</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>IdentityMinConfidence</strong></p></td>
+<td><p>Set the minimum confidence required to label an instance’s identity</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>ModelPath</strong></p></td>
+<td><p>Set the partial path to the saved <code class="docutils literal notranslate"><span class="pre">frozen_graph.pb</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PartMinConfidence</strong></p></td>
+<td><p>Set the minimum confidence required to assign a label to an instance’s keypoint</p></td>
 </tr>
 </tbody>
 </table>
@@ -608,7 +625,7 @@ boolean?
 </section>
 <section id="id2">
 <h5>Subjects<a class="headerlink" href="#id2" title="Link to this heading">#</a></h5>
-<p>Both generated and input events of this node are published to shared <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
+<p>Both generated and input events of this node are collected and passed to published <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
 Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events for this node.
 Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
 <section id="id3">
@@ -621,9 +638,9 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>RegionEvents</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;bool&gt;</span></code></p></td>
-<td><p>The <code class="docutils literal notranslate"><span class="pre">Subject</span></code> to which region events will be published. This stream is also output directly by the node</p></td>
+<tr class="row-even"><td><p><strong>TrackingEvents</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;Bonsai.Vision.ConnectedComponentCollection&gt;</span></code></p></td>
+<td><p>The <code class="docutils literal notranslate"><span class="pre">Subject</span></code> to which tracking data will be published. This stream is also output directly by the node</p></td>
 </tr>
 </tbody>
 </table>
@@ -651,6 +668,88 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 </section>
 <section id="id5">
 <h4>Usage<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<p>The trained model must first be exported to <a class="reference external" href="https://protobuf.dev/">Protocol buffer (.pb) format</a> using the <a class="reference external" href="https://sleap.ai/guides/cli.html#sleap-export"><code class="docutils literal notranslate"><span class="pre">sleap-export</span></code></a> command line interface.
+Next, create a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> and give it an appropriate name, e.g. “PoseTracking”.
+Inside, place a <code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code> node, externalise all properties, and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.</p>
+<div class="workflow docutils">
+<p><img alt="poseTracking" src="../../_images/poseTracking.svg" /></p>
+</div>
+</section>
+</section>
+<section id="regiontracking">
+<h3>RegionTracking<a class="headerlink" href="#regiontracking" title="Link to this heading">#</a></h3>
+<!-- I assume this node can be used with either PositionTracking or PoseTracking. If incorrect, we should remove the PoseTracking bit. -->
+<p>The <code class="docutils literal notranslate"><span class="pre">RegionTracking</span> <span class="pre">(Aeon.Vision)</span></code> node computes and returns a <code class="docutils literal notranslate"><span class="pre">boolean</span></code> describing whether the tracked position (from a <a class="reference internal" href="#positiontracking"><code class="docutils literal notranslate"><span class="pre">PositionTracking</span> <span class="pre">(Aeon.Vision)</span></code></a> or <a class="reference internal" href="#posetracking"><code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code></a> node) of an animal falls within a defined <a class="reference internal" href="#target-node-regiontracking-properties"><span class="std std-ref">region</span></a> of the camera image.</p>
+<!-- To be completed
+#### Inputs
+Tracking events in the format `Harp.Timestamped<Bonsai.Vision.ConnectedComponentCollection>` generated by a [`PositionTracking (Aeon.Vision)`](#positiontracking) node?
+
+#### Outputs
+boolean? 
+-->
+<section id="target-node-regiontracking-properties">
+<span id="id6"></span><h4>Properties<a class="headerlink" href="#target-node-regiontracking-properties" title="Link to this heading">#</a></h4>
+<section id="id7">
+<h5>General<a class="headerlink" href="#id7" title="Link to this heading">#</a></h5>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Region</strong></p></td>
+<td><p>An array of four <code class="docutils literal notranslate"><span class="pre">OpenCV.NET.Points</span></code>. These define the corners (anticlockwise from top left) of the region of interest</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id8">
+<h5>Subjects<a class="headerlink" href="#id8" title="Link to this heading">#</a></h5>
+<p>Both generated and input events of this node are published to shared <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
+Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events for this node.
+Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
+<section id="id9">
+<h6>Device event subjects<a class="headerlink" href="#id9" title="Link to this heading">#</a></h6>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Subject name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>RegionEvents</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;bool&gt;</span></code></p></td>
+<td><p>The <code class="docutils literal notranslate"><span class="pre">Subject</span></code> to which region events will be published. This stream is also output directly by the node</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id10">
+<h6>Device input subjects<a class="headerlink" href="#id10" title="Link to this heading">#</a></h6>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Subject name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>FrameEvents</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;Aeon.Acquisition.VideoDataFrame&gt;</span></code></p></td>
+<td><p>The <code class="docutils literal notranslate"><span class="pre">Subject</span></code> to subscribe to that carries frame events from a chosen camera</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+<section id="id11">
+<h4>Usage<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
 <p>Place a <code class="docutils literal notranslate"><span class="pre">RegionTracking</span> <span class="pre">(Aeon.Vision)</span></code> node, externalise the <code class="docutils literal notranslate"><span class="pre">Region</span></code> property, and rename it to indicate the region this node is responsible for monitoring (e.g. “NestRegion”).
 Next, add a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> node to subscribe to the common “TrackingEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> (e.g. “TrackingTop”) and connect it to the <code class="docutils literal notranslate"><span class="pre">RegionTracking</span> <span class="pre">(Aeon.Vision)</span></code> node.</p>
 <div class="workflow docutils">
@@ -660,7 +759,8 @@ Next, add a <code class="docutils literal notranslate"><span class="pre">Subscri
 </section>
 <section id="distancefrompoint">
 <h3>DistanceFromPoint<a class="headerlink" href="#distancefrompoint" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">DistanceFromPoint</span> <span class="pre">(Aeon.Vision)</span></code> node computes the distance (in pixels) between the <a class="reference internal" href="#positiontracking">tracking position</a> of an animal and a defined <a class="reference internal" href="#target-node-distancefrompoint-properties"><span class="std std-ref">point</span></a> in the camera image.</p>
+<!-- I assume this node can be used with either PositionTracking or PoseTracking. If incorrect, we should remove the PoseTracking bit. -->
+<p>The <code class="docutils literal notranslate"><span class="pre">DistanceFromPoint</span> <span class="pre">(Aeon.Vision)</span></code> node computes the distance (in pixels) between the tracked position (from a <a class="reference internal" href="#positiontracking"><code class="docutils literal notranslate"><span class="pre">PositionTracking</span> <span class="pre">(Aeon.Vision)</span></code></a> or <a class="reference internal" href="#posetracking"><code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code></a> node) of an animal and a defined <a class="reference internal" href="#target-node-distancefrompoint-properties"><span class="std std-ref">point</span></a> in the camera image.</p>
 <!-- To be completed
 #### Inputs
 Tracking events in the format `Harp.Timestamped<Bonsai.Vision.ConnectedComponentCollection>` generated by a [`PositionTracking (Aeon.Vision)`](#positiontracking) node?
@@ -673,9 +773,9 @@ This node does not output to a published `Subject`.
 :::
 -->
 <section id="target-node-distancefrompoint-properties">
-<span id="id6"></span><h4>Properties<a class="headerlink" href="#target-node-distancefrompoint-properties" title="Link to this heading">#</a></h4>
-<section id="id7">
-<h5>General<a class="headerlink" href="#id7" title="Link to this heading">#</a></h5>
+<span id="id12"></span><h4>Properties<a class="headerlink" href="#target-node-distancefrompoint-properties" title="Link to this heading">#</a></h4>
+<section id="id13">
+<h5>General<a class="headerlink" href="#id13" title="Link to this heading">#</a></h5>
 <!-- Shouldn't the property be a point "Value"? Check whether the property is indeed "Region". -->
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -692,8 +792,8 @@ This node does not output to a published `Subject`.
 </div>
 </section>
 </section>
-<section id="id8">
-<h4>Usage<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<section id="id14">
+<h4>Usage<a class="headerlink" href="#id14" title="Link to this heading">#</a></h4>
 <p>Place a <code class="docutils literal notranslate"><span class="pre">DistanceFromPoint</span> <span class="pre">(Aeon.Vision)</span></code> node, externalise the <code class="docutils literal notranslate"><span class="pre">Value</span></code> property, and rename it to indicate the point of interest for this node (e.g. “ArenaCenter”).
 Next, add a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> node to subscribe to the common “TrackingEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> (e.g. “TrackingTop”) and connect it to the <code class="docutils literal notranslate"><span class="pre">DistanceFromPoint</span> <span class="pre">(Aeon.Vision)</span></code> node.</p>
 <div class="workflow docutils">
@@ -705,16 +805,17 @@ like the <a class="reference internal" href="#inrange"><code class="docutils lit
 </section>
 <section id="inrange">
 <span id="target-node-inrange"></span><h3>InRange<a class="headerlink" href="#inrange" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">InRange</span> <span class="pre">(Aeon.Acquisition)</span></code> node is used to determine whether a <a class="reference internal" href="#positiontracking">tracked object</a> is within a specified <a class="reference internal" href="#target-node-inrange-properties"><span class="std std-ref">range</span></a> in a single dimension.</p>
+<!-- I assume this node can be used with either PositionTracking or PoseTracking. If incorrect, we should remove the PoseTracking bit. -->
+<p>The <code class="docutils literal notranslate"><span class="pre">InRange</span> <span class="pre">(Aeon.Acquisition)</span></code> node is used to determine whether the tracked position (from a <a class="reference internal" href="#positiontracking"><code class="docutils literal notranslate"><span class="pre">PositionTracking</span> <span class="pre">(Aeon.Vision)</span></code></a> or <a class="reference internal" href="#posetracking"><code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code></a> node) of an animal is within a specified <a class="reference internal" href="#target-node-inrange-properties"><span class="std std-ref">range</span></a> in a single dimension.</p>
 <!-- To be completed
 #### Inputs
 #### Outputs
 A `boolean` describing whether each value of a sequence falls within a specific range
 --> 
 <section id="target-node-inrange-properties">
-<span id="id9"></span><h4>Properties<a class="headerlink" href="#target-node-inrange-properties" title="Link to this heading">#</a></h4>
-<section id="id10">
-<h5>General<a class="headerlink" href="#id10" title="Link to this heading">#</a></h5>
+<span id="id15"></span><h4>Properties<a class="headerlink" href="#target-node-inrange-properties" title="Link to this heading">#</a></h4>
+<section id="id16">
+<h5>General<a class="headerlink" href="#id16" title="Link to this heading">#</a></h5>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Property name</p></th>
@@ -732,13 +833,13 @@ A `boolean` describing whether each value of a sequence falls within a specific 
 </table>
 </div>
 </section>
-<section id="id11">
-<h5>Subjects<a class="headerlink" href="#id11" title="Link to this heading">#</a></h5>
+<section id="id17">
+<h5>Subjects<a class="headerlink" href="#id17" title="Link to this heading">#</a></h5>
 <p>Events from this node are published to shared <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
 Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events for this node.
 Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
-<section id="id12">
-<h6>Device event subjects<a class="headerlink" href="#id12" title="Link to this heading">#</a></h6>
+<section id="id18">
+<h6>Device event subjects<a class="headerlink" href="#id18" title="Link to this heading">#</a></h6>
 <p><code class="docutils literal notranslate"><span class="pre">HarpMessage</span></code> events emitted to a <code class="docutils literal notranslate"><span class="pre">Subject</span></code></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -758,8 +859,8 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 </section>
 </section>
 </section>
-<section id="id13">
-<h4>Usage<a class="headerlink" href="#id13" title="Link to this heading">#</a></h4>
+<section id="id19">
+<h4>Usage<a class="headerlink" href="#id19" title="Link to this heading">#</a></h4>
 <p>The example here is based on a circular arena with a corridor around the outside.
 To determine if a given source is within the inner radius of the arena, first create a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> and give it an appropriate name, e.g. “InArena”.<br />
 Inside, place an <code class="docutils literal notranslate"><span class="pre">InRange</span> <span class="pre">(Aeon.Acquisition)</span></code> node, externalise all relevant properties (i.e. the upper bound that is the inner radius of the arena), and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowInput</span></code> (e.g. “Source1”) and <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.</p>
@@ -781,13 +882,15 @@ Description of any user interface components and visualisers.
 </section>
 <section id="logging">
 <h2>Logging<a class="headerlink" href="#logging" title="Link to this heading">#</a></h2>
-<p>“TrackingEvents” from a <code class="docutils literal notranslate"><span class="pre">PositionTracking</span> <span class="pre">(Aeon.Vision)</span></code> node can be logged along with the camera from which the “FrameEvents” originated using a <a class="reference internal" href="logging.html#target-node-logharpstate"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">LogHarpState</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node.
+<!-- The original "Logging" for the PoseTracking node was copied over from PositionTracking. So here I'm assuming the examples for PositionTracking are applicable to PoseTracking. Check if correct. -->
+<p>“TrackingEvents” from a <code class="docutils literal notranslate"><span class="pre">PositionTracking</span> <span class="pre">(Aeon.Vision)</span></code> or a <code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code> node can be logged along with the camera from which the “FrameEvents” originated using a <a class="reference internal" href="logging.html#target-node-logharpstate"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">LogHarpState</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node.
 First, add a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> to subscribe to the “TrackingEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> (e.g. “TrackingTop”).
-The events can then be formatted as <code class="docutils literal notranslate"><span class="pre">HarpMessages</span></code> and configured to write to register <strong>200</strong> (an unassigned register on all Harp devices) using the custom <code class="docutils literal notranslate"><span class="pre">FormatBinaryRegions</span> <span class="pre">(Aeon.Vision)</span></code> node.</p>
+The events can then be formatted as <code class="docutils literal notranslate"><span class="pre">HarpMessages</span></code> and configured to write to register <strong>200</strong> (an unassigned register on all Harp devices) using the custom <code class="docutils literal notranslate"><span class="pre">FormatBinaryRegions</span> <span class="pre">(Aeon.Vision)</span></code> node.
+Here is an example for logging a <code class="docutils literal notranslate"><span class="pre">PositionTracking</span></code> node.</p>
 <div class="workflow docutils">
 <p><img alt="logPositionTracking" src="../../_images/logPositionTracking.svg" /></p>
 </div>
-<p>Multiple <code class="docutils literal notranslate"><span class="pre">PositionTracking</span></code> nodes can be used to track objects in different camera streams simultaneously.
+<p>Multiple <code class="docutils literal notranslate"><span class="pre">PositionTracking</span></code> or <code class="docutils literal notranslate"><span class="pre">PoseTracking</span></code> nodes can be used to track objects in different camera streams simultaneously.
 To do this, select a different “FrameEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> for each node and save the results to the corresponding camera folders.</p>
 <!-- To be coompleted 
 ## State persistence
@@ -795,7 +898,12 @@ Information on state recovery or persistence requirements, if applicable.
 
 ## Alerts
 Explanation of any alert configurations and links to guides or further configuration steps.
---></section>
+-->
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>The <a class="reference external" href="https://sleap.ai/">SLEAP</a> and <a class="reference external" href="https://bonsai-rx.org/sleap/index.html">Bonsai.Sleap</a> documentation for more information on training models to be used with the <code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code> node.</p>
+</div>
+</section>
 </section>
 
 
@@ -809,20 +917,20 @@ Explanation of any alert configurations and links to guides or further configura
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="camera_controller.html"
+       href="rfid_reader.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Multi-Camera Controller</p>
+        <p class="prev-next-title">RFID Reader</p>
       </div>
     </a>
     <a class="right-next"
-       href="foraging_patch.html"
+       href="template.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Foraging Patch</p>
+        <p class="prev-next-title">[Template] Device Name</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -859,8 +967,8 @@ Explanation of any alert configurations and links to guides or further configura
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regiontracking">RegionTracking</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#target-node-regiontracking-properties">Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posetracking">PoseTracking</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Properties</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Subjects</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Device event subjects</a></li>
@@ -872,24 +980,37 @@ Explanation of any alert configurations and links to guides or further configura
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Usage</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distancefrompoint">DistanceFromPoint</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#target-node-distancefrompoint-properties">Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regiontracking">RegionTracking</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#target-node-regiontracking-properties">Properties</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">General</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Subjects</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Device event subjects</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Device input subjects</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Usage</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Usage</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distancefrompoint">DistanceFromPoint</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#target-node-distancefrompoint-properties">Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">General</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Usage</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inrange">InRange</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#target-node-inrange-properties">Properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">General</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Subjects</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Device event subjects</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">General</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Subjects</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Device event subjects</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Usage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Usage</a></li>
 </ul>
 </li>
 </ul>
@@ -902,7 +1023,7 @@ Explanation of any alert configurations and links to guides or further configura
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/reference/acquisition/cv_tracking.md.txt"
+      <li><a href="../../_sources/reference/acquisition/subject_tracking.md.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
