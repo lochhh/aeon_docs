@@ -600,7 +600,9 @@ Each of these subjects becomes accessible in the Bonsai editor’s toolbox anywh
 <h4>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h4>
 <p>Create a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> and give it an appropriate name, e.g. “Patch1”.
 Inside, place an <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code> node, externalise all properties, and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>:</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Foraging.UndergroundFeeder" src="../../_images/base-feeder.svg" /></p>
+</div>
 </section>
 </section>
 <section id="patchdispenser">
@@ -670,7 +672,9 @@ Each of these subjects becomes accessible in the Bonsai editor’s toolbox anywh
 Connect this to a <code class="docutils literal notranslate"><span class="pre">Condition</span></code> node that checks the <code class="docutils literal notranslate"><span class="pre">Value</span></code> of the incoming <code class="docutils literal notranslate"><span class="pre">Subject</span></code>.
 This is a <code class="docutils literal notranslate"><span class="pre">Boolean</span></code> that reports <code class="docutils literal notranslate"><span class="pre">True</span></code> on pellet delivery, and ensures only the rising edge of this signal is counted as a delivery.
 Finally, connect this to a <code class="docutils literal notranslate"><span class="pre">PatchDispenser</span> <span class="pre">(Aeon.Foraging)</span></code> node.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Foraging.PatchDispenser" src="../../_images/patchDispenser.svg" /></p>
+</div>
 </section>
 </section>
 <section id="pelletmonitor">
@@ -681,7 +685,9 @@ Why do we "expand" and show the workflow here and not for others?
 Are users expected to copy and paste this? -->
 <p>Within this node, pellet delivery commands received by the Harp output expander are filtered from the “PatchEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> and successful deliveries monitored through the “PelletDelivered” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> (e.g. “Patch1PelletDelivered”).
 The <code class="docutils literal notranslate"><span class="pre">RepeatEverySubject</span></code> node ensures this node is only running while an animal is present in the arena. <!-- This is not that clear to me; it seems to only run when a subject has entered, but if you had two subjects and removed one this would it not also stop, despite there being another subject stil present? --></p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Foraging.PelletMonitorWorkflow" src="../../_images/pelletMonitorWorkflow.svg" /></p>
+</div>
 <section id="id8">
 <h4>Inputs<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
 <p>None</p>
@@ -726,7 +732,9 @@ Each of these subjects becomes accessible in the Bonsai editor’s toolbox anywh
 <section id="id13">
 <h4>Usage<a class="headerlink" href="#id13" title="Link to this heading">#</a></h4>
 <p>To use a <code class="docutils literal notranslate"><span class="pre">PelletMonitor</span> <span class="pre">(Aeon.Foraging)</span></code> node, simply place one and configure its properties.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Foraging.PelletMonitor" src="../../_images/pelletMonitor.svg" /></p>
+</div>
 </section>
 </section>
 <section id="timespentonwheel">
@@ -736,7 +744,9 @@ Each of these subjects becomes accessible in the Bonsai editor’s toolbox anywh
 Alternatively, this would fit better under Usage in the WheelMoving node, as it shows how it is used. And there we can link back to TimeSpentOnWheel -->
 <!-- TODO: Fix link to wheelmoving.md -->
 <p>Within this node, the <a class="reference internal" href="#../../wheelMoving.md"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">WheelMoving</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node reports whether the wheel is in motion or not, and accumulates the differences between timestamps emitted by the feeder while the wheel is in motion.</p>
+<div class="workflow docutils">
 <p><img alt="timeSpentOnWheelWorkflow" src="../../_images/timeSpentOnWheelWorkflow.svg" /></p>
+</div>
 <section id="id14">
 <h4>Inputs<a class="headerlink" href="#id14" title="Link to this heading">#</a></h4>
 <p>None</p>
@@ -799,14 +809,18 @@ Existing subjects published outside of the node, but used for input / trigger
 <h4>Usage<a class="headerlink" href="#id19" title="Link to this heading">#</a></h4>
 <!-- TODO: Fix link to RepeatEveryBlock -->
 <p>To reset a <code class="docutils literal notranslate"><span class="pre">TimeSpentOnWheel</span> <span class="pre">(Aeon.Foraging)</span></code> monitor after a block transition, use a <a class="reference internal" href="#./RepeatEveryBlock.md"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">RepeatEveryBlock</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node and pass the result to an appropriately named <code class="docutils literal notranslate"><span class="pre">BehaviorSubject</span></code>, e.g. “Patch1TimeSpent”.</p>
-<p><img alt="timeSpentOnWheel" src="../../_images/timeSpentOnWheel.svg" /> <!-- remove these and replace with bonsai workflow from PR https://github.com/SainsburyWellcomeCentre/aeon_docs/pull/80 --></p>
+<div class="workflow docutils">
+<p><img alt="timeSpentOnWheel" src="../../_images/timeSpentOnWheel.svg" /></p>
+</div>
 </section>
 </section>
 <section id="timesincelastevent">
 <h3>TimeSinceLastEvent<a class="headerlink" href="#timesincelastevent" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">TimeSinceLastEvent</span> <span class="pre">(Aeon.Foraging)</span></code> node monitors the current state of pellet delivery commands and the beam break.</p>
 <!-- Is this the correct workflow? -->
+<div class="workflow docutils">
 <p><img alt="Aeon.Foraging.PelletMonitorWorkflow" src="../../_images/pelletMonitorWorkflow.svg" /></p>
+</div>
 <section id="id20">
 <h4>Inputs<a class="headerlink" href="#id20" title="Link to this heading">#</a></h4>
 <p>None</p>
@@ -875,7 +889,9 @@ Each of these subjects becomes accessible in the Bonsai editor’s toolbox anywh
 <h2>Logging<a class="headerlink" href="#logging" title="Link to this heading">#</a></h2>
 <p>Outputs from auxiliary nodes are first formatted using the <code class="docutils literal notranslate"><span class="pre">Format</span></code> node, within which the register addresses are configured for software generated data logs.
 Utilising available registers of the output expander, the formatted outputs are then combined to form a “Patch” assembly, before being passed to the<a class="reference internal" href="logging.html#target-node-logharpstate"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">LogHarpState</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node to be written to a log file.</p>
+<div class="workflow docutils">
 <p><img alt="logPatchEvents" src="../../_images/logPatchEvents.svg" /></p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Register address 203 is not shown in this workflow, but is generated as events marked as a retry following an unsuccessful delivery attempt.

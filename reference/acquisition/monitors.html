@@ -497,12 +497,16 @@ Sychronisation is constantly monitored across devices using a combination of <co
 <section id="monitoring-a-single-device">
 <h5>Monitoring a single device<a class="headerlink" href="#monitoring-a-single-device" title="Link to this heading">#</a></h5>
 <p>This example monitors the heartbeats from the ClockSynchronizer device itself.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.HeartbeatMonitor" src="../../_images/heartbeatMonitor.svg" /></p>
+</div>
 </section>
 <section id="monitoring-multiple-devices">
 <h5>Monitoring multiple devices<a class="headerlink" href="#monitoring-multiple-devices" title="Link to this heading">#</a></h5>
 <p>To monitor multiple devices at once, a <code class="docutils literal notranslate"><span class="pre">HeartbeatMonitor</span></code> node for each device should be added to a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> called, for example, “HeartbeatSources”, and the results merged to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code> of the group.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.HeartbeatSources merge" src="../../_images/heartbeatSourcesInt.svg" /></p>
+</div>
 </section>
 </section>
 </section>
@@ -556,7 +560,9 @@ It counts the number of devices in the <a class="reference internal" href="#moni
 <section id="id3">
 <h4>Usage<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <p>Pass the output from the <a class="reference internal" href="#monitoring-multiple-devices"><span class="xref myst">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></span></a> to a <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.HeartbeatSources" src="../../_images/heartbeatSources.svg" /></p>
+</div>
 </section>
 </section>
 </section>
@@ -566,7 +572,9 @@ It counts the number of devices in the <a class="reference internal" href="#moni
 Conditions can be based on the <a class="reference internal" href="#synchronizermonitor">outputs from the <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span></code> node</a>.
 For example, alerts can be triggered if the number of expected devices does not match the number of devices sending heartbeats, or if one or more devices are sending desynchronised heartbeats.
 The <code class="docutils literal notranslate"><span class="pre">ExpressionCondition</span></code> node then evaluates these conditions and passes the results to an <a class="reference internal" href="alerts.html#target-node-alertgate"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">AlertGate</span> <span class="pre">(Aeon.Acquisition)</span></code> node</span></a>, after which the alert is <a class="reference internal" href="alerts.html#target-node-sendalert"><span class="std std-ref">sent</span></a> and <a class="reference internal" href="alerts.html#target-node-formatlogmessage"><span class="std std-ref">logged to file</span></a>.</p>
+<div class="workflow docutils">
 <p><img alt="SynchMonitorLogs" src="../../_images/synchMonitorLogs.svg" /></p>
+</div>
 </section>
 </section>
 

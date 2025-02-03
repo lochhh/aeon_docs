@@ -527,7 +527,9 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 <p>Create a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code>.
 Inside, place an <code class="docutils literal notranslate"><span class="pre">ActivityTracking</span> <span class="pre">(Aeon.Vision)</span></code> node and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.
 Using a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code>, e.g. “CameraTop”, subscribe to the target <a class="reference internal" href="camera.html#target-module-camera"><span class="std std-ref">camera’s</span></a> “FrameEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> and connect it to the <code class="docutils literal notranslate"><span class="pre">ActivityTracking</span></code> node.</p>
+<div class="workflow docutils">
 <p><img alt="ActivityTracking" src="../../_images/activityTracking.svg" /></p>
+</div>
 <p>As with <a class="reference internal" href="subject_tracking.html#target-node-inrange"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">InRange</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a>, more than one region of interest can be defined using multiple <code class="docutils literal notranslate"><span class="pre">GroupWorkflows</span></code>, each containing a separate instance of <code class="docutils literal notranslate"><span class="pre">ActivityTracking</span> <span class="pre">(Aeon.Vision)</span></code>.</p>
 <!-- To be completed 
 ## GUI

@@ -634,7 +634,9 @@ Each of these subjects becomes accessible in the Bonsai editor’s toolbox anywh
 <h4>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h4>
 <p>Create a <code class="docutils literal notranslate"><span class="pre">Groupworkflow</span></code> and give it an appropriate name, e.g. “Nest”.
 Inside, place a <code class="docutils literal notranslate"><span class="pre">WeightScale</span> <span class="pre">(Aeon.Environment)</span></code> node, externalise all properties, and connect to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.</p>
+<div class="workflow docutils">
 <p><img alt="WeightScale" src="../../_images/weightScale.svg" /></p>
+</div>
 </section>
 </section>
 </section>
@@ -646,7 +648,9 @@ Inside, place a <code class="docutils literal notranslate"><span class="pre">Wei
 <h2>Logging<a class="headerlink" href="#logging" title="Link to this heading">#</a></h2>
 <p>Outputs from the nest module are collected and formatted into Harp messages using the <code class="docutils literal notranslate"><span class="pre">Harp.Format</span></code> and custom <code class="docutils literal notranslate"><span class="pre">FormatWeight</span></code> nodes to configure the register addresses for each data stream on a virtual Harp device, utilising commonly available registers.
 Logging of this virtual Harp device can then be performed as with any Harp device using the <a class="reference internal" href="logging.html#target-node-logharpstate"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">LogHarpState</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node.</p>
+<div class="workflow docutils">
 <p><img alt="logPatchEvents" src="../../_images/logWeight.svg" /></p>
+</div>
 <p><strong>Data schema</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>

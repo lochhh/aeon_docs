@@ -544,7 +544,9 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 <h4>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h4>
 <p>To place a camera source, first create a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> with an appropriate name for the camera, e.g. “CameraTop”.
 Inside, place a <code class="docutils literal notranslate"><span class="pre">SpinnakerVideoSource</span> <span class="pre">(Aeon.Video)</span></code> node, externalise all properties, and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.Camera" src="../../_images/camera.svg" /></p>
+</div>
 </section>
 </section>
 <section id="droppedframes">
@@ -553,7 +555,9 @@ Inside, place a <code class="docutils literal notranslate"><span class="pre">Spi
 Specifically, it monitors the “FrameID” to ensure frames arrive consecutively.</p>
 <!-- should this go under Outputs or Usage? -->
 <p>In the event that a frame is dropped, the node outputs the “Timestamp”, “Name” of the camera and the “FrameID” of the dropped frame.</p>
+<div class="workflow docutils">
 <p><img alt="DroppedFrames" src="../../_images/droppedFrames.svg" /></p>
+</div>
 <section id="id1">
 <h4>Properties<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <section id="id2">
@@ -587,7 +591,9 @@ Specifically, it monitors the actual time between receiving frames to ensure fra
 <!-- should this go under Outputs or Usage? 
 Check if these are indeed the correct outputs as they seem to be copied from DroppedFrames -->
 <p>In the event that no new frames arrive in time, the node outputs the “Timestamp”, “Name” of the camera and the “FrameID” of the dropped frame.</p>
+<div class="workflow docutils">
 <p><img alt="StreamTimeout" src="../../_images/streamTimeout.svg" /></p>
+</div>
 <p>To avoid false alarms when cameras are not active, subscription to the <code class="docutils literal notranslate"><span class="pre">StreamTimeout</span></code> workflow is controlled using the same triggers that activate and stop the cameras through the <a class="reference internal" href="camera_controller.html#target-module-camera-controller"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">CameraController</span></code></span></a>.</p>
 <section id="id4">
 <h4>Properties<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
@@ -626,7 +632,9 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 <section id="logging">
 <h2>Logging<a class="headerlink" href="#logging" title="Link to this heading">#</a></h2>
 <p>All frame events of a <a class="reference internal" href="#spinnakervideosource"><code class="docutils literal notranslate"><span class="pre">SpinnakerVideoSource</span> <span class="pre">(Aeon.Video)</span></code></a> node are logged using a <a class="reference internal" href="logging.html#target-node-logvideo"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">LogVideo</span></code> (<code class="docutils literal notranslate"><span class="pre">Aeon.Video</span></code>)</span></a> node.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Video.LogVideo" src="../../_images/logVideo.svg" /></p>
+</div>
 <p>This node saves the video itself in dedicated <code class="docutils literal notranslate"><span class="pre">.avi</span></code> files encoded with the <strong>FMP4 codec</strong>.
 Harp and hardware timestamps and the frame counter recorded at the camera are logged in corresponding <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files with the following columns:</p>
 <p><strong>Data schema</strong></p>
@@ -663,15 +671,23 @@ Harp and hardware timestamps and the frame counter recorded at the camera are lo
 <h2>Alerts<a class="headerlink" href="#alerts" title="Link to this heading">#</a></h2>
 <p>Camera streams are monitored for stream timeouts and dropped frames, which usually result from power outages or connection issues.
 The <a class="reference internal" href="#streamtimeout"><code class="docutils literal notranslate"><span class="pre">StreamTimeout</span></code></a> and <a class="reference internal" href="#droppedframes"><code class="docutils literal notranslate"><span class="pre">DroppedFrames</span></code></a> nodes detect these failure events and their outputs can be formatted as alert strings, which are then sent to the “EnvironmentAlertMessages” and “AlertLogs” <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to <a class="reference internal" href="alerts.html#target-node-sendalert"><span class="std std-ref">send</span></a> and <a class="reference internal" href="alerts.html#target-node-formatlogmessage"><span class="std std-ref">log</span></a> alerts, respectively.</p>
+<div class="workflow docutils">
 <p><img alt="CameraAlerts" src="../../_images/cameraAlerts.svg" /></p>
+</div>
 <p>In order to monitor multiple camera streams simultaneously, multiple instances of the <code class="docutils literal notranslate"><span class="pre">DroppedFrames</span></code> and <code class="docutils literal notranslate"><span class="pre">StreamTimeout</span></code> nodes can be merged before they are passed to the Alert <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
 This can be achieved by placing the nodes together in a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> and using <code class="docutils literal notranslate"><span class="pre">Merge</span></code> on the results before outputting them to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.
 Below is an example of how multiple <code class="docutils literal notranslate"><span class="pre">DroppedFrames</span></code> nodes are combined in a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> named “Dropped Frames Monitor”.</p>
+<div class="workflow docutils">
 <p><img alt="mergeDroppedFrames" src="../../_images/mergeDroppedFrames.svg" /></p>
+</div>
 <p>Similarly, multiple <code class="docutils literal notranslate"><span class="pre">StreamTimeout</span></code> nodes can be combined in another <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> named “Stream Timeout Monitor”.</p>
+<div class="workflow docutils">
 <p><img alt="mergeStreamTimeout" src="../../_images/mergeStreamTimeout.svg" /></p>
+</div>
 <p>Both “Dropped Frames Monitor” and “Stream Timeout Monitor” can then be used to monitor all camera streams simultaneously by configuring the <a class="reference internal" href="alerts.html#target-module-alerts"><span class="std std-ref">alerts</span></a>.</p>
+<div class="workflow docutils">
 <p><img alt="mergeCameraAlerts" src="../../_images/mergeCameraAlerts.svg" /></p>
+</div>
 </section>
 </section>
 

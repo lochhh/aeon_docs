@@ -527,7 +527,9 @@ Data is saved in hourly chunks using the following naming convention:</p>
 <section id="usage">
 <h4>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">LogData</span> <span class="pre">(Aeon.Acquisition)</span></code> node is generally the terminal node, to which a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> passes the data stream it is subscribed to for logging.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.LogData" src="../../_images/logData.svg" /></p>
+</div>
 <p>Incoming data streams can also be combined into dynamic classes using operators like <code class="docutils literal notranslate"><span class="pre">Zip</span></code> or <code class="docutils literal notranslate"><span class="pre">CombineLatest</span></code>.
 These combined streams can then be passed directly to a <code class="docutils literal notranslate"><span class="pre">LogData</span> <span class="pre">(Aeon.Acquisition)</span></code> node.
 The <code class="docutils literal notranslate"><span class="pre">Selector</span></code> property can be used to specify which members of the incoming data stream to be included for defining the column names and order in the resulting <code class="docutils literal notranslate"><span class="pre">.csv</span></code> log file.</p>
@@ -595,7 +597,9 @@ Data is saved in hourly chunks using the following naming convention:</p>
 <section id="id5">
 <h4>Usage<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">LogHarpState</span> <span class="pre">(Aeon.Acquisition)</span></code> node is generally the terminal node, to which a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> passes the Harp device events <code class="docutils literal notranslate"><span class="pre">Subject</span></code> it is subscribed to for logging.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.LogHarpState" src="../../_images/logHarpState.svg" /></p>
+</div>
 </section>
 </section>
 <section id="logvideo">
@@ -664,7 +668,9 @@ TODO: Fix clock synchronizer link -->
 <section id="id11">
 <h4>Usage<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">LogVideo</span> <span class="pre">(Aeon.Video)</span></code> node is generally the terminal node, to which a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> passes the frame events <code class="docutils literal notranslate"><span class="pre">Subject</span></code> it is subscribed to for logging.</p>
+<div class="workflow docutils">
 <p><img alt="Aeon.Video.LogVideo" src="../../_images/logVideo.svg" /></p>
+</div>
 <!-- To be completed
 ## GUI
 Description of any user interface components and visualisers.
