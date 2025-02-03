@@ -51,7 +51,7 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/acquisition/Aeon.Environment';</script>
-    <script src="../../../_static/js/workflow.js?v=e7055275"></script>
+    <script src="../../../_static/js/workflow.js?v=1800024c"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Aeon.Foraging" href="Aeon.Foraging.html" />
@@ -352,7 +352,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../acquisition/logging.html">Logging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../acquisition/monitors.html">Device Synchronisation Monitors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../acquisition/nest.html">Nest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../acquisition/pose_estimation.html">Pose Estimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../acquisition/rfid_reader.html">RFID Reader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../acquisition/subject_tracking.html">Subject Tracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../acquisition/template.html">[Template] Device Name</a></li>
@@ -569,7 +568,7 @@
 <h3>ActiveSubjectCollection<a class="headerlink" href="#activesubjectcollection" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.ActiveSubjectCollection">
-<span class="target" id="classAeon_1_1Environment_1_1ActiveSubjectCollection"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.ActiveSubjectCollection</span></span> <span class="pre">:</span> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Collections.ObjectModel.KeyedCollection-2" title="C# type: msdn ~&gt; System.Collections.ObjectModel.KeyedCollection"><span class="pre">KeyedCollection</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">,</span> <a class="reference internal" href="#class-Aeon.Environment.EnvironmentSubjectStateEntry" title="C# class: Aeon.Environment.EnvironmentSubjectStateEntry"><span class="pre">EnvironmentSubjectStateEntry</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.ActiveSubjectCollection" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1ActiveSubjectCollection"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.ActiveSubjectCollection</span></span> <span class="pre">:</span> <a class="reference external" href="https://learn.microsoft.com/en-us/dotnet/api/System.Collections.ObjectModel.KeyedCollection-2" title="C# type: msdn ~&gt; System.Collections.ObjectModel.KeyedCollection"><span class="pre">KeyedCollection</span></a><a class="headerlink" href="#class-Aeon.Environment.ActiveSubjectCollection" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::ActiveSubjectCollection:</p>
 <figure class="align-default">
 <div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-30a3875cf7985a5b7d49d2d6672ce32096e7ab6f.png" alt="digraph {
@@ -649,27 +648,27 @@
 <h3>AnnotationSource<a class="headerlink" href="#annotationsource" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.AnnotationSource">
-<span class="target" id="classAeon_1_1Environment_1_1AnnotationSource"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.AnnotationSource</span></span> <span class="pre">:</span> <a class="reference internal" href="Aeon.Acquisition.html#class-Aeon.Acquisition.MetadataSource" title="C# class: Aeon.Acquisition.MetadataSource"><span class="pre">Aeon.Acquisition.MetadataSource</span></a><span class="pre">&lt;</span><a class="reference internal" href="Aeon.Acquisition.html#class-Aeon.Acquisition.LogMessage" title="C# class: Aeon.Acquisition.LogMessage"><span class="pre">LogMessage</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.AnnotationSource" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1AnnotationSource"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.AnnotationSource</span></span> <span class="pre">:</span> <span class="pre">Aeon.Acquisition.MetadataSource</span><span class="pre">&lt;</span><span class="pre">TMetadata</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.AnnotationSource" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::AnnotationSource:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-2370854d02ee8c28e9c0accc322132cc9c363e81.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-79b128357a65b244225775843fb4547429d87c36.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.AnnotationSource&quot; tooltip=&quot;Aeon.Environment.AnnotationSource&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; LogMessage &gt;&quot; tooltip=&quot;MetadataSource&lt; LogMessage &gt;&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
 <p>Collaboration diagram for Aeon::Environment::AnnotationSource:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-2370854d02ee8c28e9c0accc322132cc9c363e81.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-79b128357a65b244225775843fb4547429d87c36.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.AnnotationSource&quot; tooltip=&quot;Aeon.Environment.AnnotationSource&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; LogMessage &gt;&quot; tooltip=&quot;MetadataSource&lt; LogMessage &gt;&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
@@ -857,27 +856,27 @@
 <h3>ButtonSource<a class="headerlink" href="#buttonsource" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.ButtonSource">
-<span class="target" id="classAeon_1_1Environment_1_1ButtonSource"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.ButtonSource</span></span> <span class="pre">:</span> <a class="reference internal" href="Aeon.Acquisition.html#class-Aeon.Acquisition.MetadataSource" title="C# class: Aeon.Acquisition.MetadataSource"><span class="pre">Aeon.Acquisition.MetadataSource</span></a><span class="pre">&lt;</span><span class="pre">string</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.ButtonSource" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1ButtonSource"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.ButtonSource</span></span> <span class="pre">:</span> <span class="pre">Aeon.Acquisition.MetadataSource</span><span class="pre">&lt;</span><span class="pre">TMetadata</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.ButtonSource" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::ButtonSource:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-5973be535bd966bdb412541a087323c0294da519.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-7aab0d187b95294ce5a71a95e7cf95255ee941fd.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.ButtonSource&quot; tooltip=&quot;Aeon.Environment.ButtonSource&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; string &gt;&quot; tooltip=&quot;MetadataSource&lt; string &gt;&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
 <p>Collaboration diagram for Aeon::Environment::ButtonSource:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-5973be535bd966bdb412541a087323c0294da519.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-7aab0d187b95294ce5a71a95e7cf95255ee941fd.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.ButtonSource&quot; tooltip=&quot;Aeon.Environment.ButtonSource&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; string &gt;&quot; tooltip=&quot;MetadataSource&lt; string &gt;&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
@@ -973,27 +972,27 @@
 <h3>CreateRoomLightMessage<a class="headerlink" href="#createroomlightmessage" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.CreateRoomLightMessage">
-<span class="target" id="classAeon_1_1Environment_1_1CreateRoomLightMessage"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.CreateRoomLightMessage</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><a class="reference internal" href="#struct-Aeon.Environment.RoomLightMessage" title="C# struct: Aeon.Environment.RoomLightMessage"><span class="pre">RoomLightMessage</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.CreateRoomLightMessage" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1CreateRoomLightMessage"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.CreateRoomLightMessage</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><a class="headerlink" href="#class-Aeon.Environment.CreateRoomLightMessage" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::CreateRoomLightMessage:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-35fd535acc83c97ca8e8eb7a01c6aedb28ce41a7.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-b38084f9ae163bba22ace099169eef43f4dae7ab.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.CreateRoomLightMessage&quot; tooltip=&quot;Aeon.Environment.CreateRoomLightMessage&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Source&lt; RoomLightMessage &gt;&quot; tooltip=&quot;Source&lt; RoomLightMessage &gt;&quot;]
+    &quot;2&quot; [label=&quot;Source&quot; tooltip=&quot;Source&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
 <p>Collaboration diagram for Aeon::Environment::CreateRoomLightMessage:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-35fd535acc83c97ca8e8eb7a01c6aedb28ce41a7.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-b38084f9ae163bba22ace099169eef43f4dae7ab.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.CreateRoomLightMessage&quot; tooltip=&quot;Aeon.Environment.CreateRoomLightMessage&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Source&lt; RoomLightMessage &gt;&quot; tooltip=&quot;Source&lt; RoomLightMessage &gt;&quot;]
+    &quot;2&quot; [label=&quot;Source&quot; tooltip=&quot;Source&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
@@ -1031,27 +1030,27 @@
 <h3>CreateRoomLightPreset<a class="headerlink" href="#createroomlightpreset" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.CreateRoomLightPreset">
-<span class="target" id="classAeon_1_1Environment_1_1CreateRoomLightPreset"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.CreateRoomLightPreset</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><span class="pre">&lt;</span><a class="reference internal" href="#struct-Aeon.Environment.RoomLightPreset" title="C# struct: Aeon.Environment.RoomLightPreset"><span class="pre">RoomLightPreset</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.CreateRoomLightPreset" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1CreateRoomLightPreset"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.CreateRoomLightPreset</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Source-1" title="C# type: bonsai ~&gt; Bonsai.Source"><span class="pre">Source</span></a><a class="headerlink" href="#class-Aeon.Environment.CreateRoomLightPreset" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::CreateRoomLightPreset:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-0019eb4c9041eacba3c2ea8f8cc61e7a9c81eb3c.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-878a07c7901bb9cc379dc39e181b3765a389c543.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.CreateRoomLightPreset&quot; tooltip=&quot;Aeon.Environment.CreateRoomLightPreset&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Source&lt; RoomLightPreset &gt;&quot; tooltip=&quot;Source&lt; RoomLightPreset &gt;&quot;]
+    &quot;2&quot; [label=&quot;Source&quot; tooltip=&quot;Source&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
 <p>Collaboration diagram for Aeon::Environment::CreateRoomLightPreset:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-0019eb4c9041eacba3c2ea8f8cc61e7a9c81eb3c.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-878a07c7901bb9cc379dc39e181b3765a389c543.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.CreateRoomLightPreset&quot; tooltip=&quot;Aeon.Environment.CreateRoomLightPreset&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Source&lt; RoomLightPreset &gt;&quot; tooltip=&quot;Source&lt; RoomLightPreset &gt;&quot;]
+    &quot;2&quot; [label=&quot;Source&quot; tooltip=&quot;Source&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
@@ -1311,27 +1310,27 @@
 <h3>EnumerateColony<a class="headerlink" href="#enumeratecolony" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.EnumerateColony">
-<span class="target" id="classAeon_1_1Environment_1_1EnumerateColony"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.EnumerateColony</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Combinator" title="C# type: bonsai ~&gt; Bonsai.Combinator"><span class="pre">Combinator</span></a><span class="pre">&lt;</span><a class="reference external" href="https://mysqlconnector.net/api/mysqlconnector/mysqlconnectiontype" title="C# type: mysqlconnector ~&gt; MySqlConnection"><span class="pre">MySqlConnection</span></a><span class="pre">,</span> <a class="reference internal" href="#class-Aeon.Environment.SubjectRecord" title="C# class: Aeon.Environment.SubjectRecord"><span class="pre">SubjectRecord</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.EnumerateColony" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1EnumerateColony"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.EnumerateColony</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Combinator" title="C# type: bonsai ~&gt; Bonsai.Combinator"><span class="pre">Combinator</span></a><a class="headerlink" href="#class-Aeon.Environment.EnumerateColony" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::EnumerateColony:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-e69f899e73db3ed868b9d30e27c20ff6c076fb17.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-d7f39330622eb24b49ced824ab4ebfbea3fbc64e.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.EnumerateColony&quot; tooltip=&quot;Aeon.Environment.EnumerateColony&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Combinator&lt; MySqlConnection, SubjectRecord &gt;&quot; tooltip=&quot;Combinator&lt; MySqlConnection, SubjectRecord &gt;&quot;]
+    &quot;2&quot; [label=&quot;Combinator&quot; tooltip=&quot;Combinator&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
 <p>Collaboration diagram for Aeon::Environment::EnumerateColony:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-e69f899e73db3ed868b9d30e27c20ff6c076fb17.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-d7f39330622eb24b49ced824ab4ebfbea3fbc64e.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.EnumerateColony&quot; tooltip=&quot;Aeon.Environment.EnumerateColony&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Combinator&lt; MySqlConnection, SubjectRecord &gt;&quot; tooltip=&quot;Combinator&lt; MySqlConnection, SubjectRecord &gt;&quot;]
+    &quot;2&quot; [label=&quot;Combinator&quot; tooltip=&quot;Combinator&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
@@ -1351,16 +1350,16 @@
 <h3>EnvironmentState<a class="headerlink" href="#environmentstate" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.EnvironmentState">
-<span class="target" id="classAeon_1_1Environment_1_1EnvironmentState"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.EnvironmentState</span></span> <span class="pre">:</span> <a class="reference internal" href="Aeon.Acquisition.html#class-Aeon.Acquisition.MetadataSource" title="C# class: Aeon.Acquisition.MetadataSource"><span class="pre">Aeon.Acquisition.MetadataSource</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Environment.EnvironmentStateMetadata" title="C# class: Aeon.Environment.EnvironmentStateMetadata"><span class="pre">EnvironmentStateMetadata</span></a><span class="pre">&gt;</span><span class="pre">,</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.INamedElement" title="C# type: bonsai ~&gt; Bonsai.INamedElement"><span class="pre">INamedElement</span></a><a class="headerlink" href="#class-Aeon.Environment.EnvironmentState" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1EnvironmentState"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.EnvironmentState</span></span> <span class="pre">:</span> <span class="pre">Aeon.Acquisition.MetadataSource</span><span class="pre">&lt;</span><span class="pre">TMetadata</span><span class="pre">&gt;</span><span class="pre">,</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.INamedElement" title="C# type: bonsai ~&gt; Bonsai.INamedElement"><span class="pre">INamedElement</span></a><a class="headerlink" href="#class-Aeon.Environment.EnvironmentState" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::EnvironmentState:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-22bcbb5358a13c45a7e46ac22cd25463f1961ffe.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-2ab66a727ab4101e4e62480ce0fb5238ec765c4b.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.EnvironmentState&quot; tooltip=&quot;Aeon.Environment.EnvironmentState&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;3&quot; [label=&quot;INamedElement&quot; tooltip=&quot;INamedElement&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; EnvironmentStateMetadata &gt;&quot; tooltip=&quot;MetadataSource&lt; EnvironmentStateMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
     &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
@@ -1368,13 +1367,13 @@
 </figure>
 <p>Collaboration diagram for Aeon::Environment::EnvironmentState:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-22bcbb5358a13c45a7e46ac22cd25463f1961ffe.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-2ab66a727ab4101e4e62480ce0fb5238ec765c4b.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.EnvironmentState&quot; tooltip=&quot;Aeon.Environment.EnvironmentState&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;3&quot; [label=&quot;INamedElement&quot; tooltip=&quot;INamedElement&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; EnvironmentStateMetadata &gt;&quot; tooltip=&quot;MetadataSource&lt; EnvironmentStateMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
     &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
@@ -1556,16 +1555,16 @@
 <h3>EnvironmentSubjectState<a class="headerlink" href="#environmentsubjectstate" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.EnvironmentSubjectState">
-<span class="target" id="classAeon_1_1Environment_1_1EnvironmentSubjectState"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.EnvironmentSubjectState</span></span> <span class="pre">:</span> <a class="reference internal" href="Aeon.Acquisition.html#class-Aeon.Acquisition.MetadataSource" title="C# class: Aeon.Acquisition.MetadataSource"><span class="pre">Aeon.Acquisition.MetadataSource</span></a><span class="pre">&lt;</span><a class="reference internal" href="#class-Aeon.Environment.EnvironmentSubjectStateMetadata" title="C# class: Aeon.Environment.EnvironmentSubjectStateMetadata"><span class="pre">EnvironmentSubjectStateMetadata</span></a><span class="pre">&gt;</span><span class="pre">,</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.INamedElement" title="C# type: bonsai ~&gt; Bonsai.INamedElement"><span class="pre">INamedElement</span></a><a class="headerlink" href="#class-Aeon.Environment.EnvironmentSubjectState" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1EnvironmentSubjectState"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.EnvironmentSubjectState</span></span> <span class="pre">:</span> <span class="pre">Aeon.Acquisition.MetadataSource</span><span class="pre">&lt;</span><span class="pre">TMetadata</span><span class="pre">&gt;</span><span class="pre">,</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.INamedElement" title="C# type: bonsai ~&gt; Bonsai.INamedElement"><span class="pre">INamedElement</span></a><a class="headerlink" href="#class-Aeon.Environment.EnvironmentSubjectState" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::EnvironmentSubjectState:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-3388fb31f6aea57b83236e57022307c604445685.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-830dde336732acfeced1bb100b26fa41f232c413.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.EnvironmentSubjectState&quot; tooltip=&quot;Aeon.Environment.EnvironmentSubjectState&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;3&quot; [label=&quot;INamedElement&quot; tooltip=&quot;INamedElement&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; EnvironmentSubjectStateMetadata &gt;&quot; tooltip=&quot;MetadataSource&lt; EnvironmentSubjectStateMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
     &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
@@ -1573,13 +1572,13 @@
 </figure>
 <p>Collaboration diagram for Aeon::Environment::EnvironmentSubjectState:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-3388fb31f6aea57b83236e57022307c604445685.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-830dde336732acfeced1bb100b26fa41f232c413.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.EnvironmentSubjectState&quot; tooltip=&quot;Aeon.Environment.EnvironmentSubjectState&quot; fillcolor=&quot;#BFBFBF&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;3&quot; [label=&quot;INamedElement&quot; tooltip=&quot;INamedElement&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; EnvironmentSubjectStateMetadata &gt;&quot; tooltip=&quot;MetadataSource&lt; EnvironmentSubjectStateMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
     &quot;1&quot; -&gt; &quot;3&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
@@ -1962,27 +1961,27 @@
 <h3>InterpolateRoomLightPreset<a class="headerlink" href="#interpolateroomlightpreset" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.InterpolateRoomLightPreset">
-<span class="target" id="classAeon_1_1Environment_1_1InterpolateRoomLightPreset"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.InterpolateRoomLightPreset</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Combinator" title="C# type: bonsai ~&gt; Bonsai.Combinator"><span class="pre">Combinator</span></a><span class="pre">&lt;</span><a class="reference internal" href="#struct-Aeon.Environment.RoomLightPreset" title="C# struct: Aeon.Environment.RoomLightPreset"><span class="pre">RoomLightPreset</span></a><span class="pre">,</span> <a class="reference internal" href="#struct-Aeon.Environment.RoomLightMessage" title="C# struct: Aeon.Environment.RoomLightMessage"><span class="pre">RoomLightMessage</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.InterpolateRoomLightPreset" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1InterpolateRoomLightPreset"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.InterpolateRoomLightPreset</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Combinator" title="C# type: bonsai ~&gt; Bonsai.Combinator"><span class="pre">Combinator</span></a><a class="headerlink" href="#class-Aeon.Environment.InterpolateRoomLightPreset" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::InterpolateRoomLightPreset:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-228d1f6db78893651ab97e76a3af3fd1ecf0b677.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-9d3937671b4f8883e45b8612f1eb2ddc7b820aa8.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.InterpolateRoomLightPreset&quot; tooltip=&quot;Aeon.Environment.InterpolateRoomLightPreset&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Combinator&lt; RoomLightPreset, RoomLightMessage &gt;&quot; tooltip=&quot;Combinator&lt; RoomLightPreset, RoomLightMessage &gt;&quot;]
+    &quot;2&quot; [label=&quot;Combinator&quot; tooltip=&quot;Combinator&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
 <p>Collaboration diagram for Aeon::Environment::InterpolateRoomLightPreset:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-228d1f6db78893651ab97e76a3af3fd1ecf0b677.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-9d3937671b4f8883e45b8612f1eb2ddc7b820aa8.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.InterpolateRoomLightPreset&quot; tooltip=&quot;Aeon.Environment.InterpolateRoomLightPreset&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Combinator&lt; RoomLightPreset, RoomLightMessage &gt;&quot; tooltip=&quot;Combinator&lt; RoomLightPreset, RoomLightMessage &gt;&quot;]
+    &quot;2&quot; [label=&quot;Combinator&quot; tooltip=&quot;Combinator&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
@@ -2089,27 +2088,27 @@
 <h3>ParseRfidMeasurement<a class="headerlink" href="#parserfidmeasurement" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.ParseRfidMeasurement">
-<span class="target" id="classAeon_1_1Environment_1_1ParseRfidMeasurement"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.ParseRfidMeasurement</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Combinator" title="C# type: bonsai ~&gt; Bonsai.Combinator"><span class="pre">Combinator</span></a><span class="pre">&lt;</span><a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.HarpMessage" title="C# type: harp ~&gt; Bonsai.Harp.HarpMessage"><span class="pre">HarpMessage</span></a><span class="pre">,</span> <a class="reference external" href="https://harp-tech.org/api/Bonsai.Harp.Timestamped" title="C# type: harp ~&gt; Bonsai.Harp.Timestamped"><span class="pre">Timestamped</span></a><span class="pre">&lt;</span><a class="reference internal" href="#struct-Aeon.Environment.RfidMeasurement" title="C# struct: Aeon.Environment.RfidMeasurement"><span class="pre">RfidMeasurement</span></a><span class="pre">&gt;</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.ParseRfidMeasurement" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1ParseRfidMeasurement"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.ParseRfidMeasurement</span></span> <span class="pre">:</span> <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Combinator" title="C# type: bonsai ~&gt; Bonsai.Combinator"><span class="pre">Combinator</span></a><a class="headerlink" href="#class-Aeon.Environment.ParseRfidMeasurement" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::ParseRfidMeasurement:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-9c0e4db8a7701d48c38a7afbc236136fab7d4137.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-242af9d007b8b200e409f61508fc4e9f3ff62b1f.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.ParseRfidMeasurement&quot; tooltip=&quot;Aeon.Environment.ParseRfidMeasurement&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Combinator&lt; HarpMessage, Timestamped&lt; RfidMeasurement &gt; &gt;&quot; tooltip=&quot;Combinator&lt; HarpMessage, Timestamped&lt; RfidMeasurement &gt; &gt;&quot;]
+    &quot;2&quot; [label=&quot;Combinator&quot; tooltip=&quot;Combinator&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
 <p>Collaboration diagram for Aeon::Environment::ParseRfidMeasurement:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-9c0e4db8a7701d48c38a7afbc236136fab7d4137.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-242af9d007b8b200e409f61508fc4e9f3ff62b1f.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.ParseRfidMeasurement&quot; tooltip=&quot;Aeon.Environment.ParseRfidMeasurement&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Combinator&lt; HarpMessage, Timestamped&lt; RfidMeasurement &gt; &gt;&quot; tooltip=&quot;Combinator&lt; HarpMessage, Timestamped&lt; RfidMeasurement &gt; &gt;&quot;]
+    &quot;2&quot; [label=&quot;Combinator&quot; tooltip=&quot;Combinator&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
@@ -2521,27 +2520,27 @@
 <h3>TareWeight<a class="headerlink" href="#tareweight" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.TareWeight">
-<span class="target" id="classAeon_1_1Environment_1_1TareWeight"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.TareWeight</span></span> <span class="pre">:</span> <a class="reference internal" href="Aeon.Acquisition.html#class-Aeon.Acquisition.MetadataSource" title="C# class: Aeon.Acquisition.MetadataSource"><span class="pre">Aeon.Acquisition.MetadataSource</span></a><span class="pre">&lt;</span><a class="reference external" href="https://horizongir.github.io/reactive/api/System.Reactive.Unit" title="C# type: reactive ~&gt; System.Reactive.Unit"><span class="pre">Unit</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.TareWeight" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1TareWeight"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.TareWeight</span></span> <span class="pre">:</span> <span class="pre">Aeon.Acquisition.MetadataSource</span><span class="pre">&lt;</span><span class="pre">TMetadata</span><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.TareWeight" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::TareWeight:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-867eb98fa9974418e3cb2233f20d96124d60964b.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-52339fbf56c82a63dcbc07751d0203a65740e6bc.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.TareWeight&quot; tooltip=&quot;Aeon.Environment.TareWeight&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; Unit &gt;&quot; tooltip=&quot;MetadataSource&lt; Unit &gt;&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
 <p>Collaboration diagram for Aeon::Environment::TareWeight:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-867eb98fa9974418e3cb2233f20d96124d60964b.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-52339fbf56c82a63dcbc07751d0203a65740e6bc.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.TareWeight&quot; tooltip=&quot;Aeon.Environment.TareWeight&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;MetadataSource&lt; Unit &gt;&quot; tooltip=&quot;MetadataSource&lt; Unit &gt;&quot;]
+    &quot;2&quot; [label=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot; tooltip=&quot;Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
@@ -2759,27 +2758,27 @@
 <h3>WeightRaw<a class="headerlink" href="#weightraw" title="Link to this heading">#</a></h3>
 <dl class="cs class">
 <dt class="sig sig-object cs" id="class-Aeon.Environment.WeightRaw">
-<span class="target" id="classAeon_1_1Environment_1_1WeightRaw"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.WeightRaw</span></span> <span class="pre">:</span> <a class="reference external" href="https://docs.unity3d.com/ScriptReference/Transform.html" title="C# type: unity ~&gt; Transform"><span class="pre">Transform</span></a><span class="pre">&lt;</span><a class="reference internal" href="#struct-Aeon.Environment.WeightMeasurement" title="C# struct: Aeon.Environment.WeightMeasurement"><span class="pre">WeightMeasurement</span></a><span class="pre">,</span> <a class="reference internal" href="#struct-Aeon.Environment.WeightMeasurement" title="C# struct: Aeon.Environment.WeightMeasurement"><span class="pre">WeightMeasurement</span></a><span class="pre">&gt;</span><a class="headerlink" href="#class-Aeon.Environment.WeightRaw" title="Link to this definition">#</a></dt>
+<span class="target" id="classAeon_1_1Environment_1_1WeightRaw"></span><em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Aeon.Environment.WeightRaw</span></span> <span class="pre">:</span> <a class="reference external" href="https://docs.unity3d.com/ScriptReference/Transform.html" title="C# type: unity ~&gt; Transform"><span class="pre">Transform</span></a><a class="headerlink" href="#class-Aeon.Environment.WeightRaw" title="Link to this definition">#</a></dt>
 <dd><p>Inheritence diagram for Aeon::Environment::WeightRaw:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-83f809d04e2b5137005a105defc6a2d446a51257.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-081441d5b14d52db0c76d8d05a6d142122ec6965.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.WeightRaw&quot; tooltip=&quot;Aeon.Environment.WeightRaw&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Transform&lt; WeightMeasurement, WeightMeasurement &gt;&quot; tooltip=&quot;Transform&lt; WeightMeasurement, WeightMeasurement &gt;&quot;]
+    &quot;2&quot; [label=&quot;Transform&quot; tooltip=&quot;Transform&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>
 </figure>
 <p>Collaboration diagram for Aeon::Environment::WeightRaw:</p>
 <figure class="align-default">
-<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-83f809d04e2b5137005a105defc6a2d446a51257.png" alt="digraph {
+<div align="center" class="align-center"><div class="graphviz"><img src="../../../_images/graphviz-081441d5b14d52db0c76d8d05a6d142122ec6965.png" alt="digraph {
     graph [bgcolor=&quot;#00000000&quot;]
     node [shape=rectangle style=filled fillcolor=&quot;#FFFFFF&quot; font=Helvetica padding=2]
     edge [color=&quot;#1414CE&quot;]
     &quot;1&quot; [label=&quot;Aeon.Environment.WeightRaw&quot; tooltip=&quot;Aeon.Environment.WeightRaw&quot; fillcolor=&quot;#BFBFBF&quot;]
-    &quot;2&quot; [label=&quot;Transform&lt; WeightMeasurement, WeightMeasurement &gt;&quot; tooltip=&quot;Transform&lt; WeightMeasurement, WeightMeasurement &gt;&quot;]
+    &quot;2&quot; [label=&quot;Transform&quot; tooltip=&quot;Transform&quot;]
     &quot;1&quot; -&gt; &quot;2&quot; [dir=forward tooltip=&quot;public-inheritance&quot;]
 }" class="graphviz" /></div>
 </div>

@@ -51,7 +51,7 @@
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/acquisition/monitors';</script>
-    <script src="../../_static/js/workflow.js?v=e7055275"></script>
+    <script src="../../_static/js/workflow.js?v=1800024c"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Nest" href="nest.html" />
@@ -352,7 +352,6 @@
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Device Synchronisation Monitors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nest.html">Nest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pose_estimation.html">Pose Estimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rfid_reader.html">RFID Reader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="subject_tracking.html">Subject Tracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="template.html">[Template] Device Name</a></li>
@@ -498,23 +497,19 @@ Sychronisation is constantly monitored across devices using a combination of <co
 <section id="monitoring-a-single-device">
 <h5>Monitoring a single device<a class="headerlink" href="#monitoring-a-single-device" title="Link to this heading">#</a></h5>
 <p>This example monitors the heartbeats from the ClockSynchronizer device itself.</p>
-<div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.HeartbeatMonitor" src="../../_images/heartbeatMonitor.svg" /></p>
-</div>
 </section>
 <section id="monitoring-multiple-devices">
 <h5>Monitoring multiple devices<a class="headerlink" href="#monitoring-multiple-devices" title="Link to this heading">#</a></h5>
 <p>To monitor multiple devices at once, a <code class="docutils literal notranslate"><span class="pre">HeartbeatMonitor</span></code> node for each device should be added to a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> called, for example, “HeartbeatSources”, and the results merged to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code> of the group.</p>
-<div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.HeartbeatSources merge" src="../../_images/heartbeatSourcesInt.svg" /></p>
-</div>
 </section>
 </section>
 </section>
 <section id="synchronizermonitor">
 <span id="target-node-synchronizermonitor"></span><h3>SynchronizerMonitor<a class="headerlink" href="#synchronizermonitor" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node is used to monitor the synchronisation status of acquisition devices, ensuring that all monitored devices are properly aligned and functioning in unison.
-It counts the number of devices in the <a class="reference internal" href="#monitoring-multiple-devices">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></a> and compares heatbeats acquired from each device to the heartbeats of the ClockSynchronizer device.</p>
+It counts the number of devices in the <a class="reference internal" href="#monitoring-multiple-devices"><span class="xref myst">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></span></a> and compares heatbeats acquired from each device to the heartbeats of the ClockSynchronizer device.</p>
 <section id="id1">
 <h4>Inputs<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <p>Sequence of <code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;string&gt;</span></code></p>
@@ -560,10 +555,8 @@ It counts the number of devices in the <a class="reference internal" href="#moni
 </section>
 <section id="id3">
 <h4>Usage<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
-<p>Pass the output from the <a class="reference internal" href="#monitoring-multiple-devices">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></a> to a <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node.</p>
-<div class="workflow docutils">
+<p>Pass the output from the <a class="reference internal" href="#monitoring-multiple-devices"><span class="xref myst">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></span></a> to a <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node.</p>
 <p><img alt="Aeon.Acquisition.HeartbeatSources" src="../../_images/heartbeatSources.svg" /></p>
-</div>
 </section>
 </section>
 </section>
@@ -573,9 +566,7 @@ It counts the number of devices in the <a class="reference internal" href="#moni
 Conditions can be based on the <a class="reference internal" href="#synchronizermonitor">outputs from the <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span></code> node</a>.
 For example, alerts can be triggered if the number of expected devices does not match the number of devices sending heartbeats, or if one or more devices are sending desynchronised heartbeats.
 The <code class="docutils literal notranslate"><span class="pre">ExpressionCondition</span></code> node then evaluates these conditions and passes the results to an <a class="reference internal" href="alerts.html#target-node-alertgate"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">AlertGate</span> <span class="pre">(Aeon.Acquisition)</span></code> node</span></a>, after which the alert is <a class="reference internal" href="alerts.html#target-node-sendalert"><span class="std std-ref">sent</span></a> and <a class="reference internal" href="alerts.html#target-node-formatlogmessage"><span class="std std-ref">logged to file</span></a>.</p>
-<div class="workflow docutils">
 <p><img alt="SynchMonitorLogs" src="../../_images/synchMonitorLogs.svg" /></p>
-</div>
 </section>
 </section>
 

@@ -1,0 +1,6 @@
+<map id="%1" name="%1">
+<area shape="rect" id="node1" title="Aeon.Database.RecordReader&lt; T &gt;" alt="" coords="5,5,366,53"/>
+<area shape="rect" id="node2" title="Aeon.Database.RecordReader&lt; T &gt;" alt="" coords="5,101,366,149"/>
+<area shape="poly" id="edge1" title="usage" alt="" coords="188,54,188,86,183,86,183,54"/>
+<area shape="poly" id="edge2" title="usage" alt="" coords="367,109,385,115,392,125,382,137,378,133,387,125,382,119,365,114"/>
+</map>

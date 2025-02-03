@@ -1,0 +1,15 @@
+<map id="%1" name="%1">
+<area shape="rect" id="node1" title="Aeon.Acquisition.MetadataSource&lt; TMetadata &gt;" alt="" coords="927,101,1418,149"/>
+<area shape="rect" id="node2" title="Aeon.Environment.AnnotationSource" alt="" coords="5,5,380,53"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="380,50,391,51,912,99,912,105,391,56,380,55"/>
+<area shape="rect" id="node3" title="Aeon.Environment.ButtonSource" alt="" coords="404,5,739,53"/>
+<area shape="poly" id="edge2" title="public&#45;inheritance" alt="" coords="722,51,1008,96,1008,101,721,57"/>
+<area shape="rect" id="node4" title="Aeon.Environment.EnvironmentState" alt="" coords="763,5,1142,53"/>
+<area shape="poly" id="edge3" title="public&#45;inheritance" alt="" coords="1008,52,1105,92,1103,97,1006,56"/>
+<area shape="rect" id="node5" title="Aeon.Environment.EnvironmentSubjectState" alt="" coords="1167,5,1618,53"/>
+<area shape="poly" id="edge4" title="public&#45;inheritance" alt="" coords="1339,56,1242,97,1240,92,1337,52"/>
+<area shape="rect" id="node6" title="Aeon.Environment.TareWeight" alt="" coords="1642,5,1956,53"/>
+<area shape="poly" id="edge5" title="public&#45;inheritance" alt="" coords="1643,57,1344,101,1343,96,1642,51"/>
+<area shape="rect" id="node7" title="Aeon.Foraging.DispenserController" alt="" coords="1980,5,2338,53"/>
+<area shape="poly" id="edge6" title="public&#45;inheritance" alt="" coords="1980,55,1969,56,1433,105,1433,100,1968,51,1979,50"/>
+</map>

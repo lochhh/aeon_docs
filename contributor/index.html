@@ -51,7 +51,7 @@
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contributor/index';</script>
-    <script src="../_static/js/workflow.js?v=e7055275"></script>
+    <script src="../_static/js/workflow.js?v=1800024c"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Style and Documentation Guidelines" href="style_and_doc_guidelines.html" />
@@ -500,14 +500,41 @@ RestructuredText</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </section>
+<section id="adding-bonsai-workflow-code">
+<h4>Adding Bonsai workflow code<a class="headerlink" href="#adding-bonsai-workflow-code" title="Link to this heading">#</a></h4>
+<p>Bonsai workflows can be inserted using a custom <code class="docutils literal notranslate"><span class="pre">workflow</span></code> container that displays the workflow image and allows the workflow code to be copied.
+The <code class="docutils literal notranslate"><span class="pre">.bonsai</span></code> workflow file and its corresponding <code class="docutils literal notranslate"><span class="pre">.svg</span></code> file should be placed in the <code class="docutils literal notranslate"><span class="pre">src/workflows/</span></code> directory.
+In order for the workflow to be displayed correctly, the <code class="docutils literal notranslate"><span class="pre">.bonsai</span></code> file and its corresponding <code class="docutils literal notranslate"><span class="pre">.svg</span></code> file must have the same name, e.g. <code class="docutils literal notranslate"><span class="pre">alertLogs.bonsai</span></code> and <code class="docutils literal notranslate"><span class="pre">alertLogs.svg</span></code>.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::workflow
+![<span class="nt">Alt text</span>](<span class="na">src/workflows/alertLogs.bonsai</span>)
+:::
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+RestructuredText</label><div class="sd-tab-content docutils">
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">container</span><span class="p">::</span> workflow
+
+<span class="p">    ..</span> <span class="ow">image</span><span class="p">::</span> src/workflows/alertLogs.bonsai
+        <span class="nc">:alt:</span> Alt text
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 <section id="cross-referencing-pages">
 <h4>Cross-referencing pages<a class="headerlink" href="#cross-referencing-pages" title="Link to this heading">#</a></h4>
 <section id="internal-references">
 <h5>Internal references<a class="headerlink" href="#internal-references" title="Link to this heading">#</a></h5>
 <p>For ease of referencing, we use <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/cross-referencing.html#creating-explicit-targets">explicit targets</a> to refer to specific pages and sections within the documentation.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
 Markdown</label><div class="sd-tab-content docutils">
 <p>To create an explicit target in a <code class="docutils literal notranslate"><span class="pre">.md</span></code> file, use the <code class="docutils literal notranslate"><span class="pre">(target-name)=</span></code> syntax and add the target name before the page/section header, e.g.:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>(target-hardware)=
@@ -524,8 +551,8 @@ Markdown</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
+<input id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
 RestructuredText</label><div class="sd-tab-content docutils">
 <p>To create an explicit target in a <code class="docutils literal notranslate"><span class="pre">.rst</span></code> file, use the <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">_target-name:</span></code> syntax and add the target name before the page/section header, e.g.:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_target-hardware:</span>
@@ -732,6 +759,7 @@ select the <code class="docutils literal notranslate"><span class="pre">Docs</sp
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-documentation">Contributing documentation</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-documentation">Editing the documentation</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-page">Adding a new page</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-bonsai-workflow-code">Adding Bonsai workflow code</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-referencing-pages">Cross-referencing pages</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#internal-references">Internal references</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#external-references">External references</a></li>

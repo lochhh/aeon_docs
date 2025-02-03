@@ -1,0 +1,5 @@
+<map id="%1" name="%1">
+<area shape="rect" id="node1" title="Aeon.Environment.EnumerateColony" alt="" coords="5,5,381,53"/>
+<area shape="rect" id="node2" title="Combinator" alt="" coords="126,101,260,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="196,54,196,86,190,86,190,54"/>
+</map>

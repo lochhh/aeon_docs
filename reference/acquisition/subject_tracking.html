@@ -51,7 +51,7 @@
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/acquisition/subject_tracking';</script>
-    <script src="../../_static/js/workflow.js?v=e7055275"></script>
+    <script src="../../_static/js/workflow.js?v=1800024c"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="[Template] Device Name" href="template.html" />
@@ -352,7 +352,6 @@
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitors.html">Device Synchronisation Monitors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nest.html">Nest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pose_estimation.html">Pose Estimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rfid_reader.html">RFID Reader</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Subject Tracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="template.html">[Template] Device Name</a></li>
@@ -490,7 +489,7 @@ Below is an example of an input image of the arena from a top-view camera and it
 </figcaption>
 </figure>
 </div>
-<p>Contours are found and located using the <code class="docutils literal notranslate"><span class="pre">FindContours</span></code> and <code class="docutils literal notranslate"><span class="pre">BinaryRegionAnalysis</span></code> functions from <code class="docutils literal notranslate"><span class="pre">OpenCV.NET</span></code> (available in <code class="docutils literal notranslate"><span class="pre">Bonsai.Vision</span></code> package) and a custom <code class="docutils literal notranslate"><span class="pre">TakeLargestRegions</span> <span class="pre">(Aeon.Vision)</span></code> to take the <em>n</em> largest regions as defined by the property <a class="reference internal" href="#properties"><code class="docutils literal notranslate"><span class="pre">TrackingCount</span></code></a>.</p>
+<p>Contours are found and located using the <code class="docutils literal notranslate"><span class="pre">FindContours</span></code> and <code class="docutils literal notranslate"><span class="pre">BinaryRegionAnalysis</span></code> functions from <code class="docutils literal notranslate"><span class="pre">OpenCV.NET</span></code> (available in <code class="docutils literal notranslate"><span class="pre">Bonsai.Vision</span></code> package) and a custom <code class="docutils literal notranslate"><span class="pre">TakeLargestRegions</span> <span class="pre">(Aeon.Vision)</span></code> to take the <em>n</em> largest regions as defined by the property <a class="reference internal" href="#properties"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">TrackingCount</span></code></span></a>.</p>
 <!-- #### Inputs
 Is `Harp.Timestamped<Aeon.Acquisition.VideoDataFrame>` the input? 
 
@@ -569,15 +568,11 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 <p>Create a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> and give it an appropriate name, e.g. “TrackingTop”.
 Inside, place a <code class="docutils literal notranslate"><span class="pre">PositionTracking</span> <span class="pre">(Aeon.Vision)</span></code> node, externalise all properties, and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.</p>
 <!-- Is there a use case for the basic workflow without a camera supplying the videodataframes? If none, perhaps we can remove this example and just provide the full example with camera connected. -->
-<div class="workflow docutils">
 <p><img alt="Aeon.Vision.PositionTracking" src="../../_images/positionTrackingBase.svg" /></p>
-</div>
 <p>Next, add a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> node, connect it to the <code class="docutils literal notranslate"><span class="pre">PositionTracking</span></code> node as an input, and externalise the <code class="docutils literal notranslate"><span class="pre">Name</span></code> property.
 This name will be set to the <code class="docutils literal notranslate"><span class="pre">Subject</span></code> that carries the <code class="docutils literal notranslate"><span class="pre">CameraEvents</span></code> from the <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref">camera</span></a> on which tracking is to be performed (e.g. “CameraTop”). <!-- Clarify `CameraEvents`: is this "FrameEvents" or `Harp.CameraControllerGen2.CameraEvents`? -->
 To avoid confusion<!-- with what? -->, change the display name of the externalised <code class="docutils literal notranslate"><span class="pre">Name</span></code> property to “FrameEvents”.</p>
-<div class="workflow docutils">
 <p><img alt="Aeon.Vision.PositionTracking" src="../../_images/positionTracking.svg" /></p>
-</div>
 </section>
 </section>
 <section id="posetracking">
@@ -671,9 +666,7 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 <p>The trained model must first be exported to <a class="reference external" href="https://protobuf.dev/">Protocol buffer (.pb) format</a> using the <a class="reference external" href="https://sleap.ai/guides/cli.html#sleap-export"><code class="docutils literal notranslate"><span class="pre">sleap-export</span></code></a> command line interface.
 Next, create a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> and give it an appropriate name, e.g. “PoseTracking”.
 Inside, place a <code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code> node, externalise all properties, and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.</p>
-<div class="workflow docutils">
 <p><img alt="poseTracking" src="../../_images/poseTracking.svg" /></p>
-</div>
 </section>
 </section>
 <section id="regiontracking">
@@ -752,9 +745,7 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 <h4>Usage<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
 <p>Place a <code class="docutils literal notranslate"><span class="pre">RegionTracking</span> <span class="pre">(Aeon.Vision)</span></code> node, externalise the <code class="docutils literal notranslate"><span class="pre">Region</span></code> property, and rename it to indicate the region this node is responsible for monitoring (e.g. “NestRegion”).
 Next, add a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> node to subscribe to the common “TrackingEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> (e.g. “TrackingTop”) and connect it to the <code class="docutils literal notranslate"><span class="pre">RegionTracking</span> <span class="pre">(Aeon.Vision)</span></code> node.</p>
-<div class="workflow docutils">
 <p><img alt="RegionTracking" src="../../_images/regionTracking.svg" /></p>
-</div>
 </section>
 </section>
 <section id="distancefrompoint">
@@ -796,9 +787,7 @@ This node does not output to a published `Subject`.
 <h4>Usage<a class="headerlink" href="#id14" title="Link to this heading">#</a></h4>
 <p>Place a <code class="docutils literal notranslate"><span class="pre">DistanceFromPoint</span> <span class="pre">(Aeon.Vision)</span></code> node, externalise the <code class="docutils literal notranslate"><span class="pre">Value</span></code> property, and rename it to indicate the point of interest for this node (e.g. “ArenaCenter”).
 Next, add a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> node to subscribe to the common “TrackingEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> (e.g. “TrackingTop”) and connect it to the <code class="docutils literal notranslate"><span class="pre">DistanceFromPoint</span> <span class="pre">(Aeon.Vision)</span></code> node.</p>
-<div class="workflow docutils">
 <p><img alt="DistanceFromPoint" src="../../_images/distFromPoint.svg" /></p>
-</div>
 <p>The output of the <code class="docutils literal notranslate"><span class="pre">DistanceFromPoint</span> <span class="pre">(Aeon.Vision)</span></code> node can then be used with other nodes
 like the <a class="reference internal" href="#inrange"><code class="docutils literal notranslate"><span class="pre">InRange</span> <span class="pre">(Aeon.Acquisition)</span></code></a> node to trigger events or commands based on the proximity of an animal to a specific point in the camera image.</p>
 </section>
@@ -864,15 +853,11 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 <p>The example here is based on a circular arena with a corridor around the outside.
 To determine if a given source is within the inner radius of the arena, first create a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> and give it an appropriate name, e.g. “InArena”.<br />
 Inside, place an <code class="docutils literal notranslate"><span class="pre">InRange</span> <span class="pre">(Aeon.Acquisition)</span></code> node, externalise all relevant properties (i.e. the upper bound that is the inner radius of the arena), and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowInput</span></code> (e.g. “Source1”) and <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.</p>
-<div class="workflow docutils">
 <p><img alt="InArena" src="../../_images/inRange.svg" /></p>
-</div>
 <p>The input can, for instance, be a <a class="reference internal" href="#distancefrompoint"><code class="docutils literal notranslate"><span class="pre">DistanceFromPoint</span> <span class="pre">(Aeon.Vision)</span></code></a> node, which computes the distance of a tracked animal from the centre of the arena, allowing one to determine if the animal is in the open arena.
 Multiple of these <code class="docutils literal notranslate"><span class="pre">GroupWorkflows</span></code> each containing a separate <code class="docutils literal notranslate"><span class="pre">InRange</span> <span class="pre">(Aeon.Acquisition)</span></code> node can be used together to determine if a tracked animal position falls within different regions of interest.
 For instance, to further determine if the animal is in the corridor, add another <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code>, e.g. “InCorridor”, with an <code class="docutils literal notranslate"><span class="pre">InRange</span> <span class="pre">(Aeon.Acquisition)</span></code> node with the lower bound set to the inner radius of the arena and the upper bound set to the outer radius of the arena.</p>
-<div class="workflow docutils">
 <p><img alt="ArenaOrCorridor" src="../../_images/corridorOrArena.svg" /></p>
-</div>
 <!-- To be completed
 ## GUI
 Description of any user interface components and visualisers.
@@ -887,9 +872,7 @@ Description of any user interface components and visualisers.
 First, add a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> to subscribe to the “TrackingEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> (e.g. “TrackingTop”).
 The events can then be formatted as <code class="docutils literal notranslate"><span class="pre">HarpMessages</span></code> and configured to write to register <strong>200</strong> (an unassigned register on all Harp devices) using the custom <code class="docutils literal notranslate"><span class="pre">FormatBinaryRegions</span> <span class="pre">(Aeon.Vision)</span></code> node.
 Here is an example for logging a <code class="docutils literal notranslate"><span class="pre">PositionTracking</span></code> node.</p>
-<div class="workflow docutils">
 <p><img alt="logPositionTracking" src="../../_images/logPositionTracking.svg" /></p>
-</div>
 <p>Multiple <code class="docutils literal notranslate"><span class="pre">PositionTracking</span></code> or <code class="docutils literal notranslate"><span class="pre">PoseTracking</span></code> nodes can be used to track objects in different camera streams simultaneously.
 To do this, select a different “FrameEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> for each node and save the results to the corresponding camera folders.</p>
 <!-- To be coompleted 

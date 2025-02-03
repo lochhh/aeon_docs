@@ -132,10 +132,10 @@ LogMessage
    :undoc-members:
    :allow-dot-graphs:
 
-MetadataSource
-^^^^^^^^^^^^^^
+MetadataSource-1-g
+^^^^^^^^^^^^^^^^^^
 
-.. doxygenclass:: Aeon::Acquisition::MetadataSource
+.. doxygenclass:: Aeon::Acquisition::MetadataSource-1-g
    :members:
    :undoc-members:
    :allow-dot-graphs:
@@ -164,10 +164,10 @@ RangeThreshold
    :undoc-members:
    :allow-dot-graphs:
 
-StateRecoverySubject.RecoverySubject
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StateRecoverySubject-1-g.RecoverySubject
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. doxygenclass:: Aeon::Acquisition::StateRecoverySubject::RecoverySubject
+.. doxygenclass:: Aeon::Acquisition::StateRecoverySubject-1-g::RecoverySubject
    :members:
    :undoc-members:
    :allow-dot-graphs:
@@ -188,10 +188,10 @@ ServiceAccountName
    :undoc-members:
    :allow-dot-graphs:
 
-StateRecovery
-^^^^^^^^^^^^^
+StateRecovery-1-g
+^^^^^^^^^^^^^^^^^
 
-.. doxygenclass:: Aeon::Acquisition::StateRecovery
+.. doxygenclass:: Aeon::Acquisition::StateRecovery-1-g
    :members:
    :undoc-members:
    :allow-dot-graphs:
@@ -200,6 +200,14 @@ StateRecoverySubject
 ^^^^^^^^^^^^^^^^^^^^
 
 .. doxygenclass:: Aeon::Acquisition::StateRecoverySubject
+   :members:
+   :undoc-members:
+   :allow-dot-graphs:
+
+StateRecoverySubject-1-g
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. doxygenclass:: Aeon::Acquisition::StateRecoverySubject-1-g
    :members:
    :undoc-members:
    :allow-dot-graphs:

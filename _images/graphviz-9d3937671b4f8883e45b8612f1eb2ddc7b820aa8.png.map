@@ -1,0 +1,5 @@
+<map id="%1" name="%1">
+<area shape="rect" id="node1" title="Aeon.Environment.InterpolateRoomLightPreset" alt="" coords="5,5,482,53"/>
+<area shape="rect" id="node2" title="Combinator" alt="" coords="177,101,310,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="246,54,246,86,241,86,241,54"/>
+</map>

@@ -1,4 +1,4 @@
-<map id="%3" name="%3">
+<map id="%1" name="%1">
 <area shape="rect" id="node1" title="Aeon.Environment.EnvironmentSubjectStateControl.EditorSite" alt="" coords="5,5,632,53"/>
 <area shape="rect" id="node2" title="ISite" alt="" coords="282,101,354,149"/>
 <area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="321,54,321,86,316,86,316,54"/>

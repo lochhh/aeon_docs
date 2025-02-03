@@ -43,10 +43,10 @@ ObservableDatabase
    :undoc-members:
    :allow-dot-graphs:
 
-RecordReader
-^^^^^^^^^^^^
+RecordReader-1-g
+^^^^^^^^^^^^^^^^
 
-.. doxygenclass:: Aeon::Database::RecordReader
+.. doxygenclass:: Aeon::Database::RecordReader-1-g
    :members:
    :undoc-members:
    :allow-dot-graphs:

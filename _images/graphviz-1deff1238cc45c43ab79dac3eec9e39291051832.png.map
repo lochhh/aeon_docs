@@ -1,4 +1,4 @@
-<map id="%3" name="%3">
+<map id="%1" name="%1">
 <area shape="rect" id="node1" title="Aeon.Environment.InterpolateRoomLightPreset.AnonymousInterpolation" alt="" coords="5,5,722,53"/>
 <area shape="rect" id="node2" title="IInterpolation" alt="" coords="287,101,440,149"/>
 <area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="366,54,366,86,361,86,361,54"/>

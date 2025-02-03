@@ -1,0 +1,5 @@
+<map id="%1" name="%1">
+<area shape="rect" id="node1" title="Aeon.Video.VideoFileCapture" alt="" coords="5,5,305,53"/>
+<area shape="rect" id="node2" title="Source" alt="" coords="111,101,199,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="158,54,158,86,152,86,152,54"/>
+</map>

@@ -1,4 +1,4 @@
-<map id="%3" name="%3">
+<map id="%1" name="%1">
 <area shape="rect" id="node1" title="Aeon.Video.SpinnakerCapture" alt="" coords="42,101,349,149"/>
 <area shape="rect" id="node3" title="Bonsai::Spinnaker::SpinnakerCapture" alt="" coords="5,197,386,245"/>
 <area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="198,150,198,182,193,182,193,150"/>

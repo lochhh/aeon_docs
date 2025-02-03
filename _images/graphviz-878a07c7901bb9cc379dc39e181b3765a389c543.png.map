@@ -1,0 +1,5 @@
+<map id="%1" name="%1">
+<area shape="rect" id="node1" title="Aeon.Environment.CreateRoomLightPreset" alt="" coords="5,5,440,53"/>
+<area shape="rect" id="node2" title="Source" alt="" coords="179,101,266,149"/>
+<area shape="poly" id="edge1" title="public&#45;inheritance" alt="" coords="225,54,225,86,220,86,220,54"/>
+</map>
