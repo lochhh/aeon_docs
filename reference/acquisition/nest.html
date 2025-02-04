@@ -469,7 +469,6 @@ The node also processes the weight data from the scale to calculate a baseline w
 It also filters the weight signal with a linear regression filter over a sliding window defined in its <a class="reference internal" href="#properties"><span class="xref myst">properties</span></a>.
 Finally, a measure of confidence for each of these readings is calculated.</p>
 <!-- TODO: link to API Reference -->
-<!-- Check if the "Timestamp" type is correct (double or DateTime?) -->
 <p>These measures are packaged into <code class="docutils literal notranslate"><span class="pre">Aeon.Environment.WeightMeasurement</span></code> class, each composed of the “Timestamp” (<code class="docutils literal notranslate"><span class="pre">double</span></code>), “Value” (<code class="docutils literal notranslate"><span class="pre">float</span></code>) and the “Confidence” index (<code class="docutils literal notranslate"><span class="pre">float</span></code>) of the weight measure.</p>
 <section id="inputs">
 <h4>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h4>
@@ -477,7 +476,6 @@ Finally, a measure of confidence for each of these readings is calculated.</p>
 </section>
 <section id="outputs">
 <h4>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">#</a></h4>
-<!-- Check if the "Timestamp" type is correct (double or DateTime?) -->
 <p>Stream of <code class="docutils literal notranslate"><span class="pre">DynamicClass</span></code> with the following attributes:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -496,7 +494,7 @@ Finally, a measure of confidence for each of these readings is calculated.</p>
 <td><p>Confidence score for the raw weight measurement</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>RawWeight.Timestamp</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">DateTime</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">double</span></code></p></td>
 <td><p>Timestamp when the raw weight measurement was recorded</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>FilteredWeight.Value</strong></p></td>
@@ -508,7 +506,7 @@ Finally, a measure of confidence for each of these readings is calculated.</p>
 <td><p>Confidence score for the filtered weight</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>FilteredWeight.Timestamp</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">DateTime</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">double</span></code></p></td>
 <td><p>Timestamp when the filtered weight measurement was recorded</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>BaselinedWeight.Value</strong></p></td>
@@ -520,7 +518,7 @@ Finally, a measure of confidence for each of these readings is calculated.</p>
 <td><p>Confidence score for the baselined weight</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>BaselinedWeight.Timestamp</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">DateTime</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">double</span></code></p></td>
 <td><p>Timestamp for the baselined weight measurement</p></td>
 </tr>
 </tbody>
@@ -550,8 +548,8 @@ Finally, a measure of confidence for each of these readings is calculated.</p>
 </section>
 <section id="subjects">
 <h5>Subjects<a class="headerlink" href="#subjects" title="Link to this heading">#</a></h5>
-<p>Events and commands from the weighing scale are collected from, and published to <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>, in some cases after some processing.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events, commands or data streams for this node for a specific nest.
+<p>Events and commands from the weighing scale are collected from, and published to <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s, in some cases after some processing.
+Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s to identify events, commands or data streams for this node for a specific nest.
 Each of these subjects becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
 <section id="device-event-subjects">
 <h6>Device event subjects<a class="headerlink" href="#device-event-subjects" title="Link to this heading">#</a></h6>

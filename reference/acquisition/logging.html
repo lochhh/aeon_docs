@@ -495,7 +495,7 @@ Data is saved in hourly chunks using the following naming convention:</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>ClosingDuration</strong></p></td>
-<td><p><!-- Description missing --></p></td>
+<td><p>Time delay, in seconds to ensure complete closure of consecutive files</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Heartbeats</strong></p></td>
 <td><p>The name of the subject carrying the <code class="docutils literal notranslate"><span class="pre">TimestampSeconds</span></code> events from the <code class="docutils literal notranslate"><span class="pre">ClockSynchronizer</span></code> that the system is synchronised with</p></td>
@@ -552,9 +552,8 @@ Data is saved in hourly chunks using the following naming convention:</p>
 </section>
 <section id="id2">
 <h4>Outputs<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
-<p>The <code class="docutils literal notranslate"><span class="pre">byte[]</span></code> array containing the contents of each Harp message.</p>
-<!-- Suggestion: This is generally not passed to any operators downstream of this node. -->
-<p>This is generally not used downstream of this node.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">byte[]</span></code> array containing the contents of each Harp message.
+This is generally not passed to any operators downstream of this node.</p>
 </section>
 <section id="id3">
 <h4>Properties<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
@@ -568,7 +567,7 @@ Data is saved in hourly chunks using the following naming convention:</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>ClosingDuration</strong></p></td>
-<td><p><!-- Description missing --></p></td>
+<td><p>Time delay, in seconds, to ensure complete closure of consecutive files</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Heartbeats</strong></p></td>
 <td><p>The name of the subject carrying the <code class="docutils literal notranslate"><span class="pre">TimestampSeconds</span></code> events from the <code class="docutils literal notranslate"><span class="pre">ClockSynchronizer</span></code> that the system is synchronised with</p></td>
@@ -616,9 +615,6 @@ Data is saved in hourly chunks using the following naming convention:</p>
 <span class="s2">&quot;CameraTop_2024-06-27T10-00-00.csv&quot;</span>
 </pre></div>
 </div>
-<!-- Clarify what function and why? 
-TODO: Fix clock synchronizer link -->
-<p>This function is dependent on signals from the <a class="reference internal" href="#../HardwareDevices/ClockSynchronizer/clocksynchronizer.md"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">ClockSynchronizer</span></code></span></a>.</p>
 <section id="id6">
 <h4>Inputs<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
 <p>Stream of <code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;Aeon.Video.VideoDataFrame&gt;</span></code>, originating from a <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">SpinnakerVideoSource</span> <span class="pre">(Aeon.Video)</span></code></span></a> node.</p>
@@ -639,10 +635,7 @@ TODO: Fix clock synchronizer link -->
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>ClosingDuration</strong></p></td>
-<td><p><em>Description missing</em></p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Heartbeats</strong></p></td>
-<td><p>The name of the subject carrying the <code class="docutils literal notranslate"><span class="pre">TimestampSeconds</span></code> events from the <code class="docutils literal notranslate"><span class="pre">ClockSynchronizer</span></code> that the system is synchronised with</p></td>
+<td><p>Time delay, in seconds, to ensure complete closure of consecutive files</p></td>
 </tr>
 </tbody>
 </table>
@@ -671,28 +664,7 @@ TODO: Fix clock synchronizer link -->
 <div class="workflow docutils">
 <p><img alt="Aeon.Video.LogVideo" src="../../_images/logVideo.svg" /></p>
 </div>
-<!-- To be completed
-## GUI
-Description of any user interface components and visualisers.
-
-## Logging
-Information on logging functionalities, nodes involved, and schemas for recorded data.
-
-**Data schema**
-
-| Register name         | Access | Address | Type    | Mask type          | Description                                   |
-|-----------------------|--------|---------|---------|--------------------|-----------------------------------------------|
-| **Register1**         | Access | Address | `Type`  | Mask               | Description of Register1                      |
-| **Register2**         | Access | Address | `Type`  | Mask               | Description of Register2                      |
-
-(For not virtual harp devices) a full list of the available registers for the `device name` see the corresponding [device.yml](link-to-harprepo-device.yml)
-
-## State persistence
-Information on state recovery or persistence requirements, if applicable.
-
-## Alerts
-Explanation of any alert configurations and links to guides or further configuration steps.
- --></section>
+</section>
 </section>
 </section>
 </section>

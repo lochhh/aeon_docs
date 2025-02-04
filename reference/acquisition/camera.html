@@ -466,6 +466,14 @@ Prior to adding cameras to the system, one would usually <a class="reference int
 <section id="spinnakervideosource">
 <span id="target-node-spinnakervideosource"></span><h3>SpinnakerVideoSource<a class="headerlink" href="#spinnakervideosource" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">SpinnakerVideoSource</span> <span class="pre">(Aeon.Video)</span></code> node establishes a connection and configuration of a specific Spinnaker camera.</p>
+<section id="inputs">
+<h4>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h4>
+<p>None</p>
+</section>
+<section id="outputs">
+<h4>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">#</a></h4>
+<p>Stream of <code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;Aeon.Acquisition.VideoDataFrame&gt;</span></code> carrying video data from the specified camera.</p>
+</section>
 <section id="properties">
 <h4>Properties<a class="headerlink" href="#properties" title="Link to this heading">#</a></h4>
 <section id="camera-settings">
@@ -495,9 +503,8 @@ Prior to adding cameras to the system, one would usually <a class="reference int
 </section>
 <section id="subjects">
 <h5>Subjects<a class="headerlink" href="#subjects" title="Link to this heading">#</a></h5>
-<p>Events and commands from the camera are collected from and published to <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events and triggers for this specific camera.
-Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> is published and becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using its name.</p>
+<p>Events (outputs) and commands (inputs) from the node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s, the names of which are configured in the properties of the node.
+The output <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s are then accessible in the Bonsai editor’s toolbox and are useable elsewhere in the workflow using the same names.</p>
 <section id="device-event-subjects">
 <h6>Device event subjects<a class="headerlink" href="#device-event-subjects" title="Link to this heading">#</a></h6>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -543,7 +550,8 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 <section id="usage">
 <h4>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h4>
 <p>To place a camera source, first create a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> with an appropriate name for the camera, e.g. “CameraTop”.
-Inside, place a <code class="docutils literal notranslate"><span class="pre">SpinnakerVideoSource</span> <span class="pre">(Aeon.Video)</span></code> node, externalise all properties, and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.</p>
+Inside, place a <code class="docutils literal notranslate"><span class="pre">SpinnakerVideoSource</span> <span class="pre">(Aeon.Video)</span></code> node, externalise all properties, and connect it to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.
+Configure the properties and subject names according to your requirements.</p>
 <div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.Camera" src="../../_images/camera.svg" /></p>
 </div>
@@ -553,20 +561,26 @@ Inside, place a <code class="docutils literal notranslate"><span class="pre">Spi
 <h3>DroppedFrames<a class="headerlink" href="#droppedframes" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">DroppedFrames</span> <span class="pre">(Extensions)</span></code> node monitors a sequence of <a class="reference internal" href="#device-events-subjects"><span class="xref myst">FrameEvents</span></a> from a specified <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, e.g. “CameraTop”.
 Specifically, it monitors the “FrameID” to ensure frames arrive consecutively.</p>
-<!-- should this go under Outputs or Usage? -->
-<p>In the event that a frame is dropped, the node outputs the “Timestamp”, “Name” of the camera and the “FrameID” of the dropped frame.</p>
+<section id="id1">
+<h4>Inputs<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>None</p>
+</section>
+<section id="id2">
+<h4>Outputs<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<p>In the event that a frame is dropped, the node outputs a <code class="docutils literal notranslate"><span class="pre">DynamicClass</span></code> containing the “Name” of the camera and the “Timestamp” and “FrameID” of the dropped frame.</p>
 <div class="workflow docutils">
 <p><img alt="DroppedFrames" src="../../_images/droppedFrames.svg" /></p>
 </div>
-<section id="id1">
-<h4>Properties<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
-<section id="id2">
-<h5>Subjects<a class="headerlink" href="#id2" title="Link to this heading">#</a></h5>
-<p>Events and commands from the camera are collected from and published to <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events and triggers for this specific camera.
-Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> is published and becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using its name.</p>
+</section>
 <section id="id3">
-<h6>Device event subjects <!-- This was missing - is this correct? --><a class="headerlink" href="#id3" title="Link to this heading">#</a></h6>
+<h4>Properties<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<section id="id4">
+<h5>Subjects<a class="headerlink" href="#id4" title="Link to this heading">#</a></h5>
+<p>Events and commands from the camera are collected from and published to <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s.
+Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s to identify events and triggers for this specific camera.
+Each of these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s is published and becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using its name.</p>
+<section id="device-input-subjects">
+<h6>Device input subjects<a class="headerlink" href="#device-input-subjects" title="Link to this heading">#</a></h6>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Subject name</p></th>
@@ -588,22 +602,26 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 <h3>StreamTimeout<a class="headerlink" href="#streamtimeout" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">StreamTimeout</span> <span class="pre">(Extensions)</span></code> node monitors a sequence of <a class="reference internal" href="#device-events-subjects"><span class="xref myst">FrameEvents</span></a> from a specified <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">CameraTop</span></code>.
 Specifically, it monitors the actual time between receiving frames to ensure frames arrive within a given <code class="docutils literal notranslate"><span class="pre">DueTime</span></code> property.</p>
-<!-- should this go under Outputs or Usage? 
-Check if these are indeed the correct outputs as they seem to be copied from DroppedFrames -->
-<p>In the event that no new frames arrive in time, the node outputs the “Timestamp”, “Name” of the camera and the “FrameID” of the dropped frame.</p>
+<section id="id5">
+<h4>Inputs<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<p>None</p>
+</section>
+<section id="id6">
+<h4>Outputs<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<p>In the event that no new frames arrive in time, the node outputs a <code class="docutils literal notranslate"><span class="pre">DynamicClass</span></code> containing the “Name” of the camera and the “Timestamp” and “FrameID” of the dropped frame.</p>
 <div class="workflow docutils">
 <p><img alt="StreamTimeout" src="../../_images/streamTimeout.svg" /></p>
 </div>
 <p>To avoid false alarms when cameras are not active, subscription to the <code class="docutils literal notranslate"><span class="pre">StreamTimeout</span></code> workflow is controlled using the same triggers that activate and stop the cameras through the <a class="reference internal" href="camera_controller.html#target-module-camera-controller"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">CameraController</span></code></span></a>.</p>
-<section id="id4">
-<h4>Properties<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
-<section id="id5">
-<h5>Subjects<a class="headerlink" href="#id5" title="Link to this heading">#</a></h5>
-<p>Events and commands from the camera are collected from and published to <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events and triggers for this specific camera.
-Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> is published and becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using its name.</p>
-<section id="id6">
-<h6>Device event subjects<a class="headerlink" href="#id6" title="Link to this heading">#</a></h6>
+</section>
+<section id="id7">
+<h4>Properties<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<section id="id8">
+<h5>Subjects<a class="headerlink" href="#id8" title="Link to this heading">#</a></h5>
+<p>Events and commands from the node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s, the names of which are configured in the properties of the node.
+These <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s then become accessible in the Bonsai editor’s toolbox and are useable elsewhere in the workflow using the same names.</p>
+<section id="id9">
+<h6>Device event subjects<a class="headerlink" href="#id9" title="Link to this heading">#</a></h6>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Subject name</p></th>
@@ -670,11 +688,11 @@ Harp and hardware timestamps and the frame counter recorded at the camera are lo
 <section id="alerts">
 <h2>Alerts<a class="headerlink" href="#alerts" title="Link to this heading">#</a></h2>
 <p>Camera streams are monitored for stream timeouts and dropped frames, which usually result from power outages or connection issues.
-The <a class="reference internal" href="#streamtimeout"><code class="docutils literal notranslate"><span class="pre">StreamTimeout</span></code></a> and <a class="reference internal" href="#droppedframes"><code class="docutils literal notranslate"><span class="pre">DroppedFrames</span></code></a> nodes detect these failure events and their outputs can be formatted as alert strings, which are then sent to the “EnvironmentAlertMessages” and “AlertLogs” <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to <a class="reference internal" href="alerts.html#target-node-sendalert"><span class="std std-ref">send</span></a> and <a class="reference internal" href="alerts.html#target-node-formatlogmessage"><span class="std std-ref">log</span></a> alerts, respectively.</p>
+The <a class="reference internal" href="#streamtimeout"><code class="docutils literal notranslate"><span class="pre">StreamTimeout</span></code></a> and <a class="reference internal" href="#droppedframes"><code class="docutils literal notranslate"><span class="pre">DroppedFrames</span></code></a> nodes detect these failure events and their outputs can be formatted as alert strings, which are then sent to the “EnvironmentAlertMessages” and “AlertLogs” <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s to <a class="reference internal" href="alerts.html#target-node-sendalert"><span class="std std-ref">send</span></a> and <a class="reference internal" href="alerts.html#target-node-formatlogmessage"><span class="std std-ref">log</span></a> alerts, respectively.</p>
 <div class="workflow docutils">
 <p><img alt="CameraAlerts" src="../../_images/cameraAlerts.svg" /></p>
 </div>
-<p>In order to monitor multiple camera streams simultaneously, multiple instances of the <code class="docutils literal notranslate"><span class="pre">DroppedFrames</span></code> and <code class="docutils literal notranslate"><span class="pre">StreamTimeout</span></code> nodes can be merged before they are passed to the Alert <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
+<p>In order to monitor multiple camera streams simultaneously, multiple instances of the <code class="docutils literal notranslate"><span class="pre">DroppedFrames</span></code> and <code class="docutils literal notranslate"><span class="pre">StreamTimeout</span></code> nodes can be merged before they are passed to the Alert <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s.
 This can be achieved by placing the nodes together in a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> and using <code class="docutils literal notranslate"><span class="pre">Merge</span></code> on the results before outputting them to the <code class="docutils literal notranslate"><span class="pre">WorkflowOutput</span></code>.
 Below is an example of how multiple <code class="docutils literal notranslate"><span class="pre">DroppedFrames</span></code> nodes are combined in a <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> named “Dropped Frames Monitor”.</p>
 <div class="workflow docutils">
@@ -740,6 +758,8 @@ Below is an example of how multiple <code class="docutils literal notranslate"><
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nodes">Nodes</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spinnakervideosource">SpinnakerVideoSource</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#properties">Properties</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#camera-settings">Camera settings</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#subjects">Subjects</a><ul class="nav section-nav flex-column">
@@ -753,9 +773,11 @@ Below is an example of how multiple <code class="docutils literal notranslate"><
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#droppedframes">DroppedFrames</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Subjects</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Device event subjects <!-- This was missing - is this correct? --></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Inputs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Outputs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Subjects</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#device-input-subjects">Device input subjects</a></li>
 </ul>
 </li>
 </ul>
@@ -763,9 +785,11 @@ Below is an example of how multiple <code class="docutils literal notranslate"><
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#streamtimeout">StreamTimeout</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Subjects</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Device event subjects</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Inputs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Outputs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Subjects</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Device event subjects</a></li>
 </ul>
 </li>
 </ul>

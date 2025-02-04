@@ -490,12 +490,14 @@ Below is an example of an input image of the arena from a top-view camera and it
 </figure>
 </div>
 <p>Contours are found and located using the <code class="docutils literal notranslate"><span class="pre">FindContours</span></code> and <code class="docutils literal notranslate"><span class="pre">BinaryRegionAnalysis</span></code> functions from <code class="docutils literal notranslate"><span class="pre">OpenCV.NET</span></code> (available in <code class="docutils literal notranslate"><span class="pre">Bonsai.Vision</span></code> package) and a custom <code class="docutils literal notranslate"><span class="pre">TakeLargestRegions</span> <span class="pre">(Aeon.Vision)</span></code> to take the <em>n</em> largest regions as defined by the property <a class="reference internal" href="#properties"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">TrackingCount</span></code></span></a>.</p>
-<!-- #### Inputs
-Is `Harp.Timestamped<Aeon.Acquisition.VideoDataFrame>` the input? 
-
-#### Outputs
-Is `Harp.Timestamped<Bonsai.Vision.ConnectedComponentCollection>` the output? 
--->
+<section id="inputs">
+<h4>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h4>
+<p>Sequence of <code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;Aeon.Video.VideoDataFrame&gt;</span></code>s from a specific camera published by a <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">SpinnakerVideoSource</span> <span class="pre">(Aeon.Video)</span></code></span></a> node.</p>
+</section>
+<section id="outputs">
+<h4>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">#</a></h4>
+<p>Sequence of <code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;Bonsai.Vision.ConnectedComponentCollection&gt;</span></code> describing the features of a detected subject. Also published to a <code class="docutils literal notranslate"><span class="pre">Subject</span></code>.</p>
+</section>
 <section id="properties">
 <h4>Properties<a class="headerlink" href="#properties" title="Link to this heading">#</a></h4>
 <section id="tracking-parameters">
@@ -522,9 +524,9 @@ Is `Harp.Timestamped<Bonsai.Vision.ConnectedComponentCollection>` the output?
 </section>
 <section id="subjects">
 <h5>Subjects<a class="headerlink" href="#subjects" title="Link to this heading">#</a></h5>
-<p>Events from this node are published to shared <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events for this node.
-Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
+<p>Events from this node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s.
+Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s to identify events for this node.
+Each of these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
 <section id="device-event-subjects">
 <h6>Device event subjects<a class="headerlink" href="#device-event-subjects" title="Link to this heading">#</a></h6>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -572,8 +574,7 @@ Inside, place a <code class="docutils literal notranslate"><span class="pre">Pos
 <p><img alt="Aeon.Vision.PositionTracking" src="../../_images/positionTrackingBase.svg" /></p>
 </div>
 <p>Next, add a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> node, connect it to the <code class="docutils literal notranslate"><span class="pre">PositionTracking</span></code> node as an input, and externalise the <code class="docutils literal notranslate"><span class="pre">Name</span></code> property.
-This name will be set to the <code class="docutils literal notranslate"><span class="pre">Subject</span></code> that carries the <code class="docutils literal notranslate"><span class="pre">CameraEvents</span></code> from the <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref">camera</span></a> on which tracking is to be performed (e.g. “CameraTop”). <!-- Clarify `CameraEvents`: is this "FrameEvents" or `Harp.CameraControllerGen2.CameraEvents`? -->
-To avoid confusion<!-- with what? -->, change the display name of the externalised <code class="docutils literal notranslate"><span class="pre">Name</span></code> property to “FrameEvents”.</p>
+This name will be set to the <code class="docutils literal notranslate"><span class="pre">Subject</span></code> that carries the <code class="docutils literal notranslate"><span class="pre">FrameEvents</span></code> from the <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref">camera</span></a> on which tracking is to be performed (e.g. “CameraTop”).</p>
 <div class="workflow docutils">
 <p><img alt="Aeon.Vision.PositionTracking" src="../../_images/positionTracking.svg" /></p>
 </div>
@@ -581,8 +582,9 @@ To avoid confusion<!-- with what? -->, change the display name of the externalis
 </section>
 <section id="posetracking">
 <h3>PoseTracking<a class="headerlink" href="#posetracking" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code> node utilises <a class="reference external" href="https://sleap.ai/">SLEAP</a>, which is fully integrated with Bonsai through the <a class="reference external" href="https://bonsai-rx.org/sleap/index.html">Bonsai.Sleap</a> package, to simultaneously track and identify different animals within the arena.
-It loads a trained SLEAP model, and runs inference on frame events from a <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref">camera</span></a> device, returning timestamped data containing the position of each animal, their identity and confidence measures.</p>
+<p>Pose tracking utilises <a class="reference external" href="https://sleap.ai/">SLEAP</a>, which is fully integrated with Bonsai through the <a class="reference external" href="https://bonsai-rx.org/sleap/index.html">Bonsai.Sleap</a> package, to simultaneously track and identify different animals within the arena.</p>
+<p>In Aeon experimental workflows, two linked <code class="docutils literal notranslate"><span class="pre">IncludeWorkflow</span></code>s are provided to give this functionality.
+The <code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Extensions)</span></code> node contains the complete data flow and processing workflow for identity and tracking of subjects from video frames captured by the cameras, whereas the <code class="docutils literal notranslate"><span class="pre">PoseTracking</span> <span class="pre">(Aeon.Vision.Sleap)</span></code> node is used within this workflow to perform the model inference step of processing.</p>
 <!-- To be completed
 #### Inputs
 #### Outputs
@@ -624,9 +626,9 @@ A sequence of `<type>` with the following attributes.
 </section>
 <section id="id2">
 <h5>Subjects<a class="headerlink" href="#id2" title="Link to this heading">#</a></h5>
-<p>Both generated and input events of this node are collected and passed to published <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events for this node.
-Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
+<p>Both generated and input events of this node are collected and passed to published <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s.
+Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s to identify events for this node.
+Each of these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
 <section id="id3">
 <h6>Device event subjects<a class="headerlink" href="#id3" title="Link to this heading">#</a></h6>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -706,9 +708,9 @@ boolean?
 </section>
 <section id="id8">
 <h5>Subjects<a class="headerlink" href="#id8" title="Link to this heading">#</a></h5>
-<p>Both generated and input events of this node are published to shared <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events for this node.
-Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
+<p>Both generated and input events of this node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s.
+Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s to identify events for this node.
+Each of these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
 <section id="id9">
 <h6>Device event subjects<a class="headerlink" href="#id9" title="Link to this heading">#</a></h6>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -834,9 +836,9 @@ A `boolean` describing whether each value of a sequence falls within a specific 
 </section>
 <section id="id17">
 <h5>Subjects<a class="headerlink" href="#id17" title="Link to this heading">#</a></h5>
-<p>Events from this node are published to shared <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events for this node.
-Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
+<p>Events from this node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s.
+Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s to identify events for this node.
+Each of these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
 <section id="id18">
 <h6>Device event subjects<a class="headerlink" href="#id18" title="Link to this heading">#</a></h6>
 <p><code class="docutils literal notranslate"><span class="pre">HarpMessage</span></code> events emitted to a <code class="docutils literal notranslate"><span class="pre">Subject</span></code></p>
@@ -954,6 +956,8 @@ Explanation of any alert configurations and links to guides or further configura
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nodes">Nodes</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#positiontracking">PositionTracking</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#properties">Properties</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking-parameters">Tracking parameters</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#subjects">Subjects</a><ul class="nav section-nav flex-column">

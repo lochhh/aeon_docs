@@ -505,9 +505,9 @@ This enables direct control to start and stop connected cameras, and configurati
 </section>
 <section id="subjects">
 <h5>Subjects<a class="headerlink" href="#subjects" title="Link to this heading">#</a></h5>
-<p>Events and commands from the device are collected, in some cases processed, and passed to published <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify these events, commands or data streams for this specific device.
-Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> is published and becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using its name.</p>
+<p>Events and commands from the device are collected, in some cases processed, and passed to published <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s.
+Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s to identify these events, commands or data streams for this specific device.
+Each of these <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s is published and becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using its name.</p>
 <section id="device-event-subjects">
 <h6>Device event subjects<a class="headerlink" href="#device-event-subjects" title="Link to this heading">#</a></h6>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -681,8 +681,8 @@ The example below logs the state of all relevant Harp registers in a dedicated f
 </section>
 <section id="alerts">
 <h2>Alerts<a class="headerlink" href="#alerts" title="Link to this heading">#</a></h2>
-<!-- example mentions logging, not alerts -->
-<p>In Aeon, the <code class="docutils literal notranslate"><span class="pre">VideoEvents</span></code> subject is useful for several environment monitoring workflows, such as regular logging of a summary of the current state of the experiment each hour. See <a class="reference internal" href="alerts.html#target-module-alerts"><span class="std std-ref">Alerts</span></a> for details on configuring these alerts.</p>
+<p>In Aeon, the “VideoEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> is useful as a timer for environment monitoring workflows, such as regular notification of a summary of the current state of the experiment each hour.
+See <a class="reference internal" href="alerts.html#target-module-alerts"><span class="std std-ref">Alerts</span></a> for details on configuring these alerts.</p>
 <p>As with other Harp devices in the system, this stream should be added to the <code class="docutils literal notranslate"><span class="pre">HeartbeatSources</span></code> to be monitored using the <a class="reference internal" href="monitors.html#target-node-synchronizermonitor"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node to ensure continuous synchronisation with all other synchronised devices on the system.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>

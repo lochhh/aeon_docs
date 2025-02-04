@@ -494,22 +494,15 @@ For example:</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>The system name in the configuration file must match the name of the computer, which can be set in Windows System Settings.
-In Aeon, this file is stored in a “config” folder in the root of the repository. <!-- is this important? --></p>
+In Aeon, for instance, this file is stored in a “config” folder in the root of the repository.</p>
 </div>
 </section>
 <section id="usage">
 <h4>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h4>
-<!-- Not immediately clear which is which, is  "EnvironmentAlertMessages" the `PublishSubject`? 
-what is the EnvironmentAlerts subject?  
-which one is the subscribed observer of `PublishSubject`? -->
-<!-- What is "This" referring to? 
-is `MultiCast` equivalent to `MultiCastSubject`? 
-"this `Subject` presumably refers to the "EnvironmentAlerts" `Subject`? 
-May be clearer if illustrated with a sample workflow? -->
-<p>Use a <code class="docutils literal notranslate"><span class="pre">PublishSubject</span></code> source node to publish and subscribe to the “EnvironmentAlerts” <code class="docutils literal notranslate"><span class="pre">Subject</span></code>.
-This can then be used anywhere in the workflow to send any custom alert, by using a <code class="docutils literal notranslate"><span class="pre">MultiCast</span></code> node to send formatted strings to this <code class="docutils literal notranslate"><span class="pre">Subject</span></code>.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">PublishSubject</span></code> source node is used to both declare and subscribe to a shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, in this case named “EnvironmentAlerts”.
+Messages in the form of a <code class="docutils literal notranslate"><span class="pre">string</span></code> can now be sent to this <code class="docutils literal notranslate"><span class="pre">Subject</span></code> using a <code class="docutils literal notranslate"><span class="pre">MulticastSubject</span></code> node to send custom alerts on specific configured events.</p>
 <div class="workflow docutils">
-<p><img alt="SendAlertBase" src="workflows/EnvironmentAlertsBase.bonsai" /></p>
+<p><img alt="SendAlertBase" src="../../_images/environmentAlertsBase.svg" /></p>
 </div>
 </section>
 </section>

@@ -473,8 +473,7 @@ Specifically, background subtraction is performed on the input camera frames bas
 </section>
 <section id="outputs">
 <h4>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">#</a></h4>
-<!-- Moved into this section from description, check if correct -->
-<p>A timestamped <code class="docutils literal notranslate"><span class="pre">double</span></code> describing the raw, frame-by-frame pixel intensity changes within the region of interest.</p>
+<p>A stream of <code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;double&gt;</span></code> describing the raw absolute differences in pixel intensity of consecutive frames within the region of interest.</p>
 </section>
 <section id="properties">
 <h4>Properties<a class="headerlink" href="#properties" title="Link to this heading">#</a></h4>
@@ -499,9 +498,7 @@ Specifically, background subtraction is performed on the input camera frames bas
 </section>
 <section id="subjects">
 <h5>Subjects<a class="headerlink" href="#subjects" title="Link to this heading">#</a></h5>
-<p>Events from the node are published to <code class="docutils literal notranslate"><span class="pre">Subjects</span></code>.
-Here you set the names used for these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> to identify events for this node for a specific region of interest.
-Each of these <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> becomes accessible in the Bonsai editor’s toolbox anywhere in the workflow using the name set here.</p>
+<p>Events from the node are published to a <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, the name of which is configured in the properties of the node. This <code class="docutils literal notranslate"><span class="pre">Subject</span></code> then becomes accessible in the Bonsai editor’s toolbox and is useable elsewhere in the workflow using the same name.</p>
 <section id="device-event-subjects">
 <h6>Device event subjects<a class="headerlink" href="#device-event-subjects" title="Link to this heading">#</a></h6>
 <div class="pst-scrollable-table-container"><table class="table">
