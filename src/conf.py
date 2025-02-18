@@ -134,7 +134,7 @@ html_css_files = [
     "css/custom.css",
 ]
 html_js_files = [
-    'js/workflow.js', # javascript for embedded workflows
+    "js/workflow.js",  # javascript for embedded workflows
 ]
 
 # -- Extensions configuration ---------------------------------------------------
@@ -262,7 +262,7 @@ myst_enable_extensions = [
     "attrs_inline",
 ]
 # Automatically add anchors to markdown headings
-myst_heading_anchors = 3
+myst_heading_anchors = 6
 myst_render_markdown_format = "myst"
 myst_url_schemes = {
     "http": None,
