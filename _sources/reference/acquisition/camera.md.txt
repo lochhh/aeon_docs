@@ -49,7 +49,7 @@ Configure the properties and subject names according to your requirements.
 :::
 
 ### DroppedFrames
-The `DroppedFrames (Extensions)` node monitors a sequence of [FrameEvents](#device-events-subjects) from a specified `Subject`, e.g. "CameraTop". 
+The `DroppedFrames (Extensions)` node monitors a sequence of [FrameEvents](#device-event-subjects) from a specified `Subject`, e.g. "CameraTop". 
 Specifically, it monitors the "FrameID" to ensure frames arrive consecutively. 
 
 #### Inputs
@@ -74,7 +74,7 @@ Each of these `Subject`s is published and becomes accessible in the Bonsai edito
 | **StreamEvents**     | Set the name of the events `Subject` output from a camera stream to be monitored    |
 
 ### StreamTimeout
-The `StreamTimeout (Extensions)` node monitors a sequence of [FrameEvents](#device-events-subjects) from a specified `Subject`, e.g. `CameraTop`. 
+The `StreamTimeout (Extensions)` node monitors a sequence of [FrameEvents](#device-event-subjects) from a specified `Subject`, e.g. `CameraTop`. 
 Specifically, it monitors the actual time between receiving frames to ensure frames arrive within a given `DueTime` property. 
 
 #### Inputs
