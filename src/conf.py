@@ -85,6 +85,8 @@ exclude_patterns = ["_templates"]
 # linkcheck will skip checking these URLs entirely
 linkcheck_ignore = [
     r"https://wiki\.ucl\.ac\.uk/.*",  # This is the UCL internal wiki
+    r"https://learn.microsoft.com/dotnet/api/.*",  # 429 Client Error: Too Many Requests for url
+
 ]
 # linkcheck will treat redirections from these source URI:canonical URI
 # mappings as "working".
