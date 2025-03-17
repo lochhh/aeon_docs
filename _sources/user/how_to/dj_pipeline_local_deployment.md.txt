@@ -32,7 +32,7 @@ To deploy and operate a DataJoint pipeline, you will need the following:
       docker start db
       ```
 2. GitHub repository containing the [codebase](aeon-mecha-github:) of the DataJoint pipeline
-   - [Install the codebase](target-install-aeon-mecha). No additional modifications are needed to deploy the pipeline locally.
+   - [Install the codebase](target-install-aeon-mecha) from the `sfn2024` branch. No additional modifications are needed to deploy the pipeline locally.
 3. File storage
    - Provide a location for the pipeline to access/store the data files (e.g. a local directory or mounted network storage).
 4. Compute environment

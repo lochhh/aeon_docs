@@ -20,6 +20,10 @@ To install `aeon_api` from source, first clone the repository and switch to the 
 git clone https://github.com/SainsburyWellcomeCentre/aeon_api
 cd aeon_api
 ```
+(Optional) To select a specific branch, replace `branch_name` with the desired branch name:
+```sh
+git checkout branch_name
+```
 To install the package alongside all optional dependencies:
 ```sh
 uv sync --all-extras
@@ -37,6 +41,10 @@ To install `aeon_mecha`, first clone the repository and switch to the `aeon_mech
 ```sh
 git clone https://github.com/SainsburyWellcomeCentre/aeon_mecha
 cd aeon_mecha
+```
+(Optional) To select a specific branch, replace `branch_name` with the desired branch name:
+```sh
+git checkout branch_name
 ```
 To install the package alongside all optional dependencies:
 ```sh
