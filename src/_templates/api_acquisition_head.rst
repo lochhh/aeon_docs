@@ -1,7 +1,7 @@
 ..
   This file is auto-generated.
 
-.. _target-acquisition-reference:
+.. _target-aeon-acquisition-reference:
 
 ``aeon_acquisition``
 =====================
@@ -11,7 +11,7 @@
    :hidden:
    :glob:
 
-   acquisition/*
+   aeon_acquisition/*
         
 .. list-table:: 
     
