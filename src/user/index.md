@@ -9,7 +9,7 @@ To demonstrate Aeon's various features and capabilities, we also provide the fol
 - [**Single mouse in a foraging assay**](sample-data-single-mouse-foraging:): A two-hour snippet of a single mouse in a foraging assay consisting of three food patches.
 
 :::{toctree}
-:maxdepth: 2
+:maxdepth: 1
 :caption: Tutorials
 
 tutorials/general_experimental_workflow
@@ -17,7 +17,7 @@ tutorials/aeon_dj_pipeline
 :::
 
 :::{toctree}
-:maxdepth: 2
+:maxdepth: 1
 :caption: How-to Guides
 
 how_to/io_api_example_copy
