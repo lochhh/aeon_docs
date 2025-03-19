@@ -53,8 +53,8 @@
     <script src="../../_static/js/workflow.js?v=1800024c"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Logging" href="logging.html" />
-    <link rel="prev" title="Multi-Camera Controller" href="camera_controller.html" />
+    <link rel="next" title="PatchDispenser" href="foraging_patch/patch_dispenser.html" />
+    <link rel="prev" title="SubjectDatabase" href="control_panel/subject_database.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -347,7 +347,22 @@
 <li class="toctree-l2"><a class="reference internal" href="alerts.html">Alerts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="camera.html">Spinnaker Camera</a></li>
 <li class="toctree-l2"><a class="reference internal" href="camera_controller.html">Multi-Camera Controller</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Foraging Patch</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="control_panel.html">Control Panel</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/annotation_source_GUI.html">AnnotationSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/button_source_GUI.html">ButtonSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/environment_state_GUI.html">EnvironmentState</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/experiment_properties_GUI.html">ExperimentProperties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/label_control_GUI.html">LabelControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/subject_database.html">SubjectDatabase <!--TODO: Placeholder content--></a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Foraging Patch</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/patch_dispenser.html">PatchDispenser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/pellet_monitor.html">PelletMonitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/time_since_last_event.html">TimeSinceLastEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/time_spent_on_wheel.html">TimeSpentOnWheel</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitors.html">Device Synchronisation Monitors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nest.html">Nest</a></li>
@@ -447,15 +462,20 @@
 <span id="target-module-foraging-patch"></span><h1>Foraging Patch<a class="headerlink" href="#foraging-patch" title="Link to this heading">#</a></h1>
 <p>The foraging patch module is core to foraging and long-term 24/7 experiments.
 It is utilised with a <a class="reference internal" href="../hardware/feeder.html#target-feeder"><span class="std std-ref">feeder</span></a> hardware module assembly to provide a means for animals in the arena to obtain food by turning a configurable wheel, simulating a naturalistic digging action.</p>
-<p>The primary <a class="reference internal" href="#undergroundfeeder"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code></a> node handles the connection to the feeder hardware through a <a class="reference external" href="https://github.com/harp-tech/device.outputexpander">Harp output expander</a> and defines the basic functions of the feeder.</p>
+<p>The primary <a class="reference internal" href="#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code></span></a> node handles the connection to the feeder hardware through a <a class="reference external" href="https://harp-tech.org/api/Harp.OutputExpander#">Harp output expander</a> and defines the basic functions of the feeder.</p>
+<section id="nodes">
+<h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading">#</a></h2>
 <p>To extend the functionality of the feeder, the following auxiliary nodes are provided:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#patchdispenser"><code class="docutils literal notranslate"><span class="pre">PatchDispenser</span> <span class="pre">(Aeon.Foraging)</span></code></a></p></li>
-<li><p><a class="reference internal" href="#pelletmonitor"><code class="docutils literal notranslate"><span class="pre">PelletMonitor</span> <span class="pre">(Aeon.Foraging)</span></code></a></p></li>
-<li><p><a class="reference internal" href="#timespentonwheel"><code class="docutils literal notranslate"><span class="pre">TimeSpentOnWheel</span> <span class="pre">(Aeon.Foraging)</span></code></a></p></li>
-<li><p><a class="reference internal" href="#timesincelastevent"><code class="docutils literal notranslate"><span class="pre">TimeSinceLastEvent</span> <span class="pre">(Aeon.Foraging)</span></code></a></p></li>
+<li><p><a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PatchDispenser</span> <span class="pre">(Aeon.Foraging)</span></code></span></a></p></li>
+<li><p><a class="reference internal" href="foraging_patch/pellet_monitor.html#target-node-pelletmonitor"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PelletMonitor</span> <span class="pre">(Aeon.Foraging)</span></code></span></a></p></li>
+<li><p><a class="reference internal" href="foraging_patch/time_spent_on_wheel.html#target-node-timespentonwheel"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">TimeSpentOnWheel</span> <span class="pre">(Aeon.Foraging)</span></code></span></a></p></li>
+<li><p><a class="reference internal" href="foraging_patch/time_since_last_event.html#target-node-timesincelastevent"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">TimeSinceLastEvent</span> <span class="pre">(Aeon.Foraging)</span></code></span></a></p></li>
 </ul>
-<p>Each of these auxiliary nodes accept events carried by shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s from the <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code> node. These together create a comprehensive foraging assembly known as a “Patch” that allows for real-time tracking of various measures extracted from processing sensor data and events from the feeder device, including:</p>
+<p>These nodes process events from the <a class="reference internal" href="#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code></span></a> node and retrieve or compute informative metrics for visualisation, logging, and task control.
+Each of these auxiliary nodes accept events carried by shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s from the <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code> node.
+Together, these create a comprehensive foraging assembly known as a “Patch” that allows for real-time tracking of multiple measures extracted from processing sensor data and events from the feeder device.
+These are passed to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s:</p>
 <ul class="simple">
 <li><p>PelletCount</p></li>
 <li><p>TimeSpentOnPatches</p></li>
@@ -465,12 +485,14 @@ It is utilised with a <a class="reference internal" href="../hardware/feeder.htm
 <li><p>ManualPellets</p></li>
 <li><p>TotalPelletsDelivered</p></li>
 </ul>
-<section id="nodes">
-<h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading">#</a></h2>
+<p>These <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s can then be utilised for processing, task logic, logging and visualisation of the experimental procedure.</p>
+<p>The <a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PatchDispenser</span></code></span></a> and <a class="reference internal" href="foraging_patch/pellet_monitor.html#target-node-pelletmonitor"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PelletMonitor</span></code></span></a> nodes work together to monitor delivery commands and beam break events to keep track of the number of pellets available to be delivered and the reason each pellet was delivered (a retry, automatic or manual delivery).
+It also monitors the current configuration of the patch assembly, including the threshold and current position of the foraging wheel, to facilitate recovery from unexpected interruptions or workflow crashes.
+The <a class="reference internal" href="foraging_patch/time_spent_on_wheel.html#target-node-timespentonwheel"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">TimeSpentOnWheel</span></code></span></a> and <a class="reference internal" href="foraging_patch/time_since_last_event.html#target-node-timesincelastevent"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">TimeSinceLastEvent</span></code></span></a> nodes are used to compute these relevant measures for logging, visualisation and experiment monitoring.</p>
 <section id="undergroundfeeder">
-<h3>UndergroundFeeder<a class="headerlink" href="#undergroundfeeder" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code> node establishes a connection to the <a class="reference internal" href="../hardware/feeder.html#target-feeder"><span class="std std-ref">feeder</span></a> hardware module assembly through a <a class="reference external" href="https://github.com/harp-tech/device.outputexpander">Harp output expander</a>.
-It also defines the basic functions of the feeder and a workflow to configure the relevant device operation properties.
+<span id="target-node-undergroundfeeder"></span><h3>UndergroundFeeder<a class="headerlink" href="#undergroundfeeder" title="Link to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code> node establishes a connection to the <a class="reference internal" href="../hardware/feeder.html#target-feeder"><span class="std std-ref">feeder</span></a> hardware module assembly through a <a class="reference external" href="https://harp-tech.org/api/Harp.OutputExpander#">Harp output expander</a>.
+It also defines the basic functions of the feeder and a workflow to configure the device operation properties.
 The device uses the standardised Harp communication protocol, producing timestamped Harp messages when device events occur.</p>
 <section id="inputs">
 <h4>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h4>
@@ -590,237 +612,13 @@ Inside, place an <code class="docutils literal notranslate"><span class="pre">Un
 </div>
 </section>
 </section>
-<section id="patchdispenser">
-<h3>PatchDispenser<a class="headerlink" href="#patchdispenser" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">PatchDispenser</span> <span class="pre">(Aeon.Foraging)</span></code> node keeps track of the number of pellets available to the feeder.
-It accepts pellet discount notifications triggered by the IR beam break following successful pellet delivery, and discounts these from the total number of pellets, which is itself set manually when loading the feeder hopper.</p>
-<section id="id1">
-<h4>Inputs<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;bool&gt;</span></code> events emitted by the <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code> node indicating pellet delivery.</p>
-</section>
-<section id="id2">
-<h4>Outputs<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
-<p>Stream of custom class <code class="docutils literal notranslate"><span class="pre">Aeon.Foraging.DispenserEventArgs</span></code>.</p>
-<!-- TODO: Fix link to controlpanel -->
-<p>Each item emitted consists of a “Value” (<code class="docutils literal notranslate"><span class="pre">int</span></code>) corresponding to the pellet count following an event, and an “EventType” (<code class="docutils literal notranslate"><span class="pre">Aeon.Foraging.DispenserEventType</span></code>) describing the reason for the new pellet count, i.e. due to a triggered “Discount”, or “Reset” or “Refill” command from the <a class="reference internal" href="#../../GUI/controlPanel.md"><span class="xref myst">control panel</span></a>.</p>
-</section>
-<section id="id3">
-<h4>Properties<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
-<section id="id4">
-<h5>General<a class="headerlink" href="#id4" title="Link to this heading">#</a></h5>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Property name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Name</strong></p></td>
-<td><p>Set the name to identify this specific dispenser module. e.g. “Patch1”</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="id5">
-<h5>Subjects<a class="headerlink" href="#id5" title="Link to this heading">#</a></h5>
-<p>Events (outputs) from the <code class="docutils literal notranslate"><span class="pre">PatchDispenser</span></code> node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s, the names of which are configured in the properties of the node.
-These subjects then become accessible in the Bonsai editor’s toolbox for use elsewhere under the same name</p>
-<section id="id6">
-<h6>Device event subjects<a class="headerlink" href="#id6" title="Link to this heading">#</a></h6>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Subject name</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>ControllerEvents</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Aeon.Foraging.DispenserEventArgs</span></code></p></td>
-<td><p>Controller events shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, carrying the number of pellets remaining (<code class="docutils literal notranslate"><span class="pre">int</span></code>) and the <code class="docutils literal notranslate"><span class="pre">EventType</span></code>. Also output directly by the node</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>DispenserState</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Tuple&lt;double,double,double&gt;</span></code></p></td>
-<td><p>Declared <code class="docutils literal notranslate"><span class="pre">StateRecoverySubject</span></code> to store the current Threshold, D1, and Delta parameters of the pellet dispenser</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-</section>
-</section>
-<section id="id7">
-<h4>Usage<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
-<p>Place a <code class="docutils literal notranslate"><span class="pre">SubscribeSubject</span></code> and point it to the “PelletDelivered” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> for a patch (e.g. “Patch1PelletDelivered”).
-Connect this to a <code class="docutils literal notranslate"><span class="pre">Condition</span></code> node that checks the <code class="docutils literal notranslate"><span class="pre">Value</span></code> of the incoming <code class="docutils literal notranslate"><span class="pre">Subject</span></code>.
-This is a <code class="docutils literal notranslate"><span class="pre">Boolean</span></code> that reports <code class="docutils literal notranslate"><span class="pre">True</span></code> on pellet delivery, and ensures only the rising edge of this signal is counted as a delivery.
-Finally, connect this to a <code class="docutils literal notranslate"><span class="pre">PatchDispenser</span> <span class="pre">(Aeon.Foraging)</span></code> node.</p>
-<div class="workflow docutils">
-<p><img alt="Aeon.Foraging.PatchDispenser" src="../../_images/patchDispenser.svg" /></p>
-</div>
-</section>
-</section>
-<section id="pelletmonitor">
-<h3>PelletMonitor<a class="headerlink" href="#pelletmonitor" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">PelletMonitor</span> <span class="pre">(Aeon.Foraging)</span></code> node monitors the current state of pellet delivery commands and the beam break.
-Within this node, pellet delivery commands received by the Harp output expander are filtered from the “PatchEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> and successful deliveries monitored through the “PelletDelivered” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> (e.g. “Patch1PelletDelivered”).
-The <code class="docutils literal notranslate"><span class="pre">RepeatEverySubject</span></code> node ensures this node is only running while an animal is present in the arena. <!-- This is not that clear to me; it seems to only run when a subject has entered, but if you had two subjects and removed one this would it not also stop, despite there being another subject stil present? --></p>
-<div class="workflow docutils">
-<p><img alt="Aeon.Foraging.PelletMonitorWorkflow" src="../../_images/pelletMonitorWorkflow.svg" /></p>
-</div>
-<section id="id8">
-<h4>Inputs<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
-<p>None</p>
-</section>
-<section id="id9">
-<h4>Outputs<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
-<p>Sequence of dynamic class events triggered by deliver pellet commands and beam break events, consisting of a “Timestamp” (<code class="docutils literal notranslate"><span class="pre">double</span></code>) and a “Value” (<code class="docutils literal notranslate"><span class="pre">boolean</span></code>) that reports the current state.
-This “Value” is <code class="docutils literal notranslate"><span class="pre">True</span></code> if when a delivery command has been received, and <code class="docutils literal notranslate"><span class="pre">False</span></code> when a successful beam break is detected.</p>
-</section>
-<section id="id10">
-<h4>Properties<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
-<section id="id11">
-<h5>Subjects<a class="headerlink" href="#id11" title="Link to this heading">#</a></h5>
-<p>Commands (inputs) to the <code class="docutils literal notranslate"><span class="pre">PelletMonitor</span></code> node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s, the names of which are configured in the properties of the node.</p>
-<section id="id12">
-<h6>Device command subjects<a class="headerlink" href="#id12" title="Link to this heading">#</a></h6>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Subject name</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>PelletCommand</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Harp.HarpMessage</span></code></p></td>
-<td><p>The name of the shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code> carrying all events published by the <a class="reference external" href="https://github.com/harp-tech/device.outputexpander">output expander</a> connected to an <a class="reference internal" href="#undergroundfeeder"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code></a>, e.g. “Patch1Events”</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>PelletDelivered</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;bool&gt;</span></code></p></td>
-<td><p>The name of the shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code> carrying beam break events indicating successful pellet deliveries, e.g. “Patch1PelletDelivered”. Also published by <a class="reference internal" href="#undergroundfeeder"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code></a></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-</section>
-</section>
-<section id="id13">
-<h4>Usage<a class="headerlink" href="#id13" title="Link to this heading">#</a></h4>
-<p>To use a <code class="docutils literal notranslate"><span class="pre">PelletMonitor</span> <span class="pre">(Aeon.Foraging)</span></code> node, simply place one and configure its properties.</p>
-<div class="workflow docutils">
-<p><img alt="Aeon.Foraging.PelletMonitor" src="../../_images/pelletMonitor.svg" /></p>
-</div>
-</section>
-</section>
-<section id="timespentonwheel">
-<h3>TimeSpentOnWheel<a class="headerlink" href="#timespentonwheel" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">TimeSpentOnWheel</span> <span class="pre">(Aeon.Foraging)</span></code> node monitors the motion of a given foraging wheel and accumulates the total time the animal is actively turning the wheel.</p>
-<!-- TODO: Fix link to wheelmoving.md -->
-<p>Within this node, the <a class="reference internal" href="#../../wheelMoving.md"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">WheelMoving</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node reports whether the wheel is in motion or not, and accumulates the differences between timestamps emitted by the feeder while the wheel is in motion.</p>
-<div class="workflow docutils">
-<p><img alt="timeSpentOnWheelWorkflow" src="../../_images/timeSpentOnWheelWorkflow.svg" /></p>
-</div>
-<section id="id14">
-<h4>Inputs<a class="headerlink" href="#id14" title="Link to this heading">#</a></h4>
-<p>None</p>
-</section>
-<section id="id15">
-<h4>Outputs<a class="headerlink" href="#id15" title="Link to this heading">#</a></h4>
-<p>Sequence of <code class="docutils literal notranslate"><span class="pre">double</span></code> values carrying the number of seconds the wheel has been in motion, accumulated from the data timestamps.</p>
-</section>
-<section id="id16">
-<h4>Properties<a class="headerlink" href="#id16" title="Link to this heading">#</a></h4>
-<section id="id17">
-<h5>General<a class="headerlink" href="#id17" title="Link to this heading">#</a></h5>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Property name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Name</strong></p></td>
-<td><p>Set the name to identify this specific dispenser module, e.g. “Patch1”</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="id18">
-<h5>Subjects<a class="headerlink" href="#id18" title="Link to this heading">#</a></h5>
-<p>Commands (inputs) to the <code class="docutils literal notranslate"><span class="pre">TimeSpentOnWheel</span> </code> node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s, the names of which are configured in the properties of the node.</p>
-<!-- To be completed 
-###### Device event subjects 
-`HarpMessage` events emitted to a `Subject`
-
-| Subject name      | Type        | Description                   |
-|-------------------|-------------|-------------------------------|
-| **Event1**        | `Type`      | Description of Event1         |
-| **Event2**        | `Type`      | Description of Event2         |
-
-###### Other output subjects
-Other subjects published or updated by the node, usually ater some processing
-
-| Subject name      | Type          | Description                                                                                     |
-|-------------------|---------------|-------------------------------------------------------------------------------------------------|
-| **Output1**       | `Type`        | Description of Output1                                                                          |
-| **Output2**       | `Type`        | Description of Output2                                                                          |
-
-###### Device command subjects 
-Existing subjects published outside of the node, but used for input / trigger
-
-| Subject name      | Type          | Description                                                                                     |
-|-------------------|---------------|-------------------------------------------------------------------------------------------------|
-| **Command1**      | `Type`        | Description of Command1                                                                         |
-| **Command2**      | `Type`        | Description of Command2                                                                         |
--->
-</section>
-</section>
-<section id="id19">
-<h4>Usage<a class="headerlink" href="#id19" title="Link to this heading">#</a></h4>
-<!-- TODO: Fix link to RepeatEveryBlock -->
-<p>To reset a <code class="docutils literal notranslate"><span class="pre">TimeSpentOnWheel</span> <span class="pre">(Aeon.Foraging)</span></code> monitor after a block transition, use a <a class="reference internal" href="#./RepeatEveryBlock.md"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">RepeatEveryBlock</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node and pass the result to an appropriately named <code class="docutils literal notranslate"><span class="pre">BehaviorSubject</span></code>, e.g. “Patch1TimeSpent”.</p>
-<div class="workflow docutils">
-<p><img alt="timeSpentOnWheel" src="../../_images/timeSpentOnWheel.svg" /></p>
-</div>
-</section>
-</section>
-<section id="timesincelastevent">
-<h3>TimeSinceLastEvent<a class="headerlink" href="#timesincelastevent" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">TimeSinceLastEvent</span> <span class="pre">(Aeon.Foraging)</span></code> node monitors the current state of pellet delivery commands and the beam break.</p>
-<!-- Is this the correct workflow? -->
-<div class="workflow docutils">
-<p><img alt="Aeon.Foraging.PelletMonitorWorkflow" src="../../_images/pelletMonitorWorkflow.svg" /></p>
-</div>
-<section id="id20">
-<h4>Inputs<a class="headerlink" href="#id20" title="Link to this heading">#</a></h4>
-<p>None</p>
-</section>
-<section id="id21">
-<h4>Outputs<a class="headerlink" href="#id21" title="Link to this heading">#</a></h4>
-<p>Sequence of <code class="docutils literal notranslate"><span class="pre">double</span></code> values carrying the number of seconds since the wheel was last turned, accumulated from the data timestamps</p>
-</section>
-<section id="id22">
-<h4>Properties<a class="headerlink" href="#id22" title="Link to this heading">#</a></h4>
-<p>This node does not have any properties.
-However, it assumes that a “VideoEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> from a <a class="reference internal" href="camera_controller.html#target-node-cameracontroller"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">CameraController</span></code></span></a> node exists to monitor timestamps.</p>
-</section>
-<section id="id23">
-<h4>Usage<a class="headerlink" href="#id23" title="Link to this heading">#</a></h4>
-<!-- To be completed -->
-</section>
-</section>
-<section id="additional-nodes-to-be-added">
-<h3>Additional nodes to be added<a class="headerlink" href="#additional-nodes-to-be-added" title="Link to this heading">#</a></h3>
+<section id="additional-nodes-subjects-to-be-considered">
+<h3>Additional nodes / subjects to be considered<a class="headerlink" href="#additional-nodes-subjects-to-be-considered" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>[ ] <code class="docutils literal notranslate"><span class="pre">RepeatEveryBlock</span></code></p></li>
-<li><p>[ ] <code class="docutils literal notranslate"><span class="pre">TimeSinceLastEvent</span></code></p></li>
 <li><p>[ ] <code class="docutils literal notranslate"><span class="pre">PatchDistanceState</span></code></p></li>
 <li><p>[ ] <code class="docutils literal notranslate"><span class="pre">PatchState</span></code></p></li>
-<li><p>[ ] <code class="docutils literal notranslate"><span class="pre">PathDeliveryCount</span></code></p></li>
+<li><p>[ ] <code class="docutils literal notranslate"><span class="pre">PatchDeliveryCount</span></code></p></li>
 <li><p>[ ] <code class="docutils literal notranslate"><span class="pre">PatchTimeSpent</span></code></p></li>
 <li><p>[ ] <code class="docutils literal notranslate"><span class="pre">PatchTimeSinceLastVisit</span></code></p></li>
 <li><p>[ ] <code class="docutils literal notranslate"><span class="pre">PatchWheelDisplacement</span></code></p></li>
@@ -829,11 +627,30 @@ However, it assumes that a “VideoEvents” <code class="docutils literal notra
 </section>
 <section id="gui">
 <h2>GUI<a class="headerlink" href="#gui" title="Link to this heading">#</a></h2>
-<!-- To be completed -->
+<p>The feeder hardware has several commands that may be initiated by the user, actuated through clickable buttons in a customisable control panel built by the <a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref">PatchDispenser</span></a> node.</p>
+<section id="environment-metadata">
+<h3>Environment metadata<a class="headerlink" href="#environment-metadata" title="Link to this heading">#</a></h3>
+</section>
+<section id="patchdispenser-control-panel">
+<span id="target-node-patchdispenser-control-panel"></span><h3>PatchDispenser control panel<a class="headerlink" href="#patchdispenser-control-panel" title="Link to this heading">#</a></h3>
+<p>In addition to the monitoring of pellet counts and the current state of the feeder, the <a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PatchDispenser</span></code></span></a> node also comes with its own GUI interface for controlling the feeder hardware during an experiment.</p>
+<p><img alt="patchDispenserVisualiser" src="../../_images/patch_dispenser_visualiser.svg" /></p>
+<ol class="arabic simple">
+<li><p><strong>Patch name</strong>: The name assigned to this patch, e.g. “Patch1”.</p></li>
+<li><p><strong>Current pellet count</strong>: The current estimated number of pellets in the feeder hopper.</p></li>
+<li><p><strong>Pellet count entry</strong>: Dialog box to enter a new pellet count, e.g. during a manual refill of the feeder.</p></li>
+<li><p><strong>Deliver</strong>: Button to trigger a manual pellet delivery, regardless of the activity of the wheel.</p></li>
+<li><p><strong>Refill</strong>: Button to update the current pellet count with the count specified in the pellet count entry dialog box. Typically used during maintenance mode.</p></li>
+<li><p><strong>Reset</strong>: Button to reinitialise the feeder, typically after human intervention, e.g. following a refill or in case the feeder or associated hardware has entered an erroneous state.</p></li>
+</ol>
+</section>
+<section id="patch-threshold-and-wheel-monitoring">
+<h3>Patch threshold and wheel monitoring<a class="headerlink" href="#patch-threshold-and-wheel-monitoring" title="Link to this heading">#</a></h3>
+</section>
 </section>
 <section id="logging">
 <h2>Logging<a class="headerlink" href="#logging" title="Link to this heading">#</a></h2>
-<p>Outputs from auxiliary nodes are first formatted using the <code class="docutils literal notranslate"><span class="pre">Format</span></code> node, within which the register addresses are configured for software generated data logs.
+<p>Outputs from the feeder nodes are first formatted using the <code class="docutils literal notranslate"><span class="pre">Format</span></code> node, within which the register addresses are configured for software generated data logs.
 Utilising available registers of the output expander, the formatted outputs are then combined to form a “Patch” assembly, before being passed to the<a class="reference internal" href="logging.html#target-node-logharpstate"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">LogHarpState</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node to be written to a log file.</p>
 <div class="workflow docutils">
 <p><img alt="logPatchEvents" src="../../_images/logPatchEvents.svg" /></p>
@@ -944,14 +761,17 @@ For instance, <code class="docutils literal notranslate"><span class="pre">Patch
 <p>The state of a patch includes:</p>
 <ul class="simple">
 <li><p>The distance the wheel has been turned,</p></li>
-<li><p>the current threshold set for pellet delivery,</p></li>
+<li><p>the current threshold set for pellest delivery,</p></li>
 <li><p>the total number of pellets delivered, and</p></li>
 <li><p>the number of pellets still present in the feeder.</p></li>
 </ul>
 </section>
 <section id="alerts">
 <h2>Alerts<a class="headerlink" href="#alerts" title="Link to this heading">#</a></h2>
-<!-- To be completed --></section>
+<!-- To be completed -->
+<div class="toctree-wrapper compound">
+</div>
+</section>
 </section>
 
 
@@ -965,20 +785,20 @@ For instance, <code class="docutils literal notranslate"><span class="pre">Patch
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="camera_controller.html"
+       href="control_panel/subject_database.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Multi-Camera Controller</p>
+        <p class="prev-next-title">SubjectDatabase <!--TODO: Placeholder content--></p>
       </div>
     </a>
     <a class="right-next"
-       href="logging.html"
+       href="foraging_patch/patch_dispenser.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Logging</p>
+        <p class="prev-next-title">PatchDispenser</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1018,55 +838,15 @@ For instance, <code class="docutils literal notranslate"><span class="pre">Patch
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patchdispenser">PatchDispenser</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Inputs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Outputs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">General</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Subjects</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Device event subjects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-nodes-subjects-to-be-considered">Additional nodes / subjects to be considered</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gui">GUI</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-metadata">Environment metadata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patchdispenser-control-panel">PatchDispenser control panel</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patch-threshold-and-wheel-monitoring">Patch threshold and wheel monitoring</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Usage</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pelletmonitor">PelletMonitor</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Inputs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Outputs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Subjects</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Device command subjects</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Usage</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timespentonwheel">TimeSpentOnWheel</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Inputs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Outputs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">General</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Subjects</a></li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Usage</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timesincelastevent">TimeSinceLastEvent</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Inputs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Outputs</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Properties</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Usage</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-nodes-to-be-added">Additional nodes to be added</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gui">GUI</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logging">Logging</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#state-persistence">State persistence</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alerts">Alerts</a></li>

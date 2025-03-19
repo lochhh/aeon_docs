@@ -347,7 +347,22 @@
 <li class="toctree-l2"><a class="reference internal" href="alerts.html">Alerts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="camera.html">Spinnaker Camera</a></li>
 <li class="toctree-l2"><a class="reference internal" href="camera_controller.html">Multi-Camera Controller</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foraging_patch.html">Foraging Patch</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="control_panel.html">Control Panel</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/annotation_source_GUI.html">AnnotationSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/button_source_GUI.html">ButtonSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/environment_state_GUI.html">EnvironmentState</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/experiment_properties_GUI.html">ExperimentProperties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/label_control_GUI.html">LabelControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/subject_database.html">SubjectDatabase <!--TODO: Placeholder content--></a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="foraging_patch.html">Foraging Patch</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/patch_dispenser.html">PatchDispenser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/pellet_monitor.html">PelletMonitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/time_since_last_event.html">TimeSinceLastEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/time_spent_on_wheel.html">TimeSpentOnWheel</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Device Synchronisation Monitors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nest.html">Nest</a></li>
@@ -499,7 +514,7 @@ Sychronisation is constantly monitored across devices using a combination of <co
 <section id="synchronizermonitor">
 <span id="target-node-synchronizermonitor"></span><h3>SynchronizerMonitor<a class="headerlink" href="#synchronizermonitor" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node is used to monitor the synchronisation status of acquisition devices, ensuring that all monitored devices are properly aligned and functioning in unison.
-It counts the number of devices in the <a class="reference internal" href="#monitoring-multiple-devices">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></a> and compares heatbeats acquired from each device to the heartbeats of the ClockSynchronizer device.</p>
+It counts the number of devices in the <a class="reference internal" href="#monitoring-multiple-devices"><span class="xref myst">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></span></a> and compares heatbeats acquired from each device to the heartbeats of the ClockSynchronizer device.</p>
 <section id="id1">
 <h4>Inputs<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <p>Sequence of <code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;string&gt;</span></code></p>
@@ -545,7 +560,7 @@ It counts the number of devices in the <a class="reference internal" href="#moni
 </section>
 <section id="id3">
 <h4>Usage<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
-<p>Pass the output from the <a class="reference internal" href="#monitoring-multiple-devices">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></a> to a <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node.</p>
+<p>Pass the output from the <a class="reference internal" href="#monitoring-multiple-devices"><span class="xref myst">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></span></a> to a <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node.</p>
 <div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.HeartbeatSources" src="../../_images/heartbeatSources.svg" /></p>
 </div>

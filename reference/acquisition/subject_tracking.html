@@ -347,7 +347,22 @@
 <li class="toctree-l2"><a class="reference internal" href="alerts.html">Alerts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="camera.html">Spinnaker Camera</a></li>
 <li class="toctree-l2"><a class="reference internal" href="camera_controller.html">Multi-Camera Controller</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foraging_patch.html">Foraging Patch</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="control_panel.html">Control Panel</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/annotation_source_GUI.html">AnnotationSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/button_source_GUI.html">ButtonSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/environment_state_GUI.html">EnvironmentState</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/experiment_properties_GUI.html">ExperimentProperties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/label_control_GUI.html">LabelControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_panel/subject_database.html">SubjectDatabase <!--TODO: Placeholder content--></a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="foraging_patch.html">Foraging Patch</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/patch_dispenser.html">PatchDispenser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/pellet_monitor.html">PelletMonitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/time_since_last_event.html">TimeSinceLastEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="foraging_patch/time_spent_on_wheel.html">TimeSpentOnWheel</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="monitors.html">Device Synchronisation Monitors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nest.html">Nest</a></li>
@@ -475,7 +490,7 @@ Below is an example of an input image of the arena from a top-view camera and it
 </figcaption>
 </figure>
 </div>
-<p>Contours are found and located using the <code class="docutils literal notranslate"><span class="pre">FindContours</span></code> and <code class="docutils literal notranslate"><span class="pre">BinaryRegionAnalysis</span></code> functions from <code class="docutils literal notranslate"><span class="pre">OpenCV.NET</span></code> (available in <code class="docutils literal notranslate"><span class="pre">Bonsai.Vision</span></code> package) and a custom <code class="docutils literal notranslate"><span class="pre">TakeLargestRegions</span> <span class="pre">(Aeon.Vision)</span></code> to take the <em>n</em> largest regions as defined by the property <a class="reference internal" href="#properties"><code class="docutils literal notranslate"><span class="pre">TrackingCount</span></code></a>.</p>
+<p>Contours are found and located using the <code class="docutils literal notranslate"><span class="pre">FindContours</span></code> and <code class="docutils literal notranslate"><span class="pre">BinaryRegionAnalysis</span></code> functions from <code class="docutils literal notranslate"><span class="pre">OpenCV.NET</span></code> (available in <code class="docutils literal notranslate"><span class="pre">Bonsai.Vision</span></code> package) and a custom <code class="docutils literal notranslate"><span class="pre">TakeLargestRegions</span> <span class="pre">(Aeon.Vision)</span></code> to take the <em>n</em> largest regions as defined by the property <a class="reference internal" href="#properties"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">TrackingCount</span></code></span></a>.</p>
 <section id="inputs">
 <h4>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h4>
 <p>Sequence of <code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;Aeon.Video.VideoDataFrame&gt;</span></code>s from a specific camera published by a <a class="reference internal" href="camera.html#target-node-spinnakervideosource"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">SpinnakerVideoSource</span> <span class="pre">(Aeon.Video)</span></code></span></a> node.</p>
