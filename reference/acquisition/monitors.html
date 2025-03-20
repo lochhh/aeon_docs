@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=531f5a0a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=def09fa5" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -338,7 +338,9 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../hardware.html">Hardware Assembly</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../hardware/feeder.html">Feeder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/commutation_translation.html">Commutation-Translation System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/foraging_patch.html">Foraging Patch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/habitat.html">Habitat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hardware/nest.html">Nest</a></li>
 </ul>
 </details></li>
@@ -514,7 +516,7 @@ Sychronisation is constantly monitored across devices using a combination of <co
 <section id="synchronizermonitor">
 <span id="target-node-synchronizermonitor"></span><h3>SynchronizerMonitor<a class="headerlink" href="#synchronizermonitor" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node is used to monitor the synchronisation status of acquisition devices, ensuring that all monitored devices are properly aligned and functioning in unison.
-It counts the number of devices in the <a class="reference internal" href="#monitoring-multiple-devices"><span class="xref myst">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></span></a> and compares heatbeats acquired from each device to the heartbeats of the ClockSynchronizer device.</p>
+It counts the number of devices in the <a class="reference internal" href="#monitoring-multiple-devices">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></a> and compares heatbeats acquired from each device to the heartbeats of the ClockSynchronizer device.</p>
 <section id="id1">
 <h4>Inputs<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <p>Sequence of <code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;string&gt;</span></code></p>
@@ -560,7 +562,7 @@ It counts the number of devices in the <a class="reference internal" href="#moni
 </section>
 <section id="id3">
 <h4>Usage<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
-<p>Pass the output from the <a class="reference internal" href="#monitoring-multiple-devices"><span class="xref myst">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></span></a> to a <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node.</p>
+<p>Pass the output from the <a class="reference internal" href="#monitoring-multiple-devices">“HeartbeatSources” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></a> to a <code class="docutils literal notranslate"><span class="pre">SynchronizerMonitor</span> <span class="pre">(Aeon.Acquisition)</span></code> node.</p>
 <div class="workflow docutils">
 <p><img alt="Aeon.Acquisition.HeartbeatSources" src="../../_images/heartbeatSources.svg" /></p>
 </div>

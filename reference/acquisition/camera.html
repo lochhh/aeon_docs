@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=531f5a0a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=def09fa5" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -338,7 +338,9 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../hardware.html">Hardware Assembly</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../hardware/feeder.html">Feeder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/commutation_translation.html">Commutation-Translation System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/foraging_patch.html">Foraging Patch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/habitat.html">Habitat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hardware/nest.html">Nest</a></li>
 </ul>
 </details></li>
@@ -560,7 +562,7 @@ Configure the properties and subject names according to your requirements.</p>
 </section>
 <section id="droppedframes">
 <h3>DroppedFrames<a class="headerlink" href="#droppedframes" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">DroppedFrames</span> <span class="pre">(Extensions)</span></code> node monitors a sequence of <a class="reference internal" href="#device-event-subjects"><span class="xref myst">FrameEvents</span></a> from a specified <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, e.g. “CameraTop”.
+<p>The <code class="docutils literal notranslate"><span class="pre">DroppedFrames</span> <span class="pre">(Extensions)</span></code> node monitors a sequence of <a class="reference internal" href="#device-event-subjects">FrameEvents</a> from a specified <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, e.g. “CameraTop”.
 Specifically, it monitors the “FrameID” to ensure frames arrive consecutively.</p>
 <section id="id1">
 <h4>Inputs<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
@@ -601,7 +603,7 @@ Each of these <code class="docutils literal notranslate"><span class="pre">Subje
 </section>
 <section id="streamtimeout">
 <h3>StreamTimeout<a class="headerlink" href="#streamtimeout" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">StreamTimeout</span> <span class="pre">(Extensions)</span></code> node monitors a sequence of <a class="reference internal" href="#device-event-subjects"><span class="xref myst">FrameEvents</span></a> from a specified <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">CameraTop</span></code>.
+<p>The <code class="docutils literal notranslate"><span class="pre">StreamTimeout</span> <span class="pre">(Extensions)</span></code> node monitors a sequence of <a class="reference internal" href="#device-event-subjects">FrameEvents</a> from a specified <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">CameraTop</span></code>.
 Specifically, it monitors the actual time between receiving frames to ensure frames arrive within a given <code class="docutils literal notranslate"><span class="pre">DueTime</span></code> property.</p>
 <section id="id5">
 <h4>Inputs<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>

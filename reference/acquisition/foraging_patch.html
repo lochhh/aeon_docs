@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=531f5a0a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=def09fa5" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -338,7 +338,9 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../hardware.html">Hardware Assembly</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../hardware/feeder.html">Feeder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/commutation_translation.html">Commutation-Translation System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/foraging_patch.html">Foraging Patch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/habitat.html">Habitat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hardware/nest.html">Nest</a></li>
 </ul>
 </details></li>
@@ -461,11 +463,11 @@
   <section id="foraging-patch">
 <span id="target-module-foraging-patch"></span><h1>Foraging Patch<a class="headerlink" href="#foraging-patch" title="Link to this heading">#</a></h1>
 <p>The foraging patch module is core to foraging and long-term 24/7 experiments.
-It is utilised with a <a class="reference internal" href="../hardware/feeder.html#target-feeder"><span class="std std-ref">feeder</span></a> hardware module assembly to provide a means for animals in the arena to obtain food by turning a configurable wheel, simulating a naturalistic digging action.</p>
-<p>The primary <a class="reference internal" href="#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code></span></a> node handles the connection to the feeder hardware through a <a class="reference external" href="https://harp-tech.org/api/Harp.OutputExpander#">Harp output expander</a> and defines the basic functions of the feeder.</p>
+It is utilised with a <a class="reference internal" href="../hardware/foraging_patch.html#target-foraging-patch"><span class="std std-ref">foraging patch</span></a> hardware module assembly to provide a means for animals in the arena to obtain food by turning a configurable wheel, simulating a naturalistic digging action.</p>
+<p>The primary <a class="reference internal" href="#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code></span></a> node handles the connection to the foraging patch hardware through a <a class="reference external" href="https://harp-tech.org/api/Harp.OutputExpander#">Harp output expander</a> and defines the basic functions of the foraging patch.</p>
 <section id="nodes">
 <h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading">#</a></h2>
-<p>To extend the functionality of the feeder, the following auxiliary nodes are provided:</p>
+<p>To extend the functionality of the foraging patch, the following auxiliary nodes are provided:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PatchDispenser</span> <span class="pre">(Aeon.Foraging)</span></code></span></a></p></li>
 <li><p><a class="reference internal" href="foraging_patch/pellet_monitor.html#target-node-pelletmonitor"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PelletMonitor</span> <span class="pre">(Aeon.Foraging)</span></code></span></a></p></li>
@@ -474,7 +476,7 @@ It is utilised with a <a class="reference internal" href="../hardware/feeder.htm
 </ul>
 <p>These nodes process events from the <a class="reference internal" href="#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code></span></a> node and retrieve or compute informative metrics for visualisation, logging, and task control.
 Each of these auxiliary nodes accept events carried by shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s from the <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code> node.
-Together, these create a comprehensive foraging assembly known as a “Patch” that allows for real-time tracking of multiple measures extracted from processing sensor data and events from the feeder device.
+Together, these create a comprehensive foraging assembly known as a “Patch” that allows for real-time tracking of multiple measures extracted from processing sensor data and events from the foraging patch device.
 These are passed to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s:</p>
 <ul class="simple">
 <li><p>PelletCount</p></li>
@@ -491,8 +493,8 @@ It also monitors the current configuration of the patch assembly, including the 
 The <a class="reference internal" href="foraging_patch/time_spent_on_wheel.html#target-node-timespentonwheel"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">TimeSpentOnWheel</span></code></span></a> and <a class="reference internal" href="foraging_patch/time_since_last_event.html#target-node-timesincelastevent"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">TimeSinceLastEvent</span></code></span></a> nodes are used to compute these relevant measures for logging, visualisation and experiment monitoring.</p>
 <section id="undergroundfeeder">
 <span id="target-node-undergroundfeeder"></span><h3>UndergroundFeeder<a class="headerlink" href="#undergroundfeeder" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code> node establishes a connection to the <a class="reference internal" href="../hardware/feeder.html#target-feeder"><span class="std std-ref">feeder</span></a> hardware module assembly through a <a class="reference external" href="https://harp-tech.org/api/Harp.OutputExpander#">Harp output expander</a>.
-It also defines the basic functions of the feeder and a workflow to configure the device operation properties.
+<p>The <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code> node establishes a connection to the <a class="reference internal" href="../hardware/foraging_patch.html#target-foraging-patch"><span class="std std-ref">foraging patch</span></a> hardware module assembly through a <a class="reference external" href="https://harp-tech.org/api/Harp.OutputExpander#">Harp output expander</a>.
+It also defines the basic functions of the foraging patch and a workflow to configure the device operation properties.
 The device uses the standardised Harp communication protocol, producing timestamped Harp messages when device events occur.</p>
 <section id="inputs">
 <h4>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h4>
@@ -515,10 +517,10 @@ The device uses the standardised Harp communication protocol, producing timestam
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>PortName</strong></p></td>
-<td><p>The COM port the output expander attached to your feeder is connected to</p></td>
+<td><p>The COM port the output expander attached to your foraging patch is connected to</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Radius</strong></p></td>
-<td><p>The radius of the foraging wheel in centimeters. This is used to compute the distance the wheel has been turned. The Aeon <a class="reference internal" href="../hardware/feeder.html#target-feeder"><span class="std std-ref">foraging patch</span></a> wheel has a radius of 4cm</p></td>
+<td><p>The radius of the foraging wheel in centimeters. This is used to compute the distance the wheel has been turned. The Aeon <a class="reference internal" href="../hardware/foraging_patch.html#target-foraging-patch"><span class="std std-ref">foraging patch</span></a> wheel has a radius of 4cm</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>SampleRate</strong></p></td>
 <td><p>The sampling rate of the magnetic encoder monitoring the wheel, selected from options available. For Aeon experiments, this is set to 500Hz</p></td>
@@ -529,8 +531,8 @@ The device uses the standardised Harp communication protocol, producing timestam
 </section>
 <section id="retry-function">
 <h5>Retry function<a class="headerlink" href="#retry-function" title="Link to this heading">#</a></h5>
-<p>If a pellet is due to be delivered, an IR beam break module in the feeder detects whether the pellet delivery is successful.
-In the event that a pellet is not delivered (no beam break detected), then the feeder can be configured to try again.
+<p>If a pellet is due to be delivered, an IR beam break module in the foraging patch detects whether the pellet delivery is successful.
+In the event that a pellet is not delivered (no beam break detected), then the foraging patch can be configured to try again.
 These properties configure the options around this functionality.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -543,7 +545,7 @@ These properties configure the options around this functionality.</p>
 <td><p>The time following a pellet delivery command that the device will wait for a successful beam break signal before assuming the pellet delivery has failed</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Count</strong></p></td>
-<td><p>The number of retry attempts the feeder will perform</p></td>
+<td><p>The number of retry attempts the foraging patch will perform</p></td>
 </tr>
 </tbody>
 </table>
@@ -551,7 +553,7 @@ These properties configure the options around this functionality.</p>
 </section>
 <section id="subjects">
 <h5>Subjects<a class="headerlink" href="#subjects" title="Link to this heading">#</a></h5>
-<p>Events (outputs) from and commands (inputs) to the feeder node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s, the names of which are configured in the properties of the node.
+<p>Events (outputs) from and commands (inputs) to the <code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code> node are published to shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s, the names of which are configured in the properties of the node.
 The output <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s are then accessible in the Bonsai editor’s toolbox and are useable elsewhere in the workflow using the same names.</p>
 <section id="device-event-subjects">
 <h6>Device event subjects<a class="headerlink" href="#device-event-subjects" title="Link to this heading">#</a></h6>
@@ -595,7 +597,7 @@ The output <code class="docutils literal notranslate"><span class="pre">Subject<
 </tr>
 <tr class="row-odd"><td><p><strong>ResetFeeder</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">object</span></code></p></td>
-<td><p>Trigger feeder reset. Any event passed to this <code class="docutils literal notranslate"><span class="pre">Subject</span></code> will trigger a feeder reset</p></td>
+<td><p>Trigger foraging patch reset. Any event passed to this <code class="docutils literal notranslate"><span class="pre">Subject</span></code> will trigger a foraging patch reset</p></td>
 </tr>
 </tbody>
 </table>
@@ -627,21 +629,21 @@ Inside, place an <code class="docutils literal notranslate"><span class="pre">Un
 </section>
 <section id="gui">
 <h2>GUI<a class="headerlink" href="#gui" title="Link to this heading">#</a></h2>
-<p>The feeder hardware has several commands that may be initiated by the user, actuated through clickable buttons in a customisable control panel built by the <a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref">PatchDispenser</span></a> node.</p>
+<p>The foraging patch hardware has several commands that may be initiated by the user, actuated through clickable buttons in a customisable control panel built by the <a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref">PatchDispenser</span></a> node.</p>
 <section id="environment-metadata">
 <h3>Environment metadata<a class="headerlink" href="#environment-metadata" title="Link to this heading">#</a></h3>
 </section>
 <section id="patchdispenser-control-panel">
 <span id="target-node-patchdispenser-control-panel"></span><h3>PatchDispenser control panel<a class="headerlink" href="#patchdispenser-control-panel" title="Link to this heading">#</a></h3>
-<p>In addition to the monitoring of pellet counts and the current state of the feeder, the <a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PatchDispenser</span></code></span></a> node also comes with its own GUI interface for controlling the feeder hardware during an experiment.</p>
+<p>In addition to the monitoring of pellet counts and the current state of the foraging patch, the <a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PatchDispenser</span></code></span></a> node also comes with its own GUI interface for controlling the foraging patch hardware during an experiment.</p>
 <p><img alt="patchDispenserVisualiser" src="../../_images/patch_dispenser_visualiser.svg" /></p>
 <ol class="arabic simple">
 <li><p><strong>Patch name</strong>: The name assigned to this patch, e.g. “Patch1”.</p></li>
-<li><p><strong>Current pellet count</strong>: The current estimated number of pellets in the feeder hopper.</p></li>
-<li><p><strong>Pellet count entry</strong>: Dialog box to enter a new pellet count, e.g. during a manual refill of the feeder.</p></li>
+<li><p><strong>Current pellet count</strong>: The current estimated number of pellets in the foraging patch hopper.</p></li>
+<li><p><strong>Pellet count entry</strong>: Dialog box to enter a new pellet count, e.g. during a manual refill of the foraging patch.</p></li>
 <li><p><strong>Deliver</strong>: Button to trigger a manual pellet delivery, regardless of the activity of the wheel.</p></li>
 <li><p><strong>Refill</strong>: Button to update the current pellet count with the count specified in the pellet count entry dialog box. Typically used during maintenance mode.</p></li>
-<li><p><strong>Reset</strong>: Button to reinitialise the feeder, typically after human intervention, e.g. following a refill or in case the feeder or associated hardware has entered an erroneous state.</p></li>
+<li><p><strong>Reset</strong>: Button to reinitialise the foraging patch, typically after human intervention, e.g. following a refill or in case the foraging patch or associated hardware has entered an erroneous state.</p></li>
 </ol>
 </section>
 <section id="patch-threshold-and-wheel-monitoring">
@@ -658,7 +660,7 @@ Utilising available registers of the output expander, the formatted outputs are 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Register address 203 is not shown in this workflow, but is generated as events marked as a retry following an unsuccessful delivery attempt.
-This is passed to the “PatchEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> within the <a class="reference internal" href="#undergroundfeeder"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code></a> node.</p>
+This is passed to the “PatchEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> within the <a class="reference internal" href="#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code></span></a> node.</p>
 </div>
 <p><strong>Data schema</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -763,7 +765,7 @@ For instance, <code class="docutils literal notranslate"><span class="pre">Patch
 <li><p>The distance the wheel has been turned,</p></li>
 <li><p>the current threshold set for pellest delivery,</p></li>
 <li><p>the total number of pellets delivered, and</p></li>
-<li><p>the number of pellets still present in the feeder.</p></li>
+<li><p>the number of pellets still present in the foraging patch.</p></li>
 </ul>
 </section>
 <section id="alerts">

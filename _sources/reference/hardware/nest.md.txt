@@ -2,10 +2,13 @@
 # Nest
 :::{image} ../../images/nest.svg
 :alt: Nest
-:class: img-hardware-steps
+:class: img-hardware-main
 :align: center
 :::
-Insert description of the Nest.
+The nest is designed to provide a dedicated nesting site and access to water, while continuously monitoring the weight of the animals. 
+A nesting box is attached to a scale for precise weight measurement, and it is surrounded by modified [habitat](target-habitat) outer walls. 
+A water bottle can be suspended on the side of the nesting box, with its spout protruding into the nest through a wall opening. 
+The nest is typically equipped with bedding materials and enrichment. 
 
 ## Parts list
 :::{image} ../../images/nest-partlist.svg
@@ -13,6 +16,7 @@ Insert description of the Nest.
 :align: center
 :::
 
+(target-nest-assembly-guide)=
 ## Assembly guide
 ### Scale support
 ::::{dropdown} Steps 1-3
@@ -32,7 +36,7 @@ Insert description of the Nest.
 :alt: step3
 :class: img-hardware-steps
 :figclass: caption-hardware-steps
-3\. Using 4 acrylic spacers, bolt the scale to the side of the arena.
+3\. Using 4 acrylic spacers, bolt the scale to the side of the habitat.
 :::
 ::::
 
@@ -76,13 +80,13 @@ Insert description of the Nest.
 :alt: step9
 :class: img-hardware-steps
 :figclass: caption-hardware-steps
-9\. Attach the nest outer walls (red). These will connect to the arena outer walls.
+9\. Attach the nest outer walls (red). These will connect to the habitat outer walls.
 :::
 :::{figure} ../../images/nest-step10.svg
 :alt: step10
 :class: img-hardware-steps
 :figclass: caption-hardware-steps
-10\. Position the nest base and walls onto the arena, above the scale. The base of the nest will sit directly on the scale held by the 3D printed holders, while the walls will connect to the arena outer walls.
+10\. Position the nest base and walls onto the habitat, above the scale. The base of the nest will sit directly on the scale held by the 3D printed holders, while the walls will connect to the habitat outer walls.
 :::
 ::::
 
@@ -107,3 +111,7 @@ Insert description of the Nest.
 13\. Bolt the water bottle holder on the side of the nest using angle brackets. Adjust its inclination to fit the spout into the side wall opening.
 :::
 ::::
+
+## Downloads
+- [Assembly guide](../../downloads/Nest-Guideline-Final-1.pdf)
+- [Bill of materials](../../downloads/Nest-BOM.xlsx)

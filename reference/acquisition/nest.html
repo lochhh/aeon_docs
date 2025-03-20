@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=531f5a0a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=def09fa5" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -338,7 +338,9 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../hardware.html">Hardware Assembly</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../hardware/feeder.html">Feeder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/commutation_translation.html">Commutation-Translation System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/foraging_patch.html">Foraging Patch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/habitat.html">Habitat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hardware/nest.html">Nest</a></li>
 </ul>
 </details></li>
@@ -467,7 +469,7 @@
 <h3>WeightScale<a class="headerlink" href="#weightscale" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">WeightScale</span> <span class="pre">(Aeon.Environment)</span></code> node establishes a serial connection to the weighing scale in the nest, allowing direct control to read the weight, as well as to send tare commands to the scale.
 The node also processes the weight data from the scale to calculate a baseline weight that can be subtracted on a trigger.
-It also filters the weight signal with a linear regression filter over a sliding window defined in its <a class="reference internal" href="#properties"><span class="xref myst">properties</span></a>.
+It also filters the weight signal with a linear regression filter over a sliding window defined in its <a class="reference internal" href="#properties">properties</a>.
 Finally, a measure of confidence for each of these readings is calculated.</p>
 <!-- TODO: link to API Reference -->
 <p>These measures are packaged into <code class="docutils literal notranslate"><span class="pre">Aeon.Environment.WeightMeasurement</span></code> class, each composed of the “Timestamp” (<code class="docutils literal notranslate"><span class="pre">double</span></code>), “Value” (<code class="docutils literal notranslate"><span class="pre">float</span></code>) and the “Confidence” index (<code class="docutils literal notranslate"><span class="pre">float</span></code>) of the weight measure.</p>
