@@ -83,18 +83,8 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_templates"]
 
-# linkcheck will skip checking these URLs entirely
-linkcheck_ignore = [
-    r"https://wiki\.ucl\.ac\.uk/.*",  # This is the UCL internal wiki
-    r"https://learn.microsoft.com/dotnet/api/.*",  # 429 Client Error: Too Many Requests for url
-
-]
-# linkcheck will treat redirections from these source URI:canonical URI
-# mappings as "working".
-linkcheck_allowed_redirects = {
-    r"https://doi\.org/10\.5281/zenodo\..*": r"https://zenodo\.org/records/.*",
-    r"https://zenodo\.org/doi/.*": r"https://zenodo\.org/records/.*",
-}
+# Suppress warnings for non-consecutive header level
+suppress_warnings = ["myst.header"]
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -134,10 +124,23 @@ html_theme_options = {
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
 html_js_files = [
-    'js/workflow.js', # javascript for embedded workflows
+    "js/workflow.js",  # javascript for embedded workflows
 ]
 
 # -- Extensions configuration ---------------------------------------------------
+
+# linkcheck will skip checking these URLs entirely
+linkcheck_ignore = [
+    r"https://wiki\.ucl\.ac\.uk/.*",  # This is the UCL internal wiki
+    r"http://SubjectExpressionBuilder.Name",  # Broken URL
+    r"https://learn.microsoft.com/dotnet/api/.*",  # 429 Client Error: Too Many Requests for url
+]
+# linkcheck will treat redirections from these source URI:canonical URI
+# mappings as "working".
+linkcheck_allowed_redirects = {
+    r"https://doi\.org/10\.5281/zenodo\..*": r"https://zenodo\.org/records/.*",
+    r"https://zenodo\.org/doi/.*": r"https://zenodo\.org/records/.*",
+}
 
 # Configure Breathe
 breathe_projects = {
@@ -262,7 +265,7 @@ myst_enable_extensions = [
     "attrs_inline",
 ]
 # Automatically add anchors to markdown headings
-myst_heading_anchors = 3
+myst_heading_anchors = 6
 myst_render_markdown_format = "myst"
 myst_url_schemes = {
     "http": None,

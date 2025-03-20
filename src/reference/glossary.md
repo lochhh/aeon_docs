@@ -27,13 +27,13 @@ Block
     A specific period of time, typically lasting around 3 hours, during which the reward rate for each `streams.UndergroundFeeder` (food patch) is manipulated to encourage different behaviours in the subjects.
 
 Place
-    A specific location subjects can visit within the Aeon habitat, e.g. environment, nest, arena, food patch.
+    A specific location subjects can visit within the Aeon habitat, e.g. environment, nest, habitat, food patch.
 
 Session
     For experiment 0.1, the event over the time period when an animal is placed in the nesting cage until the time the animal is removed from the nesting cage.
 
 Task Protocol
-    An integer number and associated string describing a unique behavioural task run in Project Aeon. For experiment 0.1, there were 8 unique behavioural tasks run.
+    An integer number and associated string describing a unique behavioral task run in Project Aeon. For experiment 0.1, there were 8 unique behavioral tasks run.
 
 Trial
     For experiment 0.1, the event over the time period when an animal starts moving the wheel on a patch until the time a pellet is delivered. Every experiment 0.1 {term}`session` ends on incompleted trials.
