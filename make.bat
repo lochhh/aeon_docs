@@ -26,6 +26,7 @@ if not "%1" == "clean" (
 	@echo Removing auto-generated files under 'docs' and 'src'...
 	rmdir /S /Q %BUILDDIR%
     rmdir /S /Q %SOURCEDIR%\reference\api\
+	rmdir /S /Q %SOURCEDIR%\xml\
 	del %SOURCEDIR%\about\people.md
 )
 
