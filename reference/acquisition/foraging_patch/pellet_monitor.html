@@ -342,6 +342,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/foraging_patch.html">Foraging Patch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/habitat.html">Habitat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/nest.html">Nest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/camera.html">Camera Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/camera_controller.html">Camera Controller Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/commutation_translation_system.html">Commutation-Translation System Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/foraging_patch.html">Foraging Patch Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/foraging_patch_output_expander.html">Foraging Patch Output Expander Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/microphone.html">Microphone Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/rfid_reader.html">RFID Reader Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/sound_card.html">Sound Card Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/timestamp_generator.html">Timestamp Generator Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/weighing_scale.html">Weighing Scale Wiring Schematic</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../acquisition.html">Acquisition Modules</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -467,7 +477,7 @@
 <span id="target-node-pelletmonitor"></span><h1>PelletMonitor<a class="headerlink" href="#pelletmonitor" title="Link to this heading">#</a></h1>
 <p>The <code class="docutils literal notranslate"><span class="pre">PelletMonitor</span> <span class="pre">(Aeon.Foraging)</span></code> node monitors the current state of pellet delivery commands and the beam break.
 Within this node, pellet delivery commands received by the <a class="reference external" href="https://harp-tech.org/api/Harp.OutputExpander#">Harp output expander</a> are filtered from the “PatchEvents” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> and successful deliveries monitored through the “PelletDelivered” <code class="docutils literal notranslate"><span class="pre">Subject</span></code> (e.g. “Patch1PelletDelivered”).
-The <code class="docutils literal notranslate"><span class="pre">RepeatEverySubject</span></code> node ensures this node is only running while an animal is present in the arena. <!-- This is not that clear to me; it seems to only run when a subject has entered, but if you had two subjects and removed one this would it not also stop, despite there being another subject stil present? --></p>
+The <code class="docutils literal notranslate"><span class="pre">RepeatEverySubject</span></code> node ensures this node is only running while an animal is present in the habitat. <!-- This is not that clear to me; it seems to only run when a subject has entered, but if you had two subjects and removed one this would it not also stop, despite there being another subject stil present? --></p>
 <div class="workflow docutils">
 <p><img alt="Aeon.Foraging.PelletMonitorWorkflow" src="../../../_images/pelletMonitorWorkflow.svg" /></p>
 </div>

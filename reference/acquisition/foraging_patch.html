@@ -342,6 +342,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../hardware/foraging_patch.html">Foraging Patch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hardware/habitat.html">Habitat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hardware/nest.html">Nest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/camera.html">Camera Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/camera_controller.html">Camera Controller Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/commutation_translation_system.html">Commutation-Translation System Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/foraging_patch.html">Foraging Patch Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/foraging_patch_output_expander.html">Foraging Patch Output Expander Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/microphone.html">Microphone Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/rfid_reader.html">RFID Reader Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/sound_card.html">Sound Card Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/timestamp_generator.html">Timestamp Generator Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/weighing_scale.html">Weighing Scale Wiring Schematic</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../acquisition.html">Acquisition Modules</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -463,7 +473,7 @@
   <section id="foraging-patch">
 <span id="target-module-foraging-patch"></span><h1>Foraging Patch<a class="headerlink" href="#foraging-patch" title="Link to this heading">#</a></h1>
 <p>The foraging patch module is core to foraging and long-term 24/7 experiments.
-It is utilised with a <a class="reference internal" href="../hardware/foraging_patch.html#target-foraging-patch"><span class="std std-ref">foraging patch</span></a> hardware module assembly to provide a means for animals in the arena to obtain food by turning a configurable wheel, simulating a naturalistic digging action.</p>
+It is utilised with a <a class="reference internal" href="../hardware/foraging_patch.html#target-foraging-patch"><span class="std std-ref">foraging patch</span></a> hardware module assembly to provide a means for animals in the <a class="reference internal" href="../hardware/habitat.html#target-habitat"><span class="std std-ref">habitat</span></a> to obtain food by turning a configurable wheel, simulating a naturalistic digging action.</p>
 <p>The primary <a class="reference internal" href="#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span> <span class="pre">(Aeon.Foraging)</span></code></span></a> node handles the connection to the foraging patch hardware through a <a class="reference external" href="https://harp-tech.org/api/Harp.OutputExpander#">Harp output expander</a> and defines the basic functions of the foraging patch.</p>
 <section id="nodes">
 <h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading">#</a></h2>

@@ -342,6 +342,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/foraging_patch.html">Foraging Patch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/habitat.html">Habitat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/nest.html">Nest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/camera.html">Camera Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/camera_controller.html">Camera Controller Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/commutation_translation_system.html">Commutation-Translation System Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/foraging_patch.html">Foraging Patch Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/foraging_patch_output_expander.html">Foraging Patch Output Expander Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/microphone.html">Microphone Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/rfid_reader.html">RFID Reader Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/sound_card.html">Sound Card Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/timestamp_generator.html">Timestamp Generator Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/weighing_scale.html">Weighing Scale Wiring Schematic</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../acquisition.html">Acquisition Modules</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -467,7 +477,7 @@
 <span id="target-node-timespentonwheel"></span><h1>TimeSpentOnWheel<a class="headerlink" href="#timespentonwheel" title="Link to this heading">#</a></h1>
 <p>The <code class="docutils literal notranslate"><span class="pre">TimeSpentOnWheel</span> <span class="pre">(Aeon.Foraging)</span></code> node monitors the motion of a given foraging wheel and accumulates the total time the animal is actively turning the wheel.</p>
 <!-- TODO: Fix link to wheelmoving.md -->
-<p>Within this node, the <a class="reference internal" href="#../../wheelMoving.md"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">WheelMoving</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node reports whether the wheel is in motion or not, and accumulates the differences between timestamps emitted by the feeder while the wheel is in motion.</p>
+<p>Within this node, the <a class="reference internal" href="#../../wheelMoving.md"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">WheelMoving</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node reports whether the wheel is in motion or not, and accumulates the differences between timestamps emitted by the foraging patch while the wheel is in motion.</p>
 <div class="workflow docutils">
 <p><img alt="timeSpentOnWheelWorkflow" src="../../../_images/timeSpentOnWheelWorkflow.svg" /></p>
 </div>

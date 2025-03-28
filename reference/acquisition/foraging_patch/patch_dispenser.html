@@ -342,6 +342,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/foraging_patch.html">Foraging Patch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/habitat.html">Habitat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../hardware/nest.html">Nest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/camera.html">Camera Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/camera_controller.html">Camera Controller Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/commutation_translation_system.html">Commutation-Translation System Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/foraging_patch.html">Foraging Patch Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/foraging_patch_output_expander.html">Foraging Patch Output Expander Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/microphone.html">Microphone Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/rfid_reader.html">RFID Reader Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/sound_card.html">Sound Card Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/timestamp_generator.html">Timestamp Generator Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connections/weighing_scale.html">Weighing Scale Wiring Schematic</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../acquisition.html">Acquisition Modules</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -465,10 +475,10 @@
                   
   <section id="patchdispenser">
 <span id="target-node-patchdispenser"></span><h1>PatchDispenser<a class="headerlink" href="#patchdispenser" title="Link to this heading">#</a></h1>
-<p>The <code class="docutils literal notranslate"><span class="pre">PatchDispenser</span> <span class="pre">(Aeon.Foraging)</span></code> node keeps track of the number of pellets available to the feeder, generating events for each dispensed pellet, detailing the number of remaining pellets and the reason a pellet was dispensed.
-Additionally, it constructs <a class="reference internal" href="../foraging_patch.html#target-node-patchdispenser-control-panel"><span class="std std-ref">a visualiser and a control panel</span></a> for controlling the basic and manual functions of the feeder.
-This node accepts pellet discount notifications triggered by the IR beam break following each successful pellet delivery, and discounts these from the total number of remaining pellets, which is itself set manually in the <a class="reference internal" href="../control_panel.html#target-module-control-panel"><span class="std std-ref">control panel</span></a> when loading the feeder hopper.
-The state of the dispenser is stored in a <code class="docutils literal notranslate"><span class="pre">StateRecoverySubject</span></code> to retain the feeder’s status in the event of a breakdown that requires restarting the workflow.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">PatchDispenser</span> <span class="pre">(Aeon.Foraging)</span></code> node keeps track of the number of pellets available to the foraging patch, generating events for each dispensed pellet, detailing the number of remaining pellets and the reason a pellet was dispensed.
+Additionally, it constructs <a class="reference internal" href="../foraging_patch.html#target-node-patchdispenser-control-panel"><span class="std std-ref">a visualiser and a control panel</span></a> for controlling the basic and manual functions of the foraging patch.
+This node accepts pellet discount notifications triggered by the IR beam break following each successful pellet delivery, and discounts these from the total number of remaining pellets, which is itself set manually in the <a class="reference internal" href="../control_panel.html#target-module-control-panel"><span class="std std-ref">control panel</span></a> when loading the foraging patch hopper.
+The state of the dispenser is stored in a <code class="docutils literal notranslate"><span class="pre">StateRecoverySubject</span></code> to retain the status of the foraging patch in the event of a breakdown that requires restarting the workflow.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Harp.Timestamped&lt;bool&gt;</span></code> events emitted by the <a class="reference internal" href="../foraging_patch.html#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code></span></a> node indicating pellet delivery.</p>

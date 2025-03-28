@@ -342,6 +342,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../hardware/foraging_patch.html">Foraging Patch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hardware/habitat.html">Habitat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hardware/nest.html">Nest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/camera.html">Camera Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/camera_controller.html">Camera Controller Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/commutation_translation_system.html">Commutation-Translation System Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/foraging_patch.html">Foraging Patch Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/foraging_patch_output_expander.html">Foraging Patch Output Expander Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/microphone.html">Microphone Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/rfid_reader.html">RFID Reader Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/sound_card.html">Sound Card Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/timestamp_generator.html">Timestamp Generator Wiring Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connections/weighing_scale.html">Weighing Scale Wiring Schematic</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../acquisition.html">Acquisition Modules</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -463,22 +473,20 @@
   <section id="control-panel">
 <span id="target-module-control-panel"></span><h1>Control Panel<a class="headerlink" href="#control-panel" title="Link to this heading">#</a></h1>
 <p>In Aeon, it is crucial to both monitor the state of an experiment as well as control the experiment’s hardware devices and parameters in real time.
-This is achieved through the <a class="reference internal" href="#target-node-controlpanel"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">ControlPanel</span> <span class="pre">(Aeon.Acquisition)</span></code></span></a> node, which constructs visualisers and a control panel for a given Aeon experiment. <!-- TODO: Is the ControlPanel a node in Aeon.Acquisition ? --></p>
+This is achieved through the construction of a <a class="reference internal" href="#target-node-controlpanel"><span class="std std-ref">ControlPanel</span></a>, which constructs visualisers and a control panel for a given Aeon experiment. Full control panels for individual experiments can be found in the <code class="docutils literal notranslate"><span class="pre">Extensions</span></code> folder (and the toolbox in the Bonsai editor) on the specific experimental branch.</p>
 <section id="nodes">
 <h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading">#</a></h2>
 <section id="controlpanel">
 <span id="target-node-controlpanel"></span><h3>ControlPanel<a class="headerlink" href="#controlpanel" title="Link to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">ControlPanel</span> <span class="pre">(Aeon.Acquisition)</span></code> node constructs visualisers and a control panel for an Aeon experiment.
+<p>In Aeon, the <code class="docutils literal notranslate"><span class="pre">ControlPanel</span></code> node constructs visualisers and a control panel for an Aeon experiment.
 These are split into several categories, each implemented in a dedicated <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> within the <code class="docutils literal notranslate"><span class="pre">ControlPanel</span></code>.</p>
-<!-- TODO: This is missing the corresponding svg
-:::workflow
-![ControlPanelWorkflow](../../workflows/miniAeon/controlPanel.bonsai)
-:::
--->
+<div class="workflow docutils">
+<p><img alt="ControlPanelWorkflow" src="../../_images/controlPanel.svg" /></p>
+</div>
 <ol class="arabic simple">
-<li><p><strong>PatchActivity</strong>: Tracks the state of the feeders on the rig, including the current threshold, rolling and total distance travelled on the wheels of the feeders wheels, information on the number and timing of food pellet deliveries and time since different subjects visited the different patches.</p></li>
+<li><p><strong>PatchActivity</strong>: Tracks the state of the foraging patches on the rig, including the current threshold, rolling and total distance travelled on the wheels of the foraging patches, information on the number and timing of food pellet deliveries and time since different subjects visited the different patches.</p></li>
 <li><p><strong>SubjectActivity</strong>: Constructs additional controls for the environment and exposed properties of the workflow, as well as additional visualiser windows. In Aeon, these additional windows are used to display tracking or pose information and monitoring of light levels in the experiment room.</p></li>
-<li><p><strong>EnvironmentState</strong>: Constructs a mashup of a general control panel displaying information and providing control dialogues for the <a class="reference internal" href="foraging_patch.html#target-module-foraging-patch"><span class="std std-ref">foraging patches</span></a>, the environment configuration and manual annotation and alert logs grouped into the “ExperimentMetadata” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code>, as well as experimental subjects entered and removed from the arena and subject weight measurements grouped into the “EnvironmentSubjectState” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></p></li>
+<li><p><strong>EnvironmentState</strong>: Constructs a mashup of a general control panel displaying information and providing control dialogues for the <a class="reference internal" href="foraging_patch.html#target-module-foraging-patch"><span class="std std-ref">foraging patches</span></a>, the environment configuration and manual annotation and alert logs grouped into the “ExperimentMetadata” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code>, as well as experimental subjects entered and removed from the habitat and subject weight measurements grouped into the “EnvironmentSubjectState” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></p></li>
 <li><p><strong>CameraSelector</strong>: Displays a single image visualiser used to view any camera or other <code class="docutils literal notranslate"><span class="pre">OpenCV.Net.IplImage</span></code>, selected from a list of <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s using the “SubjectActivity” control panel.</p></li>
 </ol>
 <p>Additionally, the <code class="docutils literal notranslate"><span class="pre">ControlPanel</span></code> node enables manual control to start and stop the cameras on the setup through <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Windows.Input.KeyDown.html"><code class="docutils literal notranslate"><span class="pre">KeyDown</span></code></a> nodes cast to ‘StartCameras’ and ‘StopCameras’ <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s that trigger or halt acquisition of camera images by the <a class="reference internal" href="camera_controller.html#target-module-camera-controller"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">CameraController</span></code></span></a>.
@@ -507,21 +515,17 @@ These include:</p>
 <h3>PatchActivity<a class="headerlink" href="#patchactivity" title="Link to this heading">#</a></h3>
 <!-- TODO: Any general description for the workflow? -->
 <p>The example below shows the “PatchActivity” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> used to construct a control panel for a single foraging patch, camera and RFID reader.</p>
-<!-- TODO: missing corresponding svg 
-:::workflow
-![PatchActivityWorkflow](../../../workflows/miniAeon/patchActivity.bonsai)
-:::
--->
+<div class="workflow docutils">
+<p><img alt="PatchActivityWorkflow" src="../../_images/patchActivity.svg" /></p>
+</div>
 </section>
 <section id="subjectactivity">
 <h3>SubjectActivity<a class="headerlink" href="#subjectactivity" title="Link to this heading">#</a></h3>
 <p>The “SubjectActivity” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> uses an <a class="reference internal" href="control_panel/experiment_properties_GUI.html#target-node-experimentproperties"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">ExperimentProperties</span></code></span></a> node to allow online access to exposed properties during an experiment, and a <a class="reference internal" href="control_panel/button_source_GUI.html#target-node-buttonsource"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">ButtonSource</span></code></span></a> node (triggered through a shared <code class="docutils literal notranslate"><span class="pre">Subject</span></code> “ReloadEnvironment”) to generate a labelled button that reloads an environment file.
 Additionally, the results from pose tracking modules (“SubjectPoses”) and images from a camera monitoring the status of controlled light sources in the room (“CameraLightMonitor”) are subscribed to and organised into <a class="reference external" href="https://learn.microsoft.com/en-gb/dotnet/api/system.windows.forms.tablelayoutpanel"><code class="docutils literal notranslate"><span class="pre">TableLayoutPanel</span></code>s</a>, which then create the full visualiser window.</p>
-<!-- TODO: missing corresponding svg 
-:::workflow
-![SubjectActivityWorkflow](../../../workflows/miniAeon/subjectActivity.bonsai)
-:::
--->
+<div class="workflow docutils">
+<p><img alt="SubjectActivityWorkflow" src="../../_images/subjectActivity.svg" /></p>
+</div>
 </section>
 <section id="environmentstate">
 <h3>EnvironmentState<a class="headerlink" href="#environmentstate" title="Link to this heading">#</a></h3>
@@ -529,14 +533,12 @@ Additionally, the results from pose tracking modules (“SubjectPoses”) and im
 <section id="experimentmetadata">
 <h4>ExperimentMetadata<a class="headerlink" href="#experimentmetadata" title="Link to this heading">#</a></h4>
 <p>The “ExperimentMetadata” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> creates a visualiser window that enables control of basic functions for each <a class="reference internal" href="foraging_patch.html#target-module-foraging-patch"><span class="std std-ref">foraging patch</span></a> in an experiment, through the <a class="reference internal" href="foraging_patch.html#target-node-patchdispenser-control-panel"><span class="std std-ref">control panels</span></a> created by the corresponding<a class="reference internal" href="foraging_patch/patch_dispenser.html#target-node-patchdispenser"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">PatchDispenser</span></code></span></a> node.
-Patch dispenser events are parsed into “Reset” or manual “Deliver” command <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s which are used by the <a class="reference internal" href="foraging_patch.html#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code></span></a> node to control the behaviour of the feeder hardware.</p>
+Patch dispenser events are parsed into “Reset” or manual “Deliver” command <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s which are used by the <a class="reference internal" href="foraging_patch.html#target-node-undergroundfeeder"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">UndergroundFeeder</span></code></span></a> node to control the behaviour of the foraging patch hardware.</p>
 <p>In addition, the <a class="reference internal" href="control_panel/annotation_source_GUI.html#target-node-annotationsource"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">AnnotationSource</span></code></span></a>, <a class="reference internal" href="control_panel/environment_state_GUI.html#target-node-environmentstate"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">EnvironmentState</span></code></span></a> and <a class="reference internal" href="control_panel/label_control_GUI.html#target-node-labelcontrol"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">LabelControl</span></code></span></a> nodes create the full “ExperimentMetadata” control panel.</p>
 <p>The example below shows the “ExperimentMetadata” <code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code> used to construct a control panel for a single foraging patch.</p>
-<!-- TODO: missing corresponding svg
-:::workflow
-![ExperimentMetadataWorkflow](../../../workflows/miniAeon/ExperimentMetadata.bonsai)
-:::
--->
+<div class="workflow docutils">
+<p><img alt="ExperimentMetadataWorkflow" src="../../_images/experimentMetadata.svg" /></p>
+</div>
 </section>
 <section id="environmentsubjectstate">
 <h4>EnvironmentSubjectState<a class="headerlink" href="#environmentsubjectstate" title="Link to this heading">#</a></h4>
