@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SubjectDatabase &#8212; Aeon  documentation</title>
+    <title>swc.aeon.schema.core &#8212; Aeon  documentation</title>
   
   
   
@@ -49,12 +49,12 @@
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/acquisition/control_panel/subject_database';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/api/aeon_api/swc.aeon.schema.core';</script>
     <script src="../../../_static/js/workflow.js?v=1800024c"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Foraging Patch" href="../foraging_patch.html" />
-    <link rel="prev" title="LabelControl" href="label_control_GUI.html" />
+    <link rel="next" title="swc.aeon.schema.streams" href="swc.aeon.schema.streams.html" />
+    <link rel="prev" title="swc.aeon.io.video" href="swc.aeon.io.video.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -354,55 +354,55 @@
 <li class="toctree-l2"><a class="reference internal" href="../../connections/weighing_scale.html">Weighing Scale Wiring Schematic</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../acquisition.html">Acquisition Modules</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../activity_tracking.html">Activity Tracking</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../alerts.html">Alerts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../camera.html">Spinnaker Camera</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../camera_controller.html">Multi-Camera Controller</a></li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../control_panel.html">Control Panel</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="annotation_source_GUI.html">AnnotationSource</a></li>
-<li class="toctree-l3"><a class="reference internal" href="button_source_GUI.html">ButtonSource</a></li>
-<li class="toctree-l3"><a class="reference internal" href="environment_state_GUI.html">EnvironmentState</a></li>
-<li class="toctree-l3"><a class="reference internal" href="experiment_properties_GUI.html">ExperimentProperties</a></li>
-<li class="toctree-l3"><a class="reference internal" href="label_control_GUI.html">LabelControl</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">SubjectDatabase <!--TODO: Placeholder content--></a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../acquisition.html">Acquisition Modules</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/activity_tracking.html">Activity Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/alerts.html">Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/camera.html">Spinnaker Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/camera_controller.html">Multi-Camera Controller</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../acquisition/control_panel.html">Control Panel</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/control_panel/annotation_source_GUI.html">AnnotationSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/control_panel/button_source_GUI.html">ButtonSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/control_panel/environment_state_GUI.html">EnvironmentState</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/control_panel/experiment_properties_GUI.html">ExperimentProperties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/control_panel/label_control_GUI.html">LabelControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/control_panel/subject_database.html">SubjectDatabase <!--TODO: Placeholder content--></a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../foraging_patch.html">Foraging Patch</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../foraging_patch/patch_dispenser.html">PatchDispenser</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../foraging_patch/pellet_monitor.html">PelletMonitor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../foraging_patch/time_since_last_event.html">TimeSinceLastEvent</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../foraging_patch/time_spent_on_wheel.html">TimeSpentOnWheel</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../acquisition/foraging_patch.html">Foraging Patch</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/foraging_patch/patch_dispenser.html">PatchDispenser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/foraging_patch/pellet_monitor.html">PelletMonitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/foraging_patch/time_since_last_event.html">TimeSinceLastEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../acquisition/foraging_patch/time_spent_on_wheel.html">TimeSpentOnWheel</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2"><a class="reference internal" href="../logging.html">Logging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../monitors.html">Device Synchronisation Monitors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../nest.html">Nest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../rfid_reader.html">RFID Reader</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../subject_tracking.html">Subject Tracking</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../template.html">[Template] Device Name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/monitors.html">Device Synchronisation Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/nest.html">Nest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/rfid_reader.html">RFID Reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/subject_tracking.html">Subject Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../acquisition/template.html">[Template] Device Name</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../api.html">API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../api/aeon_api.html"><code class="docutils literal notranslate"><span class="pre">aeon_api</span></code></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_api/swc.aeon.analysis.movies.html">swc.aeon.analysis.movies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_api/swc.aeon.analysis.plotting.html">swc.aeon.analysis.plotting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_api/swc.aeon.analysis.utils.html">swc.aeon.analysis.utils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_api/swc.aeon.io.api.html">swc.aeon.io.api</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_api/swc.aeon.io.reader.html">swc.aeon.io.reader</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_api/swc.aeon.io.video.html">swc.aeon.io.video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_api/swc.aeon.schema.core.html">swc.aeon.schema.core</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_api/swc.aeon.schema.streams.html">swc.aeon.schema.streams</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../api.html">API Reference</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../aeon_api.html"><code class="docutils literal notranslate"><span class="pre">aeon_api</span></code></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="swc.aeon.analysis.movies.html">swc.aeon.analysis.movies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="swc.aeon.analysis.plotting.html">swc.aeon.analysis.plotting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="swc.aeon.analysis.utils.html">swc.aeon.analysis.utils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="swc.aeon.io.api.html">swc.aeon.io.api</a></li>
+<li class="toctree-l3"><a class="reference internal" href="swc.aeon.io.reader.html">swc.aeon.io.reader</a></li>
+<li class="toctree-l3"><a class="reference internal" href="swc.aeon.io.video.html">swc.aeon.io.video</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">swc.aeon.schema.core</a></li>
+<li class="toctree-l3"><a class="reference internal" href="swc.aeon.schema.streams.html">swc.aeon.schema.streams</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../api/aeon_acquisition.html"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_acquisition/Aeon.Acquisition.html">Aeon.Acquisition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_acquisition/Aeon.Database.html">Aeon.Database</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_acquisition/Aeon.Environment.html">Aeon.Environment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_acquisition/Aeon.Foraging.html">Aeon.Foraging</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_acquisition/Aeon.Video.html">Aeon.Video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_acquisition/Aeon.Vision.html">Aeon.Vision</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../api/aeon_acquisition/Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../aeon_acquisition.html"><code class="docutils literal notranslate"><span class="pre">aeon_acquisition</span></code></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../aeon_acquisition/Aeon.Acquisition.html">Aeon.Acquisition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../aeon_acquisition/Aeon.Database.html">Aeon.Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../aeon_acquisition/Aeon.Environment.html">Aeon.Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../aeon_acquisition/Aeon.Foraging.html">Aeon.Foraging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../aeon_acquisition/Aeon.Video.html">Aeon.Video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../aeon_acquisition/Aeon.Vision.html">Aeon.Vision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../aeon_acquisition/Aeon.Vision.Sleap.html">Aeon.Vision.Sleap</a></li>
 </ul>
 </details></li>
 </ul>
@@ -453,12 +453,12 @@
     <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Reference</a></li>
     
     
-    <li class="breadcrumb-item"><a href="../../acquisition.html" class="nav-link">Acquisition Modules</a></li>
+    <li class="breadcrumb-item"><a href="../../api.html" class="nav-link">API Reference</a></li>
     
     
-    <li class="breadcrumb-item"><a href="../control_panel.html" class="nav-link">Control Panel</a></li>
+    <li class="breadcrumb-item"><a href="../aeon_api.html" class="nav-link"><code class="docutils literal notranslate"><span class="pre">aeon_api</span></code></a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">SubjectDatabase <!--TODO: Placeholder content--></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">swc.aeon.schema.core</span></li>
   </ul>
 </nav>
 </div>
@@ -475,157 +475,72 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="subjectdatabase">
-<span id="target-node-subjectdatabase"></span><h1>SubjectDatabase <!--TODO: Placeholder content--><a class="headerlink" href="#subjectdatabase" title="Link to this heading">#</a></h1>
-<p>The <code class="docutils literal notranslate"><span class="pre">SubjectDatabase</span> <span class="pre">(...)</span></code> node …</p>
-<section id="inputs">
-<h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
-</section>
-<section id="outputs">
-<h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">#</a></h2>
-<p>A sequence of <code class="docutils literal notranslate"><span class="pre">&lt;type&gt;</span></code> with the following attributes.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Attribute name</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Attr1</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
-<td><p>Description of Attr1</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Attr2</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
-<td><p>Description of Attr2</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="properties">
-<h2>Properties<a class="headerlink" href="#properties" title="Link to this heading">#</a></h2>
-<section id="general">
-<h3>General<a class="headerlink" href="#general" title="Link to this heading">#</a></h3>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Property name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Property1</strong></p></td>
-<td><p>Description of Property1</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Property2</strong></p></td>
-<td><p>Description of Property2</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="other-option-category-or-function">
-<h3>Other option category or function<a class="headerlink" href="#other-option-category-or-function" title="Link to this heading">#</a></h3>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Property name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Option1</strong></p></td>
-<td><p>Description of Option1</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Option2</strong></p></td>
-<td><p>Description of Option2</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="subjects">
-<h3>Subjects<a class="headerlink" href="#subjects" title="Link to this heading">#</a></h3>
-<p>An overview of the events and commands available or published to <code class="docutils literal notranslate"><span class="pre">Subject</span></code>s</p>
-<section id="device-event-subjects">
-<h4>Device event subjects<a class="headerlink" href="#device-event-subjects" title="Link to this heading">#</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">HarpMessage</span></code> events emitted to a <code class="docutils literal notranslate"><span class="pre">Subject</span></code></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Subject name</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Event1</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
-<td><p>Description of Event1</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Event2</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
-<td><p>Description of Event2</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="other-output-subjects">
-<h4>Other output subjects<a class="headerlink" href="#other-output-subjects" title="Link to this heading">#</a></h4>
-<p>Other subjects published or updated by the node, usually ater some processing</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Subject name</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Output1</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
-<td><p>Description of Output1</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Output2</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
-<td><p>Description of Output2</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="device-command-subjects">
-<h4>Device command subjects<a class="headerlink" href="#device-command-subjects" title="Link to this heading">#</a></h4>
-<p>Existing subjects published outside of the node, but used for input / trigger</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Subject name</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Command1</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
-<td><p>Description of Command1</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Command2</strong></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Type</span></code></p></td>
-<td><p>Description of Command2</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-</section>
-</section>
-<section id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h2>
-<p>Instructions for creating and configuring the main device node. Add necessary sub-components and configurations.</p>
-<p>::workflow
-<img alt="InsertWorkflow" src="reference/acquisition/control_panel/path/to/workflow.bonsai" /></p>
-<div class="docutils">
-</div>
-</section>
+  <section id="module-swc.aeon.schema.core">
+<span id="swc-aeon-schema-core"></span><h1>swc.aeon.schema.core<a class="headerlink" href="#module-swc.aeon.schema.core" title="Link to this heading">#</a></h1>
+<p>Schema definition for core Harp data streams.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="swc.aeon.schema.core.Encoder">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">swc.aeon.schema.core.</span></span><span class="sig-name descname"><span class="pre">Encoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/swc/aeon/schema/core.html#Encoder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#swc.aeon.schema.core.Encoder" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="swc.aeon.schema.streams.html#swc.aeon.schema.streams.Stream" title="swc.aeon.schema.streams.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+<p>Wheel magnetic encoder data.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="swc.aeon.schema.core.Environment">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">swc.aeon.schema.core.</span></span><span class="sig-name descname"><span class="pre">Environment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/swc/aeon/schema/core.html#Environment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#swc.aeon.schema.core.Environment" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="swc.aeon.schema.streams.html#swc.aeon.schema.streams.StreamGroup" title="swc.aeon.schema.streams.StreamGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamGroup</span></code></a></p>
+<p>Metadata for environment mode and subjects.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="swc.aeon.schema.core.EnvironmentState">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">swc.aeon.schema.core.</span></span><span class="sig-name descname"><span class="pre">EnvironmentState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/swc/aeon/schema/core.html#EnvironmentState"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#swc.aeon.schema.core.EnvironmentState" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="swc.aeon.schema.streams.html#swc.aeon.schema.streams.Stream" title="swc.aeon.schema.streams.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+<p>Environment state log.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="swc.aeon.schema.core.Heartbeat">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">swc.aeon.schema.core.</span></span><span class="sig-name descname"><span class="pre">Heartbeat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/swc/aeon/schema/core.html#Heartbeat"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#swc.aeon.schema.core.Heartbeat" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="swc.aeon.schema.streams.html#swc.aeon.schema.streams.Stream" title="swc.aeon.schema.streams.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+<p>Heartbeat event for Harp devices.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="swc.aeon.schema.core.MessageLog">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">swc.aeon.schema.core.</span></span><span class="sig-name descname"><span class="pre">MessageLog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/swc/aeon/schema/core.html#MessageLog"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#swc.aeon.schema.core.MessageLog" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="swc.aeon.schema.streams.html#swc.aeon.schema.streams.Stream" title="swc.aeon.schema.streams.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+<p>Message log data.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="swc.aeon.schema.core.Metadata">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">swc.aeon.schema.core.</span></span><span class="sig-name descname"><span class="pre">Metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/swc/aeon/schema/core.html#Metadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#swc.aeon.schema.core.Metadata" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="swc.aeon.schema.streams.html#swc.aeon.schema.streams.Stream" title="swc.aeon.schema.streams.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+<p>Metadata for acquisition epochs.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="swc.aeon.schema.core.Position">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">swc.aeon.schema.core.</span></span><span class="sig-name descname"><span class="pre">Position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/swc/aeon/schema/core.html#Position"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#swc.aeon.schema.core.Position" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="swc.aeon.schema.streams.html#swc.aeon.schema.streams.Stream" title="swc.aeon.schema.streams.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+<p>Position tracking data for the specified camera.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="swc.aeon.schema.core.SubjectState">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">swc.aeon.schema.core.</span></span><span class="sig-name descname"><span class="pre">SubjectState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/swc/aeon/schema/core.html#SubjectState"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#swc.aeon.schema.core.SubjectState" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="swc.aeon.schema.streams.html#swc.aeon.schema.streams.Stream" title="swc.aeon.schema.streams.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+<p>Subject state log.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="swc.aeon.schema.core.Video">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">swc.aeon.schema.core.</span></span><span class="sig-name descname"><span class="pre">Video</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/swc/aeon/schema/core.html#Video"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#swc.aeon.schema.core.Video" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="swc.aeon.schema.streams.html#swc.aeon.schema.streams.Stream" title="swc.aeon.schema.streams.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+<p>Video frame metadata.</p>
+</dd></dl>
+
 </section>
 
 
@@ -639,20 +554,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="label_control_GUI.html"
+       href="swc.aeon.io.video.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">LabelControl</p>
+        <p class="prev-next-title">swc.aeon.io.video</p>
       </div>
     </a>
     <a class="right-next"
-       href="../foraging_patch.html"
+       href="swc.aeon.schema.streams.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Foraging Patch</p>
+        <p class="prev-next-title">swc.aeon.schema.streams</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -675,20 +590,15 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties">Properties</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-option-category-or-function">Other option category or function</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subjects">Subjects</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#device-event-subjects">Device event subjects</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#other-output-subjects">Other output subjects</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#device-command-subjects">Device command subjects</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swc.aeon.schema.core.Encoder"><code class="docutils literal notranslate"><span class="pre">Encoder</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swc.aeon.schema.core.Environment"><code class="docutils literal notranslate"><span class="pre">Environment</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swc.aeon.schema.core.EnvironmentState"><code class="docutils literal notranslate"><span class="pre">EnvironmentState</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swc.aeon.schema.core.Heartbeat"><code class="docutils literal notranslate"><span class="pre">Heartbeat</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swc.aeon.schema.core.MessageLog"><code class="docutils literal notranslate"><span class="pre">MessageLog</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swc.aeon.schema.core.Metadata"><code class="docutils literal notranslate"><span class="pre">Metadata</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swc.aeon.schema.core.Position"><code class="docutils literal notranslate"><span class="pre">Position</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swc.aeon.schema.core.SubjectState"><code class="docutils literal notranslate"><span class="pre">SubjectState</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swc.aeon.schema.core.Video"><code class="docutils literal notranslate"><span class="pre">Video</span></code></a></li>
 </ul>
   </nav></div>
 
@@ -696,7 +606,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../_sources/reference/acquisition/control_panel/subject_database.md.txt"
+      <li><a href="../../../_sources/reference/api/aeon_api/swc.aeon.schema.core.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
