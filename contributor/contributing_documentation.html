@@ -32,7 +32,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=4386463d" />
@@ -415,7 +415,7 @@ This is handled by a GitHub actions workflow (<code class="docutils literal notr
 </ul>
 <p>The workflow comprises two jobs: <code class="docutils literal notranslate"><span class="pre">build_sphinx_docs</span></code> and <code class="docutils literal notranslate"><span class="pre">deploy_sphinx_docs</span></code>.
 The build job is triggered by all the listed events to ensure the documentation build remains intact with new changes.
-The deployment job is only triggered on manual dispatch or <a class="reference internal" href="#deploying-the-documentation">when a tag is pushed</a>.</p>
+The <a class="reference internal" href="#deploying-the-documentation">deployment job</a> is only triggered when a tag is pushed or when the workflow is manually dispatched from the main branch.</p>
 <section id="editing-the-documentation">
 <h2>Editing the documentation<a class="headerlink" href="#editing-the-documentation" title="Link to this heading">#</a></h2>
 <p>To edit the documentation, clone the <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_docs/"><code class="docutils literal notranslate"><span class="pre">aeon_docs</span></code> repository</a>, and work on a new branch, following the same guidelines as for <a class="reference internal" href="contributing_code.html#target-contributing-code"><span class="std std-ref">code changes</span></a>.
@@ -632,7 +632,7 @@ you can skip checking the anchors in specific URLs by adding them to
 <p>As mentioned above, the deployment job is triggered by the following events:</p>
 <ul class="simple">
 <li><p><strong>Tag push</strong>: for releasing a new version of the documentation</p></li>
-<li><p><strong>Manual dispatch</strong>: for testing purposes</p></li>
+<li><p><strong>Manual dispatch from the main branch</strong>: for testing purposes</p></li>
 </ul>
 <section id="manual-dispatch">
 <h3>Manual dispatch<a class="headerlink" href="#manual-dispatch" title="Link to this heading">#</a></h3>
