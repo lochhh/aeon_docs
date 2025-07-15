@@ -433,6 +433,9 @@ The mouse was tracked using <a class="reference external" href="https://sleap.ai
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>setuptools<span class="w"> </span>wheel<span class="w"> </span>numpy<span class="w"> </span>cython<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-build-isolation<span class="w"> </span><span class="s2">&quot;git+https://github.com/lindermanlab/ssm#egg=ssm[plotting]&quot;</span>
 </pre></div>
 </div>
+</section>
+<section id="import-libraries-and-define-helper-class">
+<h2>Import libraries and define helper class<a class="headerlink" href="#import-libraries-and-define-helper-class" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">autograd.numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -653,7 +656,7 @@ Please change the value of <code class="docutils literal notranslate"><span clas
 <section id="training-and-inference">
 <h2>Training and inference<a class="headerlink" href="#training-and-inference" title="Link to this heading">#</a></h2>
 <p>In this two-hour example, we use the data in the first hour to train the model,
-and use the model to infer the hidden states of mouse in the second hour.</p>
+and use the model to infer the hidden states of the mouse in the second hour.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">start</span> <span class="o">=</span> <span class="n">mouse_pos</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -840,6 +843,7 @@ The model parameters, transition matrix, and inferred states can then be reorder
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-environment">Set up environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries-and-define-helper-class">Import libraries and define helper class</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-sample-data">Load sample data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-and-inference">Training and inference</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameter-sorting">Parameter sorting</a></li>
