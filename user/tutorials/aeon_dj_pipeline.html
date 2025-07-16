@@ -53,7 +53,7 @@
     <script src="../../_static/js/workflow.js?v=1800024c"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="General Experimental Workflow Infrastructure" href="general_experimental_workflow.html" />
+    <link rel="next" title="General experimental workflow infrastructure" href="general_experimental_workflow.html" />
     <link rel="prev" title="User Guide" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -339,7 +339,7 @@
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">DataJoint pipeline for Aeon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="general_experimental_workflow.html">General Experimental Workflow Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general_experimental_workflow.html">General experimental workflow infrastructure</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">How-to Guides</span></p>
 <ul class="nav bd-sidenav">
@@ -416,28 +416,28 @@ The Aeon DataJoint pipeline consists of a set of <a class="reference external" h
 <h2>Pipeline architecture<a class="headerlink" href="#pipeline-architecture" title="Link to this heading">#</a></h2>
 <p>The following diagrams provide a high-level overview of the pipeline’s components and processes.</p>
 <figure class="align-default" id="id1">
-<span id="target-aeon-dj-pipeline-acquisition-fig"></span><a class="reference external image-reference" href="../../images/datajoint_overview_acquisition_related_diagram.svg"><img alt="dj-overview-acquisition" src="../../_images/datajoint_overview_acquisition_related_diagram.svg" />
+<span id="target-aeon-dj-pipeline-acquisition-fig"></span><a class="reference external image-reference" href="../../_images/datajoint_overview_acquisition_related_diagram.svg"><img alt="dj-overview-acquisition" src="../../_images/datajoint_overview_acquisition_related_diagram.svg" />
 </a>
 <figcaption>
 <p><span class="caption-text">Data acquisition-related tables.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id2">
-<span id="target-aeon-dj-pipeline-streams-fig"></span><a class="reference external image-reference" href="../../images/datajoint_overview_data_stream_diagram.svg"><img alt="dj-overview-streams" src="../../_images/datajoint_overview_data_stream_diagram.svg" />
+<span id="target-aeon-dj-pipeline-streams-fig"></span><a class="reference external image-reference" href="../../_images/datajoint_overview_data_stream_diagram.svg"><img alt="dj-overview-streams" src="../../_images/datajoint_overview_data_stream_diagram.svg" />
 </a>
 <figcaption>
 <p><span class="caption-text">Data flow for various data streams.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id3">
-<a class="reference external image-reference" href="../../images/datajoint_overview_pyrat_related_diagram.svg"><img alt="dj-overview-pyrat" src="../../_images/datajoint_overview_pyrat_related_diagram.svg" />
+<a class="reference external image-reference" href="../../_images/datajoint_overview_pyrat_related_diagram.svg"><img alt="dj-overview-pyrat" src="../../_images/datajoint_overview_pyrat_related_diagram.svg" />
 </a>
 <figcaption>
 <p><span class="caption-text">Pyrat synchronisation process.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id4">
-<span id="target-aeon-dj-pipeline-analysis-fig"></span><a class="reference external image-reference" href="../../images/datajoint_analysis_diagram.svg"><img alt="dj-analysis" src="../../_images/datajoint_analysis_diagram.svg" />
+<span id="target-aeon-dj-pipeline-analysis-fig"></span><a class="reference external image-reference" href="../../_images/datajoint_analysis_diagram.svg"><img alt="dj-analysis" src="../../_images/datajoint_analysis_diagram.svg" />
 </a>
 <figcaption>
 <p><span class="caption-text">Analysis tables.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
@@ -451,6 +451,19 @@ The Aeon DataJoint pipeline consists of a set of <a class="reference external" h
 <li><p><code class="docutils literal notranslate"><span class="pre">computed</span></code>-tier tables (red): Contains results from automated pipeline computations.</p></li>
 </ul>
 <p>Data flows through the pipeline in a top-down manner, driven by a combination of ingestion and computation routines. This layered organisation facilitates efficient data processing and modular analysis.</p>
+</section>
+<section id="automatic-table-definition">
+<h2>Automatic table definition<a class="headerlink" href="#automatic-table-definition" title="Link to this heading">#</a></h2>
+<p>Device tables (e.g. <code class="docutils literal notranslate"><span class="pre">streams.UndergroundFeeder</span></code>) and their corresponding data stream tables (e.g. <code class="docutils literal notranslate"><span class="pre">streams.UndergroundFeederDeliverPellet</span></code>, <code class="docutils literal notranslate"><span class="pre">streams.UndergroundFeederDepletionState</span></code>) are automatically defined and written to <code class="docutils literal notranslate"><span class="pre">aeon.dj_pipeline.streams.py</span></code>.</p>
+<p>The automatic table definition follows a four-stage process:</p>
+<ol class="arabic simple">
+<li><p><strong>Schema-driven device discovery</strong>: Experimental schemas (e.g. <code class="docutils literal notranslate"><span class="pre">social02</span></code>) defined in <code class="docutils literal notranslate"><span class="pre">aeon.schema.schemas.py</span></code> specify the available devices and their associated data streams (alongside the reader classes) for each experimental setup.</p></li>
+<li><p><strong>Metadata integration</strong>: For each <a class="reference internal" href="../../reference/glossary.html#term-Acquisition-Epoch"><span class="xref std std-term">aquisition epoch</span></a>, actual device configurations are extracted from the <code class="docutils literal notranslate"><span class="pre">metadata.yml</span></code> file associated with the epoch.</p></li>
+<li><p><strong>Catalogue population</strong>: Schema and metadata information are used to populate the catalogue tables (<code class="docutils literal notranslate"><span class="pre">streams.DeviceType</span></code>, <code class="docutils literal notranslate"><span class="pre">streams.StreamType</span></code>, <code class="docutils literal notranslate"><span class="pre">streams.Device</span></code>), which serve as registries to drive the automatic table definition process.</p></li>
+<li><p><strong>Dynamic table definition</strong>: <code class="docutils literal notranslate"><span class="pre">aeon.dj_pipeline.utils.streams_maker.py</span></code> then reads from these catalogue tables to define the actual device and stream table classes (e.g. <code class="docutils literal notranslate"><span class="pre">streams.UndergroundFeeder</span></code>, <code class="docutils literal notranslate"><span class="pre">streams.UndergroundFeederDeliverPellet</span></code>, <code class="docutils literal notranslate"><span class="pre">streams.UndergroundFeederDepletionState</span></code>) using predefined templates and writes them to <code class="docutils literal notranslate"><span class="pre">aeon.dj_pipeline.streams.py</span></code>.</p></li>
+</ol>
+<p>This automatic table definition system enables the pipeline to handle diverse experimental setups by defining table classes on-demand based on the actual devices present in each experiment.
+The actual database tables are then automatically created when DataJoint processes the <a class="reference external" href="https://docs.datajoint.com/core/datajoint-python/latest/design/tables/declare/#defining-a-table"><code class="docutils literal notranslate"><span class="pre">&#64;schema</span></code>-decorated</a> classes.</p>
 </section>
 <section id="core-tables">
 <h2>Core tables<a class="headerlink" href="#core-tables" title="Link to this heading">#</a></h2>
@@ -551,7 +564,7 @@ In DataJoint, tables are written within the <a class="reference external" href="
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">General Experimental Workflow Infrastructure</p>
+        <p class="prev-next-title">General experimental workflow infrastructure</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -575,6 +588,7 @@ In DataJoint, tables are written within the <a class="reference external" href="
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pipeline-architecture">Pipeline architecture</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#automatic-table-definition">Automatic table definition</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-tables">Core tables</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-and-data-acquisition">Experiment and data acquisition</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#video-data-and-position-tracking">Video data and position tracking</a></li>
