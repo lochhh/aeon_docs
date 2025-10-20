@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5b12f60e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9651da53" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,9 +55,19 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Tutorials" href="tutorials.html" />
     <link rel="prev" title="Subject Tracking" href="aeon_modules/acquisition/subject_tracking.html" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tf87bg4tv7");
+  </script>
+
   </head>
   
   
@@ -392,11 +402,15 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="how_to.html">How-to Guides</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="how_to/dj_compute_bouts_copy.html">DataJoint pipeline: Computing behavioural bouts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="how_to/dj_data_ingestion_and_processing.html">DataJoint pipeline: Data ingestion and processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="how_to/dj_fetching_data_copy.html">DataJoint pipeline: Fetching data as DataFrames</a></li>
 <li class="toctree-l2"><a class="reference internal" href="how_to/dj_pipeline_local_deployment.html">DataJoint pipeline: On-premises deployment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="how_to/dj_querying_data.html">DataJoint pipeline: Querying data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="how_to/hmm_example.html">Hidden Markov Model analysis of mouse foraging behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="how_to/dj_querying_data_copy.html">DataJoint pipeline: Querying data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="how_to/hmm_example.html">Hidden Markov Model analysis of mouse behavioural syntax</a></li>
 <li class="toctree-l2"><a class="reference internal" href="how_to/io_api_example_copy.html">Data access using the low-level API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="how_to/social_analysis1_static.html">Platform paper social experiment analysis: Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="how_to/social_analysis2.html">Platform paper social experiment analysis: Part 2</a></li>
 </ul>
 </details></li>
 </ul>
@@ -459,12 +473,49 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="sample-datasets">
+  <section class="tex2jax_ignore mathjax_ignore" id="sample-datasets">
 <span id="target-sample-datasets"></span><h1>Sample Datasets<a class="headerlink" href="#sample-datasets" title="Link to this heading">#</a></h1>
-<p>To demonstrate Aeon’s various features and capabilities, we also provide the following sample datasets that complement the user guide.</p>
+<p>To demonstrate Aeon’s various features and capabilities, we also provide the following datasets that complement the <a class="reference internal" href="tutorials.html#target-tutorials"><span class="std std-ref">tutorials</span></a> and <a class="reference internal" href="how_to.html#target-how-to"><span class="std std-ref">how-to guides</span></a>.</p>
+<section id="short-datasets">
+<span id="target-short-datasets"></span><h2>Short datasets<a class="headerlink" href="#short-datasets" title="Link to this heading">#</a></h2>
+<p>These lightweight datasets are curated excerpts from full experiments, typically sized in <strong>gigabytes (GB)</strong>.
+They are selected to support quick inspection, pipeline prototyping, or tooling validation before committing to full dataset downloads.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://doi.org/10.5281/zenodo.13881884"><strong>Single mouse in a foraging assay</strong></a>: A two-hour snippet of a single mouse in a foraging assay consisting of three food patches.</p></li>
 </ul>
+</section>
+<section id="full-datasets">
+<span id="target-full-datasets"></span><h2>Full datasets<a class="headerlink" href="#full-datasets" title="Link to this heading">#</a></h2>
+<p>These datasets contain complete experimental recordings captured across multiple acquisition machines, with sizes generally in the <strong>terabyte (TB)</strong> range.
+Each dataset is labelled by the experiment name (e.g. <code class="docutils literal notranslate"><span class="pre">social0.2</span></code>) followed by the name of the acquisition machine (e.g. <code class="docutils literal notranslate"><span class="pre">aeon3</span></code>).</p>
+<p>“raw” datasets include <a class="reference internal" href="../about/design_considerations.html#target-data-provenance-raw"><span class="std std-ref">raw data</span></a> acquired from <em>all</em> streams used in an experiment, while “ingest” datasets contain only a <em>subset</em> of post-processed, <a class="reference internal" href="../about/design_considerations.html#target-data-provenance-derived"><span class="std std-ref">derived data</span></a> (typically full-pose position and/or weight data).
+For most analyses, using both “raw” and “ingest” datasets provides the cleanest and most complete view.</p>
+<ul class="simple">
+<li><p><strong>Social 0.2</strong>: A foraging assay with three food patches featuring dynamically varying reward rates. Each experiment consists of three periods: <em>presocial</em> (each mouse alone for 3–4 days), <em>social</em> (both mice together for 2 weeks), and <em>postsocial</em> (each mouse alone again for 3–4 days).</p>
+<ul>
+<li><p><strong>social0.2-aeon3</strong>: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=18397e02-9a8e-468e-9494-7f80a41727e5">raw</a>, <a class="reference external" href="https://app.globus.org/file-manager?origin_id=1ab867b9-abf7-4494-bc01-42c57ebcaff4">ingest</a></p></li>
+<li><p><strong>social0.2-aeon4</strong>: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=6dff8570-881d-4116-9c69-4495711be44b">raw</a>, <a class="reference external" href="https://app.globus.org/file-manager?origin_id=ba50f5c9-9702-487a-884c-2707507571d0">ingest</a></p></li>
+</ul>
+</li>
+<li><p><strong>Social 0.3/0.4</strong>: A variant of the <code class="docutils literal notranslate"><span class="pre">social</span> <span class="pre">0.2</span></code> assay, with three food patches and one dummy patch fixed at the center of the habitat. The reward-rate combinations span a wider range, and the habitat includes two additional gates connecting the outer corridor to the main area. Two wooden balls are also provided as enrichment for the mice to push around. The same three-period structure (<em>presocial</em>, <em>social</em>, <em>postsocial</em>) is used.</p>
+<ul>
+<li><p><strong>social0.3-aeon3</strong>: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=788472a1-da5b-41ad-ae2a-855158b9d23d">raw</a>, <a class="reference external" href="https://app.globus.org/file-manager?origin_id=ebee46d0-e1f8-4389-bd95-0006d1faf542">ingest</a></p></li>
+<li><p><strong>social0.4-aeon3</strong>: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=e85c1626-e845-4224-9ec9-6e3465abbb2a">raw</a>, <a class="reference external" href="https://app.globus.org/file-manager?origin_id=9fcdfb0c-888b-49a6-9891-ca1c6e3fd6a1">ingest</a></p></li>
+<li><p><strong>social0.4-aeon4</strong>: <a class="reference external" href="https://app.globus.org/file-manager?origin_id=a9304184-c573-409c-b161-ddf10ccdacef">raw</a>, <a class="reference external" href="https://app.globus.org/file-manager?origin_id=69f23a6e-f9de-487e-8dda-a27e9ba7faeb">ingest</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="precomputed-datasets">
+<span id="target-precomputed-datasets"></span><h2>Precomputed datasets<a class="headerlink" href="#precomputed-datasets" title="Link to this heading">#</a></h2>
+<p>These datasets contain outputs derived from full datasets that have already been run through the upstream pipelines.
+Stored in compact formats (e.g. Parquet, pickle), they are designed to support tutorials and how-to guides without requiring users to re-run heavy preprocessing or analysis steps.
+While downstream of “raw” and “ingest”, they prioritise ease of use and clarity of analysis over full provenance traceability.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://app.globus.org/file-manager?origin_id=2c09d69d-8ba0-4ca4-9762-7c784949e5c1"><strong>Platform paper social analysis datasets</strong></a>: Datasets analysed in the <a class="reference external" href="https://www.biorxiv.org/content/10.1101/2025.07.31.664513">platform paper</a> social experiments.</p></li>
+<li><p><a class="reference external" href="https://app.globus.org/file-manager?origin_id=65b637ce-8146-4305-8cb8-d87b526a9ff6"><strong>Filtered mouse position data</strong></a>: Position and kinematic data from a two-hour snippet of a single mouse in a foraging assay.</p></li>
+</ul>
+</section>
 </section>
 
 
@@ -505,6 +556,20 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#short-datasets">Short datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#full-datasets">Full datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#precomputed-datasets">Precomputed datasets</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">
@@ -573,7 +638,7 @@
         <img src="../_static/images/light-logo-ucl.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../_static/images/dark-logo-ucl.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>
-    <a href="https://www.ucl.ac.uk/gatsby/gatsby-computational-neuroscience-unit">
+    <a href="https://www.ucl.ac.uk/life-sciences/gatsby">
         <img src="../_static/images/light-logo-gatsby.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../_static/images/dark-logo-gatsby.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>

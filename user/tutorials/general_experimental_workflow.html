@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5b12f60e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=9651da53" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,9 +55,19 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="How-to Guides" href="../how_to.html" />
     <link rel="prev" title="DataJoint pipeline for Aeon" href="aeon_dj_pipeline.html" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tf87bg4tv7");
+  </script>
+
   </head>
   
   
@@ -392,11 +402,15 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../how_to.html">How-to Guides</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to/dj_compute_bouts_copy.html">DataJoint pipeline: Computing behavioural bouts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to/dj_data_ingestion_and_processing.html">DataJoint pipeline: Data ingestion and processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to/dj_fetching_data_copy.html">DataJoint pipeline: Fetching data as DataFrames</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to/dj_pipeline_local_deployment.html">DataJoint pipeline: On-premises deployment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../how_to/dj_querying_data.html">DataJoint pipeline: Querying data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../how_to/hmm_example.html">Hidden Markov Model analysis of mouse foraging behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to/dj_querying_data_copy.html">DataJoint pipeline: Querying data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to/hmm_example.html">Hidden Markov Model analysis of mouse behavioural syntax</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to/io_api_example_copy.html">Data access using the low-level API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to/social_analysis1_static.html">Platform paper social experiment analysis: Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to/social_analysis2.html">Platform paper social experiment analysis: Part 2</a></li>
 </ul>
 </details></li>
 </ul>
@@ -462,18 +476,18 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="general-experimental-workflow-infrastructure">
-<h1>General experimental workflow infrastructure<a class="headerlink" href="#general-experimental-workflow-infrastructure" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="general-experimental-workflow-infrastructure">
+<span id="target-general-experimental-workflow"></span><h1>General experimental workflow infrastructure<a class="headerlink" href="#general-experimental-workflow-infrastructure" title="Link to this heading">#</a></h1>
 <p>The Harp hardware eco-system underpins the Aeon system.
 A full setup consists of multiple <a class="reference external" href="https://www.cf-hw.org/harp">Harp</a> devices (e.g. <a class="reference external" href="https://github.com/harp-tech/device.cameracontrollergen2">CameraController</a>, <a class="reference external" href="https://github.com/harp-tech/device.clocksynchronizer">ClockSynchronizer</a>, etc.) and cameras that need to be monitored, controlled, and logged in synchrony.
-This tutorial provides an overview of the experimental workflow infrastructure and the general strategy for designing workflows using <a class="reference internal" href="../aeon_modules/acquisition.html#target-acquisition-modules"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">Aeon.Acquisition</span></code></span></a> nodes in <a class="reference external" href="https://bonsai-rx.org/">Bonsai</a>.</p>
+This tutorial provides an overview of the experimental workflow infrastructure and the general strategy for designing workflows using <a class="reference internal" href="../aeon_modules/acquisition.html#target-acquisition-modules"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">Aeon.Acquisition</span></code></span></a> nodes in <a class="reference external" href="https://bonsai-rx.org/#">Bonsai</a>.</p>
 <section id="harp-device-configuration">
 <h2>Harp device configuration<a class="headerlink" href="#harp-device-configuration" title="Link to this heading">#</a></h2>
-<p>Each physical Harp device used in Aeon has a dedicated <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Expressions.IncludeWorkflowBuilder.html"><code class="docutils literal notranslate"><span class="pre">IncludeWorkflow</span></code></a> in the <a class="reference internal" href="../aeon_modules/acquisition.html#target-acquisition-modules"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">Aeon.Acquisition</span></code></span></a> package.
+<p>Each physical Harp device used in Aeon has a dedicated <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Expressions.IncludeWorkflowBuilder.html#"><code class="docutils literal notranslate"><span class="pre">IncludeWorkflow</span></code></a> in the <a class="reference internal" href="../aeon_modules/acquisition.html#target-acquisition-modules"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">Aeon.Acquisition</span></code></span></a> package.
 For example, a Harp <a class="reference external" href="https://github.com/harp-tech/device.cameracontrollergen2">CameraController (Gen2)</a> device is controlled by a <a class="reference internal" href="../aeon_modules/acquisition/camera_controller.html#target-node-cameracontroller"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">CameraController</span> <span class="pre">(Aeon.Video)</span></code></span></a> node.
-In the main experimental workflow, nodes are each placed in <code class="docutils literal notranslate"><span class="pre">Metadata</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Devices</span></code> of the <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Expressions.GroupWorkflowBuilder.html"><code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></a>.
+In the main experimental workflow, nodes are each placed in <code class="docutils literal notranslate"><span class="pre">Metadata</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Devices</span></code> of the <a class="reference external" href="https://bonsai-rx.org/docs/api/Bonsai.Expressions.GroupWorkflowBuilder.html#"><code class="docutils literal notranslate"><span class="pre">GroupWorkflow</span></code></a>.
 Upon execution, these nodes connect to the corresponding physical devices and configure their operation settings according to the specified properties of the node.
-Additionally, the triggers and functions of any triggered actions on the device (e.g. delivering a food pellet) as well as any <a class="reference external" href="https://bonsai-rx.org/docs/articles/subjects.html"><code class="docutils literal notranslate"><span class="pre">Subject</span></code></a> names used as inputs and outputs to the device are defined here.</p>
+Additionally, the triggers and functions of any triggered actions on the device (e.g. delivering a food pellet) as well as any <a class="reference external" href="https://bonsai-rx.org/docs/articles/subjects.html#"><code class="docutils literal notranslate"><span class="pre">Subject</span></code></a> names used as inputs and outputs to the device are defined here.</p>
 <p>Events emitted by Harp devices are in the form of <code class="docutils literal notranslate"><span class="pre">Harp.HarpMessages</span></code>.
 The full event stream, along with other useful outputs are published to <code class="docutils literal notranslate"><span class="pre">Subjects</span></code> or <code class="docutils literal notranslate"><span class="pre">BehaviorSubjects</span></code>, making them accessible in the Bonsai editor’s toolbox anywhere in the workflow using their names.</p>
 </section>
@@ -680,7 +694,7 @@ This ensures that data stored in the standardised format can be efficiently acce
         <img src="../../_static/images/light-logo-ucl.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../../_static/images/dark-logo-ucl.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>
-    <a href="https://www.ucl.ac.uk/gatsby/gatsby-computational-neuroscience-unit">
+    <a href="https://www.ucl.ac.uk/life-sciences/gatsby">
         <img src="../../_static/images/light-logo-gatsby.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../../_static/images/dark-logo-gatsby.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>

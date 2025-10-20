@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5b12f60e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=9651da53" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -53,11 +53,21 @@
     <script src="../../_static/js/workflow.js?v=1800024c"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="DataJoint pipeline: Querying data" href="dj_querying_data.html" />
-    <link rel="prev" title="DataJoint pipeline: Data ingestion and processing" href="dj_data_ingestion_and_processing.html" />
+    <link rel="next" title="DataJoint pipeline: Querying data" href="dj_querying_data_copy.html" />
+    <link rel="prev" title="DataJoint pipeline: Fetching data as DataFrames" href="dj_fetching_data_copy.html" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tf87bg4tv7");
+  </script>
+
   </head>
   
   
@@ -392,11 +402,15 @@
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../how_to.html">How-to Guides</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dj_compute_bouts_copy.html">DataJoint pipeline: Computing behavioural bouts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dj_data_ingestion_and_processing.html">DataJoint pipeline: Data ingestion and processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dj_fetching_data_copy.html">DataJoint pipeline: Fetching data as DataFrames</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">DataJoint pipeline: On-premises deployment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dj_querying_data.html">DataJoint pipeline: Querying data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hmm_example.html">Hidden Markov Model analysis of mouse foraging behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dj_querying_data_copy.html">DataJoint pipeline: Querying data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hmm_example.html">Hidden Markov Model analysis of mouse behavioural syntax</a></li>
 <li class="toctree-l2"><a class="reference internal" href="io_api_example_copy.html">Data access using the low-level API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="social_analysis1_static.html">Platform paper social experiment analysis: Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="social_analysis2.html">Platform paper social experiment analysis: Part 2</a></li>
 </ul>
 </details></li>
 </ul>
@@ -462,7 +476,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="datajoint-pipeline-on-premises-deployment">
+  <section class="tex2jax_ignore mathjax_ignore" id="datajoint-pipeline-on-premises-deployment">
 <span id="target-dj-pipeline-deployment"></span><h1>DataJoint pipeline: On-premises deployment<a class="headerlink" href="#datajoint-pipeline-on-premises-deployment" title="Link to this heading">#</a></h1>
 <p>This guide describes the processes and resources required to deploy the <a class="reference internal" href="../tutorials/aeon_dj_pipeline.html#target-aeon-dj-pipeline"><span class="std std-ref">Aeon DataJoint pipeline</span></a> on-premises.</p>
 <section id="prerequisites">
@@ -502,7 +516,7 @@ following the instructions below.</p>
 </li>
 </ul>
 </li>
-<li><p>GitHub repository containing the <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_mecha/">codebase</a> of the DataJoint pipeline</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">aeon_mecha</span></code> GitHub repository containing the <a class="reference external" href="https://github.com/SainsburyWellcomeCentre/aeon_mecha/">codebase</a> of the DataJoint pipeline.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../../getting_started/installation.html#target-install-aeon-mecha"><span class="std std-ref">Install the codebase</span></a>. No additional modifications are needed to deploy the pipeline locally.</p></li>
 </ul>
@@ -519,7 +533,7 @@ following the instructions below.</p>
 </li>
 <li><p>Data to be ingested and processed</p>
 <ul class="simple">
-<li><p>You can use the <a class="reference external" href="https://doi.org/10.5281/zenodo.13881884">Single mouse in a foraging assay</a> sample dataset as a starting point to test the pipeline. If you choose to use this sample dataset, ensure that you <a class="reference internal" href="../../getting_started/installation.html#target-install-aeon-mecha"><span class="std std-ref">switch to the <code class="docutils literal notranslate"><span class="pre">sfn2024</span></code> branch of the codebase</span></a>.</p></li>
+<li><p>You can use the <a class="reference external" href="https://doi.org/10.5281/zenodo.13881884">Single mouse in a foraging assay</a> sample dataset as a starting point to test the pipeline. If you choose to use this sample dataset, ensure that you <a class="reference internal" href="../../getting_started/installation.html#target-install-aeon-mecha"><span class="std std-ref">switch to the <code class="docutils literal notranslate"><span class="pre">aeon_docs</span></code> branch of the codebase</span></a>.</p></li>
 </ul>
 </li>
 </ol>
@@ -562,16 +576,16 @@ following the instructions below.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dj_data_ingestion_and_processing.html"
+       href="dj_fetching_data_copy.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">DataJoint pipeline: Data ingestion and processing</p>
+        <p class="prev-next-title">DataJoint pipeline: Fetching data as DataFrames</p>
       </div>
     </a>
     <a class="right-next"
-       href="dj_querying_data.html"
+       href="dj_querying_data_copy.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -670,7 +684,7 @@ following the instructions below.</p>
         <img src="../../_static/images/light-logo-ucl.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../../_static/images/dark-logo-ucl.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>
-    <a href="https://www.ucl.ac.uk/gatsby/gatsby-computational-neuroscience-unit">
+    <a href="https://www.ucl.ac.uk/life-sciences/gatsby">
         <img src="../../_static/images/light-logo-gatsby.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../../_static/images/dark-logo-gatsby.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>

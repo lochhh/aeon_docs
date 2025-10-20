@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5b12f60e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9651da53" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,9 +55,19 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Reference" href="../reference/index.html" />
     <link rel="prev" title="Contributing Code" href="contributing_code.html" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tf87bg4tv7");
+  </script>
+
   </head>
   
   
@@ -399,7 +409,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="contributing-documentation">
+  <section class="tex2jax_ignore mathjax_ignore" id="contributing-documentation">
 <span id="target-contributing-documentation"></span><h1>Contributing Documentation<a class="headerlink" href="#contributing-documentation" title="Link to this heading">#</a></h1>
 <p>The documentation is built via <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a>,
 and hosted at <a class="reference external" href="https://aeon.swc.ucl.ac.uk/">aeon.swc.ucl.ac.uk</a>.
@@ -455,6 +465,12 @@ RestructuredText</label><div class="sd-tab-content docutils">
 <p>This new page will then be included as a subpage of the parent page.</p>
 </div>
 </div>
+</section>
+<section id="adding-a-new-contributor">
+<h3>Adding a new contributor<a class="headerlink" href="#adding-a-new-contributor" title="Link to this heading">#</a></h3>
+<p>To add a new contributor to the <a class="reference internal" href="../about/people.html#target-people"><span class="std std-ref">People</span></a> page, edit the <code class="docutils literal notranslate"><span class="pre">src/about/people.csv</span></code> file to include the contributor’s <strong>first name</strong>, <strong>last name</strong>, and <strong>affiliations</strong> under the columns <code class="docutils literal notranslate"><span class="pre">First</span></code>, <code class="docutils literal notranslate"><span class="pre">Last</span></code>, and <code class="docutils literal notranslate"><span class="pre">Affiliations</span></code>.</p>
+<p>During the build process, the <code class="docutils literal notranslate"><span class="pre">make_people_list.py</span></code> script will sort the entries alphabetically by <strong>last name</strong>, then <strong>first name</strong>, and combine the <code class="docutils literal notranslate"><span class="pre">First</span></code> and <code class="docutils literal notranslate"><span class="pre">Last</span></code> columns into a single <code class="docutils literal notranslate"><span class="pre">Name</span></code> column.
+Finally, the script will update the <a class="reference internal" href="../about/people.html#target-people"><span class="std std-ref">People</span></a> page with the new, sorted list automatically.</p>
 </section>
 <section id="adding-bonsai-workflow-code">
 <h3>Adding Bonsai workflow code<a class="headerlink" href="#adding-bonsai-workflow-code" title="Link to this heading">#</a></h3>
@@ -710,6 +726,7 @@ select the <code class="docutils literal notranslate"><span class="pre">Docs</sp
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-documentation">Editing the documentation</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-page">Adding a new page</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-contributor">Adding a new contributor</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-bonsai-workflow-code">Adding Bonsai workflow code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-referencing-pages">Cross-referencing pages</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#internal-references">Internal references</a></li>
@@ -799,7 +816,7 @@ select the <code class="docutils literal notranslate"><span class="pre">Docs</sp
         <img src="../_static/images/light-logo-ucl.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../_static/images/dark-logo-ucl.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>
-    <a href="https://www.ucl.ac.uk/gatsby/gatsby-computational-neuroscience-unit">
+    <a href="https://www.ucl.ac.uk/life-sciences/gatsby">
         <img src="../_static/images/light-logo-gatsby.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../_static/images/dark-logo-gatsby.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>

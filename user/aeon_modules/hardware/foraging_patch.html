@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=5b12f60e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=9651da53" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,9 +55,19 @@
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Habitat" href="habitat.html" />
     <link rel="prev" title="Commutation-Translation System" href="commutation_translation.html" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tf87bg4tv7");
+  </script>
+
   </head>
   
   
@@ -392,11 +402,15 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../how_to.html">How-to Guides</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_compute_bouts_copy.html">DataJoint pipeline: Computing behavioural bouts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_data_ingestion_and_processing.html">DataJoint pipeline: Data ingestion and processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_fetching_data_copy.html">DataJoint pipeline: Fetching data as DataFrames</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_pipeline_local_deployment.html">DataJoint pipeline: On-premises deployment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_querying_data.html">DataJoint pipeline: Querying data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../how_to/hmm_example.html">Hidden Markov Model analysis of mouse foraging behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_querying_data_copy.html">DataJoint pipeline: Querying data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/hmm_example.html">Hidden Markov Model analysis of mouse behavioural syntax</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to/io_api_example_copy.html">Data access using the low-level API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/social_analysis1_static.html">Platform paper social experiment analysis: Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/social_analysis2.html">Platform paper social experiment analysis: Part 2</a></li>
 </ul>
 </details></li>
 </ul>
@@ -465,7 +479,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="foraging-patch">
+  <section class="tex2jax_ignore mathjax_ignore" id="foraging-patch">
 <span id="target-foraging-patch"></span><h1>Foraging Patch<a class="headerlink" href="#foraging-patch" title="Link to this heading">#</a></h1>
 <img alt="Foraging Patch" class="img-hardware-main align-center" src="../../../_images/foraging-patch.svg" />
 <p>The foraging patch, consisting of the foraging wheel and the pellet delivery system, is utilised with the <a class="reference internal" href="../acquisition/foraging_patch.html#target-module-foraging-patch"><span class="std std-ref">foraging patch acquisition module</span></a> to provide a means for animals to obtain food in the <a class="reference internal" href="habitat.html#target-habitat"><span class="std std-ref">habitat</span></a> by rotating the wheel, simulating a naturalistic digging action.</p>
@@ -652,8 +666,8 @@ An infrared beam-break sensor detects the pellets as they are delivered.</p>
 <section id="downloads">
 <h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference download internal" download="" href="../../../_downloads/804923b53de3f4f44f492a3727281a23/Foraging-Patch-Guideline.pdf"><span class="xref download myst">Assembly guide</span></a></p></li>
-<li><p><a class="reference download internal" download="" href="../../../_downloads/8b9a77130a32369b9c98b3cc0de6bf0a/Foraging-Patch-BOM.xlsx"><span class="xref download myst">Bill of materials</span></a></p></li>
+<li><p><a class="reference external" href="https://g-d194c1.3cf00.03c0.data.globus.org/Foraging-Patch-Guideline.pdf">Assembly guide</a></p></li>
+<li><p><a class="reference external" href="https://g-d194c1.3cf00.03c0.data.globus.org/Foraging-Patch-BOM.xlsx">Bill of materials</a></p></li>
 </ul>
 </section>
 </section>
@@ -786,7 +800,7 @@ An infrared beam-break sensor detects the pellets as they are delivered.</p>
         <img src="../../../_static/images/light-logo-ucl.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../../../_static/images/dark-logo-ucl.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>
-    <a href="https://www.ucl.ac.uk/gatsby/gatsby-computational-neuroscience-unit">
+    <a href="https://www.ucl.ac.uk/life-sciences/gatsby">
         <img src="../../../_static/images/light-logo-gatsby.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../../../_static/images/dark-logo-gatsby.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>

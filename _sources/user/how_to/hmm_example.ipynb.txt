@@ -5,11 +5,11 @@
    "id": "2cbbd778",
    "metadata": {},
    "source": [
-    "# Hidden Markov Model analysis of mouse foraging behaviour\n",
+    "# Hidden Markov Model analysis of mouse behavioural syntax\n",
     "\n",
-    "In this example, we fit and apply a Hidden Markov Model (HMM) to infer behavioural syllables from pre-processed mouse tracking data.\n",
+    "In this example, we fit and apply a Hidden Markov Model (HMM) to infer behavioural syllables using the precomputed [filtered mouse position data](target-precomputed-datasets).\n",
     "\n",
-    "The [sample dataset](../../downloads/hmm_example_mouse_pos.pkl) is a two-hour snippet of a single mouse in a foraging assay. \n",
+    "The dataset is a two-hour snippet of a single mouse in a foraging assay. \n",
     "The mouse was tracked using [SLEAP](sleap:) with key body parts annotated as follows:\n",
     "\n",
     ":::{image} ../../images/hmm-example-mouse-body-parts.png\n",
@@ -36,7 +36,8 @@
     "Create and activate a virtual environment named `hmm-example` using [uv](https://docs.astral.sh/uv/getting-started/installation/).\n",
     "```bash\n",
     "uv venv hmm-example --python \">=3.11\" \n",
-    "source hmm-example/bin/activate   \n",
+    "source hmm-example/bin/activate   # Unix\n",
+    ".\\hmm-example\\Scripts\\activate   # Windows\n",
     "```\n",
     "\n",
     "Install the required [`ssm` package](https://github.com/lindermanlab/ssm) and its dependencies.\n",
@@ -166,7 +167,7 @@
    "metadata": {},
    "source": [
     "## Load sample data\n",
-    "The sample dataset can be downloaded [here](../../downloads/hmm_example_mouse_pos.pkl). \n",
+    "The sample dataset can be downloaded [here](https://g-a1e3bd.3cf00.03c0.data.globus.org/hmm_example_mouse_pos.pkl). \n",
     "Please change the value of `file_path` to the location where you saved the file."
    ]
   },

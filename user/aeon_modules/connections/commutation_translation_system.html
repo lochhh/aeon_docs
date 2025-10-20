@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=5b12f60e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=9651da53" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,9 +55,19 @@
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Foraging Patch Wiring Schematic" href="foraging_patch.html" />
     <link rel="prev" title="Camera Controller Wiring Schematic" href="camera_controller.html" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tf87bg4tv7");
+  </script>
+
   </head>
   
   
@@ -392,11 +402,15 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../how_to.html">How-to Guides</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_compute_bouts_copy.html">DataJoint pipeline: Computing behavioural bouts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_data_ingestion_and_processing.html">DataJoint pipeline: Data ingestion and processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_fetching_data_copy.html">DataJoint pipeline: Fetching data as DataFrames</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_pipeline_local_deployment.html">DataJoint pipeline: On-premises deployment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_querying_data.html">DataJoint pipeline: Querying data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../how_to/hmm_example.html">Hidden Markov Model analysis of mouse foraging behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/dj_querying_data_copy.html">DataJoint pipeline: Querying data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/hmm_example.html">Hidden Markov Model analysis of mouse behavioural syntax</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to/io_api_example_copy.html">Data access using the low-level API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/social_analysis1_static.html">Platform paper social experiment analysis: Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to/social_analysis2.html">Platform paper social experiment analysis: Part 2</a></li>
 </ul>
 </details></li>
 </ul>
@@ -465,10 +479,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="commutation-translation-system-wiring-schematic">
+  <section class="tex2jax_ignore mathjax_ignore" id="commutation-translation-system-wiring-schematic">
 <span id="target-wiring-commutation-translation"></span><h1>Commutation-Translation System Wiring Schematic<a class="headerlink" href="#commutation-translation-system-wiring-schematic" title="Link to this heading">#</a></h1>
+<!-- TODO:  Add link to controller device.md -->
 <p>The position of the <a class="reference internal" href="../hardware/commutation_translation.html#target-commutation-translation"><span class="std std-ref">commutation-translation system</span></a> is updated in real time, using tracking information from the Bonsai workflow to maintain a constant slack level on a cable connected to a mounted headstage on a freely moving animal.
-In Aeon, this is currently bridged from the behaviour machine by a bespoke <!-- TODO:  Fix link--><a class="reference internal" href="#./link/to/controllerDevice_ifExists.md"><span class="xref myst">controller device</span></a> that implements the <a class="reference external" href="https://harp-tech.org/#">Harp</a> protocol in μPython (<a class="reference external" href="https://github.com/SainsburyWellcomeCentre/microharp">μHarp</a>).</p>
+In Aeon, this is currently bridged from the behaviour machine by a bespoke controller device that implements the <a class="reference external" href="https://harp-tech.org/#">Harp</a> protocol in μPython (<a class="reference external" href="https://github.com/SainsburyWellcomeCentre/microharp">μHarp</a>).</p>
 <section id="connections">
 <h2>Connections<a class="headerlink" href="#connections" title="Link to this heading">#</a></h2>
 <img alt="Commutation-translation system wiring schematic" class="img-hardware-main align-center" src="../../../_images/commutation-translation-system-connection.svg" />
@@ -659,7 +674,7 @@ In Aeon, this is currently bridged from the behaviour machine by a bespoke <!-- 
         <img src="../../../_static/images/light-logo-ucl.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../../../_static/images/dark-logo-ucl.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>
-    <a href="https://www.ucl.ac.uk/gatsby/gatsby-computational-neuroscience-unit">
+    <a href="https://www.ucl.ac.uk/life-sciences/gatsby">
         <img src="../../../_static/images/light-logo-gatsby.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../../../_static/images/dark-logo-gatsby.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>

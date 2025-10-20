@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5b12f60e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9651da53" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,9 +55,19 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="User Guide" href="../user/index.html" />
     <link rel="prev" title="Repositories" href="repositories.html" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tf87bg4tv7");
+  </script>
+
   </head>
   
   
@@ -401,7 +411,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="installation">
+  <section class="tex2jax_ignore mathjax_ignore" id="installation">
 <span id="target-installation"></span><h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
 <p>This guide will walk you through the installation of the Aeon’s <a class="reference internal" href="repositories.html#target-repositories"><span class="std std-ref">Python packages</span></a>, <code class="docutils literal notranslate"><span class="pre">aeon_api</span></code> and <code class="docutils literal notranslate"><span class="pre">aeon_mecha</span></code>, using <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/">uv</a>.
 It also includes instructions for setting up data access to the Aeon data hosted on Sainbury Wellcome Centre’s (SWC) Ceph storage (currently only applicable to SWC members).</p>
@@ -428,11 +438,14 @@ Source</label><div class="sd-tab-content docutils">
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>branch_name
 </pre></div>
 </div>
-<p>To install the package alongside all optional dependencies:</p>
+<p>To install the package and its core dependencies:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>sync
+</pre></div>
+</div>
+<p>If you wish to install all optional dependencies, use the following command instead:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>sync<span class="w"> </span>--all-extras
 </pre></div>
 </div>
-<p>If you wish to install only the core dependencies, simply drop the <code class="docutils literal notranslate"><span class="pre">--all-extras</span></code> flag from the command above.</p>
 </div>
 </div>
 </section>
@@ -449,11 +462,14 @@ In other words, you only need to install <code class="docutils literal notransla
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>branch_name
 </pre></div>
 </div>
-<p>To install the package alongside all optional dependencies:</p>
+<p>To install the package and its core dependencies:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>sync
+</pre></div>
+</div>
+<p>If you wish to install all optional dependencies, use the following command instead:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>sync<span class="w"> </span>--all-extras
 </pre></div>
 </div>
-<p>If you wish to install only the core dependencies, simply drop the <code class="docutils literal notranslate"><span class="pre">--all-extras</span></code> flag from the command above.</p>
 <div class="docutils">
 </div>
 </section>
@@ -621,7 +637,7 @@ Examples for retrieving and visualising the data can be found in the <a class="r
         <img src="../_static/images/light-logo-ucl.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../_static/images/dark-logo-ucl.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>
-    <a href="https://www.ucl.ac.uk/gatsby/gatsby-computational-neuroscience-unit">
+    <a href="https://www.ucl.ac.uk/life-sciences/gatsby">
         <img src="../_static/images/light-logo-gatsby.png" alt="Sponsors" class="only-light img-sponsor"/>
         <img src="../_static/images/dark-logo-gatsby.png" alt="Sponsors" class="only-dark img-sponsor"/>
     </a>
