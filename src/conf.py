@@ -75,6 +75,10 @@ extensions = [
     "breathe",
     "sphinx_csharp",
 ]
+# Add metadata for HTML output
+myst_html_meta = {
+    "google-site-verification": "0jmRr1sRMbm36KKyq5U3ssZCf9viPpmz0HkmHLNQP84",
+}
 
 # Add metadata for HTML output
 myst_html_meta = {
