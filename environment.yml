@@ -22,3 +22,4 @@ dependencies:
     - breathe # dependencies for aeon_acquisition docs
     - git+https://github.com/rogerbarton/sphinx-csharp.git
     - lxml
+    - sphinx-sitemap

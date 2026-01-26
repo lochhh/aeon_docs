@@ -70,10 +70,15 @@ extensions = [
     "myst_nb",
     "sphinx_design",
     "sphinx_copybutton",
+    "sphinx_sitemap",
     "convertworkflow",
     "breathe",
     "sphinx_csharp",
 ]
+# Add metadata for HTML output
+myst_html_meta = {
+    "google-site-verification": "0jmRr1sRMbm36KKyq5U3ssZCf9viPpmz0HkmHLNQP84",
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -117,6 +122,17 @@ html_theme_options = {
     "footer_start": ["footer_start"],
     "footer_end": ["footer_end"],
 }
+
+# Configure sitemap generation
+html_baseurl = "https://aeon.swc.ucl.ac.uk/"
+html_extra_path = ["robots.txt"]
+sitemap_url_scheme = "{link}"
+sitemap_excludes = [
+    "search.html",
+    "genindex.html",
+    "py-modindex.html",
+]
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -132,11 +148,18 @@ linkcheck_ignore = [
     "http://SubjectExpressionBuilder.Name",  # Broken URL
     "https://learn.microsoft.com/dotnet/api/",  # 429 Client Error: Too Many Requests for url
     "https://www.sainsburywellcome.org/",  # Occasional ConnectTimeoutError
-    "https://doi.org/10.1101/2025.07.31.664513",  # 403 Client Error: Forbidden for bioRxiv url
-    "https://www.biorxiv.org/content/10.1101/2025.07.31.664513",  # 403 Client Error: Forbidden for bioRxiv url
+    "https://doi.org/",  # 403 Client Error: Forbidden for bioRxiv url
+    "https://www.biorxiv.org/",  # 403 Client Error: Forbidden for bioRxiv url
     "http://legacy.sleap.ai/",  # NameResolutionError
     r"globus\.org",  # All URLs containing globus.org
     r"(?:\.\./)+_images/.*",  # Internal image references that get remapped during build
+    # Private repos
+    "https://github.com/coenLab/bonsai-workflows",
+    "https://github.com/Keshavarzi-lab/Ring",
+    "https://github.com/SainsburyWellcomeCentre/flexible-navigation-task",
+    "https://github.com/SainsburyWellcomeCentre/JoysickABCD",
+    "https://github.com/SainsburyWellcomeCentre/ThreatLoop-arena",
+    "https://github.com/SainsburyWellcomeCentre/vr-abcd",
 ]
 
 # linkcheck will treat redirections from these source URI:canonical URI
@@ -144,6 +167,7 @@ linkcheck_ignore = [
 linkcheck_allowed_redirects = {
     r"https://doi\.org/10\.5281/zenodo\..*": r"https://zenodo\.org/records/.*",
     r"https://zenodo\.org/doi/.*": r"https://zenodo\.org/records/.*",
+    r"https://works.datajoint.com/.*": r"https://works.datajoint.com/organizations*",
 }
 
 # -- Extensions configuration ---------------------------------------------------
@@ -281,7 +305,6 @@ myst_url_schemes = {
     "ftp": None,
     "mailto": None,
     "aeon-paper": "https://www.biorxiv.org/content/10.1101/2025.07.31.664513",
-    "aeon-docs": "https://aeon.swc.ucl.ac.uk/{{path}}",
     "aeon-docs-github": "https://github.com/SainsburyWellcomeCentre/aeon_docs/{{path}}",
     "aeon-mecha-github": "https://github.com/SainsburyWellcomeCentre/aeon_mecha/{{path}}",
     "aeon-acquisition-github": "https://github.com/SainsburyWellcomeCentre/aeon_acquisition/{{path}}",

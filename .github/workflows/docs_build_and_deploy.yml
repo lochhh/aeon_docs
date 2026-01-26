@@ -23,7 +23,7 @@ jobs:
       run:
         shell: bash -el {0}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true # Enable automatic checkout of all submodules
 
@@ -40,10 +40,10 @@ jobs:
 
       # needs to have sphinx.ext.githubpages in conf.py extensions list
       - name: Building documentation
-        run: make html
+        run: make dirhtml
 
       - name: Upload the content for deployment
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: docs
           path: ./docs/
@@ -59,14 +59,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Clear previous build if present
         shell: bash
         run: rm -rf ./docs/
 
       - name: Download the content for deployment
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: docs
           path: ./docs/
@@ -75,4 +75,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/html/
+          publish_dir: ./docs/dirhtml/
