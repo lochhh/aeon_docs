@@ -1,7 +1,7 @@
 (target-contributing-documentation)=
 # Contributing Documentation
 The documentation is built via [Sphinx](https://www.sphinx-doc.org/en/master/), 
-and hosted at [aeon.swc.ucl.ac.uk](aeon-docs:). 
+and hosted at [aeon.swc.ucl.ac.uk](target-home). 
 `src/` is the Sphinx source directory, where you can find the Markdown (`.md`) and RestructuredText (`.rst`) files that make up the documentation. 
 The site is built and deployed from the `gh-pages` branch. 
 This is handled by a GitHub actions workflow (`.github/workflows/docs_build_and_deploy.yml`), triggered by the following events:
@@ -27,7 +27,7 @@ Depending on the file format of the parent file (`.md`or `.rst`), the `toctree` 
 
 ::::{tab-set}
 :::{tab-item} Markdown
-For example, to add `new_file.md` or `new_file.rst` as a subpage of the [Contributor Guide](aeon-docs:contributor), place the new file in `src/contributor/`. 
+For example, to add `new_file.md` or `new_file.rst` as a subpage of the [Contributor Guide](target-contributor-guide), place the new file in `src/contributor/`. 
 As the parent file is `src/contributor/index.md`, add `new_file` to the `toctree` in the parent file as follows:
 ```markdown
 :::{toctree}
@@ -36,7 +36,7 @@ As the parent file is `src/contributor/index.md`, add `new_file` to the `toctree
 
 new_file
 ```
-This new page will then be included as a subpage of [Contributor Guide](aeon-docs:contributor).
+This new page will then be included as a subpage of [Contributor Guide](target-contributor-guide).
 :::
 
 :::{tab-item} RestructuredText
@@ -150,7 +150,7 @@ To build the documentation locally, first make sure you have cloned the [`aeon_d
 The following commands should be run from the root directory of the repository.
 
 :::{note}
-Windows PowerShell users should prepend `make` commands with `.\` (e.g. `.\make html`).
+Windows PowerShell users should prepend `make` commands with `.\` (e.g. `.\make dirhtml`).
 :::
 
 Create a `conda` environment with the required dependencies and activate it:
@@ -183,13 +183,13 @@ git submodule update --remote
 
 Finally, build the documentation:
 ```bash
-make html
+make dirhtml
 ```
-You can view the local build by opening `docs/html/index.html` in a browser.
+You can view the local build by opening `docs/dirhtml/index.html` in a browser.
 
 To apply new changes to the documentation, remove all automatically generated files and folders, and rebuild:
 ```bash
-make clean && make html
+make clean && make dirhtml
 ```
 
 To check that external URLs are correctly resolved, run:
