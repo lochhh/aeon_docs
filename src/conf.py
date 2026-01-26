@@ -129,7 +129,7 @@ html_theme_options = {
 }
 
 # Configure sitemap generation
-html_baseurl = "https://aeon.swc.ucl.ac.uk/"
+html_baseurl = "https://lochhh.github.io/aeon_docs/"
 html_extra_path = ["robots.txt"]
 sitemap_url_scheme = "{link}"
 sitemap_excludes = [
