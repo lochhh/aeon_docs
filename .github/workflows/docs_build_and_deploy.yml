@@ -28,7 +28,7 @@ jobs:
           submodules: true # Enable automatic checkout of all submodules
 
       - name: Set up conda
-        uses: conda-incubator/setup-miniconda@v3
+        uses: conda-incubator/setup-miniconda@v4
         with:
           auto-update-conda: true
           channels: conda-forge, nodefaults
